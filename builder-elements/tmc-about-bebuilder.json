@@ -1,0 +1,210 @@
+[
+  {
+    "uid": "sec-hero",
+    "attr": {
+      "padding_top": "120",
+      "padding_bottom": "100",
+      "style": "full-width",
+      "bg_image": "/wp-content/uploads/get-to-know-hero.jpg",
+      "bg_position": "center center"
+    },
+    "wraps": [
+      {
+        "uid": "wrap-hero-1",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {},
+        "items": [
+          {
+            "uid": "item-hero-title",
+            "type": "heading",
+            "size": "1/2",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "GET TO KNOW TMC CANCELA",
+              "header_tag": "h1",
+              "align": "left",
+              "color": "#ffffff",
+              "style": "none"
+            }
+          },
+          {
+            "uid": "item-hero-list",
+            "type": "column",
+            "size": "1/2",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Features",
+              "content": "<p style=\"color:#fff;margin:0 0 1em;\">History that spans over 40 years.</p><hr style=\"border:0;border-top:1px solid rgba(255,255,255,0.5);margin:1em 0;\"/><p style=\"color:#fff;margin:0 0 1em;\">Values focused on top quality and service.</p><hr style=\"border:0;border-top:1px solid rgba(255,255,255,0.5);margin:1em 0;\"/><p style=\"color:#fff;margin:0;\">Innovation driving efficiency and control.</p>"
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrap-hero-2",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {},
+        "items": [
+          {
+            "uid": "item-hero-subhead",
+            "type": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "More than 40 years of experience, reach and practical innovation.",
+              "header_tag": "h2",
+              "align": "left",
+              "color": "#ffffff",
+              "style": "none"
+            }
+          },
+          {
+            "uid": "item-hero-text",
+            "type": "column",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Intro",
+              "content": "<p style=\"color:#fff;\">Our international expansion covers more than 50 countries together with trusted distributors, strategic logistics, and strong regional presence.</p>"
+            }
+          },
+          {
+            "uid": "item-hero-video",
+            "type": "column",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Video",
+              "content": "<div style=\"background:#000;min-height:320px;display:flex;align-items:center;justify-content:center;color:#666;\">Video placeholder</div>"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec-values",
+    "attr": {
+      "padding_top": "0",
+      "padding_bottom": "0",
+      "style": "full-width"
+    },
+    "wraps": [
+      {
+        "uid": "wrap-values-1",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {},
+        "items": [
+          {
+            "uid": "item-values-left",
+            "type": "column",
+            "size": "1/2",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Values left",
+              "content": "<div style=\"min-height:400px;display:flex;align-items:center;padding:2em;background-size:cover;background-position:center;\" class=\"values-left-bg\"><h2 style=\"color:#fff;margin:0;font-size:1.8em;\">FOCUS ON OUR TOP VALUES</h2></div>"
+            }
+          },
+          {
+            "uid": "item-values-right",
+            "type": "column",
+            "size": "1/2",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Values right",
+              "content": "<div style=\"background:#e85d04;color:#fff;min-height:400px;padding:3em 2em;\"><ul style=\"list-style:none;padding:0;margin:0 0 2em;\"><li style=\"padding:0.5em 0;border-bottom:1px solid rgba(255,255,255,0.3);\">Responsible forestry</li><li style=\"padding:0.5em 0;border-bottom:1px solid rgba(255,255,255,0.3);\">Commitment to sustainable logging</li><li style=\"padding:0.5em 0;border-bottom:1px solid rgba(255,255,255,0.3);\">Certified processes</li><li style=\"padding:0.5em 0;\">Active role in local development</li></ul><a href=\"/company\" style=\"color:#fff;text-decoration:none;font-weight:600;\">Read more &rarr;</a></div>"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec-innovation",
+    "attr": {
+      "padding_top": "80",
+      "padding_bottom": "80",
+      "bg_color": "#ffffff"
+    },
+    "wraps": [
+      {
+        "uid": "wrap-innovation-1",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {},
+        "items": [
+          {
+            "uid": "item-innov-left",
+            "type": "column",
+            "size": "1/2",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Innovation left",
+              "content": "<h2 style=\"color:#333;margin-top:0;\">Innovation always ahead, driving growth and the continuous improvement of our products.</h2><div style=\"display:flex;gap:2em;flex-wrap:wrap;\"><div><div style=\"font-size:2.5em;font-weight:700;color:#333;\">70+</div><p style=\"color:#333;margin:0.25em 0 0;\">More than 70 countries where we are present.</p></div><div><div style=\"font-size:2.5em;font-weight:700;color:#333;\">20%</div><p style=\"color:#333;margin:0.25em 0 0;\">Reduction in CO2 emissions across the entire production process.</p></div></div>"
+            }
+          },
+          {
+            "uid": "item-innov-right",
+            "type": "column",
+            "size": "1/2",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Innovation right",
+              "content": "<div style=\"background:#f0f0f0;min-height:200px;margin-bottom:1.5em;\"></div><p style=\"color:#333;\">We work with the most advanced technology to develop cutting-edge machinery that guarantees high productivity and minimum environmental impact.</p><a href=\"/sustainability-report\" style=\"color:#e85d04;font-weight:600;\">Sustainability report &rarr;</a>"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec-cta",
+    "attr": {
+      "padding_top": "100",
+      "padding_bottom": "100",
+      "style": "full-width",
+      "bg_image": "/wp-content/uploads/lets-work-together-tractor.jpg",
+      "bg_position": "center center"
+    },
+    "wraps": [
+      {
+        "uid": "wrap-cta-1",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {},
+        "items": [
+          {
+            "uid": "item-cta-box",
+            "type": "call_to_action",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Let's work together! Contact us!",
+              "title_tag": "h2",
+              "content": "",
+              "button_title": "Contact us",
+              "link": "/contact"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
