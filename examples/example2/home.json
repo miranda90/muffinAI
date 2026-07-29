@@ -1,0 +1,2628 @@
+[
+  {
+    "icon": "section",
+    "uid": "d5916b87c",
+    "jsclass": "section",
+    "title": "Section",
+    "attr": {
+      "scroll-visibility": "show",
+      "closeable-x": "left",
+      "query_post_orderby": "date",
+      "query_post_order": "DESC",
+      "query_terms_taxonomy": "category",
+      "query_terms_orderby": "ID",
+      "query_terms_order": "ASC",
+      "query_slider_columns": {
+        "desktop": "1"
+      },
+      "background_switcher_ql": "default",
+      "query_display_slider_arrow_prev": "icon-left-open-big",
+      "query_display_slider_arrow_next": "icon-right-open-big",
+      "background_switcher": "video",
+      "background_switcher_hover": "default",
+      "background_switcher_scroll": "default",
+      "background_overlay_switcher": "default",
+      "height_switcher": "custom",
+      "css_advanced_height": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "height",
+        "val": {
+          "desktop": "100vh",
+          "tablet": "auto"
+        }
+      },
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#1D242C"
+      },
+      "bg_video_mp4": "https://tmcusa.invbit.systems/wp-content/uploads/2026/01/home-2026-01-30-home.mp4#1406",
+      "css_advanced_background_overlay_background_color": {
+        "selector": ".mcb-section-mfnuidelement .mcb-background-overlay",
+        "style": "background-color",
+        "val": "rgba(29,36,44,0.5)"
+      },
+      "vb_postid": "2",
+      "vb": 1,
+      "rwd": "desktop",
+      "css_advanced_padding": {
+        "val": {
+          "tablet": {
+            "bottom": "3rem"
+          }
+        },
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding"
+      }
+    },
+    "ver": "default",
+    "wraps": [
+      {
+        "icon": "wrap",
+        "uid": "daa9e74a6",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(3, 1fr)"
+            }
+          },
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_taxonomy": "category",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "top": "10rem"
+              },
+              "tablet": {
+                "top": "5rem",
+                "bottom": "2rem"
+              },
+              "mobile": {
+                "top": "2rem"
+              }
+            }
+          },
+          "vb_postid": "2",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": [
+          {
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Encabezado",
+            "icon": "heading",
+            "attr": {
+              "title": "Built for the thoughtest land–clearing challenges.",
+              "header_tag": "h1",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#ffffff"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "7rem",
+                    "line-height": "7rem"
+                  },
+                  "font-weight": "700",
+                  "mobile": {
+                    "font-size": "4rem",
+                    "line-height": "4rem"
+                  }
+                }
+              },
+              "width_switcher": "custom",
+              "css_advanced_flex": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "width",
+                "val": {
+                  "desktop": "70rem"
+                }
+              },
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "uid": "a57c23e2a",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "laptop_size": "1/1",
+            "mobile_size": "1/1",
+            "tablet_resized": "0"
+          }
+        ]
+      },
+      {
+        "icon": "wrap",
+        "uid": "ba917yts",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "val": {
+              "desktop": "repeat(3, 1fr)"
+            },
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns"
+          },
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_taxonomy": "category",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "css_advanced_align_self": {
+            "val": {
+              "desktop": "flex-end"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "align-self"
+          },
+          "vb_postid": "2",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": [
+          {
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Plain Text",
+            "icon": "plain-text",
+            "attr": {
+              "content": "[homepage_product_carousel]",
+              "css_advanced_margin": {
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  }
+                },
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin"
+              },
+              "shortcodes_parser": "1",
+              "css_advanced_padding": {
+                "val": {
+                  "desktop": {
+                    "top": "1.5rem",
+                    "right": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem"
+                  }
+                },
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "padding"
+              },
+              "css_advanced_background_color": {
+                "val": "#ffffff",
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "background-color"
+              },
+              "css_advanced_border_radius": {
+                "val": {
+                  "desktop": ".5rem .5rem .5rem .5rem"
+                },
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "border-radius"
+              },
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "uid": "ncredkq",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "laptop_size": "1/1",
+            "mobile_size": "1/1",
+            "tablet_resized": "0",
+            "used_fonts": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "section",
+    "uid": "2262e8a6d",
+    "jsclass": "section",
+    "title": "Section",
+    "attr": {
+      "scroll-visibility": "show",
+      "closeable-x": "left",
+      "query_post_orderby": "date",
+      "query_post_order": "DESC",
+      "query_terms_taxonomy": "category",
+      "query_terms_orderby": "ID",
+      "query_terms_order": "ASC",
+      "query_slider_columns": {
+        "desktop": "1"
+      },
+      "background_switcher_ql": "default",
+      "query_display_slider_arrow_prev": "icon-left-open-big",
+      "query_display_slider_arrow_next": "icon-right-open-big",
+      "background_switcher": "default",
+      "background_switcher_hover": "default",
+      "background_switcher_scroll": "default",
+      "background_overlay_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#F08018"
+      },
+      "css_advanced_background_position": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position",
+        "val": {
+          "desktop": "top right"
+        }
+      },
+      "css_advanced_background_size": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size",
+        "val": {
+          "desktop": "custom"
+        }
+      },
+      "css_advanced_background_size_v2": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size_v2",
+        "val": {
+          "desktop": "100rem"
+        }
+      },
+      "css_advanced_justify_content": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "justify-content",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "width_switcher": "full",
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "tablet": [],
+          "desktop": {
+            "bottom": "4rem"
+          }
+        }
+      },
+      "vb_postid": "2",
+      "vb": 1,
+      "rwd": "desktop"
+    },
+    "ver": "default",
+    "be_classes": [
+      "be_section_bg0lw4vb"
+    ],
+    "wraps": [
+      {
+        "icon": "wrap",
+        "uid": "e9ae272b9",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(2, 1fr)"
+            }
+          },
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_taxonomy": "category",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "grid": "grid",
+          "grid_columns_switcher": "custom",
+          "css_grid_columns_custom": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-grid-col-custom.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "35rem 1fr",
+              "mobile": "1fr"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "4rem"
+              },
+              "tablet": {
+                "bottom": "2rem"
+              }
+            }
+          },
+          "css_advanced_flex_grow": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "flex-grow",
+            "val": {
+              "desktop": "unset"
+            }
+          },
+          "css_advanced_align_items": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "align-items",
+            "val": {
+              "laptop": "center"
+            }
+          },
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "1580px"
+            }
+          },
+          "vb_postid": "2",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": [
+          {
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Encabezado",
+            "icon": "heading",
+            "attr": {
+              "title": "Built<br>for <br><b>real<br>work</b>",
+              "header_tag": "h2",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#1D242C"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "10rem",
+                    "line-height": "10rem"
+                  },
+                  "font-weight": "400",
+                  "text-transform": "uppercase",
+                  "tablet": {
+                    "font-size": "8rem"
+                  },
+                  "mobile": {
+                    "font-size": "5rem",
+                    "line-height": "5rem"
+                  }
+                }
+              },
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "uid": "e66fd6bbc",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "laptop_size": "1/1",
+            "mobile_size": "1/1",
+            "tablet_resized": "0"
+          },
+          {
+            "type": "image",
+            "jsclass": "image",
+            "title": "Imagen",
+            "icon": "image",
+            "attr": {
+              "src": "https://tmcusa.invbit.systems/wp-content/uploads/2026/01/home-2026-01-30-home.webp#1409",
+              "size": "full",
+              "mask_shape_size": "contain",
+              "mask_shape_position": "center center",
+              "width_switcher": "custom",
+              "css_advanced_flex": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "width",
+                "val": {
+                  "tablet": "55rem"
+                }
+              },
+              "css_advanced_position": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "position",
+                "val": {
+                  "tablet": "absolute"
+                }
+              },
+              "css_advanced_left": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "left",
+                "val": {
+                  "tablet": "40%"
+                }
+              },
+              "visibility": " hide-mobile",
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "uid": "bfeebe095",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "laptop_size": "1/1",
+            "mobile_size": "1/1",
+            "tablet_resized": "0"
+          }
+        ]
+      },
+      {
+        "icon": "wrap",
+        "uid": "18d014142",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(3, 1fr)"
+            }
+          },
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_taxonomy": "category",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "vb_postid": "2",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": []
+      },
+      {
+        "icon": "wrap",
+        "uid": "d136482e5",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(4, 1fr)",
+              "tablet": "repeat(2, 1fr)",
+              "mobile": "1fr"
+            }
+          },
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_orderby": "name",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "grid": "grid",
+          "type": "query",
+          "query_type": "terms",
+          "query_terms_taxonomy": "product_cat",
+          "query_terms_includes_product_cat": [
+            {
+              "key": "133",
+              "value": "\n\t\t\t\t\tFor Excavators\n\t\t\t\t\t"
+            },
+            {
+              "key": "134",
+              "value": "\n\t\t\t\t\tFor Stand on Skid Steer\n\t\t\t\t\t"
+            },
+            {
+              "key": "138",
+              "value": "\n\t\t\t\t\tMulchers\n\t\t\t\t\t"
+            },
+            {
+              "key": "141",
+              "value": "\n\t\t\t\t\tMultipurpose/Tillers\n\t\t\t\t\t"
+            }
+          ],
+          "classes": "home-categories-wrap",
+          "css_advanced_flex_grow": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "flex-grow",
+            "val": {
+              "desktop": "unset"
+            }
+          },
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "1580px"
+            }
+          },
+          "css_grid_rows_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "row-gap",
+            "val": {
+              "tablet": "2rem"
+            }
+          },
+          "css_grid_columns_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "column-gap",
+            "val": {
+              "tablet": "1rem"
+            }
+          },
+          "vb_postid": "2",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": [
+          {
+            "icon": "wrap",
+            "uid": "8ccggatd",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns",
+                "val": {
+                  "desktop": "repeat(3, 1fr)",
+                  "mobile": "repeat(2, 1fr)"
+                }
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "classes": "home-category-block",
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "items": [
+              {
+                "type": "image",
+                "jsclass": "image",
+                "title": "Imagen",
+                "icon": "image",
+                "attr": {
+                  "src": "{featured_image}",
+                  "size": "full",
+                  "mask_shape_size": "contain",
+                  "mask_shape_position": "center center",
+                  "css_image_frame_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                    "style": "width",
+                    "val": {
+                      "desktop": "100%"
+                    }
+                  },
+                  "image_height": "custom",
+                  "css_image_cover_height": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                    "style": "height",
+                    "val": {
+                      "desktop": "24.75rem",
+                      "mobile": "15rem"
+                    }
+                  },
+                  "css_image_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "0.5rem 0.5rem 0.5rem 0.5rem"
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1rem"
+                      }
+                    }
+                  },
+                  "link": "{permalink}",
+                  "hover": "disable",
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "6hu6mvge",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0"
+              },
+              {
+                "type": "button",
+                "jsclass": "button",
+                "title": "Botón",
+                "icon": "button",
+                "attr": {
+                  "icon_position": "left",
+                  "size": "2",
+                  "button_function_copy_to_clipboard_tooltip": "Copy to clipboard",
+                  "button_function_copy_to_clipboard_copied_tooltip": "Copied",
+                  "background_switcher": "default",
+                  "background_switcher_hover": "default",
+                  "link": "{permalink}",
+                  "css_advanced_background_img": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "background-image",
+                    "val": {
+                      "desktop": "https://tmcusa.invbit.systems/wp-content/uploads/2025/12/home-2025-12-26-home.svg#1274"
+                    }
+                  },
+                  "css_advanced_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width",
+                    "val": {
+                      "desktop": "64px"
+                    }
+                  },
+                  "height_switcher": "custom",
+                  "css_advanced_height": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "height",
+                    "val": {
+                      "desktop": "64px"
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "line-height": "1rem"
+                      }
+                    }
+                  },
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "transparent"
+                  },
+                  "css_advanced_position": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "position",
+                    "val": {
+                      "desktop": "absolute"
+                    }
+                  },
+                  "css_advanced_bottom": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "bottom",
+                    "val": {
+                      "desktop": "1rem"
+                    }
+                  },
+                  "css_advanced_right": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "right",
+                    "val": {
+                      "desktop": "12px"
+                    }
+                  },
+                  "css_advanced_transform_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner:hover",
+                    "style": "transform",
+                    "val": {
+                      "desktop": {
+                        "scaleX": 1,
+                        "skewY": 0,
+                        "skewX": 0,
+                        "scaleY": 1,
+                        "translateX": 8,
+                        "translateY": 0,
+                        "rotate": 0,
+                        "string": "1,0,0,1,8,0,0"
+                      }
+                    }
+                  },
+                  "css_advanced_background_size": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "background-size",
+                    "val": {
+                      "desktop": "custom"
+                    }
+                  },
+                  "css_advanced_background_size_v2": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "background-size_v2",
+                    "val": {
+                      "desktop": "3rem"
+                    }
+                  },
+                  "css_advanced_background_position": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "background-position",
+                    "val": {
+                      "desktop": "center"
+                    }
+                  },
+                  "css_advanced_background_repeat": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "background-repeat",
+                    "val": {
+                      "desktop": "no-repeat"
+                    }
+                  },
+                  "css_advanced_z_index": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "z-index",
+                    "val": "2"
+                  },
+                  "css_advanced_background_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner:hover",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "css_advanced_transition_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner:hover",
+                    "style": "transition",
+                    "val": ".3s"
+                  },
+                  "css_button_background_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                    "style": "background",
+                    "val": "transparent"
+                  },
+                  "css_button_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                    "style": "color",
+                    "val": "transparent"
+                  },
+                  "css_advanced_margin": {
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "bottom": "0px"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "jy5tgi1p",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0"
+              },
+              {
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Encabezado",
+                "icon": "heading",
+                "attr": {
+                  "header_tag": "h2",
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "1.8rem",
+                        "line-height": "2.2rem"
+                      },
+                      "font-weight": "700",
+                      "text-transform": "capitalize",
+                      "mobile": {
+                        "font-size": "1.875rem",
+                        "line-height": "2rem"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      }
+                    }
+                  },
+                  "link": "{permalink}",
+                  "css_advanced_padding": {
+                    "val": {
+                      "desktop": {
+                        "bottom": "2rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "padding"
+                  },
+                  "title": "{acf:card_name}",
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "1courp6a",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0"
+              }
+            ],
+            "item_is_wrap": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "section",
+    "uid": "03364dec7",
+    "jsclass": "section",
+    "title": "Section",
+    "attr": {
+      "scroll-visibility": "show",
+      "closeable-x": "left",
+      "tabber_nav_position": {
+        "desktop": "left"
+      },
+      "query_post_orderby": "date",
+      "query_post_order": "DESC",
+      "query_terms_taxonomy": "category",
+      "query_terms_orderby": "ID",
+      "query_terms_order": "ASC",
+      "css_tabber_gap": {
+        "desktop": "30"
+      },
+      "tabber_icon_position": {
+        "desktop": "left"
+      },
+      "query_slider_columns": {
+        "desktop": "1"
+      },
+      "background_switcher_ql": "default",
+      "query_display_slider_arrow_prev": "icon-left-open-big",
+      "query_display_slider_arrow_next": "icon-right-open-big",
+      "background_switcher": "default",
+      "background_switcher_hover": "default",
+      "background_switcher_scroll": "default",
+      "background_overlay_switcher": "default",
+      "height_switcher": "custom",
+      "css_advanced_height": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "height",
+        "val": {
+          "desktop": "80rem"
+        }
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#000000"
+      },
+      "width_switcher": "full",
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": []
+        }
+      },
+      "css_advanced_justify_content": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "justify-content",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_background_image": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-image",
+        "val": {
+          "desktop": "https://tmcusa.invbit.systems/wp-content/uploads/2025/12/home-2025-12-29-home.webp#1278"
+        }
+      },
+      "css_advanced_background_size": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size",
+        "val": {
+          "desktop": "cover"
+        }
+      },
+      "css_advanced_background_position": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_background_overlay_background_color": {
+        "selector": ".mcb-section-mfnuidelement .mcb-background-overlay",
+        "style": "background-color",
+        "val": "rgba(29,36,44,0.2)"
+      },
+      "vb_postid": "2",
+      "vb": 1,
+      "rwd": "desktop"
+    },
+    "ver": "default",
+    "be_classes": [
+      "be_section_bg0lw4vb"
+    ],
+    "wraps": [
+      {
+        "icon": "wrap",
+        "uid": "4595261aa",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(2, 1fr)",
+              "tablet": "1fr"
+            }
+          },
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_taxonomy": "category",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "css_advanced_background_color": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "background-color",
+            "val": "#FFFFFF"
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "4rem",
+                "right": "4rem",
+                "bottom": "4rem",
+                "left": "4rem"
+              },
+              "tablet": {
+                "right": "2rem",
+                "bottom": "2rem",
+                "left": "2rem",
+                "top": "2rem"
+              }
+            }
+          },
+          "css_advanced_border_radius": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "border-radius",
+            "val": {
+              "desktop": ".5rem .5rem .5rem .5rem"
+            }
+          },
+          "grid": "grid",
+          "css_grid_columns_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "column-gap",
+            "val": {
+              "desktop": "4rem"
+            }
+          },
+          "css_advanced_align_self": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "align-self",
+            "val": {
+              "desktop": "flex-end"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "0px"
+              }
+            }
+          },
+          "css_advanced_align_items": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "align-items",
+            "val": {
+              "desktop": "center"
+            }
+          },
+          "css_advanced_flex_grow": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "flex-grow",
+            "val": {
+              "desktop": "unset"
+            }
+          },
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "1580px",
+              "tablet": "100%"
+            }
+          },
+          "css_grid_rows_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "row-gap",
+            "val": {
+              "tablet": "2rem"
+            }
+          },
+          "vb_postid": "2",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": [
+          {
+            "icon": "wrap",
+            "uid": "2669ee690",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns",
+                "val": {
+                  "desktop": "repeat(3, 1fr)"
+                }
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Encabezado",
+                "icon": "heading",
+                "attr": {
+                  "title": "Find the right equipment for your operation in our online catalog.",
+                  "header_tag": "h2",
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "2.25rem"
+                      },
+                      "mobile": {
+                        "bottom": "1rem"
+                      }
+                    }
+                  },
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "9f4e78acd",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_heading_ngzvt6ic"
+                ]
+              },
+              {
+                "type": "column",
+                "jsclass": "column",
+                "title": "Column Text",
+                "icon": "column",
+                "attr": {
+                  "content": "<p><strong>Explore detailed specifications, applications, and configurations</strong> across our full range of forestry and land-clearing equipment. Our catalog helps you compare models, understand performance capabilities, and choose the right solution for your terrain, carrier, and job requirements. Also, <strong>you can visit our Youtube channel to see our machinery in action</strong>.</p>",
+                  "bg_position": "center top no-repeat",
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "2.25rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  },
+                  "css_advanced_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "right": "6.7rem"
+                      },
+                      "mobile": {
+                        "right": "0px"
+                      }
+                    }
+                  },
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "b98b0f807",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_column_7ok8mpss"
+                ]
+              },
+              {
+                "type": "button",
+                "jsclass": "button",
+                "title": "Botón",
+                "icon": "button",
+                "attr": {
+                  "title": "Discover the catalog",
+                  "button_function_copy_to_clipboard_tooltip": "Copy to clipboard",
+                  "button_function_copy_to_clipboard_copied_tooltip": "Copied",
+                  "background_switcher": "default",
+                  "background_switcher_hover": "default",
+                  "class": "arrow-button",
+                  "width_switcher": "custom",
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": ".5rem"
+                      }
+                    }
+                  },
+                  "css_advanced_flex": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width",
+                    "val": {
+                      "mobile": "100%",
+                      "desktop": "auto"
+                    }
+                  },
+                  "full_width": "1",
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "5f9bfec57",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_button_7naoomwx"
+                ]
+              },
+              {
+                "type": "button",
+                "jsclass": "button",
+                "title": "Botón",
+                "icon": "button",
+                "attr": {
+                  "title": "Visit our Youtube channel",
+                  "button_function_copy_to_clipboard_tooltip": "Copy to clipboard",
+                  "button_function_copy_to_clipboard_copied_tooltip": "Copied",
+                  "background_switcher": "default",
+                  "background_switcher_hover": "default",
+                  "class": "arrow-button",
+                  "width_switcher": "custom",
+                  "link": "https://www.youtube.com/user/tmccancela",
+                  "target": "1",
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      }
+                    }
+                  },
+                  "css_advanced_flex": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width",
+                    "val": {
+                      "mobile": "100%",
+                      "desktop": "auto"
+                    }
+                  },
+                  "full_width": "1",
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "433b6cd99",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_button_s29mmcug"
+                ]
+              }
+            ]
+          },
+          {
+            "icon": "wrap",
+            "uid": "d7b4000c5",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns",
+                "val": {
+                  "desktop": "repeat(3, 1fr)"
+                }
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "image",
+                "jsclass": "image",
+                "title": "Imagen",
+                "icon": "image",
+                "attr": {
+                  "src": "https://tmcusa.invbit.systems/wp-content/uploads/2025/12/txx_02_tmc_cancela-2025-12-23-txx_02_tmc_cancela.webp#1226",
+                  "size": "full",
+                  "mask_shape_size": "contain",
+                  "mask_shape_position": "center center",
+                  "css_image_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": ".5rem .5rem .5rem .5rem"
+                    }
+                  },
+                  "css_image_frame_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                    "style": "width",
+                    "val": {
+                      "desktop": "100%"
+                    }
+                  },
+                  "image_height": "custom",
+                  "css_image_cover_height": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                    "style": "height",
+                    "val": {
+                      "desktop": "33rem",
+                      "mobile": "auto"
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      }
+                    }
+                  },
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "336d02d0d",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "section",
+    "uid": "f03ecd94e",
+    "jsclass": "section",
+    "title": "Section",
+    "attr": {
+      "scroll-visibility": "show",
+      "closeable-x": "left",
+      "tabber_nav_position": {
+        "desktop": "left"
+      },
+      "query_post_orderby": "date",
+      "query_post_order": "DESC",
+      "query_terms_taxonomy": "category",
+      "query_terms_orderby": "ID",
+      "query_terms_order": "ASC",
+      "css_tabber_gap": {
+        "desktop": "30"
+      },
+      "tabber_icon_position": {
+        "desktop": "left"
+      },
+      "query_slider_columns": {
+        "desktop": "1"
+      },
+      "background_switcher_ql": "default",
+      "query_display_slider_arrow_prev": "icon-left-open-big",
+      "query_display_slider_arrow_next": "icon-right-open-big",
+      "background_switcher": "default",
+      "background_switcher_hover": "default",
+      "background_switcher_scroll": "default",
+      "background_overlay_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#1D242C"
+      },
+      "width_switcher": "full",
+      "css_advanced_justify_content": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "justify-content",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "tablet": []
+        }
+      },
+      "vb_postid": "2",
+      "vb": 1,
+      "rwd": "desktop"
+    },
+    "ver": "default",
+    "be_classes": [
+      "be_section_bg0lw4vb"
+    ],
+    "wraps": [
+      {
+        "icon": "wrap",
+        "uid": "1173ba63b",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(2, 1fr)"
+            }
+          },
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_taxonomy": "category",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "grid": "grid",
+          "grid_columns_switcher": "custom",
+          "css_grid_columns_custom": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-grid-col-custom.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "1.5fr 1fr",
+              "mobile": "1fr"
+            }
+          },
+          "css_advanced_flex_grow": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "flex-grow",
+            "val": {
+              "desktop": "unset"
+            }
+          },
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "1580px",
+              "tablet": "100%"
+            }
+          },
+          "css_grid_columns_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "column-gap",
+            "val": {
+              "desktop": "6rem",
+              "tablet": "0rem"
+            }
+          },
+          "vb_postid": "2",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": [
+          {
+            "type": "image",
+            "jsclass": "image",
+            "title": "Imagen",
+            "icon": "image",
+            "attr": {
+              "src": "https://tmcusa.invbit.systems/wp-content/uploads/2025/12/home-2025-12-29-home-1.webp#1279",
+              "size": "full",
+              "mask_shape_size": "contain",
+              "mask_shape_position": "center center",
+              "css_advanced_position": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "position",
+                "val": {
+                  "desktop": "absolute"
+                }
+              },
+              "css_advanced_right": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "right",
+                "val": {
+                  "desktop": "-28rem",
+                  "tablet": "-20rem"
+                }
+              },
+              "css_advanced_bottom": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "bottom",
+                "val": {
+                  "desktop": "70%"
+                }
+              },
+              "width_switcher": "custom",
+              "css_advanced_flex": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "width",
+                "val": {
+                  "tablet": "50rem"
+                }
+              },
+              "visibility": " hide-mobile",
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "uid": "3e7a12b77",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "laptop_size": "1/1",
+            "mobile_size": "1/1",
+            "tablet_resized": "0"
+          },
+          {
+            "icon": "wrap",
+            "uid": "631657f21",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns",
+                "val": {
+                  "desktop": "repeat(3, 1fr)"
+                }
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Encabezado",
+                "icon": "heading",
+                "attr": {
+                  "title": "We are your partner in engineering that works in the real world, focused on results.\n",
+                  "header_tag": "h2",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#FFFFFF"
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      }
+                    }
+                  },
+                  "css_advanced_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "right": "3rem"
+                      }
+                    }
+                  },
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "4bd32b550",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_heading_ngzvt6ic"
+                ]
+              }
+            ]
+          },
+          {
+            "icon": "wrap",
+            "uid": "52ca71713",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns",
+                "val": {
+                  "desktop": "repeat(3, 1fr)"
+                }
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "12rem"
+                  },
+                  "mobile": {
+                    "top": "1.5rem"
+                  }
+                }
+              },
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "column",
+                "jsclass": "column",
+                "title": "Column Text",
+                "icon": "column",
+                "attr": {
+                  "content": "<p>As your trusted partner, we deliver high-performance forestry solutions to contractors, land managers, and public agencies across the U.S. With decades of engineering expertise and real-world testing, our machines are built to handle extreme conditions, maximize productivity, and deliver consistent results job after job.</p>",
+                  "bg_position": "center top no-repeat",
+                  "css_column_attr_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr",
+                    "style": "color",
+                    "val": "#FFFFFF"
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  },
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "0675eb9ef",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_column_7ok8mpss"
+                ]
+              },
+              {
+                "type": "button",
+                "jsclass": "button",
+                "title": "Botón",
+                "icon": "button",
+                "attr": {
+                  "title": "Get to know us",
+                  "button_function_copy_to_clipboard_tooltip": "Copy to clipboard",
+                  "button_function_copy_to_clipboard_copied_tooltip": "Copied",
+                  "background_switcher": "default",
+                  "background_switcher_hover": "default",
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      }
+                    }
+                  },
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#FFFFFF"
+                  },
+                  "css_button_border_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-color",
+                    "val": "#FFFFFF"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "class": "arrow-button arrow-button-white",
+                  "css_button_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                    "style": "color",
+                    "val": "#1d242c"
+                  },
+                  "css_button_border_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                    "style": "border-color",
+                    "val": "#ffffff"
+                  },
+                  "css_button_background_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                    "style": "background",
+                    "val": "#ffffff"
+                  },
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "58a2b3db5",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_button_7naoomwx"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "icon": "wrap",
+        "uid": "9a95e7a95",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(3, 1fr)"
+            }
+          },
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_taxonomy": "category",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "vb_postid": "2",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": [
+          {
+            "type": "image",
+            "jsclass": "image",
+            "title": "Imagen",
+            "icon": "image",
+            "attr": {
+              "src": "https://tmcusa.invbit.systems/wp-content/uploads/2025/12/home-2025-12-29-home-1.webp#1279",
+              "size": "full",
+              "mask_shape_size": "contain",
+              "mask_shape_position": "center center",
+              "visibility": " hide-desktop hide-laptop hide-tablet",
+              "custom-responsive": "show",
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "mobile": {
+                    "bottom": "2rem",
+                    "top": "2rem"
+                  }
+                }
+              },
+              "image_height": "custom",
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "uid": "5c01a20e6",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "laptop_size": "1/1",
+            "mobile_size": "1/1",
+            "tablet_resized": "0"
+          }
+        ]
+      },
+      {
+        "icon": "wrap",
+        "uid": "2c0fd460e",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(4, 1fr)",
+              "mobile": "repeat(2, 1fr)"
+            }
+          },
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_taxonomy": "category",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "grid": "grid",
+          "css_grid_columns_custom": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-grid-col-custom.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "1.5fr 1fr"
+            }
+          },
+          "css_advanced_flex_grow": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "flex-grow",
+            "val": {
+              "desktop": "unset"
+            }
+          },
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "1580px",
+              "tablet": "100%"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "top": "10rem"
+              },
+              "tablet": {
+                "top": "4rem"
+              }
+            }
+          },
+          "css_grid_columns_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "column-gap",
+            "val": {
+              "desktop": ".5rem",
+              "tablet": "0px",
+              "mobile": "1rem"
+            }
+          },
+          "css_grid_rows_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "row-gap",
+            "val": {
+              "mobile": "1rem"
+            }
+          },
+          "vb_postid": "2",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": [
+          {
+            "icon": "wrap",
+            "uid": "98d93163a",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns",
+                "val": {
+                  "desktop": "repeat(3, 1fr)"
+                }
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "counter",
+                "jsclass": "counter",
+                "title": "Contador",
+                "icon": "counter",
+                "attr": {
+                  "title_tag": "h3",
+                  "number": "30",
+                  "duration": "1000",
+                  "type": "vertical",
+                  "label": "+",
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "e8eeedea1",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_counter_k7z86v8j"
+                ]
+              },
+              {
+                "type": "column",
+                "jsclass": "column",
+                "title": "Column Text",
+                "icon": "column",
+                "attr": {
+                  "content": "<p>Years of engineering experience, with proven expertise in designing forestry and land-clearing equipment.</p>",
+                  "bg_position": "center top no-repeat",
+                  "css_column_attr_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr",
+                    "style": "color",
+                    "val": "#ffffff"
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      }
+                    }
+                  },
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "92a4345a7",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_column_7ok8mpss"
+                ]
+              }
+            ]
+          },
+          {
+            "icon": "wrap",
+            "uid": "5ad95bd9a",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns",
+                "val": {
+                  "desktop": "repeat(3, 1fr)"
+                }
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "counter",
+                "jsclass": "counter",
+                "title": "Contador",
+                "icon": "counter",
+                "attr": {
+                  "title_tag": "h3",
+                  "number": "98",
+                  "duration": "1000",
+                  "type": "vertical",
+                  "label": "%",
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "34a029ad4",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_counter_k7z86v8j"
+                ]
+              },
+              {
+                "type": "column",
+                "jsclass": "column",
+                "title": "Column Text",
+                "icon": "column",
+                "attr": {
+                  "content": "<p>A customer satisfaction rate that reinforces the trust contractors and agencies place in our consistent field performance.</p>",
+                  "bg_position": "center top no-repeat",
+                  "css_column_attr_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr",
+                    "style": "color",
+                    "val": "#ffffff"
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      }
+                    }
+                  },
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "40103f93d",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_column_7ok8mpss"
+                ]
+              }
+            ]
+          },
+          {
+            "icon": "wrap",
+            "uid": "e62b74f53",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns",
+                "val": {
+                  "desktop": "repeat(3, 1fr)"
+                }
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "counter",
+                "jsclass": "counter",
+                "title": "Contador",
+                "icon": "counter",
+                "attr": {
+                  "title_tag": "h3",
+                  "number": "2.5",
+                  "duration": "1000",
+                  "type": "vertical",
+                  "label": "X",
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "05f1ba9a4",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_counter_k7z86v8j"
+                ]
+              },
+              {
+                "type": "column",
+                "jsclass": "column",
+                "title": "Column Text",
+                "icon": "column",
+                "attr": {
+                  "content": "<p>Higher productivity compared to machines that require frequent maintenance and downtime, reducing overall effectiveness.</p>",
+                  "bg_position": "center top no-repeat",
+                  "css_column_attr_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr",
+                    "style": "color",
+                    "val": "#ffffff"
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      }
+                    }
+                  },
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "2fbdb9b42",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_column_7ok8mpss"
+                ]
+              }
+            ]
+          },
+          {
+            "icon": "wrap",
+            "uid": "840d82bff",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns",
+                "val": {
+                  "desktop": "repeat(3, 1fr)"
+                }
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "vb_postid": "2",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "counter",
+                "jsclass": "counter",
+                "title": "Contador",
+                "icon": "counter",
+                "attr": {
+                  "title_tag": "h3",
+                  "number": "20",
+                  "duration": "1000",
+                  "type": "vertical",
+                  "label": "K",
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "363dfee13",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_counter_k7z86v8j"
+                ]
+              },
+              {
+                "type": "column",
+                "jsclass": "column",
+                "title": "Column Text",
+                "icon": "column",
+                "attr": {
+                  "content": "<p>Thousands of machines working worldwide delivering productivity across forestry, land clearing and agricultural projects.</p>",
+                  "bg_position": "center top no-repeat",
+                  "css_column_attr_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr",
+                    "style": "color",
+                    "val": "#ffffff"
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      }
+                    }
+                  },
+                  "vb_postid": "2",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "25d11308d",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_column_7ok8mpss"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "section",
+    "uid": "61b745d71",
+    "jsclass": "section",
+    "title": "Section",
+    "attr": {
+      "scroll-visibility": "show",
+      "closeable-x": "left",
+      "tabber_nav_position": {
+        "desktop": "left"
+      },
+      "query_post_orderby": "date",
+      "query_post_order": "DESC",
+      "query_terms_taxonomy": "category",
+      "query_terms_orderby": "ID",
+      "query_terms_order": "ASC",
+      "css_tabber_gap": {
+        "desktop": "30"
+      },
+      "tabber_icon_position": {
+        "desktop": "left"
+      },
+      "query_slider_columns": {
+        "desktop": "1"
+      },
+      "background_switcher_ql": "default",
+      "query_display_slider_arrow_prev": "icon-left-open-big",
+      "query_display_slider_arrow_next": "icon-right-open-big",
+      "background_switcher": "default",
+      "background_switcher_hover": "default",
+      "background_switcher_scroll": "default",
+      "background_overlay_switcher": "gradient",
+      "height_switcher": "custom",
+      "css_advanced_height": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "height",
+        "val": {
+          "desktop": "70rem"
+        }
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "flex-start"
+        }
+      },
+      "css_advanced_background_image": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-image",
+        "val": {
+          "desktop": "https://tmcusa.invbit.systems/wp-content/uploads/2025/12/home-2025-12-29-home-2.webp#1280"
+        }
+      },
+      "css_advanced_background_size": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size",
+        "val": {
+          "desktop": "cover"
+        }
+      },
+      "css_advanced_background_position": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_overlay_gradient": {
+        "selector": ".mcb-section-mfnuidelement .mcb-background-overlay",
+        "style": "gradient",
+        "val": {
+          "color": "#1D242C",
+          "string": "linear-gradient(0deg, rgba(29,36,44,0) 0%, #1D242C 100%)",
+          "color2": "rgba(29,36,44,0)",
+          "location2": "100%"
+        }
+      },
+      "css_advanced_align_content": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-content",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_justify_content": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "justify-content",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "vb_postid": "2",
+      "vb": 1,
+      "rwd": "desktop"
+    },
+    "ver": "default",
+    "mfn_global_section_id": "1281"
+  }
+]

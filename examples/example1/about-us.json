@@ -1,0 +1,2814 @@
+[
+  {
+    "icon": "section",
+    "uid": "5ec34d865",
+    "jsclass": "section",
+    "title": "Section",
+    "attr": {
+      "scroll-visibility": "show",
+      "closeable-x": "left",
+      "tabber_nav_position": {
+        "desktop": "left"
+      },
+      "query_post_orderby": "date",
+      "query_post_order": "DESC",
+      "query_terms_taxonomy": "category",
+      "query_terms_orderby": "ID",
+      "query_terms_order": "ASC",
+      "css_tabber_gap": {
+        "desktop": "30"
+      },
+      "tabber_icon_position": {
+        "desktop": "left"
+      },
+      "query_slider_columns": {
+        "desktop": "1"
+      },
+      "background_switcher_ql": "default",
+      "query_display_slider_arrow_prev": "icon-left-open-big",
+      "query_display_slider_arrow_next": "icon-right-open-big",
+      "background_switcher": "default",
+      "background_switcher_hover": "default",
+      "background_switcher_scroll": "default",
+      "background_overlay_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#F08018"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "12px",
+            "right": "2rem",
+            "bottom": "12px",
+            "left": "2rem"
+          },
+          "mobile": {
+            "right": "1rem",
+            "left": "1rem"
+          }
+        }
+      },
+      "width_switcher": "full",
+      "css_advanced_justify_content": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "justify-content",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "vb_postid": "13",
+      "vb": 1,
+      "rwd": "desktop"
+    },
+    "ver": "default",
+    "mfn_global_section_id": "1314"
+  },
+  {
+    "icon": "section",
+    "uid": "7q1cp5yg",
+    "jsclass": "section",
+    "title": "Section",
+    "attr": {
+      "scroll-visibility": "show",
+      "closeable-x": "left",
+      "tabber_nav_position": {
+        "desktop": "left"
+      },
+      "query_post_orderby": "date",
+      "query_post_order": "DESC",
+      "query_terms_taxonomy": "category",
+      "query_terms_orderby": "ID",
+      "query_terms_order": "ASC",
+      "css_tabber_gap": {
+        "desktop": "30"
+      },
+      "tabber_icon_position": {
+        "desktop": "left"
+      },
+      "query_slider_columns": {
+        "desktop": "1"
+      },
+      "background_switcher_ql": "default",
+      "query_display_slider_arrow_prev": "icon-left-open-big",
+      "query_display_slider_arrow_next": "icon-right-open-big",
+      "background_switcher": "default",
+      "background_switcher_hover": "default",
+      "background_switcher_scroll": "default",
+      "background_overlay_switcher": "default",
+      "css_advanced_background_color": {
+        "val": "#1D242C",
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color"
+      },
+      "width_switcher": "full",
+      "css_advanced_justify_content": {
+        "val": {
+          "desktop": "center"
+        },
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "justify-content"
+      },
+      "css_advanced_background_image": {
+        "val": {
+          "desktop": "https://tmcusa.invbit.systems/wp-content/uploads/2026/01/sobre-nosotros-2026-01-14-sobre-nosotros-scaled.webp#1290"
+        },
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-image"
+      },
+      "css_advanced_background_size": {
+        "val": {
+          "desktop": "contain"
+        },
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size"
+      },
+      "css_advanced_background_position": {
+        "val": {
+          "desktop": "top center"
+        },
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position"
+      },
+      "css_advanced_padding": {
+        "val": {
+          "desktop": {
+            "bottom": "8rem"
+          },
+          "tablet": {
+            "right": "1.5rem",
+            "left": "1.5rem"
+          },
+          "mobile": {
+            "bottom": "2rem",
+            "right": "1rem",
+            "left": "1rem"
+          }
+        },
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding"
+      },
+      "css_advanced_background_overlay_background_color": {
+        "val": "#1D242C85",
+        "selector": ".mcb-section-mfnuidelement .mcb-background-overlay",
+        "style": "background-color"
+      },
+      "vb_postid": "13",
+      "vb": 1,
+      "rwd": "desktop"
+    },
+    "ver": "default",
+    "wraps": [
+      {
+        "icon": "wrap",
+        "uid": "iefu5g27",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "val": {
+              "desktop": "repeat(3, 1fr)"
+            },
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns"
+          },
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_taxonomy": "category",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "grid": "grid",
+          "grid_columns_switcher": "custom",
+          "css_grid_columns_custom": {
+            "val": {
+              "desktop": "1.5fr auto",
+              "tablet": "1fr"
+            },
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-grid-col-custom.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns"
+          },
+          "height_switcher": "custom",
+          "css_advanced_align_items": {
+            "val": {
+              "desktop": "stretch"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "align-items"
+          },
+          "css_advanced_flex_grow": {
+            "val": {
+              "desktop": "unset"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "flex-grow"
+          },
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "val": {
+              "desktop": "1580px",
+              "tablet": "100%"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width"
+          },
+          "vb_postid": "13",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": [
+          {
+            "icon": "wrap",
+            "uid": "vi75qxrf",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "val": {
+                  "desktop": "repeat(3, 1fr)"
+                },
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns"
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "height_switcher": "custom",
+              "css_advanced_height": {
+                "val": {
+                  "desktop": "80vh",
+                  "tablet": "auto"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "height"
+              },
+              "css_advanced_align_content": {
+                "val": {
+                  "desktop": "flex-end"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "align-content"
+              },
+              "css_advanced_padding": {
+                "val": {
+                  "tablet": {
+                    "top": "3rem"
+                  },
+                  "mobile": {
+                    "top": "2rem"
+                  }
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "padding"
+              },
+              "vb_postid": "13",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Encabezado",
+                "icon": "heading",
+                "attr": {
+                  "title": "Get to<br>know <br><b>TMC <br> Cancela<br></b>",
+                  "header_tag": "h2",
+                  "css_color": {
+                    "val": "#ffffff",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color"
+                  },
+                  "css_typography": {
+                    "val": {
+                      "desktop": {
+                        "font-size": "10rem",
+                        "line-height": "8rem"
+                      },
+                      "font-weight": "400",
+                      "text-transform": "uppercase",
+                      "tablet": {
+                        "font-size": "8rem"
+                      },
+                      "mobile": {
+                        "font-size": "4rem",
+                        "line-height": "4rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography"
+                  },
+                  "css_advanced_margin": {
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "width_switcher": "custom",
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "wkjz3emn",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0"
+              }
+            ]
+          },
+          {
+            "icon": "wrap",
+            "uid": "k9khqtj8",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "val": {
+                  "desktop": "1fr"
+                },
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns"
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "grid": "grid",
+              "css_grid_rows_gap": {
+                "val": {
+                  "desktop": "1.5rem"
+                },
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "row-gap"
+              },
+              "css_advanced_align_self": {
+                "val": {
+                  "desktop": "flex-end"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+                "style": "align-self"
+              },
+              "css_advanced_margin": {
+                "val": {
+                  "tablet": {
+                    "top": "2rem"
+                  }
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "margin"
+              },
+              "vb_postid": "13",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "column",
+                "jsclass": "column",
+                "title": "Column Text",
+                "icon": "column",
+                "attr": {
+                  "content": "<p>History that spans over 40 years.</p>\n<p style=\"margin-bottom: 0;\"><a class=\"text-p-large arrow-down\" href=\"#story\">Our story</a></p>",
+                  "bg_position": "center top no-repeat",
+                  "css_column_attr_color": {
+                    "val": "#ffffff",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr",
+                    "style": "color"
+                  },
+                  "css_column_attra_color": {
+                    "val": "#ffffff",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr a",
+                    "style": "color"
+                  },
+                  "css_column_attr_typography": {
+                    "val": {
+                      "desktop": {
+                        "font-size": "2.25rem",
+                        "line-height": "2.7rem"
+                      },
+                      "font-weight": "700",
+                      "mobile": {
+                        "font-size": "1.5rem",
+                        "line-height": "2rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr",
+                    "style": "typography"
+                  },
+                  "css_advanced_padding": {
+                    "val": {
+                      "desktop": {
+                        "top": "1.5rem",
+                        "right": "1.5rem",
+                        "bottom": "1.5rem",
+                        "left": "1.5rem"
+                      },
+                      "mobile": {
+                        "right": "1.5rem",
+                        "bottom": "1.5rem",
+                        "left": "1.5rem",
+                        "top": "1.5rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "padding"
+                  },
+                  "css_advanced_border_radius": {
+                    "val": {
+                      "desktop": "0.5rem 0.5rem 0.5rem 0.5rem"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-radius"
+                  },
+                  "css_advanced_border_style": {
+                    "val": "solid",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-style"
+                  },
+                  "css_advanced_border_color": {
+                    "val": "#ffffff",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-color"
+                  },
+                  "css_advanced_border_width": {
+                    "val": {
+                      "desktop": "1px 1px 1px 1px"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-width"
+                  },
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "val": {
+                      "desktop": "27rem",
+                      "tablet": "100%"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "rd8c916",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0"
+              },
+              {
+                "type": "column",
+                "jsclass": "column",
+                "title": "Column Text",
+                "icon": "column",
+                "attr": {
+                  "content": "<p>Values focused on top quality and service.</p>\n<p style=\"margin-bottom: 0;\"><a class=\"text-p-large arrow-down\" href=\"#values\">Our values</a></p>",
+                  "bg_position": "center top no-repeat",
+                  "css_column_attr_color": {
+                    "val": "#ffffff",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr",
+                    "style": "color"
+                  },
+                  "css_column_attra_color": {
+                    "val": "#ffffff",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr a",
+                    "style": "color"
+                  },
+                  "css_column_attr_typography": {
+                    "val": {
+                      "desktop": {
+                        "font-size": "2.25rem",
+                        "line-height": "2.7rem"
+                      },
+                      "font-weight": "700",
+                      "mobile": {
+                        "font-size": "1.5rem",
+                        "line-height": "2rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr",
+                    "style": "typography"
+                  },
+                  "css_advanced_padding": {
+                    "val": {
+                      "desktop": {
+                        "top": "1.5rem",
+                        "right": "1.5rem",
+                        "bottom": "1.5rem",
+                        "left": "1.5rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "padding"
+                  },
+                  "css_advanced_border_radius": {
+                    "val": {
+                      "desktop": "0.5rem 0.5rem 0.5rem 0.5rem"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-radius"
+                  },
+                  "css_advanced_border_style": {
+                    "val": "solid",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-style"
+                  },
+                  "css_advanced_border_color": {
+                    "val": "#ffffff",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-color"
+                  },
+                  "css_advanced_border_width": {
+                    "val": {
+                      "desktop": "1px 1px 1px 1px"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-width"
+                  },
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "val": {
+                      "desktop": "27rem",
+                      "tablet": "100%"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "qnm95uk",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0"
+              },
+              {
+                "type": "column",
+                "jsclass": "column",
+                "title": "Column Text",
+                "icon": "column",
+                "attr": {
+                  "content": "<p>Innovation driving efficiency and control.</p>\n<p style=\"margin-bottom: 0;\"><a class=\"text-p-large arrow-down\" href=\"#innovation\">About innovation</a></p>",
+                  "bg_position": "center top no-repeat",
+                  "css_column_attr_color": {
+                    "val": "#ffffff",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr",
+                    "style": "color"
+                  },
+                  "css_column_attra_color": {
+                    "val": "#ffffff",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr a",
+                    "style": "color"
+                  },
+                  "css_column_attr_typography": {
+                    "val": {
+                      "desktop": {
+                        "font-size": "2.25rem",
+                        "line-height": "2.7rem"
+                      },
+                      "font-weight": "700",
+                      "mobile": {
+                        "font-size": "1.5rem",
+                        "line-height": "2rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr",
+                    "style": "typography"
+                  },
+                  "css_advanced_padding": {
+                    "val": {
+                      "desktop": {
+                        "top": "1.5rem",
+                        "right": "1.5rem",
+                        "bottom": "1.5rem",
+                        "left": "1.5rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "padding"
+                  },
+                  "css_advanced_border_radius": {
+                    "val": {
+                      "desktop": "0.5rem 0.5rem 0.5rem 0.5rem"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-radius"
+                  },
+                  "css_advanced_border_style": {
+                    "val": "solid",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-style"
+                  },
+                  "css_advanced_border_color": {
+                    "val": "#ffffff",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-color"
+                  },
+                  "css_advanced_border_width": {
+                    "val": {
+                      "desktop": "1px 1px 1px 1px"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-width"
+                  },
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "val": {
+                      "desktop": "27rem",
+                      "tablet": "100%"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "w6jd2y8",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "icon": "wrap",
+        "uid": "sx7574mc",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "val": {
+              "desktop": "repeat(3, 1fr)"
+            },
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns"
+          },
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_taxonomy": "category",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "vb_postid": "13",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": []
+      },
+      {
+        "icon": "wrap",
+        "uid": "emft0asu",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "val": {
+              "desktop": "repeat(2, 1fr)"
+            },
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns"
+          },
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_taxonomy": "category",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "grid": "grid",
+          "grid_columns_switcher": "custom",
+          "css_grid_columns_custom": {
+            "val": {
+              "desktop": "20rem 1fr",
+              "tablet": "10rem 1fr",
+              "mobile": "1fr"
+            },
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-grid-col-custom.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns"
+          },
+          "css_advanced_align_items": {
+            "val": {
+              "desktop": "stretch"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "align-items"
+          },
+          "css_advanced_flex_grow": {
+            "val": {
+              "desktop": "unset"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "flex-grow"
+          },
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "val": {
+              "desktop": "1580px",
+              "tablet": "100%"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width"
+          },
+          "css_advanced_margin": {
+            "val": {
+              "desktop": {
+                "top": "16rem"
+              },
+              "tablet": {
+                "top": "6rem"
+              },
+              "mobile": {
+                "top": "3rem"
+              }
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "margin"
+          },
+          "vb_postid": "13",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": [
+          {
+            "icon": "wrap",
+            "uid": "0i4qtird",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "val": {
+                  "desktop": "repeat(3, 1fr)"
+                },
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns"
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "css_advanced_justify_content": {
+                "val": {
+                  "desktop": "center"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "justify-content"
+              },
+              "custom_id": "about-us-bar",
+              "visibility": " hide-mobile",
+              "vb_postid": "13",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "image",
+                "jsclass": "image",
+                "title": "Imagen",
+                "icon": "image",
+                "attr": {
+                  "src": "https://tmcusa.invbit.systems/wp-content/uploads/2025/12/main-footer-2025-12-23-main-footer.svg#1237",
+                  "size": "full",
+                  "mask_shape_size": "contain",
+                  "mask_shape_position": "center center",
+                  "css_image_frame_width": {
+                    "val": {
+                      "desktop": "3.5rem"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                    "style": "width"
+                  },
+                  "width_switcher": "inline",
+                  "css_advanced_position": {
+                    "val": {
+                      "desktop": "absolute"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "position"
+                  },
+                  "css_advanced_top": {
+                    "val": {
+                      "desktop": "-6rem"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "top"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "kddpl5u",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0"
+              },
+              {
+                "type": "html",
+                "jsclass": "html",
+                "title": "HTML",
+                "icon": "html",
+                "attr": {
+                  "height_switcher": "custom",
+                  "css_advanced_height": {
+                    "val": {
+                      "desktop": "100%"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "height"
+                  },
+                  "content": "<span class=\"about-us-sticky__circle\"></span>",
+                  "custom_id": "about-us-sticky",
+                  "css_advanced_margin": {
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "a8ib4xb",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0"
+              }
+            ]
+          },
+          {
+            "icon": "wrap",
+            "uid": "c7oy7zerp",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "val": {
+                  "desktop": "1fr"
+                },
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns"
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "css_advanced_justify_content": {
+                "val": {
+                  "desktop": "flex-start"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "justify-content"
+              },
+              "grid": "grid",
+              "custom_id": "story",
+              "vb_postid": "13",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Encabezado",
+                "icon": "heading",
+                "attr": {
+                  "title": "More than 40 years of experience, reach and practical innovation.",
+                  "header_tag": "h2",
+                  "css_color": {
+                    "val": "#ffffff",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color"
+                  },
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "val": {
+                      "desktop": "45rem",
+                      "mobile": "auto"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width"
+                  },
+                  "css_advanced_margin": {
+                    "val": {
+                      "desktop": {
+                        "bottom": "1.5rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "css_typography": {
+                    "val": {
+                      "mobile": []
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "tm9beymu",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_heading_ngzvt6ic"
+                ]
+              },
+              {
+                "type": "column",
+                "jsclass": "column",
+                "title": "Column Text",
+                "icon": "column",
+                "attr": {
+                  "content": "<p>TMC Cancela has grown from a specialized manufacturer into a <strong>trusted name in mulching solutions</strong>, with consistent focus on quality, innovation and reliability. Throughout this journey, the company has steadily increased its presence across international markets while continuously r<strong>efining its products to meet changing professional needs</strong>.</p>",
+                  "bg_position": "center top no-repeat",
+                  "css_column_attr_color": {
+                    "val": "#ffffff",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .column_attr",
+                    "style": "color"
+                  },
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "val": {
+                      "desktop": "45rem",
+                      "mobile": "auto"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "hqmcarla",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_column_7ok8mpss"
+                ]
+              },
+              {
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Encabezado",
+                "icon": "heading",
+                "attr": {
+                  "title": "Our international expansion across more than 50 countries is supported by trusted distributors, strategic logistics, and strong regional presence.",
+                  "header_tag": "h3",
+                  "css_color": {
+                    "val": "#ffffff",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color"
+                  },
+                  "css_typography": {
+                    "val": {
+                      "desktop": {
+                        "font-size": "2.125rem",
+                        "line-height": "2.55rem"
+                      },
+                      "font-weight": "700"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography"
+                  },
+                  "css_advanced_margin": {
+                    "val": {
+                      "desktop": {
+                        "top": "20rem",
+                        "bottom": "1.5rem"
+                      },
+                      "tablet": {
+                        "top": "5rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "val": {
+                      "desktop": "45rem",
+                      "mobile": "100%"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "uommwmx4",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0"
+              },
+              {
+                "type": "video",
+                "jsclass": "video",
+                "title": "Video",
+                "icon": "video",
+                "attr": {
+                  "object_position": "center center",
+                  "mask_shape_size": "contain",
+                  "mask_shape_position": "center center",
+                  "css_advanced_border_radius": {
+                    "val": {
+                      "desktop": "12px 12px 12px 12px"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-radius"
+                  },
+                  "mp4": "https://tmcusa.invbit.systems/wp-content/uploads/2025/12/home-2025-12-26-home.mp4#1255",
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "val": {
+                      "desktop": "45rem",
+                      "mobile": "100%"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width"
+                  },
+                  "object_fit": {
+                    "val": "cover",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-video",
+                    "style": "object-fit"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "0vz0ywoq",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "icon": "wrap",
+        "uid": "fe8otjj",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "val": {
+              "desktop": "repeat(3, 1fr)"
+            },
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns"
+          },
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_taxonomy": "category",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "vb_postid": "13",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": []
+      },
+      {
+        "icon": "wrap",
+        "uid": "042psox8",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "val": {
+              "desktop": "repeat(2, 1fr)"
+            },
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns"
+          },
+          "query_post_type": "slide",
+          "query_post_orderby": "menu_order",
+          "query_post_order": "DESC",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "4",
+            "laptop": "2",
+            "tablet": "2",
+            "mobile": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-1",
+          "query_display_slider_arrow_next": "icon-right-1",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "css_advanced_margin": {
+            "val": {
+              "desktop": {
+                "top": "10rem"
+              },
+              "tablet": {
+                "top": "5rem"
+              },
+              "mobile": {
+                "top": "3rem"
+              }
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "margin"
+          },
+          "css_advanced_flex_grow": {
+            "val": {
+              "desktop": "unset"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "flex-grow"
+          },
+          "width_switcher": "custom",
+          "type": "query",
+          "query_type": "posts",
+          "query_display": "slider",
+          "query_post_type_slide": [
+            {
+              "key": "152",
+              "value": "\n\t\t\t\t\tAbout Us\n\t\t\t\t\t"
+            }
+          ],
+          "query_slider_arrows": "1",
+          "query_slider_arrows_style": "overlay",
+          "query_slider_dots": "1",
+          "query_slider_dots_count": "dynamic",
+          "query_slider_dots_visibility": " dots-hide-mobile",
+          "css_queryloop_slider_arrow_icon_size": {
+            "val": {
+              "desktop": "24px",
+              "mobile": "16px"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement.mfn-looped-items-slider-wrapper .mfn-swiper-arrow i",
+            "style": "--mfn-swiper-arrow-size"
+          },
+          "css_queryloop_slider_arrow_width": {
+            "val": {
+              "desktop": "64px",
+              "mobile": "48px"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement.mfn-looped-items-slider-wrapper .mfn-swiper-arrow",
+            "style": "--mfn-swiper-arrow-width"
+          },
+          "css_queryloop_slider_arrow_height": {
+            "val": {
+              "desktop": "64px",
+              "mobile": "48px"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement.mfn-looped-items-slider-wrapper .mfn-swiper-arrow",
+            "style": "--mfn-swiper-arrow-height"
+          },
+          "css_queryloop_slider_arrow_border_radius": {
+            "val": {
+              "desktop": "6px 6px 6px 6px",
+              "mobile": "4px 4px 4px 4px"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement.mfn-looped-items-slider-wrapper .mfn-swiper-arrow",
+            "style": "border-radius"
+          },
+          "css_queryloop_slider_arrow_bg_color": {
+            "val": "#F08018",
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement.mfn-looped-items-slider-wrapper .mfn-swiper-arrow",
+            "style": "background-color"
+          },
+          "css_queryloop_slider_arrow_navigation_color": {
+            "val": "#000000",
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement.mfn-looped-items-slider-wrapper .mfn-swiper-arrow",
+            "style": "--swiper-navigation-color"
+          },
+          "css_queryloop_slider_arrow_spacing": {
+            "val": {
+              "desktop": "57px",
+              "mobile": "-9px"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement.mfn-looped-items-slider-wrapper .mfn-swiper-arrow",
+            "style": "--mfn-swiper-arrow-spacing"
+          },
+          "css_queryloop_slider_arrow_navigation_color_hover": {
+            "val": "#FFFFFF",
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement.mfn-looped-items-slider-wrapper .mfn-swiper-arrow:hover",
+            "style": "--swiper-navigation-color"
+          },
+          "css_queryloop_slider_arrow_background_color_hover": {
+            "val": "#000000",
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement.mfn-looped-items-slider-wrapper .mfn-swiper-arrow:hover",
+            "style": "background-color"
+          },
+          "css_queryloop_slider_pagination_bullet_active_color": {
+            "val": "#F08018",
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement.mfn-looped-items-slider-wrapper .swiper-pagination .swiper-pagination-bullet-active",
+            "style": "--mfn-swiper-pagination-bullet-active-color"
+          },
+          "css_queryloop_slider_pagination_bullet_inactive_color": {
+            "val": "#FFFFFF",
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement.mfn-looped-items-slider-wrapper .swiper-pagination .swiper-pagination-bullet",
+            "style": "--swiper-pagination-bullet-inactive-color"
+          },
+          "css_queryloop_item_width": {
+            "val": {
+              "desktop": "25%",
+              "laptop": "50%",
+              "tablet": "50%",
+              "mobile": "100%"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner .mfn-queryloop-item-wrapper.mfn-ql-item-default",
+            "style": "width"
+          },
+          "query_slider_infinity": "1",
+          "css_queryloop_slider_pagination_spacing": {
+            "val": {
+              "desktop": "32px"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement.mfn-looped-items-slider-wrapper .swiper-pagination",
+            "style": "--mfn-swiper-pagination-spacing"
+          },
+          "query_slider_speed": "1000",
+          "css_queryloop_item_border_radius": {
+            "val": {
+              "mobile": "6px 6px 6px 6px"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner .mfn-queryloop-item-wrapper",
+            "style": "border-radius"
+          },
+          "vb_postid": "13",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": [
+          {
+            "type": "image",
+            "jsclass": "image",
+            "title": "Image",
+            "icon": "image",
+            "attr": {
+              "size": "full",
+              "mask_shape_size": "contain",
+              "mask_shape_position": "center center",
+              "src": "{featured_image}",
+              "image_height": "custom",
+              "css_image_cover_height": {
+                "val": {
+                  "desktop": "600px",
+                  "laptop": "500px",
+                  "tablet": "300px",
+                  "mobile": "250px"
+                },
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                "style": "height"
+              },
+              "css_image_text_align": {
+                "val": {
+                  "desktop": "center"
+                },
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "text-align"
+              },
+              "css_advanced_margin": {
+                "val": {
+                  "desktop": {
+                    "right": "0px",
+                    "left": "0px"
+                  }
+                },
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin"
+              },
+              "lazy_load": "lazy",
+              "link_image": "{featured_image}",
+              "hover": "disable",
+              "css_image_border_radius": {
+                "val": {
+                  "mobile": "12px 12px 12px 12px",
+                  "desktop": "12px 12px 12px 12px"
+                },
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "border-radius"
+              },
+              "vb_postid": "13",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "uid": "3t5jbor5",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "laptop_size": "1/1",
+            "mobile_size": "1/1",
+            "tablet_resized": "0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "section",
+    "uid": "poed4l8j",
+    "jsclass": "section",
+    "title": "Section",
+    "attr": {
+      "scroll-visibility": "show",
+      "closeable-x": "left",
+      "tabber_nav_position": {
+        "desktop": "left"
+      },
+      "query_post_orderby": "date",
+      "query_post_order": "DESC",
+      "query_terms_taxonomy": "category",
+      "query_terms_orderby": "ID",
+      "query_terms_order": "ASC",
+      "css_tabber_gap": {
+        "desktop": "30"
+      },
+      "tabber_icon_position": {
+        "desktop": "left"
+      },
+      "query_slider_columns": {
+        "desktop": "1"
+      },
+      "background_switcher_ql": "default",
+      "query_display_slider_arrow_prev": "icon-left-open-big",
+      "query_display_slider_arrow_next": "icon-right-open-big",
+      "background_switcher": "default",
+      "background_switcher_hover": "default",
+      "background_switcher_scroll": "default",
+      "background_overlay_switcher": "default",
+      "width_switcher": "full",
+      "custom_id": "values",
+      "vb_postid": "13",
+      "vb": 1,
+      "rwd": "desktop"
+    },
+    "ver": "default",
+    "wraps": [
+      {
+        "icon": "wrap",
+        "uid": "b52qgd8",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "val": {
+              "desktop": "repeat(3, 1fr)"
+            },
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns"
+          },
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_taxonomy": "category",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "grid": "grid",
+          "grid_columns_switcher": "custom",
+          "css_grid_columns_custom": {
+            "val": {
+              "desktop": "1.25fr 1fr",
+              "tablet": "1fr"
+            },
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-grid-col-custom.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns"
+          },
+          "css_advanced_align_items": {
+            "val": {
+              "desktop": "stretch"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "align-items"
+          },
+          "vb_postid": "13",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": [
+          {
+            "icon": "wrap",
+            "uid": "80q6izb",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "val": {
+                  "desktop": "repeat(3, 1fr)"
+                },
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns"
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "css_advanced_background_image": {
+                "val": {
+                  "desktop": "https://tmcusa.invbit.systems/wp-content/uploads/2025/12/home-2025-12-29-home.webp#1278"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "background-image"
+              },
+              "css_advanced_background_repeat": {
+                "val": {
+                  "desktop": "no-repeat"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "background-repeat"
+              },
+              "css_advanced_background_size": {
+                "val": {
+                  "desktop": "cover"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "background-size"
+              },
+              "css_advanced_background_overlay_background_color": {
+                "val": "rgba(1,1,1,0.39)",
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner > .mcb-wrap-background-overlay",
+                "style": "background-color"
+              },
+              "css_advanced_align_content": {
+                "val": {
+                  "desktop": "flex-end"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "align-content"
+              },
+              "css_advanced_padding": {
+                "val": {
+                  "desktop": {
+                    "top": "4rem",
+                    "right": "4rem",
+                    "bottom": "4rem",
+                    "left": "0px"
+                  },
+                  "tablet": {
+                    "left": "1.5rem",
+                    "bottom": "1.5rem",
+                    "top": "1.5rem",
+                    "right": "1.5rem"
+                  },
+                  "mobile": {
+                    "right": "1rem",
+                    "left": "1rem",
+                    "top": "2rem",
+                    "bottom": "2rem"
+                  }
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "padding"
+              },
+              "css_advanced_justify_content": {
+                "val": {
+                  "desktop": "flex-start"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "justify-content"
+              },
+              "vb_postid": "13",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Encabezado",
+                "icon": "heading",
+                "attr": {
+                  "title": "Focus<br>on our <br><b>Top<br>values</b>",
+                  "header_tag": "h2",
+                  "css_color": {
+                    "val": "#ffffff",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color"
+                  },
+                  "css_typography": {
+                    "val": {
+                      "desktop": {
+                        "font-size": "10rem",
+                        "line-height": "8rem"
+                      },
+                      "font-weight": "400",
+                      "text-transform": "uppercase",
+                      "tablet": {
+                        "font-size": "8rem"
+                      },
+                      "mobile": {
+                        "font-size": "4rem",
+                        "line-height": "4rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography"
+                  },
+                  "css_advanced_margin": {
+                    "val": {
+                      "desktop": {
+                        "left": "calc((100vw - 1580px)/2)"
+                      },
+                      "tablet": {
+                        "left": "0px",
+                        "bottom": "0px"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "val": {
+                      "tablet": "100%"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "4jaxf9vh",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0"
+              }
+            ]
+          },
+          {
+            "icon": "wrap",
+            "uid": "2x4hqwm4",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "val": {
+                  "desktop": "1fr"
+                },
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns"
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "css_advanced_background_color": {
+                "val": "#F08018",
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "background-color"
+              },
+              "css_advanced_padding": {
+                "val": {
+                  "desktop": {
+                    "top": "4rem",
+                    "right": "4rem",
+                    "bottom": "4rem",
+                    "left": "4rem"
+                  },
+                  "tablet": {
+                    "right": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem",
+                    "top": "1.5rem"
+                  },
+                  "mobile": {
+                    "right": "1rem",
+                    "bottom": "2rem",
+                    "left": "1rem",
+                    "top": "2rem"
+                  }
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "padding"
+              },
+              "grid": "grid",
+              "vb_postid": "13",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "list",
+                "jsclass": "list",
+                "title": "List Basic",
+                "icon": "list",
+                "attr": {
+                  "icon": "icon-lamp",
+                  "title": "Spanish-built mulchers",
+                  "title_tag": "h4",
+                  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+                  "style": 1,
+                  "image": "https://tmcusa.invbit.systems/wp-content/uploads/2026/01/sobre-nosotros-2026-01-14-sobre-nosotros-4.svg#1288",
+                  "classes": "basic-list-icon",
+                  "css_advanced_margin": {
+                    "val": {
+                      "desktop": {
+                        "bottom": "1rem"
+                      },
+                      "mobile": {
+                        "left": "-1rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "hm2198dl",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_list_tswzsbp"
+                ]
+              },
+              {
+                "type": "list",
+                "jsclass": "list",
+                "title": "List Basic",
+                "icon": "list",
+                "attr": {
+                  "icon": "icon-lamp",
+                  "title": "Engineered for intensive work",
+                  "title_tag": "h4",
+                  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+                  "style": 1,
+                  "image": "https://tmcusa.invbit.systems/wp-content/uploads/2026/01/sobre-nosotros-2026-01-14-sobre-nosotros-3.svg#1287",
+                  "css_advanced_margin": {
+                    "val": {
+                      "desktop": {
+                        "bottom": "1rem"
+                      },
+                      "mobile": {
+                        "left": "-1rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "classes": "basic-list-icon",
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "coz7s7ek",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_list_tswzsbp"
+                ]
+              },
+              {
+                "type": "list",
+                "jsclass": "list",
+                "title": "List Basic",
+                "icon": "list",
+                "attr": {
+                  "icon": "icon-lamp",
+                  "title": "Smart use of machine power",
+                  "title_tag": "h4",
+                  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+                  "style": 1,
+                  "image": "https://tmcusa.invbit.systems/wp-content/uploads/2026/01/sobre-nosotros-2026-01-14-sobre-nosotros-2.svg#1286",
+                  "classes": "basic-list-icon",
+                  "css_advanced_margin": {
+                    "val": {
+                      "desktop": {
+                        "bottom": "1rem"
+                      },
+                      "mobile": {
+                        "left": "-1rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "01dfb696",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_list_tswzsbp"
+                ]
+              },
+              {
+                "type": "list",
+                "jsclass": "list",
+                "title": "List Basic",
+                "icon": "list",
+                "attr": {
+                  "icon": "icon-lamp",
+                  "title": "Customer support and after-sales service",
+                  "title_tag": "h4",
+                  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+                  "style": 1,
+                  "image": "https://tmcusa.invbit.systems/wp-content/uploads/2026/01/sobre-nosotros-2026-01-14-sobre-nosotros-1.svg#1285",
+                  "classes": "basic-list-icon",
+                  "css_advanced_margin": {
+                    "val": {
+                      "mobile": {
+                        "left": "-1rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "hcmt8sx",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_list_tswzsbp"
+                ]
+              },
+              {
+                "type": "column",
+                "jsclass": "column",
+                "title": "Column Text",
+                "icon": "column",
+                "attr": {
+                  "content": "<p class=\"p1\"><strong>Manufactured in Spain</strong>, our <strong>mulchers</strong> support daily operations with confidence, hanlde demanding applications with ease, and are backed by <strong>trustworthy after-sales service</strong>.</p>",
+                  "bg_position": "center top no-repeat",
+                  "css_advanced_margin": {
+                    "val": {
+                      "desktop": {
+                        "top": "27rem",
+                        "bottom": "1.5rem"
+                      },
+                      "tablet": {
+                        "top": "5rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "val": {
+                      "desktop": "34rem",
+                      "mobile": "100%"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "lb3dkvvt",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_column_7ok8mpss"
+                ]
+              },
+              {
+                "type": "button",
+                "jsclass": "button",
+                "title": "Botón",
+                "icon": "button",
+                "attr": {
+                  "title": "See our catalog",
+                  "button_function_copy_to_clipboard_tooltip": "Copy to clipboard",
+                  "button_function_copy_to_clipboard_copied_tooltip": "Copied",
+                  "background_switcher": "default",
+                  "background_switcher_hover": "default",
+                  "css_button_background_color": {
+                    "val": "transparent",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color"
+                  },
+                  "class": "arrow-button arrow-button-hover-white",
+                  "link": "{permalink:79:term}",
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "in8jd2zy",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_button_7naoomwx"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "section",
+    "uid": "pqo8gclp",
+    "jsclass": "section",
+    "title": "Section",
+    "attr": {
+      "scroll-visibility": "show",
+      "closeable-x": "left",
+      "tabber_nav_position": {
+        "desktop": "left"
+      },
+      "query_post_orderby": "date",
+      "query_post_order": "DESC",
+      "query_terms_taxonomy": "category",
+      "query_terms_orderby": "ID",
+      "query_terms_order": "ASC",
+      "css_tabber_gap": {
+        "desktop": "30"
+      },
+      "tabber_icon_position": {
+        "desktop": "left"
+      },
+      "query_slider_columns": {
+        "desktop": "1"
+      },
+      "background_switcher_ql": "default",
+      "query_display_slider_arrow_prev": "icon-left-open-big",
+      "query_display_slider_arrow_next": "icon-right-open-big",
+      "background_switcher": "default",
+      "background_switcher_hover": "default",
+      "background_switcher_scroll": "default",
+      "background_overlay_switcher": "default",
+      "width_switcher": "full",
+      "css_advanced_justify_content": {
+        "val": {
+          "desktop": "center"
+        },
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "justify-content"
+      },
+      "css_advanced_background_image": {
+        "val": {
+          "desktop": "https://tmcusa.invbit.systems/wp-content/uploads/2026/01/sobre-nosotros-2026-01-14-sobre-nosotros.svg#1284"
+        },
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-image"
+      },
+      "css_advanced_background_position": {
+        "val": {
+          "desktop": "bottom right"
+        },
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position"
+      },
+      "custom_id": "innovation",
+      "vb_postid": "13",
+      "vb": 1,
+      "rwd": "desktop"
+    },
+    "ver": "default",
+    "wraps": [
+      {
+        "icon": "wrap",
+        "uid": "nzqs4hke",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "jsclass": "wrap",
+        "attr": {
+          "css_grid_columns": {
+            "val": {
+              "desktop": "repeat(3, 1fr)"
+            },
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns"
+          },
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_terms_taxonomy": "category",
+          "query_terms_orderby": "ID",
+          "query_terms_order": "ASC",
+          "query_slider_columns": {
+            "desktop": "1"
+          },
+          "background_switcher_ql": "default",
+          "query_display_slider_arrow_prev": "icon-left-open-big",
+          "query_display_slider_arrow_next": "icon-right-open-big",
+          "background_switcher": "default",
+          "background_switcher_hover": "default",
+          "background_overlay_switcher": "default",
+          "custom-responsive": "hide",
+          "grid": "grid",
+          "grid_columns_switcher": "custom",
+          "css_grid_columns_custom": {
+            "val": {
+              "desktop": "1.25fr 1fr",
+              "tablet": "1fr"
+            },
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-grid-col-custom.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "grid-template-columns"
+          },
+          "css_advanced_align_items": {
+            "val": {
+              "desktop": "stretch"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "align-items"
+          },
+          "css_advanced_flex_grow": {
+            "val": {
+              "desktop": "unset"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "flex-grow"
+          },
+          "width_switcher": "custom",
+          "css_advanced_justify_content": {
+            "val": {
+              "desktop": "center"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+            "style": "justify-content"
+          },
+          "css_advanced_flex": {
+            "val": {
+              "tablet": "100%"
+            },
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width"
+          },
+          "vb_postid": "13",
+          "vb": 1,
+          "rwd": "desktop"
+        },
+        "title": "Wrap",
+        "laptop_size": "1/1",
+        "tablet_resized": "0",
+        "items": [
+          {
+            "icon": "wrap",
+            "uid": "xmnxbzkf",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "val": {
+                  "desktop": "repeat(3, 1fr)"
+                },
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns"
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "css_advanced_border_style": {
+                "val": "solid",
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "border-style"
+              },
+              "css_advanced_border_color": {
+                "val": "#606770",
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "border-color"
+              },
+              "css_advanced_border_width": {
+                "val": {
+                  "desktop": "0 1px 0 0"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "border-width"
+              },
+              "css_advanced_flex_grow": {
+                "val": {
+                  "desktop": "unset"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+                "style": "flex-grow"
+              },
+              "width_switcher": "custom",
+              "css_advanced_justify_content": {
+                "val": {
+                  "desktop": "flex-start"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "justify-content"
+              },
+              "css_advanced_padding": {
+                "val": {
+                  "desktop": [],
+                  "tablet": []
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "padding"
+              },
+              "css_advanced_flex": {
+                "val": {
+                  "tablet": "100%"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+                "style": "width"
+              },
+              "vb_postid": "13",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Encabezado",
+                "icon": "heading",
+                "attr": {
+                  "title": "Innovation always ahead, driving growth and the continuous improvement of our products.",
+                  "header_tag": "h2",
+                  "css_advanced_padding": {
+                    "val": {
+                      "desktop": {
+                        "top": "7.5rem",
+                        "bottom": "7.5rem",
+                        "right": "10rem"
+                      },
+                      "tablet": {
+                        "top": "1.5rem",
+                        "right": "1.5rem",
+                        "bottom": "1.5rem",
+                        "left": "1.5rem"
+                      },
+                      "mobile": {
+                        "right": "1rem",
+                        "left": "1rem",
+                        "top": "2rem",
+                        "bottom": "2rem"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "padding"
+                  },
+                  "width_switcher": "custom",
+                  "css_advanced_margin": {
+                    "val": {
+                      "desktop": {
+                        "left": "calc((100vw - 1580px)/2)"
+                      },
+                      "tablet": {
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "css_advanced_flex": {
+                    "val": {
+                      "tablet": "100%"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "4u4zxth3",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_heading_ngzvt6ic"
+                ]
+              },
+              {
+                "type": "divider",
+                "jsclass": "divider",
+                "title": "&bull; Divider Basic",
+                "icon": "divider",
+                "attr": {
+                  "style": "default",
+                  "line": "default",
+                  "color": "#556981",
+                  "css_advanced_margin": {
+                    "val": {
+                      "desktop": {
+                        "right": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "height": "24",
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "laxmaiwl",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0"
+              },
+              {
+                "type": "counter",
+                "jsclass": "counter",
+                "title": "Contador",
+                "icon": "counter",
+                "attr": {
+                  "title": "<b>Multiple models developed</b>, reflecting decades of continuous innovation and technical refinement across multiple applications.",
+                  "title_tag": "p",
+                  "number": "70",
+                  "duration": "1000",
+                  "type": "vertical",
+                  "css_counternumber-wrappernumber_color": {
+                    "val": "#000000",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .number",
+                    "style": "color"
+                  },
+                  "css_counternumber-wrapperpostfix_color": {
+                    "val": "#000000",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .postfix",
+                    "style": "color"
+                  },
+                  "label": "+",
+                  "css_countertitle_color": {
+                    "val": "#1D242C",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .title",
+                    "style": "color"
+                  },
+                  "width_switcher": "custom",
+                  "css_counter_text_align": {
+                    "val": {
+                      "desktop": "left"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter",
+                    "style": "text-align"
+                  },
+                  "css_advanced_border_style": {
+                    "val": "none",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-style"
+                  },
+                  "css_advanced_border_width": {
+                    "val": {
+                      "desktop": "0 1px 0 0"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-width"
+                  },
+                  "css_advanced_margin": {
+                    "val": {
+                      "desktop": {
+                        "left": "calc((100vw - 1580px)/2)"
+                      },
+                      "tablet": {
+                        "left": "0px"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "css_advanced_flex": {
+                    "val": {
+                      "desktop": "80rem",
+                      "tablet": "33%",
+                      "mobile": "100%"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width"
+                  },
+                  "css_advanced_padding": {
+                    "val": {
+                      "tablet": {
+                        "left": "1.5rem"
+                      },
+                      "mobile": {
+                        "left": "0px",
+                        "right": "0px"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "padding"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "kk3if0lyj",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_counter_k7z86v8j"
+                ]
+              },
+              {
+                "type": "counter",
+                "jsclass": "counter",
+                "title": "Contador",
+                "icon": "counter",
+                "attr": {
+                  "title": "<b>Up to 20% gains in operational output</b>, achieved through improved machine design and precise control systems.",
+                  "title_tag": "p",
+                  "number": "20",
+                  "duration": "1000",
+                  "type": "vertical",
+                  "css_counternumber-wrappernumber_color": {
+                    "val": "#000000",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .number",
+                    "style": "color"
+                  },
+                  "css_counternumber-wrapperpostfix_color": {
+                    "val": "#000000",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .postfix",
+                    "style": "color"
+                  },
+                  "label": "%",
+                  "css_countertitle_color": {
+                    "val": "#1D242C",
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .title",
+                    "style": "color"
+                  },
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "val": {
+                      "desktop": "24rem",
+                      "tablet": "33%",
+                      "mobile": "100%"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width"
+                  },
+                  "css_counter_text_align": {
+                    "val": {
+                      "desktop": "left"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter",
+                    "style": "text-align"
+                  },
+                  "css_advanced_margin": {
+                    "val": {
+                      "desktop": {
+                        "bottom": "4rem"
+                      },
+                      "tablet": {
+                        "bottom": "0px"
+                      }
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "v20l516",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_counter_k7z86v8j"
+                ]
+              }
+            ]
+          },
+          {
+            "icon": "wrap",
+            "uid": "dhk8lbuun",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "jsclass": "wrap",
+            "attr": {
+              "css_grid_columns": {
+                "val": {
+                  "desktop": "repeat(3, 1fr)"
+                },
+                "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "grid-template-columns"
+              },
+              "query_post_type": "post",
+              "query_post_orderby": "date",
+              "query_post_order": "DESC",
+              "query_terms_taxonomy": "category",
+              "query_terms_orderby": "ID",
+              "query_terms_order": "ASC",
+              "query_slider_columns": {
+                "desktop": "1"
+              },
+              "background_switcher_ql": "default",
+              "query_display_slider_arrow_prev": "icon-left-open-big",
+              "query_display_slider_arrow_next": "icon-right-open-big",
+              "background_switcher": "default",
+              "background_switcher_hover": "default",
+              "background_overlay_switcher": "default",
+              "custom-responsive": "hide",
+              "css_advanced_padding": {
+                "val": {
+                  "desktop": {
+                    "top": "7.5rem",
+                    "right": "3rem",
+                    "bottom": "3rem",
+                    "left": "3rem"
+                  },
+                  "tablet": {
+                    "top": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem",
+                    "right": "1.5rem"
+                  },
+                  "mobile": {
+                    "right": "1rem",
+                    "left": "1rem",
+                    "top": "2rem",
+                    "bottom": "2rem"
+                  }
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "padding"
+              },
+              "css_advanced_background_repeat": {
+                "val": {
+                  "desktop": "no-repeat"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "background-repeat"
+              },
+              "css_advanced_background_position": {
+                "val": {
+                  "desktop": "bottom right"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "background-position"
+              },
+              "css_advanced_border_style": {
+                "val": "solid",
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "border-style"
+              },
+              "css_advanced_border_color": {
+                "val": "#556981",
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "border-color"
+              },
+              "css_advanced_border_width": {
+                "val": {
+                  "tablet": "1px 0 0 0"
+                },
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement > .mcb-wrap-inner",
+                "style": "border-width"
+              },
+              "vb_postid": "13",
+              "vb": 1,
+              "rwd": "desktop"
+            },
+            "title": "Wrap",
+            "laptop_size": "1/1",
+            "tablet_resized": "0",
+            "item_is_wrap": 1,
+            "items": [
+              {
+                "type": "column",
+                "jsclass": "column",
+                "title": "Column Text",
+                "icon": "column",
+                "attr": {
+                  "content": "<p>We continuously develop innovative solutions using <strong>advanced materials</strong> and <strong>forward-thinking design</strong>. Innovation guides our growth, helping us <strong>deliver competitive, and more sustainable machinery</strong> for real-world applications.</p>",
+                  "bg_position": "center top no-repeat",
+                  "css_advanced_padding": {
+                    "val": {
+                      "desktop": []
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "padding"
+                  },
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "val": {
+                      "desktop": "34rem",
+                      "mobile": "100%"
+                    },
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width"
+                  },
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "i4hsp9qw",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_column_7ok8mpss"
+                ]
+              },
+              {
+                "type": "button",
+                "jsclass": "button",
+                "title": "Botón",
+                "icon": "button",
+                "attr": {
+                  "title": "Watch our innovation process",
+                  "button_function_copy_to_clipboard_tooltip": "Copy to clipboard",
+                  "button_function_copy_to_clipboard_copied_tooltip": "Copied",
+                  "background_switcher": "default",
+                  "background_switcher_hover": "default",
+                  "class": "arrow-button arrow-button-hover-white",
+                  "target": "lightbox",
+                  "link": "https://www.youtube.com/watch?v=QvwJ-Ydcke4",
+                  "vb_postid": "13",
+                  "vb": 1,
+                  "rwd": "desktop"
+                },
+                "uid": "3ulh1y5",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "laptop_size": "1/1",
+                "mobile_size": "1/1",
+                "tablet_resized": "0",
+                "be_classes": [
+                  "be_button_7naoomwx"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "section",
+    "uid": "472607454",
+    "jsclass": "section",
+    "title": "Section",
+    "attr": {
+      "scroll-visibility": "show",
+      "closeable-x": "left",
+      "tabber_nav_position": {
+        "desktop": "left"
+      },
+      "query_post_orderby": "date",
+      "query_post_order": "DESC",
+      "query_terms_taxonomy": "category",
+      "query_terms_orderby": "ID",
+      "query_terms_order": "ASC",
+      "css_tabber_gap": {
+        "desktop": "30"
+      },
+      "tabber_icon_position": {
+        "desktop": "left"
+      },
+      "query_slider_columns": {
+        "desktop": "1"
+      },
+      "background_switcher_ql": "default",
+      "query_display_slider_arrow_prev": "icon-left-open-big",
+      "query_display_slider_arrow_next": "icon-right-open-big",
+      "background_switcher": "default",
+      "background_switcher_hover": "default",
+      "background_switcher_scroll": "default",
+      "background_overlay_switcher": "gradient",
+      "height_switcher": "custom",
+      "css_advanced_height": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "height",
+        "val": {
+          "desktop": "70rem",
+          "mobile": "auto"
+        }
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "flex-start"
+        }
+      },
+      "css_advanced_background_image": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-image",
+        "val": {
+          "desktop": "https://tmcusa.invbit.systems/wp-content/uploads/2025/12/home-2025-12-29-home-2.webp#1280"
+        }
+      },
+      "css_advanced_background_size": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size",
+        "val": {
+          "desktop": "cover"
+        }
+      },
+      "css_advanced_background_position": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_overlay_gradient": {
+        "selector": ".mcb-section-mfnuidelement .mcb-background-overlay",
+        "style": "gradient",
+        "val": {
+          "color": "#1D242C",
+          "string": "linear-gradient(0deg, rgba(29,36,44,0) 0%, #1D242C 100%)",
+          "color2": "rgba(29,36,44,0)",
+          "location2": "100%"
+        }
+      },
+      "css_advanced_align_content": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-content",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_justify_content": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "justify-content",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "vb_postid": "13",
+      "vb": 1,
+      "rwd": "desktop"
+    },
+    "ver": "default",
+    "be_classes": [
+      "be_section_bg0lw4vb"
+    ],
+    "mfn_global_section_id": "1281"
+  }
+]
