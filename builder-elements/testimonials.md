@@ -163,6 +163,9 @@
 {
   "type": "testimonials",
   "uid": "itm000001",
+  "icon": "testimonials",
+  "jsclass": "testimonials",
+  "title": "Testimonials",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

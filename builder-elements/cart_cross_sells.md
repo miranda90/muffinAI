@@ -221,6 +221,9 @@
 {
   "type": "cart_cross_sells",
   "uid": "itm000001",
+  "icon": "cart_cross_sells",
+  "jsclass": "cart_cross_sells",
+  "title": "Cross sells",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

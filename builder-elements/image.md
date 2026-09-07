@@ -272,8 +272,11 @@
 {
   "type": "image",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "image",
+  "jsclass": "image",
+  "title": "Image",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {}
 }

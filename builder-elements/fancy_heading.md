@@ -95,12 +95,14 @@
 {
   "type": "fancy_heading",
   "uid": "itm000001",
+  "icon": "fancy_heading",
+  "jsclass": "fancy_heading",
+  "title": "Fancy Heading",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut "
+    "title": "Título de ejemplo"
   }
 }
 ```

@@ -95,12 +95,14 @@
 {
   "type": "story_box",
   "uid": "itm000001",
-  "size": "1/2",
-  "tablet_size": "1/2",
+  "icon": "story_box",
+  "jsclass": "story_box",
+  "title": "Story Box",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut "
+    "title": "Título de ejemplo"
   }
 }
 ```

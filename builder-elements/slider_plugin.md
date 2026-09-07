@@ -27,6 +27,9 @@
 {
   "type": "slider_plugin",
   "uid": "itm000001",
+  "icon": "slider_plugin",
+  "jsclass": "slider_plugin",
+  "title": "Slider Plugin",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

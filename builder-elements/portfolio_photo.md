@@ -124,6 +124,9 @@
 {
   "type": "portfolio_photo",
   "uid": "itm000001",
+  "icon": "portfolio_photo",
+  "jsclass": "portfolio_photo",
+  "title": "Portfolio Photo",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

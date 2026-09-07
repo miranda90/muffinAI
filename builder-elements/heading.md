@@ -63,11 +63,15 @@
 {
   "type": "heading",
   "uid": "itm000001",
+  "icon": "heading",
+  "jsclass": "heading",
+  "title": "Heading",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the heading"
+    "title": "Título de ejemplo",
+    "header_tag": "h2"
   }
 }
 ```

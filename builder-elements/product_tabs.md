@@ -116,6 +116,9 @@
 {
   "type": "product_tabs",
   "uid": "itm000001",
+  "icon": "product_tabs",
+  "jsclass": "product_tabs",
+  "title": "Product tabs",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

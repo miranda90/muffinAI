@@ -101,11 +101,14 @@
 {
   "type": "hover_color",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "hover_color",
+  "jsclass": "hover_color",
+  "title": "Hover Color",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut "
+    "content": "Contenido de ejemplo"
   }
 }
 ```

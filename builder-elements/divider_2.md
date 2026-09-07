@@ -119,6 +119,9 @@
 {
   "type": "divider_2",
   "uid": "itm000001",
+  "icon": "divider_2",
+  "jsclass": "divider_2",
+  "title": "&bull; Divider",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

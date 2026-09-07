@@ -293,11 +293,14 @@
 {
   "type": "shop_slider",
   "uid": "itm000001",
+  "icon": "shop_slider",
+  "jsclass": "shop_slider",
+  "title": "Shop Slider",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title"
+    "title": "Título de ejemplo"
   }
 }
 ```

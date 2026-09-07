@@ -133,11 +133,14 @@
 {
   "type": "blog_teaser",
   "uid": "itm000001",
+  "icon": "blog_teaser",
+  "jsclass": "blog_teaser",
+  "title": "Blog Teaser",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title"
+    "title": "Título de ejemplo"
   }
 }
 ```

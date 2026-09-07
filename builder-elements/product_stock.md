@@ -26,6 +26,9 @@
 {
   "type": "product_stock",
   "uid": "itm000001",
+  "icon": "product_stock",
+  "jsclass": "product_stock",
+  "title": "Product stock",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

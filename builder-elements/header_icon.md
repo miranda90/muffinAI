@@ -206,6 +206,9 @@
 {
   "type": "header_icon",
   "uid": "itm000001",
+  "icon": "header_icon",
+  "jsclass": "header_icon",
+  "title": "Icon",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

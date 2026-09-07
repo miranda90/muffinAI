@@ -154,6 +154,9 @@
 {
   "type": "countdown_2",
   "uid": "itm000001",
+  "icon": "countdown_2",
+  "jsclass": "countdown_2",
+  "title": "Countdown",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

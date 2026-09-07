@@ -121,11 +121,14 @@
 {
   "type": "clients_slider",
   "uid": "itm000001",
+  "icon": "clients_slider",
+  "jsclass": "clients_slider",
+  "title": "Clients Slider",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title"
+    "title": "Título de ejemplo"
   }
 }
 ```

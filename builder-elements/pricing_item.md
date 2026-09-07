@@ -265,11 +265,14 @@
 {
   "type": "pricing_item",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
-  "mobile_size": "1/4",
+  "icon": "pricing_item",
+  "jsclass": "pricing_item",
+  "title": "Pricing Item",
+  "size": "1/1",
+  "tablet_size": "1/1",
+  "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title"
+    "title": "Título de ejemplo"
   }
 }
 ```

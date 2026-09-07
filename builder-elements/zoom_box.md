@@ -92,11 +92,14 @@
 {
   "type": "zoom_box",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "zoom_box",
+  "jsclass": "zoom_box",
+  "title": "Zoom Box",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "content": "Lorem ipsum dolor"
+    "content": "Contenido de ejemplo"
   }
 }
 ```

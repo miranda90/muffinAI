@@ -90,6 +90,9 @@
 {
   "type": "countdown",
   "uid": "itm000001",
+  "icon": "countdown",
+  "jsclass": "countdown",
+  "title": "Countdown Basic",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

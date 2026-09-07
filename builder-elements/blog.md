@@ -409,6 +409,9 @@
 {
   "type": "blog",
   "uid": "itm000001",
+  "icon": "blog",
+  "jsclass": "blog",
+  "title": "Blog",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

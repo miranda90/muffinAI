@@ -271,8 +271,11 @@
 {
   "type": "toggle",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "toggle",
+  "jsclass": "toggle",
+  "title": "Toggle",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {}
 }

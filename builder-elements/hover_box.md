@@ -41,8 +41,11 @@
 {
   "type": "hover_box",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "hover_box",
+  "jsclass": "hover_box",
+  "title": "Hover Box",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {}
 }

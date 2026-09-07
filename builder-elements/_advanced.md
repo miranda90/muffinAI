@@ -1,6 +1,6 @@
 # Pestaña Advanced (común a TODOS los items)
 
-Estos campos están disponibles en cualquier elemento del builder, además de sus campos propios.
+Campos comunes.
 
 
 ### Dimensions
@@ -186,7 +186,7 @@ Estos campos están disponibles en cualquier elemento del builder, además de su
 ### Transform
 
 - **`css_advanced_transform`** (transform) — 
-  - Valor: Objeto CSS: `{"selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner", "style": "transform", "val": {"desktop": {..., "string": "matrix(...)"} — solo string se emite, "tablet": ..., "mobile": ...}}`
+  - Valor: Objeto CSS: `{"selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner", "style": "transform", "val": {"desktop": {"scaleX":1,"skewY":0,"skewX":0,"scaleY":1,"translateX":0,"translateY":0,"rotate":0,"string":"1,0,0,1,0,0,0"}, "tablet": ..., "mobile": ...}}`
   - Default: `0`
   - Responsive: sí (`val` por dispositivo: desktop/laptop/tablet/mobile)
 - **`css_advanced_transform_origin`** (select) — Transform origin
@@ -195,7 +195,7 @@ Estos campos están disponibles en cualquier elemento del builder, además de su
 - **`css_advanced_transition`** (sliderbar) — Transition duration
   - Valor: Objeto CSS: `{"selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner", "style": "transition", "val": "valor"}`
 - **`css_advanced_transform_hover`** (transform) — Transform options
-  - Valor: Objeto CSS: `{"selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner:hover", "style": "transform", "val": {"desktop": {..., "string": "matrix(...)"} — solo string se emite, "tablet": ..., "mobile": ...}}`
+  - Valor: Objeto CSS: `{"selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner:hover", "style": "transform", "val": {"desktop": {"scaleX":1,"skewY":0,"skewX":0,"scaleY":1,"translateX":0,"translateY":0,"rotate":0,"string":"1,0,0,1,0,0,0"}, "tablet": ..., "mobile": ...}}`
   - Default: `0`
   - Responsive: sí (`val` por dispositivo: desktop/laptop/tablet/mobile)
 

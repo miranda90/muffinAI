@@ -61,6 +61,9 @@
 {
   "type": "product_meta",
   "uid": "itm000001",
+  "icon": "product_meta",
+  "jsclass": "product_meta",
+  "title": "Product meta",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

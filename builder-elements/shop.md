@@ -269,6 +269,9 @@
 {
   "type": "shop",
   "uid": "itm000001",
+  "icon": "shop",
+  "jsclass": "shop",
+  "title": "Shop",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

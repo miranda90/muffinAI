@@ -51,8 +51,11 @@
 {
   "type": "before_after",
   "uid": "itm000001",
-  "size": "1/3",
-  "tablet_size": "1/3",
+  "icon": "before_after",
+  "jsclass": "before_after",
+  "title": "Before After",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {}
 }

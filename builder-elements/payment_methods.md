@@ -59,6 +59,9 @@
 {
   "type": "payment_methods",
   "uid": "itm000001",
+  "icon": "payment_methods",
+  "jsclass": "payment_methods",
+  "title": "Payment methods",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

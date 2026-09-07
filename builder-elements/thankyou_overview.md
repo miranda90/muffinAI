@@ -97,6 +97,9 @@
 {
   "type": "thankyou_overview",
   "uid": "itm000001",
+  "icon": "thankyou_overview",
+  "jsclass": "thankyou_overview",
+  "title": "Order overview",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

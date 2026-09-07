@@ -206,11 +206,14 @@
 {
   "type": "our_team_list",
   "uid": "itm000001",
+  "icon": "our_team_list",
+  "jsclass": "our_team_list",
+  "title": "Our Team List",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title"
+    "title": "Título de ejemplo"
   }
 }
 ```

@@ -128,11 +128,14 @@
 {
   "type": "shop_categories",
   "uid": "itm000001",
+  "icon": "shop_categories",
+  "jsclass": "shop_categories",
+  "title": "Shop categories",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "1"
+    "title": "Título de ejemplo"
   }
 }
 ```

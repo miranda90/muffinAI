@@ -377,6 +377,9 @@
 {
   "type": "shop_products",
   "uid": "itm000001",
+  "icon": "shop_products",
+  "jsclass": "shop_products",
+  "title": "Shop products",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

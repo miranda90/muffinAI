@@ -20,9 +20,12 @@
 {
   "type": "sidebar_widget",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
-  "mobile_size": "1/4",
+  "icon": "sidebar_widget",
+  "jsclass": "sidebar_widget",
+  "title": "Sidebar Widget",
+  "size": "1/1",
+  "tablet_size": "1/1",
+  "mobile_size": "1/1",
   "attr": {}
 }
 ```

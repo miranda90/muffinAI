@@ -61,6 +61,9 @@
 {
   "type": "portfolio_slider",
   "uid": "itm000001",
+  "icon": "portfolio_slider",
+  "jsclass": "portfolio_slider",
+  "title": "Portfolio Slider",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

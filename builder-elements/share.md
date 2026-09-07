@@ -165,6 +165,9 @@
 {
   "type": "share",
   "uid": "itm000001",
+  "icon": "share",
+  "jsclass": "share",
+  "title": "Share",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

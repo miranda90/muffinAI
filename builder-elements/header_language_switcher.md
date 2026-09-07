@@ -112,6 +112,9 @@
 {
   "type": "header_language_switcher",
   "uid": "itm000001",
+  "icon": "header_language_switcher",
+  "jsclass": "header_language_switcher",
+  "title": "WPML switcher",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

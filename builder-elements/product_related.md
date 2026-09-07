@@ -281,6 +281,9 @@
 {
   "type": "product_related",
   "uid": "itm000001",
+  "icon": "product_related",
+  "jsclass": "product_related",
+  "title": "Product related",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

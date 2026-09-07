@@ -35,6 +35,9 @@
 {
   "type": "header_promo_bar",
   "uid": "itm000001",
+  "icon": "header_promo_bar",
+  "jsclass": "header_promo_bar",
+  "title": "Promo bar",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

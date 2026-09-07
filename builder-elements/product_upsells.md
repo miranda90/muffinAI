@@ -274,6 +274,9 @@
 {
   "type": "product_upsells",
   "uid": "itm000001",
+  "icon": "product_upsells",
+  "jsclass": "product_upsells",
+  "title": "Product upsells",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

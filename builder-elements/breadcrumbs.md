@@ -49,6 +49,9 @@
 {
   "type": "breadcrumbs",
   "uid": "itm000001",
+  "icon": "breadcrumbs",
+  "jsclass": "breadcrumbs",
+  "title": "Breadcrumbs",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

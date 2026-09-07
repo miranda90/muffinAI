@@ -28,6 +28,9 @@
 {
   "type": "product_title",
   "uid": "itm000001",
+  "icon": "product_title",
+  "jsclass": "product_title",
+  "title": "Product title",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

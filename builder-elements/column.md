@@ -67,10 +67,15 @@
 {
   "type": "column",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "column",
+  "jsclass": "column",
+  "title": "Column Text",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
-  "attr": {}
+  "attr": {
+    "title": "Título de ejemplo"
+  }
 }
 ```
 

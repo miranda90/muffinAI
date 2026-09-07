@@ -436,11 +436,14 @@
 {
   "type": "banner_box",
   "uid": "itm000001",
-  "size": "1/3",
-  "tablet_size": "1/3",
+  "icon": "banner_box",
+  "jsclass": "banner_box",
+  "title": "Banner box",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title"
+    "title": "Título de ejemplo"
   }
 }
 ```

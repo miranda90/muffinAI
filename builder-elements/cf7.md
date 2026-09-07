@@ -126,6 +126,9 @@
 {
   "type": "cf7",
   "uid": "itm000001",
+  "icon": "cf7",
+  "jsclass": "cf7",
+  "title": "Contact Form 7",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

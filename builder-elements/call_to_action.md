@@ -149,12 +149,14 @@
 {
   "type": "call_to_action",
   "uid": "itm000001",
+  "icon": "call_to_action",
+  "jsclass": "call_to_action",
+  "title": "Call to Action",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut "
+    "title": "Título de ejemplo"
   }
 }
 ```

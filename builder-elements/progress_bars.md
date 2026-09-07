@@ -90,11 +90,14 @@
 {
   "type": "progress_bars",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "progress_bars",
+  "jsclass": "progress_bars",
+  "title": "Progress Bars",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title"
+    "title": "Título de ejemplo"
   }
 }
 ```

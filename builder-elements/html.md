@@ -14,10 +14,15 @@
 {
   "type": "html",
   "uid": "itm000001",
+  "icon": "html",
+  "jsclass": "html",
+  "title": "HTML",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
-  "attr": {}
+  "attr": {
+    "content": "Contenido de ejemplo"
+  }
 }
 ```
 

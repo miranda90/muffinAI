@@ -1,6 +1,6 @@
 # Campos de WRAP
 
-Campos disponibles en `attr` de cada wrap (incluye grid, query loop, sticky...).
+Campos de attr de wrap.
 
 
 ### Options

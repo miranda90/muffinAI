@@ -148,6 +148,9 @@
 {
   "type": "product_images",
   "uid": "itm000001",
+  "icon": "product_images",
+  "jsclass": "product_images",
+  "title": "Product images",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

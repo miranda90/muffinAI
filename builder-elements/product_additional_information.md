@@ -53,11 +53,14 @@
 {
   "type": "product_additional_information",
   "uid": "itm000001",
+  "icon": "product_additional_information",
+  "jsclass": "product_additional_information",
+  "title": "Additional information",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "1"
+    "title": "Título de ejemplo"
   }
 }
 ```

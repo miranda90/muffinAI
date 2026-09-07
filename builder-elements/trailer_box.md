@@ -90,11 +90,14 @@
 {
   "type": "trailer_box",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "trailer_box",
+  "jsclass": "trailer_box",
+  "title": "Trailer Box",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title"
+    "title": "Título de ejemplo"
   }
 }
 ```

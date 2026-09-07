@@ -93,8 +93,11 @@
 {
   "type": "portfolio_grid",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "portfolio_grid",
+  "jsclass": "portfolio_grid",
+  "title": "Portfolio Grid",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {}
 }

@@ -19,6 +19,9 @@
 {
   "type": "footer_logo",
   "uid": "itm000001",
+  "icon": "footer_logo",
+  "jsclass": "footer_logo",
+  "title": "Logo",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

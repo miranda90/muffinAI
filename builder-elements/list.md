@@ -87,12 +87,14 @@
 {
   "type": "list",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "list",
+  "jsclass": "list",
+  "title": "List Basic",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut "
+    "title": "Título de ejemplo"
   }
 }
 ```
