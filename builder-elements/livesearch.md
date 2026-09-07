@@ -28,7 +28,10 @@
 {
   "type": "livesearch",
   "uid": "itm000001",
-  "size": "1/3",
+  "icon": "livesearch",
+  "jsclass": "livesearch",
+  "title": "Live search",
+  "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {}

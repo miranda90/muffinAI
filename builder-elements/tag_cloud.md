@@ -76,6 +76,9 @@
 {
   "type": "tag_cloud",
   "uid": "itm000001",
+  "icon": "tag_cloud",
+  "jsclass": "tag_cloud",
+  "title": "Tag cloud",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

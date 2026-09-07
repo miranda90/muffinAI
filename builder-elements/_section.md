@@ -1,6 +1,6 @@
 # Campos de SECCIÓN
 
-Campos disponibles en `attr` de cada sección.
+Campos de attr de sección.
 
 
 ### Header options

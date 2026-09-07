@@ -337,6 +337,9 @@
 {
   "type": "sidemenu_menu",
   "uid": "itm000001",
+  "icon": "sidemenu_menu",
+  "jsclass": "sidemenu_menu",
+  "title": "Menu",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

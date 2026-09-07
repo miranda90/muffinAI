@@ -29,8 +29,11 @@
 {
   "type": "map_basic",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "map_basic",
+  "jsclass": "map_basic",
+  "title": "Map Basic",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {}
 }

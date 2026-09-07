@@ -167,11 +167,14 @@
 {
   "type": "blog_news",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "blog_news",
+  "jsclass": "blog_news",
+  "title": "Blog News",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title"
+    "title": "Título de ejemplo"
   }
 }
 ```

@@ -128,6 +128,9 @@
 {
   "type": "offer",
   "uid": "itm000001",
+  "icon": "offer",
+  "jsclass": "offer",
+  "title": "Offer Slider Full",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

@@ -68,6 +68,9 @@
 {
   "type": "clients",
   "uid": "itm000001",
+  "icon": "clients",
+  "jsclass": "clients",
+  "title": "Clients",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

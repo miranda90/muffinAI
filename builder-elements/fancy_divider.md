@@ -25,6 +25,9 @@
 {
   "type": "fancy_divider",
   "uid": "itm000001",
+  "icon": "fancy_divider",
+  "jsclass": "fancy_divider",
+  "title": "Fancy Divider",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

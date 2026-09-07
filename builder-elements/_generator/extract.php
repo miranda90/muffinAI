@@ -8,7 +8,11 @@ error_reporting(E_ERROR | E_PARSE); // silenciar warnings de claves indefinidas
 
 define('ABSPATH', '/tmp/');
 
-$THEME = '/Users/invbit/Documents/Mis proyectos/muffinAI/betheme';
+$opts = getopt('', ['theme:', 'stdout', 'check']);
+$THEME = realpath($opts['theme'] ?? (__DIR__ . '/../../betheme'));
+if (!$THEME || !is_file($THEME . '/functions/builder/class-mfn-builder-fields.php')) {
+    fwrite(STDERR, "Theme no encontrado\n"); exit(3);
+}
 
 // ---------- Stubs WordPress ----------
 function __($s, $d = null) { return $s; }
@@ -47,18 +51,21 @@ function wp_upload_dir() { return ['baseurl' => '{uploads}', 'basedir' => '/tmp'
 $src = file_get_contents($THEME . '/muffin-options/theme-options.php');
 
 function extract_function($src, $name) {
-    $pos = strpos($src, 'function ' . $name . '(');
-    if ($pos === false) { return null; }
-    $brace = strpos($src, '{', $pos);
-    $depth = 0; $i = $brace;
-    $len = strlen($src);
-    do {
-        $ch = $src[$i];
-        if ($ch === '{') { $depth++; }
-        elseif ($ch === '}') { $depth--; }
-        $i++;
-    } while ($depth > 0 && $i < $len);
-    return substr($src, $pos, $i - $pos);
+    $tokens = token_get_all($src);
+    for ($i = 0; $i < count($tokens); $i++) {
+        if (!is_array($tokens[$i]) || $tokens[$i][0] !== T_FUNCTION) continue;
+        $j = $i + 1;
+        while (isset($tokens[$j]) && is_array($tokens[$j]) && $tokens[$j][0] === T_WHITESPACE) $j++;
+        if (!isset($tokens[$j]) || !is_array($tokens[$j]) || $tokens[$j][1] !== $name) continue;
+        $code = ''; $depth = 0; $started = false;
+        for (; $i < count($tokens); $i++) {
+            $token = $tokens[$i];
+            $code .= is_array($token) ? $token[1] : $token;
+            if ($token === '{') { $depth++; $started = true; }
+            if ($token === '}' && --$depth === 0 && $started) return $code;
+        }
+    }
+    throw new RuntimeException('Función requerida no encontrada: ' . $name);
 }
 
 foreach (['mfna_bg_position', 'mfna_bg_size', 'mfna_utc', 'mfna_section_style', 'mfna_skin'] as $fn) {
@@ -99,12 +106,36 @@ $out = [
     'animations' => $get('animations'),
 ];
 
-$json = json_encode($out, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PARTIAL_OUTPUT_ON_ERROR);
-file_put_contents(__DIR__ . '/fields-dump.json', $json);
-
-echo "OK items=" . count($out['items'])
-    . " inline=" . count($out['inline_shortcodes'])
-    . " section_fields=" . count($out['section'])
-    . " wrap_fields=" . count($out['wrap'])
-    . " advanced_fields=" . count($out['advanced'])
-    . " bytes=" . strlen($json) . "\n";
+$source_files = [
+    'functions/builder/class-mfn-builder-fields.php',
+    'functions/builder/class-mfn-builder-items.php',
+    'functions/builder/class-mfn-builder-helper.php',
+    'functions/admin/class-mfn-helper.php',
+    'muffin-options/theme-options.php',
+    'visual-builder/assets/js/scripts.js',
+];
+$out['source_hashes'] = [];
+foreach ($source_files as $file) $out['source_hashes'][$file] = hash_file('sha256', $THEME . '/' . $file);
+$out['theme_version'] = null; // Partial reference may have no style.css; never infer from asset names.
+if (is_file($THEME . '/style.css') && preg_match('/^Version:\s*(.+)$/mi', file_get_contents($THEME . '/style.css'), $match)) {
+    $out['theme_version'] = trim($match[1]);
+}
+$items_source = file_get_contents($THEME . '/functions/builder/class-mfn-builder-items.php');
+preg_match_all('/function\s+item_(\w+)\s*\(/', $items_source, $matches);
+$out['render_types'] = $matches[1]; sort($out['render_types']);
+$json = json_encode($out, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR);
+if (isset($opts['check'])) {
+    $old = json_decode(file_get_contents(__DIR__ . '/../_elements.json'), true, 512, JSON_THROW_ON_ERROR);
+    $same = true;
+    $current = json_decode($json, true, 512, JSON_THROW_ON_ERROR);
+    foreach (['section','wrap','advanced','items','inline_shortcodes','animations','source_hashes','render_types'] as $key) {
+        if (($old[$key] ?? null) !== $current[$key]) { fwrite(STDERR, "Diferencia: " . $key . "\n"); $same = false; }
+    }
+    exit($same ? 0 : 1);
+}
+if (isset($opts['stdout'])) { echo $json; exit(0); }
+$tmp = tempnam(__DIR__, '.fields-');
+if (file_put_contents($tmp, $json) === false || !rename($tmp, __DIR__ . '/fields-dump.json')) {
+    throw new RuntimeException('No se pudo publicar fields-dump.json');
+}
+echo "OK items=" . count($out['items']) . " bytes=" . strlen($json) . "\n";

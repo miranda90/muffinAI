@@ -18,11 +18,14 @@
 {
   "type": "product_content",
   "uid": "itm000001",
+  "icon": "product_content",
+  "jsclass": "product_content",
+  "title": "Product content",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "content": ""
+    "content": "Contenido de ejemplo"
   }
 }
 ```

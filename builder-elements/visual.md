@@ -19,10 +19,15 @@
 {
   "type": "visual",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "visual",
+  "jsclass": "visual",
+  "title": "Visual Editor",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
-  "attr": {}
+  "attr": {
+    "content": "Contenido de ejemplo"
+  }
 }
 ```
 

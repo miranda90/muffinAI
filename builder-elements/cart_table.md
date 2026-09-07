@@ -216,6 +216,9 @@
 {
   "type": "cart_table",
   "uid": "itm000001",
+  "icon": "cart_table",
+  "jsclass": "cart_table",
+  "title": "Cart table",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

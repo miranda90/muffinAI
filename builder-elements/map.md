@@ -126,10 +126,15 @@
 {
   "type": "map",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
-  "mobile_size": "1/4",
-  "attr": {}
+  "icon": "map",
+  "jsclass": "map",
+  "title": "Map Advanced",
+  "size": "1/1",
+  "tablet_size": "1/1",
+  "mobile_size": "1/1",
+  "attr": {
+    "title": "Título de ejemplo"
+  }
 }
 ```
 

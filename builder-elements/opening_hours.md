@@ -127,12 +127,14 @@
 {
   "type": "opening_hours",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "opening_hours",
+  "jsclass": "opening_hours",
+  "title": "Opening Hours",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title",
-    "content": "Vitae adipiscing turpis. Aenean ligula nibh, molestie id viv"
+    "title": "Título de ejemplo"
   }
 }
 ```

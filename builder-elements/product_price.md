@@ -33,6 +33,9 @@
 {
   "type": "product_price",
   "uid": "itm000001",
+  "icon": "product_price",
+  "jsclass": "product_price",
+  "title": "Product price",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

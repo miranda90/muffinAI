@@ -76,11 +76,14 @@
 {
   "type": "table_of_contents",
   "uid": "itm000001",
+  "icon": "table_of_contents",
+  "jsclass": "table_of_contents",
+  "title": "Table of Contents",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "Table of contents"
+    "title": "Título de ejemplo"
   }
 }
 ```

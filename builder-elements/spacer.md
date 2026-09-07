@@ -15,6 +15,9 @@
 {
   "type": "spacer",
   "uid": "itm000001",
+  "icon": "spacer",
+  "jsclass": "spacer",
+  "title": "Spacer",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

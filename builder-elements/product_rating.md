@@ -25,6 +25,9 @@
 {
   "type": "product_rating",
   "uid": "itm000001",
+  "icon": "product_rating",
+  "jsclass": "product_rating",
+  "title": "Product rating",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

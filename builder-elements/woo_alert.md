@@ -41,6 +41,9 @@
 {
   "type": "woo_alert",
   "uid": "itm000001",
+  "icon": "woo_alert",
+  "jsclass": "woo_alert",
+  "title": "Alert",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

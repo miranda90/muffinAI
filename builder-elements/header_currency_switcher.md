@@ -170,6 +170,9 @@
 {
   "type": "header_currency_switcher",
   "uid": "itm000001",
+  "icon": "header_currency_switcher",
+  "jsclass": "header_currency_switcher",
+  "title": "Currency switcher",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

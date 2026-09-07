@@ -133,6 +133,9 @@
 {
   "type": "offer_thumb",
   "uid": "itm000001",
+  "icon": "offer_thumb",
+  "jsclass": "offer_thumb",
+  "title": "Offer Slider Thumb",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

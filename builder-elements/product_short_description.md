@@ -24,6 +24,9 @@
 {
   "type": "product_short_description",
   "uid": "itm000001",
+  "icon": "product_short_description",
+  "jsclass": "product_short_description",
+  "title": "Short description",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

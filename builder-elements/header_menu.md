@@ -284,6 +284,9 @@
 {
   "type": "header_menu",
   "uid": "itm000001",
+  "icon": "header_menu",
+  "jsclass": "header_menu",
+  "title": "Menu",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

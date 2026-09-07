@@ -68,6 +68,9 @@
 {
   "type": "lottie",
   "uid": "itm000001",
+  "icon": "lottie",
+  "jsclass": "lottie",
+  "title": "Lottie",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

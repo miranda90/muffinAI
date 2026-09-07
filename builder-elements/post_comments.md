@@ -12,6 +12,9 @@
 {
   "type": "post_comments",
   "uid": "itm000001",
+  "icon": "post_comments",
+  "jsclass": "post_comments",
+  "title": "Post comments",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

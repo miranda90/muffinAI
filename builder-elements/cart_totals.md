@@ -152,6 +152,9 @@
 {
   "type": "cart_totals",
   "uid": "itm000001",
+  "icon": "cart_totals",
+  "jsclass": "cart_totals",
+  "title": "Cart totals",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

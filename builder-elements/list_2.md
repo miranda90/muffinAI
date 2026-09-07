@@ -125,8 +125,11 @@
 {
   "type": "list_2",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "list_2",
+  "jsclass": "list_2",
+  "title": "List",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {}
 }

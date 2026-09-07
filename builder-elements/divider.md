@@ -34,6 +34,9 @@
 {
   "type": "divider",
   "uid": "itm000001",
+  "icon": "divider",
+  "jsclass": "divider",
+  "title": "&bull; Divider Basic",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

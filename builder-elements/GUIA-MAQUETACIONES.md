@@ -1,5 +1,6 @@
 # Guía de maquetaciones – Diseño real BeTheme/Muffin Builder
 
+> Actualización: el flujo verificable, las excepciones por ruta y las precisiones sobre transformaciones, medios y perfiles están en [10-flujo-verificable.md](../docs/bebuilder/10-flujo-verificable.md). Las pruebas del código prevalecen sobre reglas históricas.
 Esta guía describe **cómo se construyen en el diseño real** las maquetaciones más habituales, tomando como referencia:
 
 - **`examples/example2/home.json`** – Home TMC (hero con video, sección naranja, catálogo, estadísticas, CTA final).
@@ -16,10 +17,10 @@ Objetivo: tener patrones claros para replicar o aproximar estos layouts al gener
 **Sección (attr):**
 
 - `background_switcher`: `"video"`.
-- `bg_video_mp4`: URL del vídeo (p. ej. `"https://.../archivo.mp4#ID"`).
+- `bg_video_mp4`: URL del vídeo en la Media Library del destino con sufijo `#ID` (p. ej. `"https://.../archivo.mp4#1406"`). Flujo de descarga/subida y optimización en `docs/bebuilder/09-medios-imagenes-video.md` §5.
 - `height_switcher`: `"custom"`.
 - `css_advanced_height`: `{ "selector": ".mcb-section-mfnuidelement", "style": "height", "val": { "desktop": "100vh", "tablet": "auto" } }`.
-- `css_advanced_background_color`: color de respaldo (ej. `#1D242C`).
+- `css_advanced_background_color`: color de respaldo (ej. `#1D242C`). Es lo único que se ve mientras carga el vídeo: el poster solo existe vía `bg_image` (deprecado), así que elegir el color dominante del vídeo.
 - `css_advanced_background_overlay_background_color`: overlay (ej. `"rgba(29,36,44,0.5)"`).
 
 **Estructura de wraps:**
@@ -83,6 +84,74 @@ Objetivo: tener patrones claros para replicar o aproximar estos layouts al gener
 
 ---
 
+## 3.bis Fila de tarjetas estáticas (grid + subwraps) — patrón por defecto
+
+**Diseño:** N tarjetas idénticas en fila (icono/imagen + título + texto + botón), con un hueco
+definido entre ellas (ej. 36px) y todas a la misma altura, con el botón alineado abajo.
+
+**Por qué grid y no N wraps hermanos `1/4`:** el `gap` no existe fuera del grid —
+`css_grid_columns_gap`/`css_grid_rows_gap` están condicionados a `wrap_grid is grid` y su selector
+exige `.mcb-wrap-grid` (`class-mfn-builder-fields.php:3582-3600`,
+`class-mfn-builder-front.php:1528`). Con hermanos, el hueco es el gutter del theme (~2%) y solo se
+modula con márgenes, que además comen ancho de columna. Ver trampa 21 en `docs/bebuilder/05`.
+
+**Wrap contenedor (`1/1`):**
+
+- `grid`: `"grid"`, `grid_columns_switcher`: `""`.
+- `css_grid_columns`: `{ "desktop": "repeat(4, 1fr)", "tablet": "repeat(2, 1fr)", "mobile": "1fr" }`.
+- `css_grid_columns_gap` / `css_grid_rows_gap`: el hueco del diseño, con valor por breakpoint.
+
+**Cada tarjeta = subwrap (`item_is_wrap: 1`), `size` `1/1` en los tres breakpoints** (el reparto lo
+hace el grid, no el `size`):
+
+- Fondo/borde/radio de la tarjeta en `.mcb-wrap-inner` (`css_advanced_background_color`,
+  `css_advanced_border_radius`, `css_advanced_padding`) + `background_switcher: "default"`.
+- `height_switcher: "custom"` + `css_advanced_height` `{"desktop": "100%"}`: sin esto el fondo no
+  llena la celda estirada y las tarjetas se ven de distinta altura aunque el grid sí lo esté.
+- `css_advanced_align_content: "space-between"` para clavar el botón abajo.
+- Dentro, items normales: `image` (icono con `css_image_frame_width`), `heading`, `plain_text`,
+  `button`.
+
+**Lo que sobra con este patrón:** `classes: "equal-height-wrap"` en la sección y el `margin-bottom`
+por tarjeta — los cubre el propio grid y `css_grid_rows_gap`.
+
+**Compatibilidad:** nested wrap es información en el perfil visual; W005 bloquea con strict únicamente en classic.
+
+**Resumen:** tarjetas con gap definido → wrap `1/1` grid + un `item_is_wrap` por tarjeta con
+`height: 100%` y `align-content: space-between`.
+
+---
+
+## 3.ter Fila de cifras animadas (counter)
+
+**Diseño:** 3-5 cifras grandes con una descripción corta debajo (“+1.000 profesionales en
+plantilla”), normalmente centradas.
+
+**Elemento:** `counter` si el formato y la animación encajan con el diseño; texto para formatos no soportados. Anima de 0 al valor al entrar en viewport
+(`js/scripts.js:1425-1465`, waypoint + `data-to`) y ya trae la estructura del bloque:
+`.number-wrapper` (`.prefix` + `.number` + `.postfix`) + `.title`, cada parte con sus propios campos
+de color y tipografía.
+
+**Campos clave:**
+
+- `prefix` (“+”, “€”), `number` (**entero pelado**: el JS hace `Math.floor` sobre `data-to`),
+  `label` (sufijo: “%”, “k”), `title` (la descripción) + `title_tag`.
+- `icon`: `""` **y** `image`: `""` — el default es `icon-lamp` y si no se vacía se pinta un icono
+  que el diseño no tiene (`theme-shortcodes.php:7770`).
+- `thousands_separator`: `""` | `"comma"` | `"space"`. **No hay opción de punto**: para el formato
+  español (`1.000`) la aproximación correcta es `"space"` (`1 000`, que es lo que recomienda la RAE);
+  si el cliente exige el punto, entonces sí toca `plain_text` estático y se pierde la animación.
+- `duration` en ms (ej. `"1500"`), `type`: `"vertical"`.
+
+**Aviso:** la animación puede estar apagada globalmente en Theme Options
+(`math-animations-disable`, `theme-shortcodes.php:7728`). Si las cifras salen fijas, mirar ahí antes
+que al JSON.
+
+**Resumen:** cifras = `counter` con `prefix`/`number`/`label`/`title`, `icon` e `image` vacíos y
+`thousands_separator: "space"` para miles en español.
+
+---
+
 ## 4. Sección con imagen de fondo y card centrada (CTA catálogo)
 
 **Diseño:** Sección altura fija (ej. 80rem), imagen de fondo cover y overlay; una card blanca centrada con título, texto y dos botones.
@@ -106,7 +175,7 @@ Objetivo: tener patrones claros para replicar o aproximar estos layouts al gener
 
 - **heading** (h2).
 - **column** (texto descriptivo).
-- Dos **button** (ej. “Discover the catalog” y “Visit our Youtube channel”) con `class`: `"arrow-button"`, enlaces y márgenes responsive.
+- Dos **button** (ej. “Discover the catalog” y “Visit our Youtube channel”) con `classes`: `"arrow-button"`, enlaces y márgenes responsive.
 
 **Resumen:** Imagen de fondo + card = sección con height custom + background image + overlay; wrap con fondo blanco, padding y border-radius; contenido en wrap anidado (heading + column + botones).
 
@@ -185,7 +254,7 @@ Si hay contenido (ej. “Have any doubts? Contact us!”), suele ir en un wrap c
 
 En el diseño real se usan clases y estilos concretos:
 
-- **Sólido (fondo blanco, texto negro):** `class`: `"arrow-button"`.
+- **Sólido (fondo blanco, texto negro):** `classes`: `"arrow-button"`.
 - **Outline blanco (fondo transparente, borde y texto blanco):** `class`: `"arrow-button arrow-button-white"`; en attr: `css_button_background_color`: transparent, `css_button_border_color` y `css_button_color`: `#FFFFFF`; hover con `css_button_background_hover`: `#ffffff`, `css_button_color_hover`: `#1d242c`.
 - **Enlace externo:** `target`: `"1"` (o `"_blank"` según tema), `link`: URL.
 
@@ -201,7 +270,11 @@ En el diseño real se usan clases y estilos concretos:
 - [ ] **Column:** `attr.content` (HTML); colores de texto con `css_column_attr_color` (y `css_column_attra_color` para enlaces).
 - [ ] **Hero con video:** `background_switcher`: `"video"`, `bg_video_mp4`, overlay, height 100vh; segundo wrap con `align-self`: flex-end para card abajo.
 - [ ] **Card sobre imagen:** Wrap con fondo blanco, padding, border-radius, ancho custom; contenido en wrap anidado.
-- [ ] **Estadísticas:** Item **counter** con `type`: `"vertical"`, `number`, `label`; junto a **column** con descripción.
+- [ ] **Estadísticas:** Item **counter** (nunca `plain_text` estático) con `type`: `"vertical"`,
+      `prefix`/`number` entero/`label`/`title`, `icon` e `image` vacíos y `thousands_separator`
+      (`"space"` para miles en español). Ver §3.ter.
+- [ ] **Fila de tarjetas con gap del diseño:** wrap `1/1` en `grid` + un `item_is_wrap` por tarjeta
+      con `height: 100%`, no N wraps hermanos `1/4` (no admiten `gap`). Ver §3.bis.
 - [ ] **Overlay degradado:** `background_overlay_switcher`: `"gradient"` y `css_advanced_overlay_gradient` con `string` del linear-gradient.
 
 ---

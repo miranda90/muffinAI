@@ -6,6 +6,9 @@ Uso:
     python3 generate_fichas.py # regenera todas las fichas .md y _elements.json
 """
 import json
+import argparse
+import tempfile
+from pathlib import Path
 import os
 import sys
 
@@ -71,7 +74,7 @@ def field_value_format(f):
         elif t == "gradient":
             inner = '{..., "string": "linear-gradient(...)"} — solo string se emite'
         elif t == "transform":
-            inner = '{..., "string": "matrix(...)"} — solo string se emite'
+            inner = '{"scaleX":1,"skewY":0,"skewX":0,"scaleY":1,"translateX":0,"translateY":0,"rotate":0,"string":"1,0,0,1,0,0,0"}'
         elif t in ("css_filters", "backdrop_filter"):
             inner = '{..., "string": "blur(...) ..."} — solo string se emite'
         else:
@@ -142,23 +145,18 @@ def render_fields(attrs, level=3):
 
 
 def example_json(eid, item):
+    # Concrete editable content, no theme placeholder URLs or implicit demo video.
     attr = {}
-    for f in item.get("attr", []):
-        if not isinstance(f, dict) or not f.get("id"):
-            continue
-        if f["id"] in ("title", "content") and "std" in f and isinstance(f["std"], str):
-            attr[f["id"]] = f["std"][:60]
-        if len(attr) >= 2:
-            break
-    ex = {
-        "type": eid,
-        "uid": "itm000001",
-        "size": item.get("size", "1/1"),
-        "tablet_size": item.get("tablet_size", "1/1"),
-        "mobile_size": item.get("mobile_size", "1/1"),
-        "attr": attr,
-    }
-    return json.dumps(ex, indent=2, ensure_ascii=False)
+    fields = {f.get("id"): f for f in item.get("attr", []) if isinstance(f, dict)}
+    if "title" in fields: attr["title"] = "Título de ejemplo"
+    elif "content" in fields: attr["content"] = "Contenido de ejemplo"
+    if eid == "heading": attr["header_tag"] = "h2"
+    if eid == "video": attr["video"] = ""
+    if eid == "counter": attr.update(number="100", icon="", image="")
+    return json.dumps({"type": eid, "uid": "itm000001", "icon": item.get("icon", eid),
+                       "jsclass": eid, "title": item.get("title", eid), "size": "1/1",
+                       "tablet_size": "1/1", "mobile_size": "1/1", "attr": attr},
+                      indent=2, ensure_ascii=False)
 
 
 def ficha_item(eid, item, inline=None):
@@ -234,51 +232,50 @@ def ficha_shared(name, title, intro, attrs):
     return "\n".join(lines)
 
 
+def generated_files(d):
+    items, inline = d["items"], d["inline_shortcodes"]
+    output = {eid + ".md": ficha_item(eid, item, inline.get(eid)) for eid, item in items.items()}
+    output.update({eid + ".md": ficha_inline_only(eid, item) for eid, item in inline.items() if eid not in items})
+    for name, title, intro, fields in (
+        ("_advanced", "Pestaña Advanced (común a TODOS los items)", "Campos comunes.", d["advanced"]),
+        ("_section", "Campos de SECCIÓN", "Campos de attr de sección.", d["section"]),
+        ("_wrap", "Campos de WRAP", "Campos de attr de wrap.", d["wrap"]),
+    ):
+        output[name + ".md"] = ficha_shared(name, title, intro, fields)
+    output["_elements.json"] = json.dumps(d, indent=1, ensure_ascii=False)
+    return output
+
+
 def main():
-    with open(DUMP, encoding="utf-8") as fh:
-        d = json.load(fh)
-
-    items = d["items"]
-    inline = d["inline_shortcodes"]
-
-    written = []
-
-    # Fichas de items (con variante inline si colisiona)
-    for eid, item in items.items():
-        il = inline.get(eid)
-        path = os.path.join(OUT, f"{eid}.md")
-        with open(path, "w", encoding="utf-8") as fh:
-            fh.write(ficha_item(eid, item, inline=il))
-        written.append(eid)
-
-    # Shortcodes solo-inline
-    inline_only = [k for k in inline if k not in items]
-    for eid in inline_only:
-        path = os.path.join(OUT, f"{eid}.md")
-        with open(path, "w", encoding="utf-8") as fh:
-            fh.write(ficha_inline_only(eid, inline[eid]))
-        written.append(eid)
-
-    # Fichas compartidas
-    shared = [
-        ("_advanced", "Pestaña Advanced (común a TODOS los items)",
-         "Estos campos están disponibles en cualquier elemento del builder, además de sus campos propios.",
-         d["advanced"]),
-        ("_section", "Campos de SECCIÓN",
-         "Campos disponibles en `attr` de cada sección.", d["section"]),
-        ("_wrap", "Campos de WRAP",
-         "Campos disponibles en `attr` de cada wrap (incluye grid, query loop, sticky...).", d["wrap"]),
-    ]
-    for name, title, intro, attrs in shared:
-        with open(os.path.join(OUT, f"{name}.md"), "w", encoding="utf-8") as fh:
-            fh.write(ficha_shared(name, title, intro, attrs))
-
-    # _elements.json íntegro y correcto
-    with open(os.path.join(OUT, "_elements.json"), "w", encoding="utf-8") as fh:
-        json.dump(d, fh, indent=1, ensure_ascii=False)
-
-    print(f"fichas: {len(written)} (items {len(items)}, inline-only {len(inline_only)})")
-    print(f"compartidas: _advanced.md, _section.md, _wrap.md, _elements.json")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dump", default=DUMP)
+    parser.add_argument("--out", default=OUT)
+    parser.add_argument("--check", action="store_true")
+    opts = parser.parse_args()
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "tools"))
+    from contracts import read_json
+    from validate_bebuilder_json import Schema
+    data = read_json(opts.dump)
+    schema = Schema(data)
+    render_types = set(data.get("render_types", schema.item_types))
+    if render_types != schema.item_types:
+        raise ValueError("El catálogo canónico no coincide con los métodos de render")
+    output = generated_files(data)
+    dest = Path(opts.out)
+    if opts.check:
+        changed = [name for name, text in output.items() if not (dest/name).is_file() or (dest/name).read_text() != text]
+        if changed: print("Fichas desactualizadas: " + ", ".join(changed))
+        return int(bool(changed))
+    dest.mkdir(parents=True, exist_ok=True)
+    # Prepare the complete generation before replacing anything. Publish the catalog last.
+    with tempfile.TemporaryDirectory(prefix=".catalog-", dir=dest.parent) as stage:
+        stage = Path(stage)
+        for name, text in output.items():
+            if Path(name).name != name: raise ValueError("Nombre de ficha inválido")
+            (stage/name).write_text(text, encoding="utf-8")
+        for name in output: os.replace(stage/name, dest/name)
+    print("Generados %d ficheros; %d tipos, %d alias" % (len(output), len(schema.item_types), len(schema.aliases)))
+    return 0
 
 
 if __name__ == "__main__":

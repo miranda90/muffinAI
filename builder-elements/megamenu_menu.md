@@ -241,6 +241,9 @@
 {
   "type": "megamenu_menu",
   "uid": "itm000001",
+  "icon": "megamenu_menu",
+  "jsclass": "megamenu_menu",
+  "title": "Menu",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

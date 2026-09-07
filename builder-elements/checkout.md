@@ -303,6 +303,9 @@
 {
   "type": "checkout",
   "uid": "itm000001",
+  "icon": "checkout",
+  "jsclass": "checkout",
+  "title": "Checkout",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

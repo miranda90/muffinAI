@@ -260,11 +260,14 @@
 {
   "type": "blog_slider",
   "uid": "itm000001",
+  "icon": "blog_slider",
+  "jsclass": "blog_slider",
+  "title": "Blog Slider",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title"
+    "title": "Título de ejemplo"
   }
 }
 ```

@@ -158,6 +158,9 @@
 {
   "type": "hotspot",
   "uid": "itm000001",
+  "icon": "hotspot",
+  "jsclass": "hotspot",
+  "title": "Hotspot",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

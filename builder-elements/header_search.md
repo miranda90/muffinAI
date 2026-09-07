@@ -73,6 +73,9 @@
 {
   "type": "header_search",
   "uid": "itm000001",
+  "icon": "header_search",
+  "jsclass": "header_search",
+  "title": "Search field",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

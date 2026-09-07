@@ -122,6 +122,9 @@
 {
   "type": "product_cart_button",
   "uid": "itm000001",
+  "icon": "product_cart_button",
+  "jsclass": "product_cart_button",
+  "title": "Add to cart",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

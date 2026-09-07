@@ -60,6 +60,9 @@
 {
   "type": "popup_exit",
   "uid": "itm000001",
+  "icon": "popup_exit",
+  "jsclass": "popup_exit",
+  "title": "Exit link",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

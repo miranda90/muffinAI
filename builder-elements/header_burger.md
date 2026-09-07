@@ -395,6 +395,9 @@
 {
   "type": "header_burger",
   "uid": "itm000001",
+  "icon": "header_burger",
+  "jsclass": "header_burger",
+  "title": "Menu burger",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

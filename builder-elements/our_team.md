@@ -238,11 +238,14 @@
 {
   "type": "our_team",
   "uid": "itm000001",
-  "size": "1/4",
-  "tablet_size": "1/4",
+  "icon": "our_team",
+  "jsclass": "our_team",
+  "title": "Our Team",
+  "size": "1/1",
+  "tablet_size": "1/1",
   "mobile_size": "1/1",
   "attr": {
-    "title": "This is the title"
+    "title": "Título de ejemplo"
   }
 }
 ```

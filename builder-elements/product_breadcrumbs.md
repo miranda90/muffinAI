@@ -42,6 +42,9 @@
 {
   "type": "product_breadcrumbs",
   "uid": "itm000001",
+  "icon": "product_breadcrumbs",
+  "jsclass": "product_breadcrumbs",
+  "title": "Breadcrumbs",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",

@@ -89,6 +89,9 @@
 {
   "type": "order_steps",
   "uid": "itm000001",
+  "icon": "order_steps",
+  "jsclass": "order_steps",
+  "title": "Order steps",
   "size": "1/1",
   "tablet_size": "1/1",
   "mobile_size": "1/1",
