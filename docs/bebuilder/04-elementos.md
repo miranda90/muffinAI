@@ -90,7 +90,7 @@ selector/style del PHP). `L` = línea en `class-mfn-builder-fields.php`.
 | `lottie` | 49907 | `source_switcher` (`file`/`url`), `file`, `src`, `trigger`, `loop`, `speed`, `viewport`, `frame_start/_end`, `direction`, `link` |
 | `share` | 55530 | `copy_link(_icon/_label)`, `facebook(_icon/_label)`, `twitter(_icon/_label)`, `linkedin(_icon/_label)` |
 | `timeline` | 61785 | `tabs` |
-| `video` | 63602 | `video` (URL embed), `parameters`, `mp4`, `ogv`, `placeholder`, `html5_parameters`, `object_fit`, `object_position`, `mask_shape_type/_size/_position` |
+| `video` | 63602 | `video` (ID YouTube/Vimeo; **`""` obligatorio para HTML5**, default `n7-F-FMzM7Q` — trampa 25), `parameters`, `mp4` (`URL#ID`), `ogv`, `placeholder` (poster, `URL#ID`), `html5_parameters` (código, p. ej. `a;;l;m;i`), `object_fit`, `object_position`, `mask_shape_type/_size/_position` |
 | `divider_2` | 25416 | `type`, `align`, `addon`, `label`, `image`, `icon` |
 | `divider` (legacy) | 25905 | `height`, `style`, `line`, `color`, `themecolor` |
 | `breadcrumbs` | 33306 | `separator`, `breadcrumb_home` |

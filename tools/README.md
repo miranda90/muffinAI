@@ -1,5 +1,26 @@
 # tools/ — Validador de JSON BeBuilder
 
+> Flujo vigente: [generación verificable](../docs/bebuilder/10-flujo-verificable.md).
+> API pura `validate()`, perfiles `--origin generated|export`, `--editor visual|classic`,
+> manifests/perfil/excepciones y puerta de entrega `tools/build.py`.
+> `--fix --json` emite un objeto único con `document`; `--fix` envía el informe a stderr.
+> `--fix -o` no sobrescribe el original y solo publica si `accepted` es true.
+> `W005` es informativo en visual. E031 ya no se emite por pseudoclases con `:`.
+> `norm_selector` conserva combinadores. Transform string son siete números CSV.
+
+```bash
+python3 tools/check.py
+python3 tools/build.py proyectos/_plantilla/build_plantilla.py --check
+python3 tools/validate_bebuilder_json.py examples/example2/home.json --origin export --json
+```
+
+Nuevos diagnósticos: E000 límites del documento; E015 estructura legacy en generación;
+E017 grid fuera de attr; E018 alias no normalizado; E034 CSS plano; E038 repetidor;
+E039 hoja CSS inválida; E040 transformación incoherente; E070–E073 medios/perfil/vídeo;
+W065 grid inactivo; W066 tipo de contenido; W070–W079 medios, dependencias, fuentes,
+Global Styles y enlaces. Los códigos anteriores se conservan donde corresponde.
+
+
 `validate_bebuilder_json.py` comprueba que un JSON de BeBuilder (`mfn-page-items`) es
 importable y se renderizará como se espera, **antes** de tocar WordPress.
 
@@ -39,7 +60,7 @@ Solo lo determinista, nunca lo que exige decidir:
 | `attr.vb` / `vb_postid` / `rwd` | eliminados (basura de runtime del VB) |
 | `border-width` / `border-radius` con objeto | convertidos a string shorthand (trampa 14) |
 | `class` | migrado a `classes` (fusionando si ya existía) |
-| Pseudo-clase `:hover` en `selector` | reescrita a `\|hover` (solo si el theme no la declara con `:`) |
+| Selectores | no se modifican automáticamente; conservar combinadores y ámbito |
 | `tablet_size` / `mobile_size` ausentes | añadidos (`= size` y `1/1`) |
 | `uid` ausente | generado (9 chars, determinista por ruta) |
 | `icon` / `jsclass` / `title` ausentes | añadidos para paridad con el Visual Builder |
@@ -64,6 +85,8 @@ No inventa `size`, `type` ni contenido: esos casos siguen siendo errores.
 | E010 | `type` inexistente → item ignorado en silencio (`front.php:2608`); sugiere el más cercano |
 | E011 / E012 | `item_is_wrap` con `type`, o sin array `items` |
 | E013 | `attr` que no es objeto |
+| E014 | Wrap anidado dentro de otro wrap anidado: el theme solo recorre **un** nivel de `item_is_wrap` (trampa 16) |
+| E016 | Query loop de wrap con **varios items directos**: el primer guardado en el VB los borra y deja un wrap anidado vacío. La tarjeta va dentro de un `item_is_wrap: 1` (trampa 20) |
 | E020 | `attr.vb`, `vb_postid` o `rwd` (runtime del VB; altera dynamic data) |
 | E021 | Atributo legacy con valor → el front lo vuelca como `style=""` inline |
 | E022 | `custom_css` |
@@ -89,7 +112,7 @@ No inventa `size`, `type` ni contenido: esos casos siguen siendo errores.
 | W031 | `selector` sin `mfnuidelement` → el estilo se aplica a toda la página |
 | W032 / W033 | `selector` / `style` distintos de los declarados en el theme |
 | W037 | Claves no-dispositivo a primer nivel en un campo responsive |
-| W039 | `val` = `"0"` → PHP `empty()` lo descarta y no genera CSS (usar `"0px"`) |
+| W039 | Valor `"0"` en `val` (también por breakpoint o por lado de un `dimensions`) → PHP `empty()` lo descarta y no genera CSS (usar `"0px"`) |
 | W040 | Valor fuera del enum declarado del campo (con sugerencia) |
 | W041 | Propiedad tipográfica no reconocida |
 | W042 | Color con formato no reconocido |
@@ -104,6 +127,8 @@ No inventa `size`, `type` ni contenido: esos casos siguen siendo errores.
 | W060 | Shortcode de otro page builder dentro del contenido |
 | W061 | `padding` / `margin` en `px`, `em` o `pt` — **regla 6**: van en `rem` (con la equivalencia calculada) |
 | W062 | `padding` / `margin` / tipografía sin valor `mobile` — **regla 5**: generar siempre pensando en responsive |
+| W063 | Query loop sobre un CPT que Theme Options puede desactivar → loop vacío y fatal 500 en admin-ajax (trampa 15) |
+| W064 | Fondo (`background-color` / `gradient`) sin `background_switcher` explícito → control oculto en el panel (trampa 19) |
 
 ### Reglas del proyecto que el validador impone
 
@@ -122,12 +147,13 @@ Al validar exports ajenos (no generados por nosotros) tiene sentido silenciarlas
 
 `I001`–`I006` (uid/icon/attr ausentes, sección global, wrap vacío), `I021` (legacy vacío),
 `I032` (selector equivalente pero no idéntico), `I035`, `I037`/`I038` (ámbito desktop),
+`I034` (solo `--origin export`: select de estilo exportado como valor plano, el `std` del VB),
 `I050` (sección sin `width_switcher` explícito), `I053` (grid sin `grid: "grid"`),
 `I057`, `I060`.
 
 ## Mantenimiento
 
-El validador no tiene reglas hardcodeadas sobre campos concretos: todo sale del catálogo.
+Los campos y condiciones proceden del catálogo. Las políticas y excepciones técnicas verificadas se mantienen explícitas y con pruebas.
 Tras actualizar el theme hay que regenerarlo:
 
 ```bash
@@ -138,6 +164,10 @@ Verificación rápida de que el validador sigue calibrado (los exports reales de
 salir sin errores estructurales, solo con la basura de runtime que el propio VB añade):
 
 ```bash
-python3 tools/validate_bebuilder_json.py examples/example1/about-us.json --json
-python3 tools/validate_bebuilder_json.py examples/example2/home.json --json
+python3 tools/validate_bebuilder_json.py examples/example1/about-us.json --origin export --json
+python3 tools/validate_bebuilder_json.py examples/example2/home.json --origin export --json
 ```
+
+Sin `--origin export` se aplican las políticas del taller (regla 5, `rem`, runtime del VB) y un
+export real sale con errores: no es una regresión del validador. `python3 tools/check.py` ejecuta
+esta calibración automáticamente.

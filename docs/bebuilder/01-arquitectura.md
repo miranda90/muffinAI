@@ -64,6 +64,13 @@ Es estructura canónica y soportada:
 - `helper.php:263-276` — `unique_ID_reset()` recorre sus hijos.
 - `visual-builder-class.php:1005-1012` — el VB le inyecta `jsclass/title/icon` de wrap.
 
+**UN SOLO NIVEL.** El render (`show_items` → `show_wraps`) recurre sin límite, pero las tres rutinas
+de la ruta de import se paran en el primer nivel: `unique_ID_reset` (`helper.php:246-282`),
+`loadExistedElements` (`visual-builder-class.php:1005`) y `MfnLocalCssCompability::nested_wrap`
+(`local-css-compability.php:365-371`). Un wrap anidado dentro de otro wrap anidado degrada en
+silencio: uid sin regenerar, bloque ausente del panel y `css_*` sin normalizar. Detalle y
+alternativas de maquetación en `05-reglas-y-trampas.md` trampa 16; el validador lo bloquea (E014).
+
 **Limitaciones reales** (no error 500):
 - El **builder clásico admin** (formulario antiguo) genera warnings PHP 8 con nested wraps (`admin.php:833` sin guard) — puede parecer un 500 con `display_errors` activo.
 - **BeBuilder Blocks Classic se autodesactiva** si detecta `item_is_wrap` o `type: "query"` en la página (`admin.php:1637-1646`).
@@ -80,7 +87,25 @@ Es estructura canónica y soportada:
 | Builder clásico | `wp_ajax_mfn_builder_import` | `ajax.php:1175` |
 
 - Espera `json_decode` → array de secciones. Validación mínima: nonce + `is_array`. **Sin validación de esquema**: JSON incompleto se acepta y se degrada en silencio al renderizar.
-- `unique_ID_reset()` **sobrescribe todos los `uid`** (sección/wrap/item/nested). Los uid del JSON de entrada son irrelevantes; no construir referencias cruzadas por uid.
+- `unique_ID_reset()` **sobrescribe todos los `uid`** (sección/wrap/item/nested de primer nivel). Los uid del JSON de entrada son irrelevantes; no construir referencias cruzadas por uid.
+
+Cadena real de `wp_ajax_importdata` (`visual-builder.php:1046-1077`):
+
+```
+mfnvb_import_data()
+  └ MfnLocalCssCompability->render($items)   normaliza css_* legacy (1 nivel de anidamiento)
+  └ mfnvb_renderView($items, $id)            visual-builder.php:1513
+      ├ new MfnVisualBuilder()               ← instancia una clase de CPT según el post EDITADO
+      ├ unique_ID_reset()                    regenera uid
+      ├ $front->show_sections()              renderiza el HTML de vuelta
+      └ loadExistedElements()                construye el formulario del panel
+```
+
+**El paso que más 500 provoca es el primero de `renderView`**, y no depende del JSON: `MfnVisualBuilder`
+elige la clase de post type con `get_post_type($post_id)` y la instancia sin `class_exists()`
+(`visual-builder-class.php:52`). Si ese CPT está desactivado en Theme Options, su clase no se ha
+cargado (`functions.php:118-146`) y el import muere con un fatal. Ver `05-reglas-y-trampas.md`
+trampa 15 — es el primer sitio donde mirar ante un 500 al importar.
 
 ### 5.2 Export
 
@@ -144,3 +169,11 @@ las claves de `attr` **son** los parámetros del shortcode; las no declaradas se
 
 Wraps/secciones tipo `query` (`attr.type = "query"`): repiten sus wraps por cada resultado de
 `WP_Query`/`get_terms` (loops dinámicos), con soporte slider (Swiper) y masonry. Ver campos `query_*` en doc 03.
+
+Dos detalles del render dentro de un loop, ambos con consecuencias al editar:
+
+- Cada iteración se envuelve en `.mfn-queryloop-item-wrapper` (`:1230`/`:2310` para términos,
+  `:2489` para posts).
+- **Solo la iteración 0 es editable**: `:2793` `if( $vb && !$w_iterate )` es lo que añade `vb-item`,
+  `data-uid` y la barra del módulo. Combinado con `iframe.css:1544` (`pointer-events: none` en las
+  demás), en el VB solo se puede tocar la primera tarjeta. Trampas 18 y 20 de la doc 05.

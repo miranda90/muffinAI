@@ -1,5 +1,6 @@
 # 02 — Pipeline CSS: de `css_*` en el JSON a hoja de estilos
 
+> Actualización: el flujo verificable, las excepciones por ruta y las precisiones sobre transformaciones, medios y perfiles están en [10-flujo-verificable.md](10-flujo-verificable.md). Las pruebas del código prevalecen sobre reglas históricas.
 **Regla absoluta del proyecto: el JSON nunca lleva CSS inline ni genera archivos CSS a mano.**
 Todo estilo se expresa como atributo `css_*` con `{selector, style, val}`; el theme genera
 `wp-content/uploads/betheme/css/post-{ID}.css` automáticamente.
@@ -50,7 +51,7 @@ Formato canónico — copiar `selector` y `style` **literalmente** de la definic
 | `section_wrapper` | `mcb-section-inner-{uid}` |
 | `mcb-wrap-inner` | `mcb-wrap-inner-{uid}` |
 | `mcb-column-inner` | `mcb-column-inner-{uid}` |
-| `\|` (pipe) | `:` → pseudo-clases: escribir `\|hover`, `\|before`, `\|after` (NUNCA `:hover` en el selector) |
+| `\|` (pipe) | `:` → pseudo-clases: escribir `\|hover`, `\|before`, `\|after` (convención del catálogo; `:hover` también compila) |
 
 Selectores base por nivel:
 
@@ -126,7 +127,7 @@ Con `padding` el resultado (`padding-top`) sí es una propiedad válida, de ahí
 Detalle completo y síntomas en el panel del VB: `05-reglas-y-trampas.md` §3.
 | `typography` | `{device: {font-family, font-size, line-height, font-weight, letter-spacing, text-transform, font-style, text-decoration, color}}` | propiedades sueltas; `font-family` se registra en `mfn-page-fonts` y se entrecomilla |
 | `gradient` | objeto con `type, angle, color, location, color2, location2` y **`string`** | SOLO `string` se emite, como `background-image` |
-| `transform` | `{device: {…, "string": "matrix(…)"}}` | SOLO `string` |
+| `transform` | `{device: {…, "string": "1,0,0,1,0,0,0"}}` | SOLO `string` |
 | `filter` / `backdrop-filter` | `{device: {…, "string": "blur(10px)"}}` | SOLO `string` |
 | `background-image` | `"https://…/img.jpg"` | se envuelve en `url(…)` automáticamente |
 | `box-shadow` | string `"inset x y blur spread color"` | tal cual |

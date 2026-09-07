@@ -23,6 +23,12 @@ Códigos de salida:
 from __future__ import annotations
 
 import argparse
+import copy
+from functools import lru_cache
+from contextlib import redirect_stdout
+from pathlib import Path
+from types import SimpleNamespace
+from contracts import inspect_tree, strict_loads, read_json, atomic_json, MAX_BYTES
 import hashlib
 import json
 import os
@@ -95,7 +101,7 @@ RE_STYLE_TAG = re.compile(r"<\s*style[\s>]|<\s*link[^>]+stylesheet", re.I)
 RE_SHORTCODE = re.compile(r"\[([a-z0-9_]+)[\s\]/]", re.I)
 
 RE_COLOR = re.compile(
-    r"^(#[0-9a-f]{3,8}"
+    r"^(#(?:[0-9a-f]{3}|[0-9a-f]{4}|[0-9a-f]{6}|[0-9a-f]{8})"
     r"|rgba?\([^)]*\)"
     r"|hsla?\([^)]*\)"
     r"|var\(--[^)]*\)"
@@ -149,6 +155,7 @@ SWITCHER_RULES = [
 UNKNOWN_TYPE = "\x00unknown"
 
 ERROR, WARN, INFO = "error", "warning", "info"
+POLICY_CODES = {"E020", "E021", "E022", "E023", "E024", "W002", "W061", "W062", "W050", "W051"}
 LEVEL_ORDER = {ERROR: 0, WARN: 1, INFO: 2}
 
 
@@ -177,8 +184,19 @@ class Schema:
     """Índice de definiciones de campo extraídas de _elements.json."""
 
     def __init__(self, data):
+        if not isinstance(data, dict) or not isinstance(data.get("items"), dict) or not data["items"]:
+            raise ValueError("Catálogo inválido: items debe ser un objeto no vacío.")
+        for key in ("section", "wrap", "advanced"):
+            if not isinstance(data.get(key), (list, dict)):
+                raise ValueError("Catálogo inválido: falta " + key)
         self.raw = data
-        self.item_types = set(data.get("items", {}).keys())
+        self.aliases = {k: x["type"] for k, x in data["items"].items()
+                        if isinstance(x, dict) and x.get("type", k) != k}
+        self.item_types = set(data["items"]) - set(self.aliases)
+        for alias in self.aliases:
+            self.canonical(alias)
+        if "render_types" in data and set(data["render_types"]) != self.item_types:
+            raise ValueError("El catálogo no coincide con los métodos de render declarados")
         self.inline_shortcodes = set(data.get("inline_shortcodes", {}).keys())
         self.animations = set(data.get("animations", {}).keys())
 
@@ -188,6 +206,7 @@ class Schema:
 
         self.items = {}
         for itype, spec in data.get("items", {}).items():
+            if not isinstance(spec, dict): raise ValueError("Definición de item inválida: " + itype)
             idx = self._index(spec.get("attr", []))
             for fid, defs in self.advanced.items():
                 idx.setdefault(fid, []).extend(defs)
@@ -195,15 +214,47 @@ class Schema:
 
         # Catálogo global: usado solo para decidir si una clave es "desconocida
         # en este tipo" o "inexistente en todo el theme".
+        self.controllers = {}
+        for scope_key, index in [("section", self.section), ("wrap", self.wrap), (None, self.advanced), *self.items.items()]:
+            mapping = {}
+            for key, definitions in index.items():
+                for definition in definitions:
+                    mapping.setdefault(definition.get("attr_id", key), key)
+            self.controllers[scope_key] = mapping
+
         self.all_ids = set(self.section) | set(self.wrap) | set(self.advanced)
         for idx in self.items.values():
             self.all_ids |= set(idx)
+
+    def canonical(self, itype):
+        seen = set()
+        while itype in self.aliases:
+            if itype in seen:
+                raise ValueError("Ciclo de alias: " + itype)
+            seen.add(itype)
+            itype = self.aliases[itype]
+        if itype not in self.item_types:
+            raise ValueError("Tipo sin definición canónica: " + str(itype))
+        return itype
+
+    def index_for(self, scope, itype=None):
+        return self.section if scope == "section" else self.wrap if scope == "wrap" else self.items.get(itype, self.advanced)
+
+    def field(self, scope, itype, key, selector=None):
+        defs = self.defs_for(scope, itype, key)
+        styled = [d for d in defs if d.get("selector") and d.get("style")]
+        if selector is not None:
+            styled = [d for d in styled if d["selector"] == selector]
+        signatures = {(d["selector"], d["style"], d.get("type"), d.get("version")) for d in styled}
+        if len(signatures) != 1:
+            raise ValueError("Campo ausente o ambiguo: %s/%s/%s" % (scope, itype, key))
+        return styled[0]
 
     @staticmethod
     def _walk(fields, out):
         """Aplana definiciones, incluidas las anidadas en options/param/form."""
         if isinstance(fields, dict):
-            fields = fields.values()
+            fields = list(fields.values())
         if not isinstance(fields, (list, tuple)):
             return
         for f in fields:
@@ -243,7 +294,11 @@ class Schema:
 class Validator:
     def __init__(self, schema, opts):
         self.s = schema
-        self.o = opts
+        defaults = dict(ignore=set(), fix=False, origin="generated", editor="visual", strict=False,
+                        exceptions=[], manifest=None, profile=None)
+        defaults.update(vars(opts))
+        self.o = SimpleNamespace(**defaults)
+        self.suppressed = []
         self.issues = []
         self.stats = Counter()
         self.uids = defaultdict(list)
@@ -253,9 +308,18 @@ class Validator:
     # -- registro ---------------------------------------------------------- #
 
     def add(self, level, code, path, msg, hint=""):
+        if self.o.origin == "export" and code in POLICY_CODES:
+            level = INFO
+        issue = Issue(level, code, path, msg, hint)
         if code in self.o.ignore:
+            self.suppressed.append(issue)
             return
-        self.issues.append(Issue(level, code, path, msg, hint))
+        for exception in self.o.exceptions:
+            if exception.get("code") == code and exception.get("path") == path and exception.get("reason", "").strip():
+                if level != ERROR or code in POLICY_CODES:
+                    self.suppressed.append(issue)
+                    return
+        self.issues.append(issue)
 
     def err(self, *a, **k):
         self.add(ERROR, *a, **k)
@@ -273,6 +337,21 @@ class Validator:
     # -- entrada ----------------------------------------------------------- #
 
     def run(self, doc):
+        try:
+            if not getattr(self.o, "checked", False): inspect_tree(doc)
+        except ValueError as exc:
+            self.err("E000", "$", str(exc))
+            return doc
+        self.reserved_uids = set()
+        stack = [doc]
+        while stack:
+            value = stack.pop()
+            if isinstance(value, dict):
+                if isinstance(value.get("uid"), str):
+                    self.reserved_uids.add(value["uid"])
+                stack.extend(value.values())
+            elif isinstance(value, list):
+                stack.extend(value)
         if not isinstance(doc, list):
             self.err("E001", "$", "La raíz no es un array de secciones (es %s)."
                      % type(doc).__name__,
@@ -316,6 +395,14 @@ class Validator:
 
         attr = self.attr(node, path, "section", None)
 
+        if attr is not None:
+            self.query_post_type(node, attr, path)
+        if "items" in node and "wraps" not in node:
+            if self.o.origin == "generated":
+                self.err("E015", path, "Generar wraps explícitos; la estructura legacy no se entrega.")
+            elif isinstance(node["items"], list):
+                for i, it in enumerate(node["items"]):
+                    self.item(it, "%s.items[%d]" % (path, i))
         if attr is not None and "width_switcher" not in attr:
             self.info("I050", path + ".attr",
                       "Sección sin `width_switcher` explícito.",
@@ -339,13 +426,7 @@ class Validator:
         attr = self.attr(node, path, "wrap", None)
 
         if attr is not None:
-            grid = str(node.get("grid", "") or attr.get("grid", ""))
-            for key in ("css_grid_columns", "css_grid_columns_custom", "css_grid_columns_gap"):
-                if key in attr and grid != "grid":
-                    self.info("I053", "%s.attr.%s" % (path, key),
-                              "`%s` sin `grid: \"grid\"` en el wrap: la regla se genera pero no "
-                              "aplica (el selector exige `.mcb-wrap-grid`)." % key)
-                    break
+            self.container(node, attr, path)
 
         items = node.get("items")
         if items is None:
@@ -353,24 +434,101 @@ class Validator:
         elif not isinstance(items, list):
             self.err("E005", path + ".items", "`items` debe ser un array.")
         else:
+            self.queryloop_card(node, attr, items, path, nested)
             for i, it in enumerate(items):
                 self.item(it, "%s.items[%d]" % (path, i))
 
+    def queryloop_card(self, node, attr, items, path, nested):
+        """Un query loop de WRAP debe contener la tarjeta en UN wrap anidado."""
+        if nested or not isinstance(attr, dict):
+            return
+        if str(attr.get("type", "")) != "query":
+            return
+        direct = [it for it in items
+                  if isinstance(it, dict) and not it.get("item_is_wrap")]
+        # Un único item directo sí lo exporta el propio VB (examples/example1/about-us.json
+        # $[1].wraps[4]: query loop en slider con un solo `image`). La pérdida medida se da
+        # al agrupar varios: ahí el contenedor de iteración se confunde con un nested wrap.
+        if len(items) <= 1:
+            return
+        self.err("E016", path + ".items",
+                 "Query loop de wrap con %d items directos: la tarjeta debe ir dentro de "
+                 "UN wrap anidado (`item_is_wrap: 1`) o el primer guardado en el VB "
+                 "los borra." % len(direct),
+                 "Medido en servidor (2026-07-29): importados 53 items con 5 directos en el "
+                 "loop, guardados 49 — el wrap del loop quedó con un wrap anidado VACÍO. "
+                 "prepareForm.items() (scripts.js:2317-2323) resuelve el contenedor de "
+                 "iteración (scripts.js:7364) como nested wrap y pierde los hijos. Sin nodos "
+                 "no hay CSS: colores y alturas desaparecen. La forma que el VB exporta es "
+                 "wrap query → item_is_wrap:1 → items (examples/example2/home.json).")
+
+    def container(self, node, attr, path):
+        self.query_post_type(node, attr, path)
+        if "grid" in node:
+            self.err("E017", path + ".grid", "grid pertenece a attr, no a la raíz del wrap.")
+        for key in ("css_grid_columns", "css_grid_columns_custom", "css_grid_columns_gap", "css_grid_rows_gap"):
+            if key in attr and attr.get("grid") != "grid":
+                self.warn("W065", path + ".attr." + key, "Campo grid sin attr.grid: grid; no se aplica.")
+
+    # -- query loop: CPTs desactivables ------------------------------------ #
+
+    # Theme Options > Post types permite desactivar estos CPT. Al desactivarlos,
+    # functions.php:118-146 deja de hacer `require_once` de su clase, pero los
+    # posts siguen en la BD con ese `post_type` y el Visual Builder instancia la
+    # clase sin `class_exists()` (visual-builder-class.php:52 y :638).
+    MFN_DISABLEABLE_CPT = {
+        "portfolio": "Mfn_Post_Type_Portfolio",
+        "client": "Mfn_Post_Type_Client",
+        "offer": "Mfn_Post_Type_Offer",
+        "slide": "Mfn_Post_Type_Slide",
+        "testimonial": "Mfn_Post_Type_Testimonial",
+        "layout": "Mfn_Post_Type_Layout",
+        "template": "Mfn_Post_Type_Template",
+    }
+
+    def query_post_type(self, node, attr, path):
+        if str(node.get("type", "") or attr.get("type", "")) != "query":
+            return
+        if str(attr.get("query_type", "")) != "posts":
+            return
+        cpt = str(attr.get("query_post_type", "") or "")
+        if cpt in self.MFN_DISABLEABLE_CPT:
+            self.warn("W063", "%s.attr.query_post_type" % path,
+                      "El query loop consume el CPT `%s`, que Theme Options puede desactivar." % cpt,
+                      "Si está desactivado en el destino: (1) el loop no devuelve nada, y (2) editar "
+                      "cualquier post de ese tipo en el Visual Builder provoca un fatal 500 en "
+                      "admin-ajax — `new %s()` sin `class_exists()` en visual-builder-class.php:52. "
+                      "Comprobar Theme Options > Post types antes de importar (trampa 15)."
+                      % self.MFN_DISABLEABLE_CPT[cpt])
+
     # -- item -------------------------------------------------------------- #
 
-    def item(self, node, path):
+    def item(self, node, path, depth=0):
         if not isinstance(node, dict):
             self.err("E003", path, "El item no es un objeto (es %s)." % type(node).__name__)
             return
 
-        is_wrap = str(node.get("item_is_wrap", "")) in ("1", "true")
+        is_wrap = node.get("item_is_wrap") in (1, "1", True, "true")
 
         if is_wrap:
             self.stats["nested_wraps"] += 1
-            self.warn("W005", path,
+            if self.o.fix and type(node.get("item_is_wrap")) is not int:
+                node["item_is_wrap"] = 1
+                self.fix(path, "item_is_wrap normalizado a 1")
+            report_nested = self.warn if self.o.editor == "classic" else self.info
+            report_nested("W005", path,
                       "`item_is_wrap` (wrap anidado): válido en el Visual Builder, "
                       "pero desactiva BeBuilder Blocks Classic y genera warnings en el builder clásico.",
                       "admin.php:1637-1646 / :833. Evitarlo si la página debe editarse fuera del VB.")
+            if depth >= 1:
+                self.err("E014", path,
+                         "Wrap anidado dentro de otro wrap anidado (nivel %d). El theme solo "
+                         "recorre UN nivel de `item_is_wrap`." % (depth + 1),
+                         "unique_ID_reset (helper.php:246-282) no regenera los uid más abajo; "
+                         "loadExistedElements (visual-builder-class.php:1005) descarta del formulario "
+                         "todo hijo sin `type`; MfnLocalCssCompability::nested_wrap "
+                         "(local-css-compability.php:365-371) llama a nested_item() sin volver a "
+                         "comprobar `item_is_wrap`. Aplanar a un solo nivel.")
             if node.get("type"):
                 self.err("E011", path + ".type",
                          "Un wrap anidado (`item_is_wrap: 1`) no debe llevar `type` (tiene \"%s\")."
@@ -379,9 +537,15 @@ class Validator:
                 self.err("E012", path, "`item_is_wrap: 1` sin array `items`.")
             self.node_identity(node, path, "wrap")
             self.sizes(node, path, SIZES, required=True, kind="item")
-            self.attr(node, path, "wrap", None)
-            for i, it in enumerate(node.get("items") or []):
-                self.item(it, "%s.items[%d]" % (path, i))
+            attr = self.attr(node, path, "wrap", None)
+            if attr is not None:
+                self.container(node, attr, path)
+            if not isinstance(node.get("items"), list):
+                return
+            if depth >= 1:
+                return
+            for i, it in enumerate(node["items"]):
+                self.item(it, "%s.items[%d]" % (path, i), depth + 1)
             return
 
         self.stats["items"] += 1
@@ -390,9 +554,14 @@ class Validator:
         if not itype:
             self.err("E009", path,
                      "Item sin `type` y sin `item_is_wrap: 1`: el front lo descarta (front.php:2606).")
+            itype = None
         elif not isinstance(itype, str):
             self.err("E010", path + ".type", "`type` debe ser string (es %s)." % type(itype).__name__)
             itype = None
+        elif itype in self.s.aliases:
+            canonical = self.s.canonical(itype)
+            self.err("E018", path + ".type", "Alias %s no renderizable; generar type: %s." % (itype, canonical))
+            itype = UNKNOWN_TYPE
         elif itype not in self.s.item_types:
             near = self.suggest(itype, self.s.item_types)
             self.err("E010", path + ".type",
@@ -423,7 +592,13 @@ class Validator:
         uid = node.get("uid")
         if uid is None:
             if self.o.fix:
-                node["uid"] = self.gen_uid(path)
+                candidate, suffix = self.gen_uid(path), 0
+                while candidate in self.reserved_uids:
+                    suffix += 1
+                    candidate = self.gen_uid(path + ":" + str(suffix))
+                node["uid"] = candidate
+                self.reserved_uids.add(candidate)
+                self.uids[candidate].append(path)
                 self.fix(path, "uid generado (%s)" % node["uid"])
             else:
                 self.info("I001", path, "Sin `uid` (el import lo regenera igualmente).")
@@ -435,7 +610,13 @@ class Validator:
         else:
             self.uids[uid].append(path)
 
-        for key, default in (("icon", kind), ("jsclass", kind), ("title", kind.capitalize())):
+        identity = kind
+        spec = {}
+        if kind == "item" and isinstance(node.get("type"), str) and node["type"] in self.s.item_types:
+            identity = node["type"]
+            spec = self.s.raw["items"][identity]
+        for key, default in (("icon", spec.get("icon", identity)), ("jsclass", identity),
+                             ("title", spec.get("title", identity.replace("_", " ").title()))):
             if key not in node:
                 if self.o.fix:
                     node[key] = default
@@ -452,7 +633,7 @@ class Validator:
                 self.err("E00%d" % (6 if kind == "wrap" else 7), path,
                          "%s sin `size`: NO se renderiza, sin ningún aviso." % kind.capitalize(),
                          "front.php:1625 (wrap) / :2614 (item). Causa nº1 de \"importé y no sale nada\".")
-        elif size not in allowed:
+        elif not isinstance(size, str) or size not in allowed:
             self.err("E008", path + ".size",
                      "`size: %r` inválido." % size,
                      "Válidos: %s%s." % (", ".join(sorted(SIZES)),
@@ -462,7 +643,7 @@ class Validator:
             val = node.get(key)
             if val is None:
                 if key in ("tablet_size", "mobile_size"):
-                    if self.o.fix and size in allowed:
+                    if self.o.fix and isinstance(size, str) and size in allowed:
                         node[key] = size if key == "tablet_size" else "1/1"
                         self.fix(path, "%s=\"%s\" añadido" % (key, node[key]))
                     else:
@@ -471,7 +652,7 @@ class Validator:
                                   "explícito." % (key, "= size" if key == "tablet_size" else '"1/1"'),
                                   "Regla 5 del proyecto (05-reglas-y-trampas.md §1). "
                                   "`--fix` lo añade automáticamente.")
-            elif val not in allowed:
+            elif not isinstance(val, str) or val not in allowed:
                 self.err("E008", "%s.%s" % (path, key), "`%s: %r` inválido." % (key, val))
 
     def check_uid_collisions(self):
@@ -550,11 +731,13 @@ class Validator:
                                   key,
                                   "para el item `%s`" % itype if known and itype else "en el catálogo del theme"),
                               "" if known else "Posible typo. Catálogo: builder-elements/_elements.json.")
+                if isinstance(value, dict) and any(k in value for k in ("selector", "style", "val")):
+                    self.css_field(key, value, [], {}, kpath)
                 continue
 
             self.value(key, value, defs, kpath, scope, itype)
 
-        self.consistency(attr, apath, scope)
+        self.consistency(attr, apath, scope, itype)
         return attr
 
     @staticmethod
@@ -582,27 +765,81 @@ class Validator:
         # Un id puede tener varias definiciones (advanced + propia del elemento).
         # Se valida contra la primera que declare selector/style, si la hay.
         styled = [d for d in defs if d.get("selector") and d.get("style")]
-        primary = styled[0] if styled else defs[0]
+        matching = [d for d in styled if isinstance(value, dict) and
+                    d["selector"] == value.get("selector") and d["style"] == value.get("style")]
+        primary = matching[0] if matching else styled[0] if styled else defs[0]
 
         if isinstance(value, dict) and ("selector" in value or "style" in value or "val" in value):
             self.css_field(key, value, defs, primary, kpath)
             return
 
-        if styled and isinstance(value, dict):
-            # Campo de estilo exportado como valor plano responsive: no genera CSS
-            self.info("I030", kpath,
-                      "`%s` sin `selector`/`style`: no genera CSS (class-mfn-helper.php:195-198)." % key)
+        if styled:
+            if value not in (None, "", {}, []):
+                declared = self.declared_options(styled)
+                if self.o.origin == "export" and isinstance(value, str) and value in declared:
+                    # El VB exporta el select sin tocar como string plano (su `std`): no genera
+                    # CSS y el theme aplica su propio valor por defecto. En generación sigue
+                    # siendo error porque el objeto css_* es la única forma de emitir la regla.
+                    self.info("I034", kpath, "Select de estilo exportado como valor plano (default del VB); no genera CSS.")
+                else:
+                    self.err("E034", kpath, "Campo CSS sin objeto selector/style/val; no genera CSS.")
             return
+
+        if isinstance(value, (list, dict)):
+            self.structured_content(value, primary, kpath)
+            return
+        if value is not None and not isinstance(value, str):
+            self.warn("W066", kpath, "Campo de contenido debe ser string o estructura declarada.")
 
         if isinstance(value, str):
             self.string_content(value, kpath)
             enum_checked = self.options(value, defs, kpath, key)
             self.special_plain(key, value, kpath, enum_checked)
 
+    def structured_content(self, value, definition, path):
+        if definition.get("type") == "tabs" and not isinstance(value, list):
+            self.err("E038", path, "Un repetidor tabs requiere un array de objetos.")
+            return
+        if definition.get("type") == "tabs" and any(not isinstance(x, dict) for x in value):
+            self.err("E038", path, "Cada fila tabs debe ser un objeto.")
+        stack = [(value, path)]
+        while stack:
+            obj, here = stack.pop()
+            if isinstance(obj, str):
+                self.string_content(obj, here)
+            elif isinstance(obj, dict):
+                if any(k in obj for k in ("selector", "style", "val")) and "selector" in obj:
+                    self.css_field("nested", obj, [], {}, here)
+                else:
+                    stack.extend((v, here + "." + k) for k, v in obj.items())
+            elif isinstance(obj, list):
+                stack.extend((v, "%s[%d]" % (here, i)) for i, v in enumerate(obj))
+
+    @staticmethod
+    def zero_values(val, path):
+        """Rutas de `val` cuyo valor es "0"/0 — descartado por `empty()` en el helper."""
+        if val in ("0", 0):
+            return [path]
+        if isinstance(val, dict):
+            out = []
+            for k, v in val.items():
+                out.extend(Validator.zero_values(v, "%s.%s" % (path, k)))
+            return out
+        return []
+
     def css_field(self, key, value, defs, primary, kpath):
         selector = value.get("selector")
         style = value.get("style")
         val = value.get("val")
+        if not isinstance(selector, str) or not isinstance(style, str):
+            self.err("E030", kpath, "selector y style deben ser strings no vacíos.")
+            return
+        if not style or not re.fullmatch(r"(?:--)?[a-zA-Z_][a-zA-Z0-9_-]*", style):
+            self.err("E030", kpath + ".style", "Propiedad CSS vacía o inválida.")
+            return
+        if isinstance(val, (list, bool)):
+            self.err("E039", kpath + ".val", "Valor CSS debe ser string, número o mapa de dispositivos.")
+            return
 
         # class-mfn-helper.php:198 — `if (empty(selector) || empty(val)) continue;`
         # `style` NO se comprueba: si falta, se emite ":valor;" (CSS corrupto).
@@ -618,10 +855,18 @@ class Validator:
                      "class-mfn-helper.php:198 no valida `style`; el fallo aparece en el CSS final.")
 
         # PHP empty(): "0" y 0 se consideran vacíos y el atributo se descarta.
-        if value.get("val") in ("0", 0):
-            self.warn("W039", kpath + ".val",
-                      "`val` = %r: PHP `empty()` lo trata como vacío y NO genera CSS."
-                      % value.get("val"),
+        # Se comprueba también dentro de `val` (breakpoints y lados de un dimensions):
+        # `mfnLocalStyle` recibe cada lado por separado y devuelve array() si es "0".
+        emitted = value.get("val")
+        if any(kind in style for kind in ("transform", "gradient", "filter")):
+            def strings_only(obj):
+                if not isinstance(obj, dict): return obj
+                return {k: strings_only(v) for k, v in obj.items() if k in DEVICE_SET or k == "string"}
+            emitted = strings_only(emitted)
+        for zpath in self.zero_values(emitted, kpath + ".val"):
+            self.warn("W039", zpath,
+                      "valor \"0\": PHP `empty()` lo trata como vacío y NO genera CSS "
+                      "(queda el valor por defecto del theme).",
                       "Usar \"0px\" / \"0%\" en su lugar (class-mfn-helper.php:198 y :406).")
 
         if not selector:
@@ -637,22 +882,7 @@ class Validator:
                 self.err("E032", kpath + ".selector",
                          "El selector contiene `{`, `}` o `;`: rompe el CSS generado.")
 
-            if not exact:
-                # El propio theme declara `:hover` literal en algunos selectores;
-                # solo es un fallo si el campo NO lo declara así.
-                declares_colon = any(":" in e for e in expected)
-                if re.search(r":[a-z\-]{3,}", selector) and "|" not in selector and not declares_colon:
-                    if self.o.fix:
-                        value["selector"] = re.sub(r":(?=[a-z\-]{3,})", "|", selector)
-                        self.fix(kpath + ".selector", "pseudo-clase `:` → `|`")
-                        selector = value["selector"]
-                    else:
-                        self.err("E031", kpath + ".selector",
-                                 "Pseudo-clase escrita con `:` (%s): el helper espera `|`." % selector,
-                                 "class-mfn-helper.php:404-428 sustituye `|` por `:`. "
-                                 "Escribir `|hover`, `|before`.")
-
-            if "mfnuidelement" not in selector:
+            if any("mfnuidelement" not in part for part in selector.split(",")):
                 self.warn("W031", kpath + ".selector",
                           "El selector no contiene `mfnuidelement`: el estilo se aplicará a TODA la página.",
                           "Selectores base por nivel en docs/bebuilder/02-css-pipeline.md §3.")
@@ -665,7 +895,7 @@ class Validator:
             elif expected and equivalent and not exact:
                 self.info("I032", kpath + ".selector",
                           "Selector equivalente pero no idéntico al del theme "
-                          "(difiere el combinador `>` o los espacios).")
+                          "(difieren solo espacios o la notación de pseudoclases).")
 
         if isinstance(style, str):
             expected = {d.get("style") for d in defs if d.get("style")}
@@ -757,13 +987,18 @@ class Validator:
     def leaf(self, key, v, fdef, style, path, ftype):
         if v in (None, "", {}, []):
             return
+        if isinstance(v, (list, bool)):
+            self.err("E039", path, "Hoja CSS de tipo inválido.")
+            return
 
         # ---- dimensions: las dos gramáticas incompatibles (trampa 14)
         if ftype == "dimensions":
             separated = fdef.get("version") == "separated-fields"
             if isinstance(v, dict):
                 if not separated:
-                    if self.o.fix:
+                    recognized = set(v) <= (SIDES | {"top-left", "top-right", "bottom-right", "bottom-left"})
+                    complete = set(v) == SIDES or (style == "border-radius" and set(v) == {"top-left", "top-right", "bottom-right", "bottom-left"})
+                    if self.o.fix and recognized and complete and all(isinstance(x, (str, int, float)) and not isinstance(x, bool) for x in v.values()):
                         shorthand = self.dims_to_shorthand(v, style)
                         self.replace_leaf(path, shorthand)
                         self.fix(path, "objeto → shorthand \"%s\"" % shorthand)
@@ -784,6 +1019,8 @@ class Validator:
                                   % (key, ", ".join(sorted(unknown))))
                     for side, sv in v.items():
                         if side in SIDES:
+                            if not isinstance(sv, (str, int, float)) or isinstance(sv, bool):
+                                self.err("E039", path + "." + side, "Dimensión debe ser escalar.")
                             self.unit(sv, style, "%s.%s" % (path, side))
                             self.rem_unit(key, sv, style, "%s.%s" % (path, side))
             elif isinstance(v, str):
@@ -804,12 +1041,25 @@ class Validator:
         if isinstance(v, dict) and (
                 ftype in STRING_ONLY_TYPES
                 or any(t in (style or "") for t in ("gradient", "transform", "filter"))):
-            if not v.get("string"):
+            if not isinstance(v.get("string"), str) or not v["string"]:
                 self.err("E036", path,
                          "`%s` sin subclave `string` (o vacía): el helper descarta el resto "
                          "de subclaves y no emite nada." % key,
                          "Ej.: {\"type\":\"linear\",...,"
                          "\"string\":\"linear-gradient(180deg,#000 0%,#fff 100%)\"}")
+            elif ftype == "transform" or style == "transform":
+                serial = v["string"]
+                if not isinstance(serial, str) or not re.fullmatch(r"\s*-?(?:\d+(?:\.\d*)?|\.\d+)(?:\s*,\s*-?(?:\d+(?:\.\d*)?|\.\d+)){6}\s*", serial):
+                    self.err("E040", path, "Transform string requiere siete números CSV (a,b,c,d,tx,ty,rotate), sin matrix().")
+                else:
+                    keys = ("scaleX", "skewY", "skewX", "scaleY", "translateX", "translateY", "rotate")
+                    for key2, number in zip(keys, serial.split(",")):
+                        try:
+                            consistent = key2 in v and float(v[key2]) == float(number)
+                        except (ValueError, TypeError):
+                            consistent = False
+                        if not consistent:
+                            self.err("E040", path + "." + key2, "Parámetro editable ausente o incoherente con string.")
             return
 
         # ---- typography
@@ -821,6 +1071,8 @@ class Validator:
                               "Propiedades tipográficas no reconocidas: %s." % ", ".join(sorted(unknown)),
                               "Válidas: %s." % ", ".join(sorted(TYPOGRAPHY_KEYS)))
                 for k2, v2 in v.items():
+                    if not isinstance(v2, (str, int, float)) or isinstance(v2, bool):
+                        self.err("E039", path + "." + k2, "Propiedad tipográfica debe ser escalar.")
                     if k2 == "color" and isinstance(v2, str):
                         self.color(v2, "%s.%s" % (path, k2))
                     elif k2 in ("font-size", "letter-spacing", "word-spacing") and isinstance(v2, str):
@@ -842,6 +1094,11 @@ class Validator:
             return
 
         # ---- opciones cerradas responsive
+        if isinstance(v, dict):
+            self.err("E039", path, "Este campo CSS requiere un valor escalar, no subpropiedades.")
+            return
+        if isinstance(v, (int, float)):
+            self.unit(str(v), style, path)
         if isinstance(v, str):
             self.options(v, [fdef], path, key)
             if style:
@@ -850,6 +1107,20 @@ class Validator:
                 self.warn("W047", path, "El valor contiene `;` o `{}`: puede romper la regla CSS generada.")
 
     # -- utilidades de valor ------------------------------------------------ #
+
+    def declared_options(self, defs):
+        """Claves de enum estático declaradas por un campo select/switch (sin listas dinámicas)."""
+        keys = set()
+        for d in defs:
+            opts = d.get("options")
+            if not isinstance(opts, dict) or d.get("type") not in ("switch", "select", "radio_img"):
+                continue
+            if any(x is not None for x in (d.get("php_options"), d.get("themeoptions"), d.get("dynamic_data"))):
+                continue
+            if any(isinstance(x, dict) for x in opts.values()):
+                continue
+            keys.update(map(str, opts.keys()))
+        return keys
 
     def options(self, v, defs, path, key):
         """Valida contra el enum del campo. Devuelve True si el campo tenía enum."""
@@ -977,20 +1248,43 @@ class Validator:
             if v and not re.match(r"^[A-Za-z][\w:.\-]*$", v):
                 self.warn("W059", path, "`custom_id` no es un id HTML válido: %r." % v)
 
-    def consistency(self, attr, apath, scope):
-        for field, switcher, required, scopes in SWITCHER_RULES:
-            if scope not in scopes or field not in attr:
-                continue
-            current = attr.get(switcher)
-            if current is None:
-                self.warn("W050", "%s.%s" % (apath, field),
-                          "`%s` presente sin `%s` explícito." % (field, switcher),
-                          "Escribir `\"%s\": \"%s\"` o el panel del VB no mostrará el control."
-                          % (switcher, sorted(required)[0]))
-            elif str(current) not in required:
-                self.warn("W051", "%s.%s" % (apath, field),
-                          "`%s` requiere `%s` en %s (actual: %r)."
-                          % (field, switcher, "/".join(sorted(required)), current))
+    def consistency(self, attr, apath, scope, itype=None):
+        index = self.s.index_for(scope, itype)
+        controllers = self.s.controllers.get(scope if scope != "item" else itype, {})
+        def evaluate(condition):
+            if isinstance(condition, dict) and "id" in condition:
+                key = controllers.get(condition["id"])
+                if key is None:
+                    return None
+                if key not in attr:
+                    return None
+                expected, actual = condition.get("val"), attr[key]
+                op = condition.get("opt", "is")
+                if op == "is": return actual == expected
+                if op == "isnt": return actual != expected
+                return None
+            if isinstance(condition, (list, dict)):
+                parts = list(condition.values()) if isinstance(condition, dict) else condition
+                operator = parts[0] if parts and isinstance(parts[0], str) else "AND"
+                values = [evaluate(x) for x in parts if isinstance(x, (dict, list))]
+                if not values: return None
+                if operator == "OR":
+                    return True if True in values else None if None in values else False
+                return False if False in values else None if None in values else True
+            return None
+        for key, value in attr.items():
+            if value in (None, "", {}, []): continue
+            defs = index.get(key, [])
+            if isinstance(value, dict) and value.get("selector"):
+                defs = [d for d in defs if d.get("selector") == value["selector"]] or defs
+            conditions = [d.get("condition") for d in defs]
+            if not conditions or any(not c for c in conditions): continue
+            states = [evaluate(c) for c in conditions]
+            if True in states: continue
+            if None in states:
+                self.warn("W050", apath + "." + key, "Condición del panel no resuelta; declarar sus controles explícitos.")
+            else:
+                self.warn("W051", apath + "." + key, "Campo oculto por sus condiciones del catálogo; comprobar intención.")
 
     # -- fix helpers -------------------------------------------------------- #
 
@@ -1013,7 +1307,8 @@ class Validator:
     @staticmethod
     def norm_selector(sel):
         """Normaliza combinadores y espacios para comparar selectores equivalentes."""
-        return re.sub(r"\s*>\s*", " ", re.sub(r"\s+", " ", sel or "")).strip()
+        # Conservatively preserve all combinators and internal whitespace.
+        return (sel or "").strip().replace("|", ":")
 
     @staticmethod
     def gen_uid(seed):
@@ -1068,13 +1363,15 @@ def find_schema(explicit):
 
 def load_json(text, source):
     try:
-        return json.loads(text), None
+        return strict_loads(text), None
     except json.JSONDecodeError as e:
         lines = text.splitlines()
         ctx = lines[e.lineno - 1] if 0 < e.lineno <= len(lines) else ""
         pointer = " " * max(e.colno - 1, 0) + "^"
         return None, ("%s: JSON no parseable — %s (línea %d, columna %d)\n    %s\n    %s"
                       % (source, e.msg, e.lineno, e.colno, ctx[:200], pointer[:200]))
+    except (ValueError, RecursionError) as e:
+        return None, "%s: %s" % (source, e)
 
 
 COLORS = {ERROR: "\033[31m", WARN: "\033[33m", INFO: "\033[36m", "ok": "\033[32m", "off": "\033[0m",
@@ -1150,101 +1447,118 @@ def render(issues, stats, opts, source):
         print(c("ok", "VÁLIDO — " + verdict))
 
 
+@lru_cache(maxsize=4)
+def _cached_schema(path, mtime, size):
+    return Schema(read_json(path))
+
+
+def load_schema(path=None):
+    path = Path(find_schema(path))
+    stat = path.stat()
+    return _cached_schema(str(path.resolve()), stat.st_mtime_ns, stat.st_size)
+
+
+def validate(document, schema=None, *, origin="generated", editor="visual", strict=False,
+             fix=False, ignore=(), exceptions=(), manifest=None, profile=None):
+    """Pure public API: never changes the caller's document or writes files."""
+    inspect_tree(document)
+    if origin not in ("generated", "export") or editor not in ("visual", "classic"):
+        raise ValueError("Perfil de validación desconocido.")
+    if not isinstance(exceptions, (list, tuple)) or any(
+        not isinstance(x, dict) or not all(isinstance(x.get(k), str) and x[k].strip()
+                                          for k in ("code", "path", "reason")) for x in exceptions):
+        raise ValueError("Excepciones requieren code, path y reason no vacíos.")
+    schema = schema or load_schema()
+    opts = SimpleNamespace(origin=origin, editor=editor, strict=strict, fix=fix,
+                           ignore=set(ignore), exceptions=list(exceptions), manifest=manifest, profile=profile, checked=True)
+    working = copy.deepcopy(document)
+    v = Validator(schema, opts)
+    v.run(working)
+    fixes = list(v.fixes)
+    if fix:
+        apply_deep_fixes(working, schema, v)
+        opts.fix = False
+        v = Validator(schema, opts)
+        v.run(working)
+    from project_checks import check_project
+    check_project(working, v)
+    counts = Counter(i.level for i in v.issues)
+    structural = [i for i in v.issues + v.suppressed if i.level == ERROR and i.code not in POLICY_CODES]
+    exit_code = 1 if counts[ERROR] or structural else 2 if strict and counts[WARN] else 0
+    return {
+        "valid": counts[ERROR] == 0 and not structural,
+        "structurally_valid": not structural,
+        "accepted": exit_code == 0,
+        "exit_code": exit_code,
+        "origin": origin, "editor": editor,
+        "counts": {level: counts[level] for level in (ERROR, WARN, INFO)},
+        "stats": {k: c for k, c in v.stats.items() if not k.startswith("type_")},
+        "types": {k[5:]: c for k, c in v.stats.items() if k.startswith("type_")},
+        "fixes": fixes, "issues": [i.as_dict() for i in v.issues],
+        "suppressed": [i.as_dict() for i in v.suppressed],
+        "document": working,
+    }
+
+
 def main(argv=None):
-    p = argparse.ArgumentParser(
-        description="Validador de JSON BeBuilder (BeTheme / Muffin Builder).",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="Fuente de verdad: builder-elements/_elements.json + docs/bebuilder/.")
-    p.add_argument("file", help="Fichero JSON a validar ('-' para stdin).")
-    p.add_argument("--schema", help="Ruta a _elements.json (autodetectada por defecto).")
-    p.add_argument("--json", action="store_true", dest="as_json",
-                   help="Salida en JSON (para CI o para que la consuma un agente).")
-    p.add_argument("--level", choices=[ERROR, WARN, INFO], default=INFO,
-                   help="Nivel mínimo a mostrar (por defecto: info).")
-    p.add_argument("--strict", action="store_true",
-                   help="Salir con código 2 si hay warnings.")
-    p.add_argument("--ignore", default="",
-                   help="Códigos a silenciar, separados por coma (ej. W058,I003).")
-    p.add_argument("--max-issues", type=int, default=200,
-                   help="Máximo de incidencias impresas (0 = sin límite).")
-    p.add_argument("--max-per-code", type=int, default=5,
-                   help="Máximo de repeticiones impresas por código (0 = sin límite).")
-    p.add_argument("--fix", action="store_true",
-                   help="Corrige automáticamente lo mecánico y escribe el resultado.")
-    p.add_argument("-o", "--output", help="Fichero de salida para --fix (por defecto: stdout).")
-    p.add_argument("--indent", type=int, default=2, help="Indentación del JSON corregido.")
-    p.add_argument("--no-hints", action="store_true", help="Oculta la línea de pista/evidencia.")
+    p = argparse.ArgumentParser(description="Valida BeBuilder sin modificar el original.")
+    p.add_argument("file", help="JSON de entrada o - para stdin")
+    p.add_argument("--schema")
+    p.add_argument("--json", action="store_true", dest="as_json")
+    p.add_argument("--level", choices=[ERROR, WARN, INFO], default=INFO)
+    p.add_argument("--strict", action="store_true")
+    p.add_argument("--origin", choices=["generated", "export"], default="generated")
+    p.add_argument("--editor", choices=["visual", "classic"], default="visual")
+    p.add_argument("--manifest")
+    p.add_argument("--profile")
+    p.add_argument("--exceptions", help="Array JSON de {code,path,reason}")
+    p.add_argument("--ignore", default="")
+    p.add_argument("--max-issues", type=int, default=200)
+    p.add_argument("--max-per-code", type=int, default=5)
+    p.add_argument("--fix", action="store_true")
+    p.add_argument("-o", "--output")
+    p.add_argument("--indent", type=int, default=2)
+    p.add_argument("--no-hints", action="store_true")
     p.add_argument("--no-color", action="store_true")
     opts = p.parse_args(argv)
-    opts.ignore = set(x.strip().upper() for x in opts.ignore.split(",") if x.strip())
-
-    schema_path = find_schema(opts.schema)
-    if not schema_path:
-        sys.stderr.write("No se encuentra builder-elements/_elements.json. "
-                         "Usa --schema RUTA.\n")
-        return 3
-    with open(schema_path, "r", encoding="utf-8") as fh:
-        schema = Schema(json.load(fh))
-
-    if opts.file == "-":
-        text, source = sys.stdin.read(), "<stdin>"
-    else:
-        if not os.path.isfile(opts.file):
-            sys.stderr.write("No existe el fichero: %s\n" % opts.file)
-            return 3
-        with open(opts.file, "r", encoding="utf-8-sig") as fh:
-            text = fh.read()
-        source = opts.file
-
-    doc, parse_err = load_json(text, source)
-    if parse_err:
+    try:
+        if opts.output and not opts.fix:
+            raise ValueError("--output requiere --fix.")
+        if min(opts.max_issues, opts.max_per_code, opts.indent) < 0:
+            raise ValueError("Límites e indentación deben ser no negativos.")
+        if opts.output and opts.file != "-" and Path(opts.output).resolve() == Path(opts.file).resolve():
+            raise ValueError("La salida debe ser distinta del original.")
+        schema_path = find_schema(opts.schema)
+        if not schema_path:
+            raise ValueError("No se encuentra el catálogo.")
+        schema = load_schema(schema_path)
+        document = strict_loads(sys.stdin.read(MAX_BYTES + 1)) if opts.file == "-" else read_json(opts.file)
+        result = validate(document, schema, origin=opts.origin, editor=opts.editor, strict=opts.strict,
+                          fix=opts.fix, ignore=[x.strip().upper() for x in opts.ignore.split(",") if x.strip()],
+                          exceptions=read_json(opts.exceptions) if opts.exceptions else [],
+                          manifest=read_json(opts.manifest) if opts.manifest else None,
+                          profile=read_json(opts.profile) if opts.profile else None)
+        result["source"] = opts.file
+        # A rejected repair remains reviewable on stdout, but never replaces a file.
+        if opts.output and result["accepted"]:
+            atomic_json(opts.output, result["document"], opts.indent or None)
         if opts.as_json:
-            print(json.dumps({"valid": False, "parse_error": parse_err, "issues": []},
-                             ensure_ascii=False, indent=2))
+            if not opts.fix: result.pop("document")
+            print(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False))
         else:
-            sys.stderr.write(parse_err + "\n")
+            issues = [Issue(i["level"], i["code"], i["path"], i["message"], i.get("hint", "")) for i in result["issues"]]
+            with redirect_stdout(sys.stderr if opts.fix else sys.stdout):
+                render(issues, Counter(result["stats"]), opts, opts.file)
+                print("Aceptado: %s (exit %d)" % (result["accepted"], result["exit_code"]))
+            if opts.fix and not opts.output:
+                print(json.dumps(result["document"], ensure_ascii=False, indent=opts.indent or None, allow_nan=False))
+        return result["exit_code"]
+    except (OSError, ValueError, TypeError, KeyError, AttributeError, RecursionError) as exc:
+        error = {"valid": False, "structurally_valid": False, "accepted": False,
+                 "exit_code": 3, "parse_error": str(exc), "issues": []}
+        if opts.as_json: print(json.dumps(error, ensure_ascii=False))
+        else: print(str(exc), file=sys.stderr)
         return 3
-
-    v = Validator(schema, opts)
-    v.run(doc)
-    if opts.fix:
-        apply_deep_fixes(doc, schema, v)
-
-    counts = Counter(i.level for i in v.issues)
-
-    if opts.as_json:
-        print(json.dumps({
-            "source": source,
-            "valid": counts[ERROR] == 0,
-            "counts": {"error": counts[ERROR], "warning": counts[WARN], "info": counts[INFO]},
-            "stats": {k: c for k, c in v.stats.items() if not k.startswith("type_")},
-            "types": {k[5:]: c for k, c in v.stats.items() if k.startswith("type_")},
-            "fixes": v.fixes,
-            "issues": [i.as_dict() for i in v.issues
-                       if LEVEL_ORDER[i.level] <= LEVEL_ORDER[opts.level]],
-        }, ensure_ascii=False, indent=2))
-    else:
-        render(v.issues, v.stats, opts, source)
-        if opts.fix:
-            sys.stderr.write("\n%d correcciones aplicadas.\n" % len(v.fixes))
-            for f in v.fixes[:50]:
-                sys.stderr.write("  · %s\n" % f)
-
-    if opts.fix:
-        payload = json.dumps(doc, ensure_ascii=False,
-                             indent=opts.indent if opts.indent > 0 else None)
-        if opts.output:
-            with open(opts.output, "w", encoding="utf-8") as fh:
-                fh.write(payload + "\n")
-            sys.stderr.write("Escrito: %s\n" % opts.output)
-        else:
-            print(payload)
-
-    if counts[ERROR]:
-        return 1
-    if opts.strict and counts[WARN]:
-        return 2
-    return 0
 
 
 if __name__ == "__main__":
