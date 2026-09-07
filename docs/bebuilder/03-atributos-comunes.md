@@ -1,5 +1,6 @@
 # 03 — Atributos comunes: Advanced, sección, wrap, switchers
 
+> Actualización: el flujo verificable, las excepciones por ruta y las precisiones sobre transformaciones, medios y perfiles están en [10-flujo-verificable.md](10-flujo-verificable.md). Las pruebas del código prevalecen sobre reglas históricas.
 Fuente: `class-mfn-builder-fields.php` — `set_section()` L181 (209 campos), `set_wrap()` L3497 (179 campos),
 `set_advanced()` L66752 (pestaña común a todos los items).
 
@@ -58,7 +59,7 @@ con `version: "separated-fields"`). El resto de `dimensions` — `border-width`,
 | `background_switcher` | switch | `"default"` \| `"gradient"` — decide qué subcampos aplican |
 | `css_advanced_background_color` | color | `background-color` caja interna |
 | `css_advanced_gradient` | gradient | requiere `val.string` |
-| `css_advanced_background_img` | upload | URL; helper envuelve en `url()` |
+| `css_advanced_background_img` | upload | `URL#ID` del adjunto (formato del export); helper envuelve en `url()` sin tocar el fragmento. Doc 09 |
 | `css_advanced_background_repeat` / `_position` (+`_position_v2`) / `_attachment` / `_size` (+`_size_v2`) | select/text | `_v2` activos con valor `"custom"` |
 | `css_advanced_backdrop_filter` | backdrop_filter | requiere `val.string` |
 | `css_advanced_transition` | sliderbar | `transition` (ms) |
@@ -109,7 +110,7 @@ con `version: "separated-fields"`). El resto de `dimensions` — `border-width`,
 ## 2. Campos de SECCIÓN (no `css_*`)
 
 - **Layout**: `width_switcher` (`""`\|`"full"`\|`"custom"`), `height_switcher` (`""`\|`"full-screen"`\|`"custom"`), `reverse_order`, `navigation`, `hide`, `collapse`, `style` (legacy).
-- **Fondo/vídeo**: `background_switcher` (`"default"`\|`"gradient"`\|`"video"`), `bg_video_mp4` (URL), `bg_video_dots`, `background_switcher_hover`, `background_switcher_scroll`, `background_overlay_switcher` (`"default"`\|`"gradient"`).
+- **Fondo/vídeo**: `background_switcher` (`"default"`\|`"gradient"`\|`"video"`), `bg_video_mp4` (`URL#ID` del `.mp4` en la Media Library; poster solo vía `bg_image` deprecado → usar color de fondo de respaldo, doc 09 §5.2), `bg_video_dots`, `background_switcher_hover`, `background_switcher_scroll`, `background_overlay_switcher` (`"default"`\|`"gradient"`).
 - **Decoración**: `shape_divider_type_top/_bottom` + `_flip_`/`_invert_`/`_bring_front_`, `divider`, `decor_top`, `decor_bottom`.
 - **Header templates**: `scroll-visibility`, `closeable`, `closeable-time`, `closeable-x`.
 - **Query loop** (sección repetidora): `type: "query"`, `query_type` (`""` posts \| `"terms"`), `query_post_type`, `query_post_orderby/order/per_page/offset/pagination`, `query_terms_taxonomy`, `query_terms_includes_*/excludes_*`, `query_terms_orderby/order/hide_empty/number`, `query_display` (`""`\|`"slider"`), `query_display_style` (`"masonry"`), `query_slider_*` (columns, autoplay, speed, arrows, dots, …).
@@ -158,7 +159,8 @@ clave (`width_switcher`) tiene `attr_id` distinto por contexto (`sect_`/`wrap_`/
 
 | Tipo de campo | Valor en JSON |
 |---|---|
-| text / textarea / select / color / icon / upload | string (`"#fff"`, `"icon-basket"`, URL) |
+| text / textarea / select / color / icon | string (`"#fff"`, `"icon-basket"`) |
+| upload | `"https://sitio/wp-content/uploads/2026/08/foto.jpg#1409"` — URL del adjunto + `#ID` (doc 09 §4) |
 | switch single | string clave de opción |
 | switch multiple (`visibility`) | tokens separados por espacio, **con espacio inicial** |
 | checkbox | `"1"` / `""` |
