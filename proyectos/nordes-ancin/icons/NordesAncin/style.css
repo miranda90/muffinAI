@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'nordes';
+  src:  url('fonts/nordes.eot?na1');
+  src:  url('fonts/nordes.eot?na1#iefix') format('embedded-opentype'),
+    url('fonts/nordes.ttf?na1') format('truetype'),
+    url('fonts/nordes.woff?na1') format('woff'),
+    url('fonts/nordes.svg?na1#nordes') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="nordes-"], [class*=" nordes-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'nordes' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nordes-hand-heart:before {
+  content: "\e900";
+}
+.nordes-pipe:before {
+  content: "\e901";
+}
+.nordes-lightning:before {
+  content: "\e902";
+}
+.nordes-shield:before {
+  content: "\e903";
+}
+.nordes-pipe-wrench:before {
+  content: "\e904";
+}
+.nordes-snowflake:before {
+  content: "\e905";
+}
+.nordes-fan:before {
+  content: "\e906";
+}
+.nordes-fingerprint:before {
+  content: "\e907";
+}
+.nordes-arrow-right:before {
+  content: "\e908";
+}
+.nordes-fire-extinguisher:before {
+  content: "\e909";
+}
+.nordes-fire:before {
+  content: "\e90a";
+}
+.nordes-handshake:before {
+  content: "\e90b";
+}
+.nordes-thermometer-simple:before {
+  content: "\e90c";
+}
+.nordes-drop:before {
+  content: "\e90d";
+}
+.nordes-play:before {
+  content: "\e90e";
+}
+.nordes-pencil-ruler:before {
+  content: "\e90f";
+}
+.nordes-arrow-up-right:before {
+  content: "\e910";
+}
+.nordes-caret-down:before {
+  content: "\e911";
+}
+.nordes-screwdriver:before {
+  content: "\e912";
+}
+.nordes-magnifying-glass:before {
+  content: "\e913";
+}
+.nordes-caret-down-alt:before {
+  content: "\e914";
+}
+.nordes-asterisk:before {
+  content: "\e915";
+}
+.nordes-hammer:before {
+  content: "\e916";
+}
+.nordes-globe:before {
+  content: "\e917";
+}
+.nordes-play-alt:before {
+  content: "\e918";
+}
+.nordes-arrow-up-right-alt:before {
+  content: "\e919";
+}
+.nordes-office-chair:before {
+  content: "\e91a";
+}
+.nordes-factory:before {
+  content: "\e91b";
+}
+.nordes-nut:before {
+  content: "\e91c";
+}
+.nordes-storefront:before {
+  content: "\e91d";
+}
+.nordes-warehouse:before {
+  content: "\e91e";
+}
+.nordes-list:before {
+  content: "\e91f";
+}
+.nordes-x:before {
+  content: "\e920";
+}
+.nordes-compass-tool:before {
+  content: "\e921";
+}
+.nordes-wrench:before {
+  content: "\e922";
+}
+.nordes-lightning-alt:before {
+  content: "\e923";
+}
+.nordes-nut-alt:before {
+  content: "\e924";
+}

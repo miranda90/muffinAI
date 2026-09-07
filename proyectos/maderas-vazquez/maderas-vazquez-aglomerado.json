@@ -1,0 +1,4905 @@
+[
+  {
+    "uid": "sec000011",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Hero — Aglomerado",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "15.625rem",
+            "right": "4rem",
+            "bottom": "11.25rem",
+            "left": "4rem"
+          },
+          "tablet": {
+            "top": "10rem",
+            "right": "2.5rem",
+            "bottom": "8rem",
+            "left": "2.5rem"
+          },
+          "mobile": {
+            "top": "8rem",
+            "right": "1.25rem",
+            "bottom": "6.5rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#1F2230"
+      },
+      "css_advanced_background_image": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-image",
+        "val": {
+          "desktop": "https://maderasvazquez.com/wp-content/uploads/2026/08/hero-aglomerado.jpg"
+        }
+      },
+      "css_advanced_background_size": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size",
+        "val": {
+          "desktop": "cover"
+        }
+      },
+      "css_advanced_background_position": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_background_repeat": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-repeat",
+        "val": {
+          "desktop": "no-repeat"
+        }
+      },
+      "background_overlay_switcher": "gradient",
+      "css_advanced_overlay_gradient": {
+        "selector": ".mcb-section-mfnuidelement .mcb-background-overlay",
+        "style": "gradient",
+        "val": {
+          "type": "linear",
+          "angle": "180",
+          "color": "rgba(0,0,0,0)",
+          "location": "47",
+          "color2": "rgba(0,0,0,0.6)",
+          "location2": "75",
+          "string": "linear-gradient(180deg, rgba(0,0,0,0) 47%, rgba(0,0,0,0.6) 75%), linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%)"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000002",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Hero — titular",
+        "size": "1/2",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {},
+        "items": [
+          {
+            "uid": "itm000001",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Hero — titular",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Aglomerado",
+              "header_tag": "h1",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#FDFDFC"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "64px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1.28px",
+                    "font-weight": "700"
+                  },
+                  "tablet": {
+                    "font-size": "52px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1px",
+                    "font-weight": "700"
+                  },
+                  "mobile": {
+                    "font-size": "40px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-0.8px",
+                    "font-weight": "700"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000007",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Hero — intro y chips",
+        "size": "1/2",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {},
+        "items": [
+          {
+            "uid": "itm000003",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Hero — intro",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Panel derivado de la madera, compuesto por partículas de madera unidas con resinas sintéticas y prensadas a alta presión. Disponible en diferentes espesores y formatos para carpintería, construcción e industria.",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#EFF0F0"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.25rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000004",
+            "type": "button",
+            "jsclass": "button",
+            "title": "Hero — chip Estándar",
+            "icon": "button",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Estándar",
+              "link": "#estandar",
+              "button_style": "",
+              "width_switcher": "inline",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#3B4FB0"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#FDFDFC"
+              },
+              "css_button_border_style": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-style",
+                "val": "solid"
+              },
+              "css_button_border_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-color",
+                "val": "#E3E5E8"
+              },
+              "css_button_border_width": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-width",
+                "val": {
+                  "desktop": "1px 1px 1px 1px"
+                }
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "200px 200px 200px 200px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "0.5rem",
+                    "right": "1.5rem",
+                    "bottom": "0.5rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "0.5rem",
+                    "right": "1.5rem",
+                    "bottom": "0.5rem",
+                    "left": "1.5rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "14px",
+                    "line-height": "1.4",
+                    "font-weight": "600"
+                  },
+                  "mobile": {
+                    "font-size": "13px",
+                    "line-height": "1.4",
+                    "font-weight": "600"
+                  }
+                }
+              },
+              "css_button_color_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                "style": "color",
+                "val": "#3B4FB0"
+              },
+              "background_switcher_hover": "default",
+              "css_button_background_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                "style": "background",
+                "val": "#FDFDFC"
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "right": "0.75rem",
+                    "bottom": "0.75rem"
+                  },
+                  "mobile": {
+                    "right": "0.75rem",
+                    "bottom": "0.75rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000005",
+            "type": "button",
+            "jsclass": "button",
+            "title": "Hero — chip Hidrófugo",
+            "icon": "button",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Hidrófugo",
+              "link": "#hidrofugo",
+              "button_style": "",
+              "width_switcher": "inline",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#FDFDFC"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "rgba(0,0,0,0)"
+              },
+              "css_button_border_style": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-style",
+                "val": "solid"
+              },
+              "css_button_border_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-color",
+                "val": "#E3E5E8"
+              },
+              "css_button_border_width": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-width",
+                "val": {
+                  "desktop": "1px 1px 1px 1px"
+                }
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "200px 200px 200px 200px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "0.5rem",
+                    "right": "1.5rem",
+                    "bottom": "0.5rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "0.5rem",
+                    "right": "1.5rem",
+                    "bottom": "0.5rem",
+                    "left": "1.5rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "14px",
+                    "line-height": "1.4",
+                    "font-weight": "600"
+                  },
+                  "mobile": {
+                    "font-size": "13px",
+                    "line-height": "1.4",
+                    "font-weight": "600"
+                  }
+                }
+              },
+              "css_button_color_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                "style": "color",
+                "val": "#3B4FB0"
+              },
+              "background_switcher_hover": "default",
+              "css_button_background_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                "style": "background",
+                "val": "#FDFDFC"
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "right": "0.75rem",
+                    "bottom": "0.75rem"
+                  },
+                  "mobile": {
+                    "right": "0.75rem",
+                    "bottom": "0.75rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000006",
+            "type": "button",
+            "jsclass": "button",
+            "title": "Hero — chip Ignífugo",
+            "icon": "button",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Ignífugo",
+              "link": "#ignifugo",
+              "button_style": "",
+              "width_switcher": "inline",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#FDFDFC"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "rgba(0,0,0,0)"
+              },
+              "css_button_border_style": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-style",
+                "val": "solid"
+              },
+              "css_button_border_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-color",
+                "val": "#E3E5E8"
+              },
+              "css_button_border_width": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-width",
+                "val": {
+                  "desktop": "1px 1px 1px 1px"
+                }
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "200px 200px 200px 200px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "0.5rem",
+                    "right": "1.5rem",
+                    "bottom": "0.5rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "0.5rem",
+                    "right": "1.5rem",
+                    "bottom": "0.5rem",
+                    "left": "1.5rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "14px",
+                    "line-height": "1.4",
+                    "font-weight": "600"
+                  },
+                  "mobile": {
+                    "font-size": "13px",
+                    "line-height": "1.4",
+                    "font-weight": "600"
+                  }
+                }
+              },
+              "css_button_color_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                "style": "color",
+                "val": "#3B4FB0"
+              },
+              "background_switcher_hover": "default",
+              "css_button_background_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                "style": "background",
+                "val": "#FDFDFC"
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "right": "0.75rem",
+                    "bottom": "0.75rem"
+                  },
+                  "mobile": {
+                    "right": "0.75rem",
+                    "bottom": "0.75rem"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000010",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Hero — Composición",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "top": "3.375rem"
+              },
+              "mobile": {
+                "top": "2rem"
+              }
+            }
+          },
+          "css_advanced_border_style": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-style",
+            "val": "solid"
+          },
+          "css_advanced_border_color": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-color",
+            "val": "rgba(255,255,255,0.8)"
+          },
+          "css_advanced_border_width": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-width",
+            "val": {
+              "desktop": "1px 0px 0px 0px"
+            }
+          },
+          "css_advanced_min_height": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "min-height",
+            "val": {
+              "desktop": "400px",
+              "tablet": "300px",
+              "mobile": "auto"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "3rem"
+              },
+              "mobile": {
+                "top": "2rem"
+              }
+            }
+          },
+          "css_advanced_align_content": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "align-content",
+            "val": {
+              "desktop": "flex-end"
+            }
+          },
+          "css_advanced_justify_content": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "justify-content",
+            "val": {
+              "desktop": "center"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000008",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Hero — Composición",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Composición",
+              "header_tag": "h2",
+              "css_txt_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#FDFDFC"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "64px",
+                    "line-height": "1",
+                    "letter-spacing": "-1.28px",
+                    "font-weight": "500"
+                  },
+                  "tablet": {
+                    "font-size": "52px",
+                    "line-height": "1.05",
+                    "letter-spacing": "-1px",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "40px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-0.8px",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "4rem"
+                  },
+                  "mobile": {
+                    "bottom": "2rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000009",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Hero — Composición texto",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "El tablero aglomerado se fabrica a partir de partículas de madera (virutas, serrín) que se mezclan con resinas sintéticas y se prensan bajo calor y presión. El resultado es un panel homogéneo, estable y económico, ideal para mobiliario, revestimientos y aplicaciones de interior donde se requiere un soporte plano y uniforme.",
+              "width_switcher": "custom",
+              "css_advanced_flex": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "width",
+                "val": {
+                  "desktop": "692px",
+                  "tablet": "80%",
+                  "mobile": "100%"
+                }
+              },
+              "css_desc_text_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#EFF0F0"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000029",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Aglomerado — Estándar",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "7.5rem",
+            "bottom": "7.5rem",
+            "left": "7.5rem"
+          },
+          "tablet": {
+            "top": "4rem",
+            "right": "2.5rem",
+            "bottom": "4rem",
+            "left": "2.5rem"
+          },
+          "mobile": {
+            "top": "3rem",
+            "right": "1.25rem",
+            "bottom": "3rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "custom_id": "estandar",
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#FDFDFC"
+      },
+      "css_advanced_margin": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "margin",
+        "val": {
+          "desktop": {
+            "top": "-3.75rem"
+          },
+          "mobile": {
+            "top": "-2.5rem"
+          }
+        }
+      },
+      "css_advanced_border_radius": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "border-radius",
+        "val": {
+          "desktop": "64px 64px 0px 0px",
+          "mobile": "32px 32px 0px 0px"
+        }
+      },
+      "css_advanced_box_shadow": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "box-shadow",
+        "val": {
+          "desktop": "0px 0px 64px 0px rgba(51,80,153,0.08)"
+        }
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "center"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000014",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Fotos",
+        "size": "2/5",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "grid": "grid",
+          "grid_columns_switcher": "",
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(2, 1fr)",
+              "tablet": "repeat(2, 1fr)",
+              "mobile": "repeat(2, 1fr)"
+            }
+          },
+          "css_grid_columns_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "column-gap",
+            "val": {
+              "desktop": "16px",
+              "mobile": "12px"
+            }
+          },
+          "css_grid_rows_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "row-gap",
+            "val": {
+              "desktop": "16px",
+              "mobile": "12px"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "right": "2rem"
+              },
+              "tablet": {
+                "right": "1rem"
+              },
+              "mobile": {
+                "bottom": "2rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000012",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Foto 1",
+            "icon": "image",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://maderasvazquez.com/wp-content/uploads/2026/08/aglomerado-estandar-1.png",
+              "size": "full",
+              "alt": "",
+              "hover": "disable",
+              "image_height": "custom",
+              "image_height_style": "",
+              "css_image_cover_height": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                "style": "height",
+                "val": {
+                  "desktop": "380px",
+                  "tablet": "300px",
+                  "mobile": "220px"
+                }
+              },
+              "css_image_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "42px 42px 42px 42px",
+                  "mobile": "24px 24px 24px 24px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000013",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Foto 2",
+            "icon": "image",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://maderasvazquez.com/wp-content/uploads/2026/08/aglomerado-estandar-2.png",
+              "size": "full",
+              "alt": "",
+              "hover": "disable",
+              "image_height": "custom",
+              "image_height_style": "",
+              "css_image_cover_height": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                "style": "height",
+                "val": {
+                  "desktop": "380px",
+                  "tablet": "300px",
+                  "mobile": "220px"
+                }
+              },
+              "css_image_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "42px 42px 42px 42px",
+                  "mobile": "24px 24px 24px 24px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000028",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Estándar — texto",
+        "size": "3/5",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "left": "2rem"
+              },
+              "tablet": {
+                "left": "1rem"
+              },
+              "mobile": {
+                "bottom": "0px"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000015",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Estándar — título",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Estándar",
+              "header_tag": "h2",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#1F2230"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "42px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  },
+                  "tablet": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  },
+                  "mobile": {
+                    "font-size": "30px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0.75rem"
+                  },
+                  "mobile": {
+                    "bottom": "0.75rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000016",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Estándar — descripción",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "El aglomerado estándar es la opción más versátil y económica. Fabricado con partículas de madera de densidad media, ofrece una superficie lisa y uniforme apta para laminado, chapado o pintura. Uso recomendado en ambientes secos de interior.",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#5C5851"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000017",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Estándar — subtítulo tabla",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Dimensiones disponibles",
+              "header_tag": "h3",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#1F2230"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.3",
+                    "letter-spacing": "-0.4px",
+                    "font-weight": "700"
+                  },
+                  "mobile": {
+                    "font-size": "18px",
+                    "line-height": "1.3",
+                    "letter-spacing": "-0.36px",
+                    "font-weight": "700"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0.75rem"
+                  },
+                  "mobile": {
+                    "bottom": "0.75rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000020",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Tabla — cabecera",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.25rem",
+                    "bottom": "1rem",
+                    "left": "1.25rem"
+                  },
+                  "mobile": {
+                    "top": "0.75rem",
+                    "right": "0.875rem",
+                    "bottom": "0.75rem",
+                    "left": "0.875rem"
+                  }
+                }
+              },
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#3B4FB0"
+              },
+              "css_advanced_border_radius": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "12px 12px 0px 0px"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000018",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "Medidas (mm)",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "15px",
+                        "line-height": "22px",
+                        "font-weight": "700",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "20px",
+                        "font-weight": "700",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000019",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "Espesores (mm)",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "15px",
+                        "line-height": "22px",
+                        "font-weight": "700",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "20px",
+                        "font-weight": "700",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000023",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Tabla — fila",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.25rem",
+                    "bottom": "1rem",
+                    "left": "1.25rem"
+                  },
+                  "mobile": {
+                    "top": "0.75rem",
+                    "right": "0.875rem",
+                    "bottom": "0.75rem",
+                    "left": "0.875rem"
+                  }
+                }
+              },
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#FDFDFC"
+              },
+              "css_advanced_border_style": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-style",
+                "val": "solid"
+              },
+              "css_advanced_border_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-color",
+                "val": "#E3E5E8"
+              },
+              "css_advanced_border_width": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-width",
+                "val": {
+                  "desktop": "0px 1px 1px 1px"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000021",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "2440 × 1220",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#5C5851"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "14px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000022",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "10, 16, 19 y 30",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#5C5851"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "14px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000026",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Tabla — fila",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.25rem",
+                    "bottom": "1rem",
+                    "left": "1.25rem"
+                  },
+                  "mobile": {
+                    "top": "0.75rem",
+                    "right": "0.875rem",
+                    "bottom": "0.75rem",
+                    "left": "0.875rem"
+                  }
+                }
+              },
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#F4F3F0"
+              },
+              "css_advanced_border_style": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-style",
+                "val": "solid"
+              },
+              "css_advanced_border_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-color",
+                "val": "#E3E5E8"
+              },
+              "css_advanced_border_width": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-width",
+                "val": {
+                  "desktop": "0px 1px 1px 1px"
+                }
+              },
+              "css_advanced_border_radius": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "0px 0px 12px 12px"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000024",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "2850 × 2100",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#5C5851"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "14px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000025",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "30 y 40",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#5C5851"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "14px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000027",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Estándar — enlace consultar",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "<a href=\"/contacto/\">Otras opciones y medidas, consultar →</a>",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#3B4FB0"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "13px",
+                    "line-height": "20px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "13px",
+                    "line-height": "20px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0.75rem",
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "top": "0.75rem",
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000047",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Aglomerado — Hidrófugo",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "7.5rem",
+            "bottom": "7.5rem",
+            "left": "7.5rem"
+          },
+          "tablet": {
+            "top": "4rem",
+            "right": "2.5rem",
+            "bottom": "4rem",
+            "left": "2.5rem"
+          },
+          "mobile": {
+            "top": "3rem",
+            "right": "1.25rem",
+            "bottom": "3rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "custom_id": "hidrofugo",
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#F4F3F0"
+      },
+      "css_advanced_margin": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "margin",
+        "val": {
+          "desktop": {
+            "top": "-3.75rem"
+          },
+          "mobile": {
+            "top": "-2.5rem"
+          }
+        }
+      },
+      "css_advanced_border_radius": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "border-radius",
+        "val": {
+          "desktop": "64px 64px 0px 0px",
+          "mobile": "32px 32px 0px 0px"
+        }
+      },
+      "css_advanced_box_shadow": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "box-shadow",
+        "val": {
+          "desktop": "0px 0px 64px 0px rgba(51,80,153,0.08)"
+        }
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "center"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000046",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Hidrófugo — texto",
+        "size": "3/5",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "right": "2rem"
+              },
+              "tablet": {
+                "right": "1rem"
+              },
+              "mobile": {
+                "bottom": "0px"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000033",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Hidrófugo — título",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Hidrófugo",
+              "header_tag": "h2",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#1F2230"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "42px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  },
+                  "tablet": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  },
+                  "mobile": {
+                    "font-size": "30px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0.75rem"
+                  },
+                  "mobile": {
+                    "bottom": "0.75rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000034",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Hidrófugo — descripción",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Tablero fabricado con resinas especiales de melamina-urea-formaldehído que aumentan su resistencia a la humedad. Identificable por su color verdoso característico. Indicado para cocinas, baños y zonas con humedad ambiental moderada.",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#5C5851"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000035",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Hidrófugo — subtítulo tabla",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Dimensiones disponibles",
+              "header_tag": "h3",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#1F2230"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.3",
+                    "letter-spacing": "-0.4px",
+                    "font-weight": "700"
+                  },
+                  "mobile": {
+                    "font-size": "18px",
+                    "line-height": "1.3",
+                    "letter-spacing": "-0.36px",
+                    "font-weight": "700"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0.75rem"
+                  },
+                  "mobile": {
+                    "bottom": "0.75rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000038",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Tabla — cabecera",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.25rem",
+                    "bottom": "1rem",
+                    "left": "1.25rem"
+                  },
+                  "mobile": {
+                    "top": "0.75rem",
+                    "right": "0.875rem",
+                    "bottom": "0.75rem",
+                    "left": "0.875rem"
+                  }
+                }
+              },
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#3B4FB0"
+              },
+              "css_advanced_border_radius": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "12px 12px 0px 0px"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000036",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "Medidas (mm)",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "15px",
+                        "line-height": "22px",
+                        "font-weight": "700",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "20px",
+                        "font-weight": "700",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000037",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "Espesores (mm)",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "15px",
+                        "line-height": "22px",
+                        "font-weight": "700",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "20px",
+                        "font-weight": "700",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000041",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Tabla — fila",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.25rem",
+                    "bottom": "1rem",
+                    "left": "1.25rem"
+                  },
+                  "mobile": {
+                    "top": "0.75rem",
+                    "right": "0.875rem",
+                    "bottom": "0.75rem",
+                    "left": "0.875rem"
+                  }
+                }
+              },
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#FDFDFC"
+              },
+              "css_advanced_border_style": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-style",
+                "val": "solid"
+              },
+              "css_advanced_border_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-color",
+                "val": "#E3E5E8"
+              },
+              "css_advanced_border_width": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-width",
+                "val": {
+                  "desktop": "0px 1px 1px 1px"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000039",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "2440 × 1220",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#5C5851"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "14px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000040",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "16, 19 y 22",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#5C5851"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "14px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000044",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Tabla — fila",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.25rem",
+                    "bottom": "1rem",
+                    "left": "1.25rem"
+                  },
+                  "mobile": {
+                    "top": "0.75rem",
+                    "right": "0.875rem",
+                    "bottom": "0.75rem",
+                    "left": "0.875rem"
+                  }
+                }
+              },
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#F4F3F0"
+              },
+              "css_advanced_border_style": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-style",
+                "val": "solid"
+              },
+              "css_advanced_border_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-color",
+                "val": "#E3E5E8"
+              },
+              "css_advanced_border_width": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-width",
+                "val": {
+                  "desktop": "0px 1px 1px 1px"
+                }
+              },
+              "css_advanced_border_radius": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "0px 0px 12px 12px"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000042",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "2850 × 2100",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#5C5851"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "14px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000043",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "19 y 22",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#5C5851"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "14px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000045",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Hidrófugo — enlace consultar",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "<a href=\"/contacto/\">Otras opciones y medidas, consultar →</a>",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#3B4FB0"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "13px",
+                    "line-height": "20px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "13px",
+                    "line-height": "20px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0.75rem",
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "top": "0.75rem",
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000032",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Fotos",
+        "size": "2/5",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "grid": "grid",
+          "grid_columns_switcher": "",
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(2, 1fr)",
+              "tablet": "repeat(2, 1fr)",
+              "mobile": "repeat(2, 1fr)"
+            }
+          },
+          "css_grid_columns_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "column-gap",
+            "val": {
+              "desktop": "16px",
+              "mobile": "12px"
+            }
+          },
+          "css_grid_rows_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "row-gap",
+            "val": {
+              "desktop": "16px",
+              "mobile": "12px"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "left": "2rem"
+              },
+              "tablet": {
+                "left": "1rem"
+              },
+              "mobile": {
+                "bottom": "2rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000030",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Foto 1",
+            "icon": "image",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://maderasvazquez.com/wp-content/uploads/2026/08/aglomerado-hidrofugo-1.png",
+              "size": "full",
+              "alt": "",
+              "hover": "disable",
+              "image_height": "custom",
+              "image_height_style": "",
+              "css_image_cover_height": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                "style": "height",
+                "val": {
+                  "desktop": "380px",
+                  "tablet": "300px",
+                  "mobile": "220px"
+                }
+              },
+              "css_image_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "42px 42px 42px 42px",
+                  "mobile": "24px 24px 24px 24px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000031",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Foto 2",
+            "icon": "image",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://maderasvazquez.com/wp-content/uploads/2026/08/aglomerado-hidrofugo-2.png",
+              "size": "full",
+              "alt": "",
+              "hover": "disable",
+              "image_height": "custom",
+              "image_height_style": "",
+              "css_image_cover_height": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                "style": "height",
+                "val": {
+                  "desktop": "380px",
+                  "tablet": "300px",
+                  "mobile": "220px"
+                }
+              },
+              "css_image_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "42px 42px 42px 42px",
+                  "mobile": "24px 24px 24px 24px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000062",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Aglomerado — Ignífugo",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "7.5rem",
+            "bottom": "7.5rem",
+            "left": "7.5rem"
+          },
+          "tablet": {
+            "top": "4rem",
+            "right": "2.5rem",
+            "bottom": "4rem",
+            "left": "2.5rem"
+          },
+          "mobile": {
+            "top": "3rem",
+            "right": "1.25rem",
+            "bottom": "3rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "custom_id": "ignifugo",
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#FDFDFC"
+      },
+      "css_advanced_margin": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "margin",
+        "val": {
+          "desktop": {
+            "top": "-3.75rem"
+          },
+          "mobile": {
+            "top": "-2.5rem"
+          }
+        }
+      },
+      "css_advanced_border_radius": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "border-radius",
+        "val": {
+          "desktop": "64px 64px 0px 0px",
+          "mobile": "32px 32px 0px 0px"
+        }
+      },
+      "css_advanced_box_shadow": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "box-shadow",
+        "val": {
+          "desktop": "0px 0px 64px 0px rgba(51,80,153,0.08)"
+        }
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "center"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000050",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Fotos",
+        "size": "2/5",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "grid": "grid",
+          "grid_columns_switcher": "",
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(2, 1fr)",
+              "tablet": "repeat(2, 1fr)",
+              "mobile": "repeat(2, 1fr)"
+            }
+          },
+          "css_grid_columns_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "column-gap",
+            "val": {
+              "desktop": "16px",
+              "mobile": "12px"
+            }
+          },
+          "css_grid_rows_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "row-gap",
+            "val": {
+              "desktop": "16px",
+              "mobile": "12px"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "right": "2rem"
+              },
+              "tablet": {
+                "right": "1rem"
+              },
+              "mobile": {
+                "bottom": "2rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000048",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Foto 1",
+            "icon": "image",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://maderasvazquez.com/wp-content/uploads/2026/08/aglomerado-ignifugo-1.png",
+              "size": "full",
+              "alt": "",
+              "hover": "disable",
+              "image_height": "custom",
+              "image_height_style": "",
+              "css_image_cover_height": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                "style": "height",
+                "val": {
+                  "desktop": "380px",
+                  "tablet": "300px",
+                  "mobile": "220px"
+                }
+              },
+              "css_image_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "42px 42px 42px 42px",
+                  "mobile": "24px 24px 24px 24px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000049",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Foto 2",
+            "icon": "image",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://maderasvazquez.com/wp-content/uploads/2026/08/aglomerado-ignifugo-2.png",
+              "size": "full",
+              "alt": "",
+              "hover": "disable",
+              "image_height": "custom",
+              "image_height_style": "",
+              "css_image_cover_height": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                "style": "height",
+                "val": {
+                  "desktop": "380px",
+                  "tablet": "300px",
+                  "mobile": "220px"
+                }
+              },
+              "css_image_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "42px 42px 42px 42px",
+                  "mobile": "24px 24px 24px 24px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000061",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Ignífugo — texto",
+        "size": "3/5",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "left": "2rem"
+              },
+              "tablet": {
+                "left": "1rem"
+              },
+              "mobile": {
+                "bottom": "0px"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000051",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Ignífugo — título",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Ignífugo",
+              "header_tag": "h2",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#1F2230"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "42px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  },
+                  "tablet": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  },
+                  "mobile": {
+                    "font-size": "30px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0.75rem"
+                  },
+                  "mobile": {
+                    "bottom": "0.75rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000052",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Ignífugo — descripción",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Tablero con tratamiento retardante del fuego que cumple la clasificación B-s2,d0 según norma UNE-EN 13501-1. Incorpora sales ignífugas en su composición que retrasan la propagación de la llama. Obligatorio en edificios de pública concurrencia y según normativa CTE.",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#5C5851"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000053",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Ignífugo — subtítulo tabla",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Dimensiones disponibles",
+              "header_tag": "h3",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#1F2230"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.3",
+                    "letter-spacing": "-0.4px",
+                    "font-weight": "700"
+                  },
+                  "mobile": {
+                    "font-size": "18px",
+                    "line-height": "1.3",
+                    "letter-spacing": "-0.36px",
+                    "font-weight": "700"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0.75rem"
+                  },
+                  "mobile": {
+                    "bottom": "0.75rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000056",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Tabla — cabecera",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.25rem",
+                    "bottom": "1rem",
+                    "left": "1.25rem"
+                  },
+                  "mobile": {
+                    "top": "0.75rem",
+                    "right": "0.875rem",
+                    "bottom": "0.75rem",
+                    "left": "0.875rem"
+                  }
+                }
+              },
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#3B4FB0"
+              },
+              "css_advanced_border_radius": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "12px 12px 0px 0px"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000054",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "Medidas (mm)",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "15px",
+                        "line-height": "22px",
+                        "font-weight": "700",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "20px",
+                        "font-weight": "700",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000055",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "Espesores (mm)",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "15px",
+                        "line-height": "22px",
+                        "font-weight": "700",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "20px",
+                        "font-weight": "700",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000059",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Tabla — fila",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.25rem",
+                    "bottom": "1rem",
+                    "left": "1.25rem"
+                  },
+                  "mobile": {
+                    "top": "0.75rem",
+                    "right": "0.875rem",
+                    "bottom": "0.75rem",
+                    "left": "0.875rem"
+                  }
+                }
+              },
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#FDFDFC"
+              },
+              "css_advanced_border_style": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-style",
+                "val": "solid"
+              },
+              "css_advanced_border_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-color",
+                "val": "#E3E5E8"
+              },
+              "css_advanced_border_width": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-width",
+                "val": {
+                  "desktop": "0px 1px 1px 1px"
+                }
+              },
+              "css_advanced_border_radius": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "0px 0px 12px 12px"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000057",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "2440 × 1220",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#5C5851"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "14px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000058",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Celda",
+                "icon": "plain_text",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/2",
+                "attr": {
+                  "content": "16, 19 y 22",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#5C5851"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "14px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000060",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Ignífugo — enlace consultar",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "<a href=\"/contacto/\">Otras opciones y medidas, consultar →</a>",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#3B4FB0"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "13px",
+                    "line-height": "20px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "13px",
+                    "line-height": "20px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0.75rem",
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "top": "0.75rem",
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000086",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Pre-footer — Certificaciones y contacto",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "4rem",
+            "bottom": "7.5rem",
+            "left": "4rem"
+          },
+          "tablet": {
+            "top": "4rem",
+            "right": "2.5rem",
+            "bottom": "4rem",
+            "left": "2.5rem"
+          },
+          "mobile": {
+            "top": "3rem",
+            "right": "1.25rem",
+            "bottom": "3rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#EFF0F0"
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "stretch"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000080",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Pre-footer — certificaciones",
+        "size": "2/5",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "background_switcher": "default",
+          "css_advanced_background_color": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "background-color",
+            "val": "#3B4FB0"
+          },
+          "css_advanced_border_radius": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-radius",
+            "val": {
+              "desktop": "42px 42px 42px 42px",
+              "mobile": "24px 24px 24px 24px"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "4rem",
+                "right": "4rem",
+                "bottom": "4rem",
+                "left": "4rem"
+              },
+              "tablet": {
+                "top": "2.5rem",
+                "right": "2.5rem",
+                "bottom": "2.5rem",
+                "left": "2.5rem"
+              },
+              "mobile": {
+                "top": "1.5rem",
+                "right": "1.5rem",
+                "bottom": "1.5rem",
+                "left": "1.5rem"
+              }
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "0px"
+              },
+              "tablet": {
+                "bottom": "2.5rem"
+              },
+              "mobile": {
+                "bottom": "1.5rem"
+              }
+            }
+          },
+          "height_switcher": "custom",
+          "css_advanced_height": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "height",
+            "val": {
+              "desktop": "100%"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000065",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Certificaciones — titular",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Sostenibilidad garantizada con certificaciones oficiales",
+              "header_tag": "h2",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#FDFDFC"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "42px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  },
+                  "tablet": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  },
+                  "mobile": {
+                    "font-size": "30px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "3.25rem"
+                  },
+                  "mobile": {
+                    "bottom": "2rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000069",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Certificación PEFC™",
+            "item_is_wrap": 1,
+            "size": "1/3",
+            "tablet_size": "1/3",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.625rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000066",
+                "type": "image",
+                "jsclass": "image",
+                "title": "Certificación — logo PEFC™",
+                "icon": "image",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "src": "https://maderasvazquez.com/wp-content/uploads/2026/08/cert-pefc.png",
+                  "size": "full",
+                  "alt": "PEFC™",
+                  "hover": "disable",
+                  "image_height": "custom",
+                  "image_height_style": "fit",
+                  "css_image_cover_height": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                    "style": "height",
+                    "val": {
+                      "desktop": "116px",
+                      "mobile": "96px"
+                    }
+                  },
+                  "css_image_text_align": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "text-align",
+                    "val": {
+                      "desktop": "center"
+                    }
+                  },
+                  "height_switcher": "custom",
+                  "css_advanced_height": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "height",
+                    "val": {
+                      "desktop": "164px",
+                      "mobile": "140px"
+                    }
+                  },
+                  "background_switcher": "default",
+                  "css_advanced_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "background-color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_advanced_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "24px 24px 24px 24px"
+                    }
+                  },
+                  "css_advanced_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "1.5rem",
+                        "right": "1.5rem",
+                        "bottom": "1.5rem",
+                        "left": "1.5rem"
+                      },
+                      "mobile": {
+                        "top": "1.25rem",
+                        "right": "1.25rem",
+                        "bottom": "1.25rem",
+                        "left": "1.25rem"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1.5rem"
+                      },
+                      "mobile": {
+                        "bottom": "1rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000067",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Certificación — número",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "01",
+                  "width_switcher": "inline",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#F4F3F0"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "16px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "15px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "right": "0.5rem",
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "right": "0.5rem",
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000068",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Certificación — nombre",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "PEFC™",
+                  "header_tag": "p",
+                  "width_switcher": "inline",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "22px",
+                        "line-height": "1.4",
+                        "font-weight": "700"
+                      },
+                      "mobile": {
+                        "font-size": "19px",
+                        "line-height": "1.4",
+                        "font-weight": "700"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000073",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Certificación ISO 9001",
+            "item_is_wrap": 1,
+            "size": "1/3",
+            "tablet_size": "1/3",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.625rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000070",
+                "type": "image",
+                "jsclass": "image",
+                "title": "Certificación — logo ISO 9001",
+                "icon": "image",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "src": "https://maderasvazquez.com/wp-content/uploads/2026/08/cert-iso-9001.png",
+                  "size": "full",
+                  "alt": "ISO 9001",
+                  "hover": "disable",
+                  "image_height": "custom",
+                  "image_height_style": "fit",
+                  "css_image_cover_height": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                    "style": "height",
+                    "val": {
+                      "desktop": "116px",
+                      "mobile": "96px"
+                    }
+                  },
+                  "css_image_text_align": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "text-align",
+                    "val": {
+                      "desktop": "center"
+                    }
+                  },
+                  "height_switcher": "custom",
+                  "css_advanced_height": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "height",
+                    "val": {
+                      "desktop": "164px",
+                      "mobile": "140px"
+                    }
+                  },
+                  "background_switcher": "default",
+                  "css_advanced_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "background-color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_advanced_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "24px 24px 24px 24px"
+                    }
+                  },
+                  "css_advanced_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "1.5rem",
+                        "right": "1.5rem",
+                        "bottom": "1.5rem",
+                        "left": "1.5rem"
+                      },
+                      "mobile": {
+                        "top": "1.25rem",
+                        "right": "1.25rem",
+                        "bottom": "1.25rem",
+                        "left": "1.25rem"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1.5rem"
+                      },
+                      "mobile": {
+                        "bottom": "1rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000071",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Certificación — número",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "02",
+                  "width_switcher": "inline",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#F4F3F0"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "16px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "15px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "right": "0.5rem",
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "right": "0.5rem",
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000072",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Certificación — nombre",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "ISO 9001",
+                  "header_tag": "p",
+                  "width_switcher": "inline",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "22px",
+                        "line-height": "1.4",
+                        "font-weight": "700"
+                      },
+                      "mobile": {
+                        "font-size": "19px",
+                        "line-height": "1.4",
+                        "font-weight": "700"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000077",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Certificación FSC ®",
+            "item_is_wrap": 1,
+            "size": "1/3",
+            "tablet_size": "1/3",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.625rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000074",
+                "type": "image",
+                "jsclass": "image",
+                "title": "Certificación — logo FSC ®",
+                "icon": "image",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "src": "https://maderasvazquez.com/wp-content/uploads/2026/08/cert-fsc.png",
+                  "size": "full",
+                  "alt": "FSC ®",
+                  "hover": "disable",
+                  "image_height": "custom",
+                  "image_height_style": "fit",
+                  "css_image_cover_height": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                    "style": "height",
+                    "val": {
+                      "desktop": "116px",
+                      "mobile": "96px"
+                    }
+                  },
+                  "css_image_text_align": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "text-align",
+                    "val": {
+                      "desktop": "center"
+                    }
+                  },
+                  "height_switcher": "custom",
+                  "css_advanced_height": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "height",
+                    "val": {
+                      "desktop": "164px",
+                      "mobile": "140px"
+                    }
+                  },
+                  "background_switcher": "default",
+                  "css_advanced_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "background-color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_advanced_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "24px 24px 24px 24px"
+                    }
+                  },
+                  "css_advanced_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "1.5rem",
+                        "right": "1.5rem",
+                        "bottom": "1.5rem",
+                        "left": "1.5rem"
+                      },
+                      "mobile": {
+                        "top": "1.25rem",
+                        "right": "1.25rem",
+                        "bottom": "1.25rem",
+                        "left": "1.25rem"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1.5rem"
+                      },
+                      "mobile": {
+                        "bottom": "1rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000075",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Certificación — número",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "03",
+                  "width_switcher": "inline",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#F4F3F0"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "16px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "15px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "right": "0.5rem",
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "right": "0.5rem",
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000076",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Certificación — nombre",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "FSC ®",
+                  "header_tag": "p",
+                  "width_switcher": "inline",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "22px",
+                        "line-height": "1.4",
+                        "font-weight": "700"
+                      },
+                      "mobile": {
+                        "font-size": "19px",
+                        "line-height": "1.4",
+                        "font-weight": "700"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000078",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Certificaciones — texto",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Nuestros procesos y productos cuentan con certificaciones oficiales que garantizan calidad, sostenibilidad y cumplimiento de las normativas más exigentes del sector.",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#E3E5E8"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "16px",
+                    "line-height": "1.4",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "15px",
+                    "line-height": "1.4",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "3.25rem"
+                  },
+                  "mobile": {
+                    "bottom": "2rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000079",
+            "type": "button",
+            "jsclass": "button",
+            "title": "Certificaciones — botón",
+            "icon": "button",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Nuestra política sostenible",
+              "link": "/sostenibilidad/",
+              "button_style": "",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#1F2230"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#EFF0F0"
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "200px 200px 200px 200px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.5rem",
+                    "bottom": "1rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "0.875rem",
+                    "right": "1.25rem",
+                    "bottom": "0.875rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "16px",
+                    "line-height": "1.2",
+                    "font-weight": "600",
+                    "text-transform": "uppercase"
+                  },
+                  "mobile": {
+                    "font-size": "15px",
+                    "line-height": "1.2",
+                    "font-weight": "600",
+                    "text-transform": "uppercase"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000085",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Pre-footer — servicios y contacto",
+        "size": "3/5",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_align_items": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "align-items",
+            "val": {
+              "desktop": "stretch"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "left": "1.5rem"
+              },
+              "tablet": {
+                "left": "0px"
+              },
+              "mobile": {
+                "left": "0px"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000082",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Tarjeta — Gama de stock permanente",
+            "item_is_wrap": 1,
+            "size": "1/2",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#1F2230"
+              },
+              "css_advanced_border_radius": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "42px 42px 42px 42px",
+                  "mobile": "24px 24px 24px 24px"
+                }
+              },
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "2.625rem",
+                    "right": "2.625rem",
+                    "bottom": "2.625rem",
+                    "left": "2.625rem"
+                  },
+                  "mobile": {
+                    "top": "1.5rem",
+                    "right": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.625rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              },
+              "height_switcher": "custom",
+              "css_advanced_height": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "height",
+                "val": {
+                  "desktop": "100%"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000081",
+                "type": "icon_box_2",
+                "jsclass": "icon_box_2",
+                "title": "Gama de stock permanente",
+                "icon": "icon_box_2",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Gama de stock permanente",
+                  "title_tag": "h3",
+                  "content": "Estamos siempre preparados para cubrir las necesidades de nuestros clientes, y nos adaptamos a diferentes situaciones.",
+                  "icon": "fas fa-box",
+                  "icon_position": "top",
+                  "icon_align": "start",
+                  "hover": "",
+                  "css_icon_box_icon_wrapper_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .icon-wrapper",
+                    "style": "width",
+                    "val": {
+                      "desktop": "70px",
+                      "mobile": "60px"
+                    }
+                  },
+                  "css_icon_box_icon_wrapper_height": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .icon-wrapper",
+                    "style": "height",
+                    "val": {
+                      "desktop": "70px",
+                      "mobile": "60px"
+                    }
+                  },
+                  "background_switcher": "default",
+                  "css_icon_box_icon_wrapper_bg_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .icon-wrapper",
+                    "style": "background-color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_icon_box_icon_wrapper_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .icon-wrapper",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "100px 100px 100px 100px"
+                    }
+                  },
+                  "css_icon_box_icon_wrapper_i_font_size": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .icon-wrapper i",
+                    "style": "font-size",
+                    "val": {
+                      "desktop": "32px",
+                      "mobile": "28px"
+                    }
+                  },
+                  "css_icon_box_icon_wrapper_icon_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .icon-wrapper i",
+                    "style": "color",
+                    "val": "#1F2230"
+                  },
+                  "css_icon_box_icon_wrapper_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .icon-wrapper",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "4rem"
+                      },
+                      "mobile": {
+                        "bottom": "2rem"
+                      }
+                    }
+                  },
+                  "css_icon_box_title_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_icon_box_title_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "22px",
+                        "line-height": "1.4",
+                        "font-weight": "700"
+                      },
+                      "mobile": {
+                        "font-size": "19px",
+                        "line-height": "1.4",
+                        "font-weight": "700"
+                      }
+                    }
+                  },
+                  "css_icon_box_title_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1rem"
+                      },
+                      "mobile": {
+                        "bottom": "1rem"
+                      }
+                    }
+                  },
+                  "css_icon_box_desc_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "color",
+                    "val": "#E3E5E8"
+                  },
+                  "css_icon_box_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "16px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "15px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_icon_box_desc_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000084",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Tarjeta — Atención técnica especializada",
+            "item_is_wrap": 1,
+            "size": "1/2",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#1F2230"
+              },
+              "css_advanced_border_radius": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "42px 42px 42px 42px",
+                  "mobile": "24px 24px 24px 24px"
+                }
+              },
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "2.625rem",
+                    "right": "2.625rem",
+                    "bottom": "2.625rem",
+                    "left": "2.625rem"
+                  },
+                  "mobile": {
+                    "top": "1.5rem",
+                    "right": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.625rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              },
+              "height_switcher": "custom",
+              "css_advanced_height": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "height",
+                "val": {
+                  "desktop": "100%"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000083",
+                "type": "icon_box_2",
+                "jsclass": "icon_box_2",
+                "title": "Atención técnica especializada",
+                "icon": "icon_box_2",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Atención técnica especializada",
+                  "title_tag": "h3",
+                  "content": "Nuestro equipo de profesionales está siempre preparado para resolver dudas y dar soluciones.",
+                  "icon": "fas fa-headset",
+                  "icon_position": "top",
+                  "icon_align": "start",
+                  "hover": "",
+                  "css_icon_box_icon_wrapper_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .icon-wrapper",
+                    "style": "width",
+                    "val": {
+                      "desktop": "70px",
+                      "mobile": "60px"
+                    }
+                  },
+                  "css_icon_box_icon_wrapper_height": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .icon-wrapper",
+                    "style": "height",
+                    "val": {
+                      "desktop": "70px",
+                      "mobile": "60px"
+                    }
+                  },
+                  "background_switcher": "default",
+                  "css_icon_box_icon_wrapper_bg_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .icon-wrapper",
+                    "style": "background-color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_icon_box_icon_wrapper_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .icon-wrapper",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "100px 100px 100px 100px"
+                    }
+                  },
+                  "css_icon_box_icon_wrapper_i_font_size": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .icon-wrapper i",
+                    "style": "font-size",
+                    "val": {
+                      "desktop": "32px",
+                      "mobile": "28px"
+                    }
+                  },
+                  "css_icon_box_icon_wrapper_icon_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .icon-wrapper i",
+                    "style": "color",
+                    "val": "#1F2230"
+                  },
+                  "css_icon_box_icon_wrapper_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .icon-wrapper",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "4rem"
+                      },
+                      "mobile": {
+                        "bottom": "2rem"
+                      }
+                    }
+                  },
+                  "css_icon_box_title_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "color",
+                    "val": "#FDFDFC"
+                  },
+                  "css_icon_box_title_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "22px",
+                        "line-height": "1.4",
+                        "font-weight": "700"
+                      },
+                      "mobile": {
+                        "font-size": "19px",
+                        "line-height": "1.4",
+                        "font-weight": "700"
+                      }
+                    }
+                  },
+                  "css_icon_box_title_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1rem"
+                      },
+                      "mobile": {
+                        "bottom": "1rem"
+                      }
+                    }
+                  },
+                  "css_icon_box_desc_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "color",
+                    "val": "#E3E5E8"
+                  },
+                  "css_icon_box_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "16px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "15px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_icon_box_desc_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000064",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Tarjeta — Contáctanos",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#FDFDFC"
+              },
+              "css_advanced_border_radius": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "42px 42px 42px 42px",
+                  "mobile": "24px 24px 24px 24px"
+                }
+              },
+              "css_advanced_box_shadow": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "box-shadow",
+                "val": {
+                  "desktop": "0px 0px 64px 0px rgba(51,80,153,0.08)"
+                }
+              },
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "2.625rem",
+                    "right": "2.625rem",
+                    "bottom": "2.625rem",
+                    "left": "2.625rem"
+                  },
+                  "mobile": {
+                    "top": "1.5rem",
+                    "right": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem"
+                  }
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000063",
+                "type": "promo_box",
+                "jsclass": "promo_box",
+                "title": "Contáctanos",
+                "icon": "promo_box",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "image": "https://maderasvazquez.com/wp-content/uploads/2026/08/prefooter-contacto.jpg",
+                  "title": "Contáctanos y ponnos a prueba en la realización de tu proyecto",
+                  "title_tag": "h3",
+                  "content": "Nos gustan los retos y encontrar nuevas oportunidades para innovar con nuestro trabajo. Estamos en constante aprendizaje y mejora, y podemos demostrarlo. Te estamos esperando.",
+                  "btn_text": "Contactar →",
+                  "btn_link": "/contacto/",
+                  "position": "left",
+                  "border": "0",
+                  "css_promo_box_wrapperphoto_wrapper_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .promo_box_wrapper .photo_wrapper",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "16px 16px 16px 16px"
+                    }
+                  },
+                  "css_promo_box_desc_title_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .promo_box_wrapper .desc_wrapper .title",
+                    "style": "color",
+                    "val": "#323232"
+                  },
+                  "css_promo_box_desc_title_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .promo_box_wrapper .desc_wrapper .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "22px",
+                        "line-height": "1.4",
+                        "font-weight": "700"
+                      },
+                      "mobile": {
+                        "font-size": "19px",
+                        "line-height": "1.4",
+                        "font-weight": "700"
+                      }
+                    }
+                  },
+                  "css_promo_box_desc_title_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .promo_box_wrapper .desc_wrapper .title",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1rem"
+                      },
+                      "mobile": {
+                        "bottom": "1rem"
+                      }
+                    }
+                  },
+                  "css_promo_box_desc_desc_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .promo_box_wrapper .desc_wrapper .desc",
+                    "style": "color",
+                    "val": "#5C5851"
+                  },
+                  "css_promo_box_desc_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .promo_box_wrapper .desc_wrapper .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "16px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "15px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_promo_box_desc_desc_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .promo_box_wrapper .desc_wrapper .desc",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1.5rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  },
+                  "background_switcher": "default",
+                  "css_promo_box_desc_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .promo_box_wrapper .desc_wrapper .button",
+                    "style": "background-color",
+                    "val": "rgba(0,0,0,0)"
+                  },
+                  "css_promo_box_desc_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .promo_box_wrapper .desc_wrapper .button",
+                    "style": "color",
+                    "val": "#323232"
+                  },
+                  "css_promo_box_desc_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .promo_box_wrapper .desc_wrapper .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  },
+                  "css_promo_box_desc_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .promo_box_wrapper .desc_wrapper .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "16px",
+                        "line-height": "1.2",
+                        "font-weight": "600",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "15px",
+                        "line-height": "1.2",
+                        "font-weight": "600",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_promo_box_desc_button_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .promo_box_wrapper .desc_wrapper .button:hover",
+                    "style": "color",
+                    "val": "#3B4FB0"
+                  },
+                  "background_switcher_hover": "default",
+                  "css_promo_box_desc_button_background_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .promo_box_wrapper .desc_wrapper .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .promo_box_wrapper .desc_wrapper .button:before",
+                    "style": "background",
+                    "val": "rgba(0,0,0,0)"
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
