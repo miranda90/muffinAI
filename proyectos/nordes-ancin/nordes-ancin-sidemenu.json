@@ -1,0 +1,707 @@
+[
+  {
+    "uid": "sec000026",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Menú lateral — Nordés Ancín",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "full",
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "mobile": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          }
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000012",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Panel — menú",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "4rem"
+              },
+              "mobile": {
+                "bottom": "2.5rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000010",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Etiqueta — Menú",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Menú",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#A3A3A3"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.6",
+                    "text-transform": "uppercase"
+                  },
+                  "mobile": {
+                    "font-size": "16px",
+                    "line-height": "1.6",
+                    "text-transform": "uppercase"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.25rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000011",
+            "type": "sidemenu_menu",
+            "jsclass": "sidemenu_menu",
+            "title": "Menú lateral",
+            "icon": "sidemenu_menu",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "tabs": [
+                {
+                  "title": "Menú lateral",
+                  "menu": "6"
+                }
+              ],
+              "submenu": "on",
+              "submenu_on": "toggled",
+              "submenu_icon_display": "on",
+              "submenu_icon": "fas fa-angle-down",
+              "css_ul-sidemenu-menulia-menu-link_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement ul.mfn-sidemenu-menu li a.mfn-menu-link",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              },
+              "css_ul-sidemenu-menulia-menu-link_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement ul.mfn-sidemenu-menu li a.mfn-menu-link",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "1rem"
+                  }
+                }
+              },
+              "css_sidemenu-menulia-menu-link_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement ul.mfn-sidemenu-menu li a.mfn-menu-link",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "36px",
+                    "line-height": "1.24",
+                    "letter-spacing": "-0.72px",
+                    "font-weight": "500"
+                  },
+                  "tablet": {
+                    "font-size": "32px",
+                    "line-height": "1.24",
+                    "letter-spacing": "-0.64px",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "28px",
+                    "line-height": "1.24",
+                    "letter-spacing": "-0.56px",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_ul-sidemenu-menulia-menu-link_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement ul.mfn-sidemenu-menu li a.mfn-menu-link",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_ul-sidemenu-menu-link_color_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement ul.mfn-sidemenu-menu li a.mfn-menu-link:hover",
+                "style": "color",
+                "val": "#F1F1EE"
+              },
+              "css_sidemenu-menuli_sidemenu_submenu_icon_size": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mfn-sidemenu-menu li",
+                "style": "--mfn-sidemenu-submenu-icon-size",
+                "val": {
+                  "desktop": "19.2px"
+                }
+              },
+              "css_sidemenu-menuliouter-menu-subi_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mfn-sidemenu-menu li .outer-menu-sub i",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000014",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Panel — separador",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "4rem"
+              },
+              "mobile": {
+                "bottom": "2.5rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000013",
+            "type": "divider",
+            "jsclass": "divider",
+            "title": "Separador",
+            "icon": "divider",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "height": "1",
+              "style": "default",
+              "line": "default",
+              "color": "rgba(252,252,252,0.24)",
+              "themecolor": "0",
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000019",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Panel — contacto",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "7.5rem"
+              },
+              "mobile": {
+                "bottom": "3rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000015",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Etiqueta — Contacto",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Contacto",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#A3A3A3"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.6",
+                    "text-transform": "uppercase"
+                  },
+                  "mobile": {
+                    "font-size": "16px",
+                    "line-height": "1.6",
+                    "text-transform": "uppercase"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.25rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000016",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Dirección",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Polígono Espíritu Santo, c/ Monier 9-11, parcelas 36-38, 15650 Cambre",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.4px"
+                  },
+                  "mobile": {
+                    "font-size": "18px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.36px"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "1rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000017",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Teléfono",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "<a href=\"tel:+34981138338\">+34 981 138 338</a>",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#F1F1EE"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.6"
+                  },
+                  "mobile": {
+                    "font-size": "16px",
+                    "line-height": "1.6"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "1rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000018",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Email",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "<a href=\"mailto:info@nordesancin.com\">info@nordesancin.com</a>",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#F1F1EE"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.6"
+                  },
+                  "mobile": {
+                    "font-size": "16px",
+                    "line-height": "1.6"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000021",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Panel — redes (etiqueta)",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "0px"
+              },
+              "mobile": {
+                "bottom": "0px"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000020",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Etiqueta — Redes sociales",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Redes sociales",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#A3A3A3"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.6",
+                    "text-transform": "uppercase"
+                  },
+                  "mobile": {
+                    "font-size": "16px",
+                    "line-height": "1.6",
+                    "text-transform": "uppercase"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.25rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000025",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Panel — redes sociales",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "grid": "grid",
+          "grid_columns_switcher": "custom",
+          "css_grid_columns_custom": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-grid-col-custom.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(3, 28.8px)",
+              "mobile": "repeat(3, 24px)"
+            }
+          },
+          "css_grid_columns_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "column-gap",
+            "val": {
+              "desktop": "1.2rem",
+              "mobile": "1rem"
+            }
+          },
+          "css_grid_rows_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "row-gap",
+            "val": {
+              "desktop": "0px"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "0px"
+              },
+              "mobile": {
+                "bottom": "0px"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000022",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Red social — Instagram",
+            "icon": "image",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://nordesancin.com/wp-content/uploads/2026/07/icono-instagram.svg",
+              "stretch": "0",
+              "alt": "Instagram",
+              "link": "https://www.instagram.com/",
+              "target": "1",
+              "lazy_load": "",
+              "css_image_frame_width": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "width",
+                "val": {
+                  "desktop": "28.8px",
+                  "mobile": "24px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000023",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Red social — LinkedIn",
+            "icon": "image",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://nordesancin.com/wp-content/uploads/2026/07/icono-linkedin.svg",
+              "stretch": "0",
+              "alt": "LinkedIn",
+              "link": "https://www.linkedin.com/",
+              "target": "1",
+              "lazy_load": "",
+              "css_image_frame_width": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "width",
+                "val": {
+                  "desktop": "28.8px",
+                  "mobile": "24px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000024",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Red social — Facebook",
+            "icon": "image",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://nordesancin.com/wp-content/uploads/2026/07/icono-facebook.svg",
+              "stretch": "0",
+              "alt": "Facebook",
+              "link": "https://www.facebook.com/",
+              "target": "1",
+              "lazy_load": "",
+              "css_image_frame_width": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "width",
+                "val": {
+                  "desktop": "28.8px",
+                  "mobile": "24px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

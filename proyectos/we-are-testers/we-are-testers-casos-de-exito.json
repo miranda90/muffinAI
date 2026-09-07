@@ -1,0 +1,4278 @@
+[
+  {
+    "uid": "sec000009",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Hero — Casos de éxito",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "0px",
+            "right": "2.25rem",
+            "bottom": "0px",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "0px",
+            "right": "1.5rem",
+            "bottom": "0px",
+            "left": "1.5rem"
+          },
+          "mobile": {
+            "top": "0px",
+            "right": "1rem",
+            "bottom": "0px",
+            "left": "1rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#7F41F5"
+      },
+      "css_advanced_background_image": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-image",
+        "val": {
+          "desktop": "https://wearetesters.com/wp-content/uploads/2026/08/hero-fondo.jpg"
+        }
+      },
+      "css_advanced_background_size": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size",
+        "val": {
+          "desktop": "cover"
+        }
+      },
+      "css_advanced_background_position": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_background_repeat": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-repeat",
+        "val": {
+          "desktop": "no-repeat"
+        }
+      },
+      "height_switcher": "custom",
+      "css_advanced_height": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "height",
+        "val": {
+          "desktop": "900px",
+          "tablet": "auto",
+          "mobile": "auto"
+        }
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "stretch"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000005",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Hero — texto",
+        "size": "1/2",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "height_switcher": "custom",
+          "css_advanced_height": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "height",
+            "val": {
+              "desktop": "100%",
+              "tablet": "auto",
+              "mobile": "auto"
+            }
+          },
+          "css_advanced_align_content": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "align-content",
+            "val": {
+              "desktop": "space-between"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "3rem",
+                "right": "3rem",
+                "bottom": "3rem",
+                "left": "3rem"
+              },
+              "tablet": {
+                "top": "8rem",
+                "right": "1rem",
+                "bottom": "2.5rem",
+                "left": "1rem"
+              },
+              "mobile": {
+                "top": "7rem",
+                "right": "0px",
+                "bottom": "2rem",
+                "left": "0px"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000001",
+            "type": "breadcrumbs",
+            "jsclass": "breadcrumbs",
+            "title": "Hero — breadcrumb",
+            "icon": "breadcrumbs",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "separator": "/",
+              "breadcrumb_home": "1",
+              "css_breadcrumbs_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .breadcrumbs",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "14px",
+                    "line-height": "1.5",
+                    "font-weight": "600"
+                  },
+                  "mobile": {
+                    "font-size": "13px",
+                    "line-height": "1.5",
+                    "font-weight": "600"
+                  }
+                }
+              },
+              "css_breadcrumbs_gap": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .breadcrumbs",
+                "style": "gap",
+                "val": {
+                  "desktop": "10px"
+                }
+              },
+              "css_breadcrumbsli_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .breadcrumbs li",
+                "style": "color",
+                "val": "#FFFFFF"
+              },
+              "css_breadcrumbslia_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .breadcrumbs li a",
+                "style": "color",
+                "val": "#FFFFFF"
+              },
+              "css_breadcrumbslia_color_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .breadcrumbs li:hover a",
+                "style": "color",
+                "val": "#F4F7F9"
+              },
+              "css_breadcrumbsli-breadcrumbs-separator_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .breadcrumbs li .mfn-breadcrumbs-separator",
+                "style": "color",
+                "val": "rgba(255,255,255,0.6)"
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "2rem",
+                    "left": "0px"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000002",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Hero — titular",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Investigación que se convierte en decisiones",
+              "header_tag": "h1",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#FFFFFF"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "68px",
+                    "line-height": "1",
+                    "letter-spacing": "-1.36px",
+                    "font-weight": "600"
+                  },
+                  "tablet": {
+                    "font-size": "48px",
+                    "line-height": "1.05",
+                    "letter-spacing": "-1px",
+                    "font-weight": "600"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-0.7px",
+                    "font-weight": "600"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "2.25rem",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "1.5rem",
+                    "left": "0px"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000003",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Hero — descripción",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Descubre cómo ayudamos a empresas de diferentes sectores a comprender mejor a sus consumidores y usuarios y convertir los insights en mejores decisiones de negocio.",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#F4F7F9"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "24px",
+                    "line-height": "1.5",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "18px",
+                    "line-height": "1.5",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "4rem",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "2rem",
+                    "left": "0px"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000004",
+            "type": "button",
+            "jsclass": "button",
+            "title": "Hero — botón",
+            "icon": "button",
+            "size": "1/2",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Cuéntanos tu reto",
+              "link": "/contacto/",
+              "icon": "icon-right-thin",
+              "icon_position": "left",
+              "button_style": "",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#5717CF"
+              },
+              "css_button_icon_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                "style": "color",
+                "val": "#5717CF"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#FFFFFF"
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "0px 0px 0px 0px"
+                }
+              },
+              "css_button_gap": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "gap",
+                "val": {
+                  "desktop": "16px",
+                  "mobile": "12px"
+                }
+              },
+              "css_button_icon_size": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button .button_icon",
+                "style": "font-size",
+                "val": {
+                  "desktop": "20px",
+                  "mobile": "18px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "0.625rem",
+                    "right": "1.5rem",
+                    "bottom": "0.625rem",
+                    "left": "0.75rem"
+                  },
+                  "mobile": {
+                    "top": "0.625rem",
+                    "right": "1.25rem",
+                    "bottom": "0.625rem",
+                    "left": "0.75rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.4",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "16px",
+                    "line-height": "1.4",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              },
+              "width_switcher": "inline"
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000008",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Hero — imagen",
+        "size": "1/2",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "3rem",
+                "right": "3rem",
+                "bottom": "3rem",
+                "left": "0px"
+              },
+              "tablet": {
+                "top": "0px",
+                "right": "1rem",
+                "bottom": "2.5rem",
+                "left": "1rem"
+              },
+              "mobile": {
+                "top": "0px",
+                "right": "0px",
+                "bottom": "2rem",
+                "left": "0px"
+              }
+            }
+          },
+          "css_advanced_align_items": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "align-items",
+            "val": {
+              "desktop": "center"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000007",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Hero — panel imagen",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#7F41F5"
+              },
+              "css_advanced_background_image": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-image",
+                "val": {
+                  "desktop": "https://wearetesters.com/wp-content/uploads/2026/08/hero-fondo.jpg"
+                }
+              },
+              "css_advanced_background_size": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-size",
+                "val": {
+                  "desktop": "cover"
+                }
+              },
+              "css_advanced_background_position": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-position",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_advanced_background_repeat": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-repeat",
+                "val": {
+                  "desktop": "no-repeat"
+                }
+              },
+              "css_advanced_align_items": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "align-items",
+                "val": {
+                  "desktop": "flex-end"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000006",
+                "type": "image",
+                "jsclass": "image",
+                "title": "Hero — foto",
+                "icon": "image",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "src": "https://wearetesters.com/wp-content/uploads/2026/08/hero-foto.png",
+                  "alt": "Equipo de We are testers analizando resultados con un cliente",
+                  "stretch": "1",
+                  "hover": "disable",
+                  "image_height": "custom",
+                  "image_height_style": "",
+                  "css_image_cover_height": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                    "style": "height",
+                    "val": {
+                      "desktop": "805px",
+                      "tablet": "560px",
+                      "mobile": "420px"
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000050",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Casos de éxito",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "4rem",
+            "bottom": "0px",
+            "left": "4rem"
+          },
+          "tablet": {
+            "top": "5rem",
+            "right": "2rem",
+            "bottom": "0px",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "4rem",
+            "right": "1rem",
+            "bottom": "0px",
+            "left": "1rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#FFFFFF"
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000012",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Eyebrow — Casos de éxito",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_align_items": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "align-items",
+            "val": {
+              "desktop": "center"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "2rem"
+              },
+              "mobile": {
+                "bottom": "1.25rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000010",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Eyebrow — cuadrado",
+            "icon": "image",
+            "size": "1/6",
+            "tablet_size": "1/6",
+            "mobile_size": "1/6",
+            "attr": {
+              "src": "https://wearetesters.com/wp-content/uploads/2026/08/eyebrow-cuadrado.svg",
+              "alt": "",
+              "width_switcher": "inline",
+              "hover": "disable",
+              "css_image_frame_width": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "width",
+                "val": {
+                  "desktop": "10px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "1.125rem",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0.75rem",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000011",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Eyebrow — texto",
+            "icon": "heading",
+            "size": "5/6",
+            "tablet_size": "5/6",
+            "mobile_size": "5/6",
+            "attr": {
+              "title": "Casos de éxito",
+              "header_tag": "p",
+              "width_switcher": "inline",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#221C3D"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "24px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-0.48px",
+                    "font-weight": "600",
+                    "text-transform": "uppercase"
+                  },
+                  "mobile": {
+                    "font-size": "18px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-0.36px",
+                    "font-weight": "600",
+                    "text-transform": "uppercase"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000014",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Casos — titular",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "5rem"
+              },
+              "tablet": {
+                "bottom": "3rem"
+              },
+              "mobile": {
+                "bottom": "2rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000013",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Casos — titular",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Historias de clientes<br>que confían en We are testers",
+              "header_tag": "h2",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#221C3D"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "68px",
+                    "line-height": "1",
+                    "letter-spacing": "-1.36px",
+                    "font-weight": "600"
+                  },
+                  "tablet": {
+                    "font-size": "48px",
+                    "line-height": "1.05",
+                    "letter-spacing": "-1px",
+                    "font-weight": "600"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-0.7px",
+                    "font-weight": "600"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000022",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Caso — Eroski",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_align_items": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "align-items",
+            "val": {
+              "desktop": "center"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "4rem",
+                "right": "1rem",
+                "bottom": "4rem",
+                "left": "1rem"
+              },
+              "tablet": {
+                "top": "3rem",
+                "right": "0px",
+                "bottom": "3rem",
+                "left": "0px"
+              },
+              "mobile": {
+                "top": "2.5rem",
+                "right": "0px",
+                "bottom": "2.5rem",
+                "left": "0px"
+              }
+            }
+          },
+          "css_advanced_border_style": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-style",
+            "val": "solid"
+          },
+          "css_advanced_border_width": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-width",
+            "val": {
+              "desktop": "0px 0px 1px 0px"
+            }
+          },
+          "css_advanced_border_color": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-color",
+            "val": "#E5E7EB"
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000020",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Eroski — texto",
+            "item_is_wrap": 1,
+            "size": "1/2",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "2rem",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              },
+              "css_advanced_align_items": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "align-items",
+                "val": {
+                  "desktop": "flex-start"
+                }
+              },
+              "css_advanced_order": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+                "style": "order",
+                "val": {
+                  "desktop": "1",
+                  "mobile": "2"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000015",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Eroski — cliente",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Eroski",
+                  "header_tag": "h2",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#221C3D"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "68px",
+                        "line-height": "1",
+                        "letter-spacing": "-1.36px",
+                        "font-weight": "600"
+                      },
+                      "tablet": {
+                        "font-size": "48px",
+                        "line-height": "1.05",
+                        "letter-spacing": "-1px",
+                        "font-weight": "600"
+                      },
+                      "mobile": {
+                        "font-size": "36px",
+                        "line-height": "1.1",
+                        "letter-spacing": "-0.7px",
+                        "font-weight": "600"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1rem",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0.75rem",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000016",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Eroski — titular",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Cocrear con consumidores un nuevo modelo de tienda",
+                  "header_tag": "h3",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#5717CF"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "30px",
+                        "line-height": "1.5",
+                        "font-weight": "600"
+                      },
+                      "mobile": {
+                        "font-size": "22px",
+                        "line-height": "1.4",
+                        "font-weight": "600"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1rem",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0.75rem",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000017",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Eroski — texto",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "A través de una comunidad online, Eroski pudo profundizar en las necesidades y expectativas de sus clientes para identificar las claves de una experiencia de compra ideal y orientar la definición de un nuevo modelo de tienda.",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#4A5565"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.5",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.5",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1.5rem",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1.25rem",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000018",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Etiqueta — Comunidades online",
+                "icon": "button",
+                "size": "1/4",
+                "tablet_size": "1/4",
+                "mobile_size": "1/2",
+                "attr": {
+                  "title": "Comunidades online",
+                  "link": "",
+                  "icon": "",
+                  "button_style": "",
+                  "width_switcher": "inline",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#000000"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "css_button_border_style": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-style",
+                    "val": "solid"
+                  },
+                  "css_button_border_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-width",
+                    "val": {
+                      "desktop": "1px 1px 1px 1px"
+                    }
+                  },
+                  "css_button_border_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-color",
+                    "val": "#C5C7C8"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "2000px 2000px 2000px 2000px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0.375rem",
+                        "right": "0.75rem",
+                        "bottom": "0.375rem",
+                        "left": "0.75rem"
+                      },
+                      "mobile": {
+                        "top": "0.375rem",
+                        "right": "0.75rem",
+                        "bottom": "0.375rem",
+                        "left": "0.75rem"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "12px",
+                        "line-height": "1.3",
+                        "font-weight": "500",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "11px",
+                        "line-height": "1.3",
+                        "font-weight": "500",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_button_background_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                    "style": "background",
+                    "val": "#F4F7F9"
+                  },
+                  "css_button_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                    "style": "color",
+                    "val": "#000000"
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0.75rem",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0.75rem",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000019",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Eroski — leer más",
+                "icon": "button",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Leer más",
+                  "link": "/casos-de-exito/eroski/",
+                  "icon": "icon-right-thin",
+                  "icon_position": "left",
+                  "button_style": "",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#221C3D"
+                  },
+                  "css_button_icon_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                    "style": "color",
+                    "val": "#7F41F5"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "0px 0px 0px 0px"
+                    }
+                  },
+                  "css_button_gap": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "gap",
+                    "val": {
+                      "desktop": "16px",
+                      "mobile": "12px"
+                    }
+                  },
+                  "css_button_icon_size": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button .button_icon",
+                    "style": "font-size",
+                    "val": {
+                      "desktop": "20px",
+                      "mobile": "18px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0.25rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0.25rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "1.75rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "1.25rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  },
+                  "width_switcher": "inline",
+                  "css_button_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                    "style": "color",
+                    "val": "#5717CF"
+                  },
+                  "css_button_background_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                    "style": "background",
+                    "val": "transparent"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000021",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Eroski — imagen",
+            "icon": "image",
+            "size": "1/2",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://wearetesters.com/wp-content/uploads/2026/08/caso-eroski.png",
+              "alt": "Caso de éxito Eroski",
+              "stretch": "1",
+              "hover": "disable",
+              "link": "/casos-de-exito/eroski/",
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "1.5rem",
+                    "left": "0px"
+                  }
+                }
+              },
+              "css_advanced_order": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "order",
+                "val": {
+                  "desktop": "2",
+                  "mobile": "1"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000031",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Caso — Unicaja Banco",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_align_items": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "align-items",
+            "val": {
+              "desktop": "center"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "4rem",
+                "right": "1rem",
+                "bottom": "4rem",
+                "left": "1rem"
+              },
+              "tablet": {
+                "top": "3rem",
+                "right": "0px",
+                "bottom": "3rem",
+                "left": "0px"
+              },
+              "mobile": {
+                "top": "2.5rem",
+                "right": "0px",
+                "bottom": "2.5rem",
+                "left": "0px"
+              }
+            }
+          },
+          "css_advanced_border_style": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-style",
+            "val": "solid"
+          },
+          "css_advanced_border_width": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-width",
+            "val": {
+              "desktop": "0px 0px 1px 0px"
+            }
+          },
+          "css_advanced_border_color": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-color",
+            "val": "#E5E7EB"
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000030",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Unicaja Banco — imagen",
+            "icon": "image",
+            "size": "1/2",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://wearetesters.com/wp-content/uploads/2026/08/caso-unicaja.png",
+              "alt": "Caso de éxito Unicaja Banco",
+              "stretch": "1",
+              "hover": "disable",
+              "link": "/casos-de-exito/unicaja-banco/",
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "1.5rem",
+                    "left": "0px"
+                  }
+                }
+              },
+              "css_advanced_order": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "order",
+                "val": {
+                  "desktop": "1",
+                  "mobile": "1"
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000029",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Unicaja Banco — texto",
+            "item_is_wrap": 1,
+            "size": "1/2",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "2rem"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              },
+              "css_advanced_align_items": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "align-items",
+                "val": {
+                  "desktop": "flex-start"
+                }
+              },
+              "css_advanced_order": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+                "style": "order",
+                "val": {
+                  "desktop": "2",
+                  "mobile": "2"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000023",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Unicaja Banco — cliente",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Unicaja Banco",
+                  "header_tag": "h2",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#221C3D"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "68px",
+                        "line-height": "1",
+                        "letter-spacing": "-1.36px",
+                        "font-weight": "600"
+                      },
+                      "tablet": {
+                        "font-size": "48px",
+                        "line-height": "1.05",
+                        "letter-spacing": "-1px",
+                        "font-weight": "600"
+                      },
+                      "mobile": {
+                        "font-size": "36px",
+                        "line-height": "1.1",
+                        "letter-spacing": "-0.7px",
+                        "font-weight": "600"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1rem",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0.75rem",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000024",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Unicaja Banco — titular",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Validar un nuevo producto digital antes de su lanzamiento",
+                  "header_tag": "h3",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#5717CF"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "30px",
+                        "line-height": "1.5",
+                        "font-weight": "600"
+                      },
+                      "mobile": {
+                        "font-size": "22px",
+                        "line-height": "1.4",
+                        "font-weight": "600"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1rem",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0.75rem",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000025",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Unicaja Banco — texto",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "Liberbank Digital, actualmente integrado en Unicaja Banco, confió en We are testers para validar el lanzamiento de una nueva tarjeta dirigida a un público específico, analizando su funcionamiento, la experiencia de contratación, el diseño y la sensibilidad al precio.",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#4A5565"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.5",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.5",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1.5rem",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1.25rem",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000026",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Etiqueta — Investigación cuantitativa",
+                "icon": "button",
+                "size": "1/4",
+                "tablet_size": "1/4",
+                "mobile_size": "1/2",
+                "attr": {
+                  "title": "Investigación cuantitativa",
+                  "link": "",
+                  "icon": "",
+                  "button_style": "",
+                  "width_switcher": "inline",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#000000"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "css_button_border_style": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-style",
+                    "val": "solid"
+                  },
+                  "css_button_border_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-width",
+                    "val": {
+                      "desktop": "1px 1px 1px 1px"
+                    }
+                  },
+                  "css_button_border_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-color",
+                    "val": "#C5C7C8"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "2000px 2000px 2000px 2000px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0.375rem",
+                        "right": "0.75rem",
+                        "bottom": "0.375rem",
+                        "left": "0.75rem"
+                      },
+                      "mobile": {
+                        "top": "0.375rem",
+                        "right": "0.75rem",
+                        "bottom": "0.375rem",
+                        "left": "0.75rem"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "12px",
+                        "line-height": "1.3",
+                        "font-weight": "500",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "11px",
+                        "line-height": "1.3",
+                        "font-weight": "500",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_button_background_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                    "style": "background",
+                    "val": "#F4F7F9"
+                  },
+                  "css_button_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                    "style": "color",
+                    "val": "#000000"
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0.75rem",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0.75rem",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000027",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Etiqueta — UX Research",
+                "icon": "button",
+                "size": "1/4",
+                "tablet_size": "1/4",
+                "mobile_size": "1/2",
+                "attr": {
+                  "title": "UX Research",
+                  "link": "",
+                  "icon": "",
+                  "button_style": "",
+                  "width_switcher": "inline",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#000000"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "css_button_border_style": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-style",
+                    "val": "solid"
+                  },
+                  "css_button_border_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-width",
+                    "val": {
+                      "desktop": "1px 1px 1px 1px"
+                    }
+                  },
+                  "css_button_border_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-color",
+                    "val": "#C5C7C8"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "2000px 2000px 2000px 2000px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0.375rem",
+                        "right": "0.75rem",
+                        "bottom": "0.375rem",
+                        "left": "0.75rem"
+                      },
+                      "mobile": {
+                        "top": "0.375rem",
+                        "right": "0.75rem",
+                        "bottom": "0.375rem",
+                        "left": "0.75rem"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "12px",
+                        "line-height": "1.3",
+                        "font-weight": "500",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "11px",
+                        "line-height": "1.3",
+                        "font-weight": "500",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_button_background_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                    "style": "background",
+                    "val": "#F4F7F9"
+                  },
+                  "css_button_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                    "style": "color",
+                    "val": "#000000"
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0.75rem",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0.75rem",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000028",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Unicaja Banco — leer más",
+                "icon": "button",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Leer más",
+                  "link": "/casos-de-exito/unicaja-banco/",
+                  "icon": "icon-right-thin",
+                  "icon_position": "left",
+                  "button_style": "",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#221C3D"
+                  },
+                  "css_button_icon_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                    "style": "color",
+                    "val": "#7F41F5"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "0px 0px 0px 0px"
+                    }
+                  },
+                  "css_button_gap": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "gap",
+                    "val": {
+                      "desktop": "16px",
+                      "mobile": "12px"
+                    }
+                  },
+                  "css_button_icon_size": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button .button_icon",
+                    "style": "font-size",
+                    "val": {
+                      "desktop": "20px",
+                      "mobile": "18px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0.25rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0.25rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "1.75rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "1.25rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  },
+                  "width_switcher": "inline",
+                  "css_button_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                    "style": "color",
+                    "val": "#5717CF"
+                  },
+                  "css_button_background_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                    "style": "background",
+                    "val": "transparent"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uid": "wrp000040",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Caso — Azti",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_align_items": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "align-items",
+            "val": {
+              "desktop": "center"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "4rem",
+                "right": "1rem",
+                "bottom": "4rem",
+                "left": "1rem"
+              },
+              "tablet": {
+                "top": "3rem",
+                "right": "0px",
+                "bottom": "3rem",
+                "left": "0px"
+              },
+              "mobile": {
+                "top": "2.5rem",
+                "right": "0px",
+                "bottom": "2.5rem",
+                "left": "0px"
+              }
+            }
+          },
+          "css_advanced_border_style": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-style",
+            "val": "solid"
+          },
+          "css_advanced_border_width": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-width",
+            "val": {
+              "desktop": "0px 0px 1px 0px"
+            }
+          },
+          "css_advanced_border_color": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-color",
+            "val": "#E5E7EB"
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000038",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Azti — texto",
+            "item_is_wrap": 1,
+            "size": "1/2",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "2rem",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              },
+              "css_advanced_align_items": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "align-items",
+                "val": {
+                  "desktop": "flex-start"
+                }
+              },
+              "css_advanced_order": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+                "style": "order",
+                "val": {
+                  "desktop": "1",
+                  "mobile": "2"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000032",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Azti — cliente",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Azti",
+                  "header_tag": "h2",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#221C3D"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "68px",
+                        "line-height": "1",
+                        "letter-spacing": "-1.36px",
+                        "font-weight": "600"
+                      },
+                      "tablet": {
+                        "font-size": "48px",
+                        "line-height": "1.05",
+                        "letter-spacing": "-1px",
+                        "font-weight": "600"
+                      },
+                      "mobile": {
+                        "font-size": "36px",
+                        "line-height": "1.1",
+                        "letter-spacing": "-0.7px",
+                        "font-weight": "600"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1rem",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0.75rem",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000033",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Azti — titular",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Incorporar la voz del consumidor al desarrollo de nuevos productos",
+                  "header_tag": "h3",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#5717CF"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "30px",
+                        "line-height": "1.5",
+                        "font-weight": "600"
+                      },
+                      "mobile": {
+                        "font-size": "22px",
+                        "line-height": "1.4",
+                        "font-weight": "600"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1rem",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0.75rem",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000034",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Azti — texto",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "AZTI incorporó la perspectiva de consumidores de diferentes países para explorar sus percepciones, hábitos y necesidades y obtener insights que orientaran el desarrollo de nuevos productos reducidos en azúcar.",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#4A5565"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.5",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.5",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1.5rem",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1.25rem",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000035",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Etiqueta — Comunidades online",
+                "icon": "button",
+                "size": "1/4",
+                "tablet_size": "1/4",
+                "mobile_size": "1/2",
+                "attr": {
+                  "title": "Comunidades online",
+                  "link": "",
+                  "icon": "",
+                  "button_style": "",
+                  "width_switcher": "inline",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#000000"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "css_button_border_style": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-style",
+                    "val": "solid"
+                  },
+                  "css_button_border_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-width",
+                    "val": {
+                      "desktop": "1px 1px 1px 1px"
+                    }
+                  },
+                  "css_button_border_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-color",
+                    "val": "#C5C7C8"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "2000px 2000px 2000px 2000px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0.375rem",
+                        "right": "0.75rem",
+                        "bottom": "0.375rem",
+                        "left": "0.75rem"
+                      },
+                      "mobile": {
+                        "top": "0.375rem",
+                        "right": "0.75rem",
+                        "bottom": "0.375rem",
+                        "left": "0.75rem"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "12px",
+                        "line-height": "1.3",
+                        "font-weight": "500",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "11px",
+                        "line-height": "1.3",
+                        "font-weight": "500",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_button_background_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                    "style": "background",
+                    "val": "#F4F7F9"
+                  },
+                  "css_button_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                    "style": "color",
+                    "val": "#000000"
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0.75rem",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0.75rem",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000036",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Etiqueta — Investigación cualitativa",
+                "icon": "button",
+                "size": "1/4",
+                "tablet_size": "1/4",
+                "mobile_size": "1/2",
+                "attr": {
+                  "title": "Investigación cualitativa",
+                  "link": "",
+                  "icon": "",
+                  "button_style": "",
+                  "width_switcher": "inline",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#000000"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "css_button_border_style": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-style",
+                    "val": "solid"
+                  },
+                  "css_button_border_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-width",
+                    "val": {
+                      "desktop": "1px 1px 1px 1px"
+                    }
+                  },
+                  "css_button_border_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-color",
+                    "val": "#C5C7C8"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "2000px 2000px 2000px 2000px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0.375rem",
+                        "right": "0.75rem",
+                        "bottom": "0.375rem",
+                        "left": "0.75rem"
+                      },
+                      "mobile": {
+                        "top": "0.375rem",
+                        "right": "0.75rem",
+                        "bottom": "0.375rem",
+                        "left": "0.75rem"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "12px",
+                        "line-height": "1.3",
+                        "font-weight": "500",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "11px",
+                        "line-height": "1.3",
+                        "font-weight": "500",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_button_background_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                    "style": "background",
+                    "val": "#F4F7F9"
+                  },
+                  "css_button_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                    "style": "color",
+                    "val": "#000000"
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0.75rem",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0.75rem",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000037",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Azti — leer más",
+                "icon": "button",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Leer más",
+                  "link": "/casos-de-exito/azti/",
+                  "icon": "icon-right-thin",
+                  "icon_position": "left",
+                  "button_style": "",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#221C3D"
+                  },
+                  "css_button_icon_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                    "style": "color",
+                    "val": "#7F41F5"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "0px 0px 0px 0px"
+                    }
+                  },
+                  "css_button_gap": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "gap",
+                    "val": {
+                      "desktop": "16px",
+                      "mobile": "12px"
+                    }
+                  },
+                  "css_button_icon_size": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button .button_icon",
+                    "style": "font-size",
+                    "val": {
+                      "desktop": "20px",
+                      "mobile": "18px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0.25rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0.25rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "1.75rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "1.25rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  },
+                  "width_switcher": "inline",
+                  "css_button_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                    "style": "color",
+                    "val": "#5717CF"
+                  },
+                  "css_button_background_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                    "style": "background",
+                    "val": "transparent"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000039",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Azti — imagen",
+            "icon": "image",
+            "size": "1/2",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://wearetesters.com/wp-content/uploads/2026/08/caso-azti.png",
+              "alt": "Caso de éxito Azti",
+              "stretch": "1",
+              "hover": "disable",
+              "link": "/casos-de-exito/azti/",
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "1.5rem",
+                    "left": "0px"
+                  }
+                }
+              },
+              "css_advanced_order": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "order",
+                "val": {
+                  "desktop": "2",
+                  "mobile": "1"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000049",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Caso — Europcar",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_align_items": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "align-items",
+            "val": {
+              "desktop": "center"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "4rem",
+                "right": "1rem",
+                "bottom": "4rem",
+                "left": "1rem"
+              },
+              "tablet": {
+                "top": "3rem",
+                "right": "0px",
+                "bottom": "3rem",
+                "left": "0px"
+              },
+              "mobile": {
+                "top": "2.5rem",
+                "right": "0px",
+                "bottom": "2.5rem",
+                "left": "0px"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000048",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Europcar — imagen",
+            "icon": "image",
+            "size": "1/2",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://wearetesters.com/wp-content/uploads/2026/08/caso-europcar.png",
+              "alt": "Caso de éxito Europcar",
+              "stretch": "1",
+              "hover": "disable",
+              "link": "/casos-de-exito/europcar/",
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "1.5rem",
+                    "left": "0px"
+                  }
+                }
+              },
+              "css_advanced_order": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "order",
+                "val": {
+                  "desktop": "1",
+                  "mobile": "1"
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000047",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Europcar — texto",
+            "item_is_wrap": 1,
+            "size": "1/2",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "2rem"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              },
+              "css_advanced_align_items": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "align-items",
+                "val": {
+                  "desktop": "flex-start"
+                }
+              },
+              "css_advanced_order": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+                "style": "order",
+                "val": {
+                  "desktop": "2",
+                  "mobile": "2"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000041",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Europcar — cliente",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Europcar",
+                  "header_tag": "h2",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#221C3D"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "68px",
+                        "line-height": "1",
+                        "letter-spacing": "-1.36px",
+                        "font-weight": "600"
+                      },
+                      "tablet": {
+                        "font-size": "48px",
+                        "line-height": "1.05",
+                        "letter-spacing": "-1px",
+                        "font-weight": "600"
+                      },
+                      "mobile": {
+                        "font-size": "36px",
+                        "line-height": "1.1",
+                        "letter-spacing": "-0.7px",
+                        "font-weight": "600"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1rem",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0.75rem",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000042",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Europcar — titular",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Integrar la voz del cliente en la estrategia de negocio",
+                  "header_tag": "h3",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#5717CF"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "30px",
+                        "line-height": "1.5",
+                        "font-weight": "600"
+                      },
+                      "mobile": {
+                        "font-size": "22px",
+                        "line-height": "1.4",
+                        "font-weight": "600"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1rem",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0.75rem",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000043",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Europcar — texto",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "A través de diferentes estudios cuantitativos y de UX Research, Europcar pudo validar decisiones de negocio, comprender mejor a sus clientes y optimizar la experiencia de contratación online.",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#4A5565"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.5",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.5",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1.5rem",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "1.25rem",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000044",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Etiqueta — Investigación cuantitativa",
+                "icon": "button",
+                "size": "1/4",
+                "tablet_size": "1/4",
+                "mobile_size": "1/2",
+                "attr": {
+                  "title": "Investigación cuantitativa",
+                  "link": "",
+                  "icon": "",
+                  "button_style": "",
+                  "width_switcher": "inline",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#000000"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "css_button_border_style": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-style",
+                    "val": "solid"
+                  },
+                  "css_button_border_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-width",
+                    "val": {
+                      "desktop": "1px 1px 1px 1px"
+                    }
+                  },
+                  "css_button_border_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-color",
+                    "val": "#C5C7C8"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "2000px 2000px 2000px 2000px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0.375rem",
+                        "right": "0.75rem",
+                        "bottom": "0.375rem",
+                        "left": "0.75rem"
+                      },
+                      "mobile": {
+                        "top": "0.375rem",
+                        "right": "0.75rem",
+                        "bottom": "0.375rem",
+                        "left": "0.75rem"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "12px",
+                        "line-height": "1.3",
+                        "font-weight": "500",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "11px",
+                        "line-height": "1.3",
+                        "font-weight": "500",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_button_background_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                    "style": "background",
+                    "val": "#F4F7F9"
+                  },
+                  "css_button_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                    "style": "color",
+                    "val": "#000000"
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0.75rem",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0.75rem",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000045",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Etiqueta — UX Research",
+                "icon": "button",
+                "size": "1/4",
+                "tablet_size": "1/4",
+                "mobile_size": "1/2",
+                "attr": {
+                  "title": "UX Research",
+                  "link": "",
+                  "icon": "",
+                  "button_style": "",
+                  "width_switcher": "inline",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#000000"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "css_button_border_style": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-style",
+                    "val": "solid"
+                  },
+                  "css_button_border_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-width",
+                    "val": {
+                      "desktop": "1px 1px 1px 1px"
+                    }
+                  },
+                  "css_button_border_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-color",
+                    "val": "#C5C7C8"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "2000px 2000px 2000px 2000px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0.375rem",
+                        "right": "0.75rem",
+                        "bottom": "0.375rem",
+                        "left": "0.75rem"
+                      },
+                      "mobile": {
+                        "top": "0.375rem",
+                        "right": "0.75rem",
+                        "bottom": "0.375rem",
+                        "left": "0.75rem"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "12px",
+                        "line-height": "1.3",
+                        "font-weight": "500",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "11px",
+                        "line-height": "1.3",
+                        "font-weight": "500",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_button_background_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                    "style": "background",
+                    "val": "#F4F7F9"
+                  },
+                  "css_button_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                    "style": "color",
+                    "val": "#000000"
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0.75rem",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0.75rem",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000046",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Europcar — leer más",
+                "icon": "button",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Leer más",
+                  "link": "/casos-de-exito/europcar/",
+                  "icon": "icon-right-thin",
+                  "icon_position": "left",
+                  "button_style": "",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#221C3D"
+                  },
+                  "css_button_icon_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                    "style": "color",
+                    "val": "#7F41F5"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "transparent"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "0px 0px 0px 0px"
+                    }
+                  },
+                  "css_button_gap": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "gap",
+                    "val": {
+                      "desktop": "16px",
+                      "mobile": "12px"
+                    }
+                  },
+                  "css_button_icon_size": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button .button_icon",
+                    "style": "font-size",
+                    "val": {
+                      "desktop": "20px",
+                      "mobile": "18px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0.25rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0.25rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.4",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "1.75rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "1.25rem",
+                        "right": "0px",
+                        "bottom": "0px",
+                        "left": "0px"
+                      }
+                    }
+                  },
+                  "width_switcher": "inline",
+                  "css_button_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                    "style": "color",
+                    "val": "#5717CF"
+                  },
+                  "css_button_background_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                    "style": "background",
+                    "val": "transparent"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000060",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Clientes",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "0px",
+            "bottom": "7.5rem",
+            "left": "0px"
+          },
+          "tablet": {
+            "top": "5rem",
+            "right": "0px",
+            "bottom": "5rem",
+            "left": "0px"
+          },
+          "mobile": {
+            "top": "4rem",
+            "right": "0px",
+            "bottom": "4rem",
+            "left": "0px"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#FFFFFF"
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000053",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Eyebrow — Clientes",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_align_items": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "align-items",
+            "val": {
+              "desktop": "center"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "2rem"
+              },
+              "mobile": {
+                "bottom": "1.25rem"
+              }
+            }
+          },
+          "css_advanced_justify_content": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "justify-content",
+            "val": {
+              "desktop": "center"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000051",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Eyebrow — cuadrado",
+            "icon": "image",
+            "size": "1/6",
+            "tablet_size": "1/6",
+            "mobile_size": "1/6",
+            "attr": {
+              "src": "https://wearetesters.com/wp-content/uploads/2026/08/eyebrow-cuadrado.svg",
+              "alt": "",
+              "width_switcher": "inline",
+              "hover": "disable",
+              "css_image_frame_width": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "width",
+                "val": {
+                  "desktop": "10px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "1.125rem",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0.75rem",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000052",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Eyebrow — texto",
+            "icon": "heading",
+            "size": "5/6",
+            "tablet_size": "5/6",
+            "mobile_size": "5/6",
+            "attr": {
+              "title": "Clientes",
+              "header_tag": "p",
+              "width_switcher": "inline",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#221C3D"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "24px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-0.48px",
+                    "font-weight": "600",
+                    "text-transform": "uppercase"
+                  },
+                  "mobile": {
+                    "font-size": "18px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-0.36px",
+                    "font-weight": "600",
+                    "text-transform": "uppercase"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000055",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Clientes — titular",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "3rem"
+              },
+              "mobile": {
+                "bottom": "2rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000054",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Clientes — titular",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Ya confían en nosotros",
+              "header_tag": "h2",
+              "css_txt_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#101828"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "60px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  },
+                  "tablet": {
+                    "font-size": "44px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  },
+                  "mobile": {
+                    "font-size": "34px",
+                    "line-height": "1.2",
+                    "font-weight": "600"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000057",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Clientes — logos",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "3rem"
+              },
+              "mobile": {
+                "bottom": "2rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000056",
+            "type": "clients_slider",
+            "jsclass": "clients_slider",
+            "title": "Clientes — logos",
+            "icon": "clients_slider",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "",
+              "title_tag": "span",
+              "orderby": "menu_order",
+              "order": "ASC",
+              "per_slide": "8",
+              "scroll": "1",
+              "navigation": "content",
+              "background_switcher": "default",
+              "css_clients_slider_ulliclient_wrapper_height": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .clients_slider_ul li .client_wrapper",
+                "style": "height",
+                "val": "89px"
+              },
+              "css_clients_slider_ulliclient_wrapper_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .clients_slider_ul li .client_wrapper",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1.5rem",
+                    "right": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "1rem",
+                    "right": "1rem",
+                    "bottom": "1rem",
+                    "left": "1rem"
+                  }
+                }
+              },
+              "css_clients_slider_ulliclient_wrapper_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .clients_slider_ul li .client_wrapper",
+                "style": "background-color",
+                "val": "#F4F7F9"
+              },
+              "css_clients_slider_ulliclient_wrapper_background_color_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .clients_slider_ul li .client_wrapper:hover",
+                "style": "background-color",
+                "val": "#E9EDF1"
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000059",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Clientes — botón",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_justify_content": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "justify-content",
+            "val": {
+              "desktop": "center"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000058",
+            "type": "button",
+            "jsclass": "button",
+            "title": "Clientes — botón",
+            "icon": "button",
+            "size": "1/3",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Ver casos de éxito",
+              "link": "/casos-de-exito/",
+              "icon": "icon-right-thin",
+              "icon_position": "left",
+              "button_style": "",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#FFFFFF"
+              },
+              "css_button_icon_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                "style": "color",
+                "val": "#FFFFFF"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#5717CF"
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "0px 0px 0px 0px"
+                }
+              },
+              "css_button_gap": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "gap",
+                "val": {
+                  "desktop": "16px",
+                  "mobile": "12px"
+                }
+              },
+              "css_button_icon_size": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button .button_icon",
+                "style": "font-size",
+                "val": {
+                  "desktop": "20px",
+                  "mobile": "18px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "0.625rem",
+                    "right": "1.5rem",
+                    "bottom": "0.625rem",
+                    "left": "0.75rem"
+                  },
+                  "mobile": {
+                    "top": "0.625rem",
+                    "right": "1.25rem",
+                    "bottom": "0.625rem",
+                    "left": "0.75rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.4",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "16px",
+                    "line-height": "1.4",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              },
+              "width_switcher": "inline",
+              "css_button_background_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                "style": "background",
+                "val": "#7F41F5"
+              },
+              "css_button_color_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                "style": "color",
+                "val": "#FFFFFF"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000066",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "CTA — Informes",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "5rem",
+            "bottom": "7.5rem",
+            "left": "5rem"
+          },
+          "tablet": {
+            "top": "5rem",
+            "right": "2rem",
+            "bottom": "5rem",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "4rem",
+            "right": "1rem",
+            "bottom": "4rem",
+            "left": "1rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#7F41F5"
+      },
+      "css_advanced_background_image": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-image",
+        "val": {
+          "desktop": "https://wearetesters.com/wp-content/uploads/2026/08/cta-fondo.jpg"
+        }
+      },
+      "css_advanced_background_size": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size",
+        "val": {
+          "desktop": "cover"
+        }
+      },
+      "css_advanced_background_position": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_background_repeat": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-repeat",
+        "val": {
+          "desktop": "no-repeat"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000063",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "CTA — texto",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_justify_content": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "justify-content",
+            "val": {
+              "desktop": "center"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "2rem"
+              },
+              "mobile": {
+                "bottom": "1.5rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000061",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "CTA — titular",
+            "icon": "heading",
+            "size": "1/2",
+            "tablet_size": "2/3",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Más conocimiento para tus próximos retos",
+              "header_tag": "h2",
+              "css_txt_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#FFFFFF"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "68px",
+                    "line-height": "1",
+                    "letter-spacing": "-1.36px",
+                    "font-weight": "600"
+                  },
+                  "tablet": {
+                    "font-size": "48px",
+                    "line-height": "1.05",
+                    "letter-spacing": "-1px",
+                    "font-weight": "600"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-0.7px",
+                    "font-weight": "600"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "1.5rem",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "1rem",
+                    "left": "0px"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000062",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "CTA — texto",
+            "icon": "plain_text",
+            "size": "2/5",
+            "tablet_size": "2/3",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Profundiza en las tendencias y comportamientos que están transformando los mercados a través de nuestros informes.",
+              "css_desc_text_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#FFFFFF"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.5",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.5",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000065",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "CTA — botón",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_justify_content": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "justify-content",
+            "val": {
+              "desktop": "center"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000064",
+            "type": "button",
+            "jsclass": "button",
+            "title": "CTA — botón",
+            "icon": "button",
+            "size": "1/3",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Ver informes",
+              "link": "/recursos/informes/",
+              "icon": "icon-right-thin",
+              "icon_position": "left",
+              "button_style": "",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#5717CF"
+              },
+              "css_button_icon_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                "style": "color",
+                "val": "#5717CF"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#FFFFFF"
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "0px 0px 0px 0px"
+                }
+              },
+              "css_button_gap": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "gap",
+                "val": {
+                  "desktop": "16px",
+                  "mobile": "12px"
+                }
+              },
+              "css_button_icon_size": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button .button_icon",
+                "style": "font-size",
+                "val": {
+                  "desktop": "20px",
+                  "mobile": "18px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "0.625rem",
+                    "right": "1.5rem",
+                    "bottom": "0.625rem",
+                    "left": "0.75rem"
+                  },
+                  "mobile": {
+                    "top": "0.625rem",
+                    "right": "1.25rem",
+                    "bottom": "0.625rem",
+                    "left": "0.75rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.4",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "16px",
+                    "line-height": "1.4",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px"
+                  }
+                }
+              },
+              "width_switcher": "inline",
+              "css_button_background_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:before",
+                "style": "background",
+                "val": "#F4F7F9"
+              },
+              "css_button_color_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button:hover",
+                "style": "color",
+                "val": "#5717CF"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

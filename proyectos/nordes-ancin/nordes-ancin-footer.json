@@ -1,0 +1,1296 @@
+[
+  {
+    "uid": "sec000026",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Footer — Nordés Ancín",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#001689"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "0px",
+            "right": "2.25rem",
+            "bottom": "2.25rem",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "0px",
+            "right": "1.5rem",
+            "bottom": "1.5rem",
+            "left": "1.5rem"
+          },
+          "mobile": {
+            "top": "0px",
+            "right": "1.25rem",
+            "bottom": "1.25rem",
+            "left": "1.25rem"
+          }
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000006",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Footer — certificaciones",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "background_switcher": "default",
+          "css_advanced_background_color": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "background-color",
+            "val": "#F1F1EE"
+          },
+          "css_advanced_border_radius": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-radius",
+            "val": {
+              "desktop": "12px 12px 12px 12px"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "1.75rem",
+                "right": "2.25rem",
+                "bottom": "1.75rem",
+                "left": "2.25rem"
+              },
+              "mobile": {
+                "top": "1.5rem",
+                "right": "1.5rem",
+                "bottom": "1.5rem",
+                "left": "1.5rem"
+              }
+            }
+          },
+          "css_advanced_align_items": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "align-items",
+            "val": {
+              "desktop": "center"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "1rem"
+              },
+              "mobile": {
+                "bottom": "1rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000003",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Certificaciones — texto",
+            "item_is_wrap": 1,
+            "size": "1/2",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "2rem"
+                  }
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000001",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Título — Certificaciones",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width",
+                    "val": {
+                      "desktop": "280px",
+                      "tablet": "280px",
+                      "mobile": "100%"
+                    }
+                  },
+                  "title": "Certificaciones que marcan la diferencia",
+                  "header_tag": "h4",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#1F1F1F"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "28px",
+                        "line-height": "1.2",
+                        "letter-spacing": "-1.12px",
+                        "font-weight": "400"
+                      },
+                      "tablet": {
+                        "font-size": "26px",
+                        "line-height": "1.2",
+                        "letter-spacing": "-1.04px",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "24px",
+                        "line-height": "1.2",
+                        "letter-spacing": "-0.96px",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_txt_align": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "text-align",
+                    "val": {
+                      "desktop": "left"
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1rem"
+                      },
+                      "mobile": {
+                        "bottom": "1rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000002",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Botón — Nuestras certificaciones",
+                "icon": "button",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Nuestras certificaciones",
+                  "link": "/certificaciones/",
+                  "icon": "icon-right-thin",
+                  "icon_position": "right",
+                  "button_style": "",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_button_icon_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "#001689"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "8px 8px 8px 8px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0.875rem",
+                        "right": "1.5rem",
+                        "bottom": "0.875rem",
+                        "left": "1.5rem"
+                      },
+                      "mobile": {
+                        "top": "0.75rem",
+                        "right": "1.25rem",
+                        "bottom": "0.75rem",
+                        "left": "1.25rem"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "20px",
+                        "line-height": "1.4",
+                        "letter-spacing": "-0.8px"
+                      },
+                      "mobile": {
+                        "font-size": "18px",
+                        "line-height": "1.4",
+                        "letter-spacing": "-0.72px"
+                      }
+                    }
+                  },
+                  "css__text_align": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "text-align",
+                    "val": {
+                      "desktop": "left"
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000005",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Certificaciones — sello",
+            "item_is_wrap": 1,
+            "size": "1/2",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_justify_content": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "justify-content",
+                "val": {
+                  "desktop": "flex-end",
+                  "mobile": "flex-start"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000004",
+                "type": "image",
+                "jsclass": "image",
+                "title": "Sello Bureau Veritas",
+                "icon": "image",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width",
+                    "val": {
+                      "desktop": "338px",
+                      "tablet": "300px",
+                      "mobile": "260px"
+                    }
+                  },
+                  "src": "https://nordesancin.com/wp-content/uploads/2026/07/sello-bureau-veritas.png",
+                  "stretch": "0",
+                  "alt": "Certificación Bureau Veritas ISO 9001, ISO 14001, ISO 45001",
+                  "lazy_load": "",
+                  "css_image_frame_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                    "style": "width",
+                    "val": {
+                      "desktop": "338px",
+                      "tablet": "300px",
+                      "mobile": "260px"
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uid": "wrp000019",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Footer — bloque principal",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "background_switcher": "default",
+          "css_advanced_background_color": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "background-color",
+            "val": "#FCFCFC"
+          },
+          "css_advanced_border_radius": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-radius",
+            "val": {
+              "desktop": "12px 12px 12px 12px"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "2.25rem",
+                "right": "2.25rem",
+                "bottom": "2.25rem",
+                "left": "2.25rem"
+              },
+              "mobile": {
+                "top": "1.5rem",
+                "right": "1.5rem",
+                "bottom": "1.5rem",
+                "left": "1.5rem"
+              }
+            }
+          },
+          "css_advanced_align_items": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "align-items",
+            "val": {
+              "desktop": "stretch"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "2.25rem"
+              },
+              "mobile": {
+                "bottom": "2.25rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000012",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Footer — contacto",
+            "item_is_wrap": 1,
+            "size": "3/5",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "2.25rem"
+                  }
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000007",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Etiqueta — Contacto",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "Contacto",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#A3A3A3"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "13.3px",
+                        "line-height": "1.6",
+                        "letter-spacing": "0.5px",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.6",
+                        "letter-spacing": "0.5px",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "2.25rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000008",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Dirección",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "Polígono Espíritu Santo<br />c/ Monier 9-11, parcelas 36-38<br />15650 Cambre",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#1F1F1F"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.6"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.6"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1.5rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000009",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Teléfono",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "<a href=\"tel:+34981138338\">+34 981 138 338</a>",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#6B6B6B"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "13.3px",
+                        "line-height": "1.6"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.6"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1.5rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000010",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Email",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "<a href=\"mailto:info@nordesancin.com\">info@nordesancin.com</a>",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#6B6B6B"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "13.3px",
+                        "line-height": "1.6"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.6"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000011",
+                "type": "footer_logo",
+                "jsclass": "footer_logo",
+                "title": "Logotipo",
+                "icon": "footer_logo",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "width_switcher": "custom",
+                  "css_advanced_flex": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "width",
+                    "val": {
+                      "desktop": "316px",
+                      "tablet": "280px",
+                      "mobile": "240px"
+                    }
+                  },
+                  "image": "https://nordesancin.com/wp-content/uploads/2026/07/logo-nordes-ancin-color.svg",
+                  "link": "/",
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "top": "8.5rem",
+                        "bottom": "0px"
+                      },
+                      "tablet": {
+                        "top": "4rem",
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "top": "3rem",
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000015",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Footer — menú",
+            "item_is_wrap": 1,
+            "size": "1/5",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "left": "4rem"
+                  },
+                  "tablet": {
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "left": "0px"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "2.25rem"
+                  }
+                }
+              },
+              "css_advanced_border_style": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-style",
+                "val": "solid"
+              },
+              "css_advanced_border_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-color",
+                "val": "rgba(31,31,31,0.12)"
+              },
+              "css_advanced_border_width": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-width",
+                "val": {
+                  "desktop": "0px 0px 0px 1px",
+                  "tablet": "0px 0px 0px 0px",
+                  "mobile": "0px 0px 0px 0px"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000013",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Etiqueta — Menú",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "Menú",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#A3A3A3"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "13.3px",
+                        "line-height": "1.6",
+                        "letter-spacing": "0.5px",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.6",
+                        "letter-spacing": "0.5px",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "2.25rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000014",
+                "type": "footer_menu",
+                "jsclass": "footer_menu",
+                "title": "Menú — Menú",
+                "icon": "footer_menu",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "menu_display": "",
+                  "menu_style": "vertical",
+                  "css_mcb-column-innerul-footer-menu--vertical_text_align": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner ul.mfn-footer-menu-style-vertical",
+                    "style": "text-align",
+                    "val": {
+                      "desktop": "left"
+                    }
+                  },
+                  "css_ula_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement ul a",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.6"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.6"
+                      }
+                    }
+                  },
+                  "css_ula_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement ul a",
+                    "style": "color",
+                    "val": "#1F1F1F"
+                  },
+                  "css_ula_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement ul a:hover",
+                    "style": "color",
+                    "val": "#001689"
+                  },
+                  "css_ula_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement ul a",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0.5rem",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0.5rem",
+                        "left": "0px"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000018",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Footer — legal",
+            "item_is_wrap": 1,
+            "size": "1/5",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "left": "2.25rem"
+                  },
+                  "tablet": {
+                    "left": "0px"
+                  },
+                  "mobile": {
+                    "left": "0px"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "2.25rem"
+                  }
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000016",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Etiqueta — Legal",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "Legal",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#A3A3A3"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "13.3px",
+                        "line-height": "1.6",
+                        "letter-spacing": "0.5px",
+                        "text-transform": "uppercase"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.6",
+                        "letter-spacing": "0.5px",
+                        "text-transform": "uppercase"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "2.25rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000017",
+                "type": "footer_menu",
+                "jsclass": "footer_menu",
+                "title": "Menú — Legal",
+                "icon": "footer_menu",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "menu_display": "",
+                  "menu_style": "vertical",
+                  "css_mcb-column-innerul-footer-menu--vertical_text_align": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner ul.mfn-footer-menu-style-vertical",
+                    "style": "text-align",
+                    "val": {
+                      "desktop": "left"
+                    }
+                  },
+                  "css_ula_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement ul a",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.6"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.6"
+                      }
+                    }
+                  },
+                  "css_ula_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement ul a",
+                    "style": "color",
+                    "val": "#1F1F1F"
+                  },
+                  "css_ula_color_hover": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement ul a:hover",
+                    "style": "color",
+                    "val": "#001689"
+                  },
+                  "css_ula_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement ul a",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0.5rem",
+                        "left": "0px"
+                      },
+                      "mobile": {
+                        "top": "0px",
+                        "right": "0px",
+                        "bottom": "0.5rem",
+                        "left": "0px"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uid": "wrp000021",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Footer — copyright",
+        "size": "1/2",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_align_items": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "align-items",
+            "val": {
+              "desktop": "center"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "0px"
+              },
+              "mobile": {
+                "bottom": "1.5rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000020",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Copyright",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Copyright © Nordés Ancín. Todos los derechos reservados.",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "13.3px",
+                    "line-height": "1.6"
+                  },
+                  "mobile": {
+                    "font-size": "13px",
+                    "line-height": "1.6"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000025",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Footer — redes sociales",
+        "size": "1/2",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "grid": "grid",
+          "grid_columns_switcher": "custom",
+          "css_grid_columns_custom": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-grid-col-custom.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(3, 24px)",
+              "mobile": "repeat(3, 24px)"
+            }
+          },
+          "css_grid_columns_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "column-gap",
+            "val": {
+              "desktop": "1rem"
+            }
+          },
+          "css_grid_rows_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "row-gap",
+            "val": {
+              "desktop": "0px"
+            }
+          },
+          "css_advanced_justify_content": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "justify-content",
+            "val": {
+              "desktop": "flex-end",
+              "mobile": "flex-start"
+            }
+          },
+          "css_advanced_align_items": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "align-items",
+            "val": {
+              "desktop": "center"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "0px"
+              },
+              "mobile": {
+                "bottom": "0px"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000022",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Red social — Instagram",
+            "icon": "image",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://nordesancin.com/wp-content/uploads/2026/07/icono-instagram.svg",
+              "stretch": "0",
+              "alt": "Instagram",
+              "link": "https://www.instagram.com/",
+              "target": "1",
+              "lazy_load": "",
+              "css_image_frame_width": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "width",
+                "val": {
+                  "desktop": "24px",
+                  "mobile": "24px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000023",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Red social — LinkedIn",
+            "icon": "image",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://nordesancin.com/wp-content/uploads/2026/07/icono-linkedin.svg",
+              "stretch": "0",
+              "alt": "LinkedIn",
+              "link": "https://www.linkedin.com/",
+              "target": "1",
+              "lazy_load": "",
+              "css_image_frame_width": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "width",
+                "val": {
+                  "desktop": "24px",
+                  "mobile": "24px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000024",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Red social — Facebook",
+            "icon": "image",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://nordesancin.com/wp-content/uploads/2026/07/icono-facebook.svg",
+              "stretch": "0",
+              "alt": "Facebook",
+              "link": "https://www.facebook.com/",
+              "target": "1",
+              "lazy_load": "",
+              "css_image_frame_width": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "width",
+                "val": {
+                  "desktop": "24px",
+                  "mobile": "24px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

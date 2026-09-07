@@ -1,0 +1,4640 @@
+[
+  {
+    "uid": "sec000009",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Hero — Portada",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "2.25rem",
+            "right": "2.25rem",
+            "bottom": "2.25rem",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "8rem",
+            "right": "2rem",
+            "bottom": "2.5rem",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "7rem",
+            "right": "1.25rem",
+            "bottom": "2rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_image": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-image",
+        "val": {
+          "desktop": "https://nordesancin.com/wp-content/uploads/2026/07/hero-portada.jpg"
+        }
+      },
+      "css_advanced_background_size": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size",
+        "val": {
+          "desktop": "cover"
+        }
+      },
+      "css_advanced_background_position": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_background_repeat": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-repeat",
+        "val": {
+          "desktop": "no-repeat"
+        }
+      },
+      "height_switcher": "custom",
+      "css_advanced_height": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "height",
+        "val": {
+          "desktop": "1117px",
+          "tablet": "880px",
+          "mobile": "auto"
+        }
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "flex-end"
+        }
+      },
+      "css_advanced_justify_content": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "justify-content",
+        "val": {
+          "desktop": "space-between"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000002",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Hero — titular",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "7.5rem"
+              },
+              "tablet": {
+                "bottom": "4rem"
+              },
+              "mobile": {
+                "bottom": "3rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000001",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Hero title",
+            "icon": "heading",
+            "size": "2/5",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Diseño, ejecución y mantenimiento de proyectos integrales de instalaciones",
+              "header_tag": "h1",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "64px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-3.2px",
+                    "font-weight": "500"
+                  },
+                  "tablet": {
+                    "font-size": "48px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-2.4px",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "34px",
+                    "line-height": "1.15",
+                    "letter-spacing": "-1.2px",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000006",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Hero — tarjeta servicio",
+        "size": "1/3",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "background_switcher": "default",
+          "css_advanced_background_color": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "background-color",
+            "val": "rgba(31,31,31,0.12)"
+          },
+          "css_backdrop_filter": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "backdrop-filter",
+            "val": {
+              "desktop": {
+                "blur": "60",
+                "string": "blur(60px)"
+              }
+            }
+          },
+          "css_advanced_border_radius": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-radius",
+            "val": {
+              "desktop": "12px 12px 12px 12px"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "1.5rem",
+                "right": "1.5rem",
+                "bottom": "1.5rem",
+                "left": "1.5rem"
+              },
+              "mobile": {
+                "top": "1.25rem",
+                "right": "1.25rem",
+                "bottom": "1.25rem",
+                "left": "1.25rem"
+              }
+            }
+          },
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "500px",
+              "tablet": "420px",
+              "mobile": "100%"
+            }
+          },
+          "css_advanced_align_self": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "align-self",
+            "val": {
+              "desktop": "flex-end"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "0px"
+              },
+              "mobile": {
+                "bottom": "1.5rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000003",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Servicio destacado — título",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Diseño e ingeniería",
+              "header_tag": "h2",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "28px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1.12px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "22px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-0.8px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "0.5rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000004",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Servicio destacado — texto",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Desarrollo de proyectos técnicos adaptados a cada cliente, combinando innovación, eficiencia y precisión.",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#F1F1EE"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.6",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "16px",
+                    "line-height": "1.6",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.25rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000005",
+            "type": "button",
+            "jsclass": "button",
+            "title": "Servicio destacado — botón",
+            "icon": "button",
+            "size": "1/2",
+            "tablet_size": "1/2",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Saber más",
+              "link": "/servicios/diseno-e-ingenieria/",
+              "icon": "icon-right-thin",
+              "icon_position": "right",
+              "button_style": "",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_button_icon_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#FCFCFC"
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "8px 8px 8px 8px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.5rem",
+                    "bottom": "1rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "0.875rem",
+                    "right": "1.25rem",
+                    "bottom": "0.875rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.8px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.6px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000008",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Hero — texto",
+        "size": "1/3",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "564px",
+              "tablet": "480px",
+              "mobile": "100%"
+            }
+          },
+          "css_advanced_align_self": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "align-self",
+            "val": {
+              "desktop": "flex-end"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000007",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Hero — descripción",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "En Nordés Ancín desarrollamos soluciones de ingeniería y montaje en climatización, ventilación, frío industrial, fontanería, saneamiento, protección contra incendios, evacuación de humos, electricidad y cuadros eléctricos y de control.",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "22px",
+                    "line-height": "1.6"
+                  },
+                  "mobile": {
+                    "font-size": "18px",
+                    "line-height": "1.6"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000022",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Value proposition",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "2.25rem",
+            "bottom": "7.5rem",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "5rem",
+            "right": "2rem",
+            "bottom": "5rem",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "3.5rem",
+            "right": "1.25rem",
+            "bottom": "3.5rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#FCFCFC"
+      },
+      "css_advanced_justify_content": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "justify-content",
+        "val": {
+          "desktop": "center"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000011",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Value prop — texto",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_justify_content": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "justify-content",
+            "val": {
+              "desktop": "center"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "4rem"
+              },
+              "mobile": {
+                "bottom": "2.5rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000010",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Value prop — titular",
+            "icon": "heading",
+            "size": "2/3",
+            "tablet_size": "5/6",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Soluciones técnicas integrales para instalaciones eficientes, seguras y duraderas, con ingeniería propia, equipo especializado y acompañamiento en todas las fases del proyecto.",
+              "header_tag": "h2",
+              "css_txt_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "42px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1.68px",
+                    "font-weight": "400"
+                  },
+                  "tablet": {
+                    "font-size": "34px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1.2px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "26px",
+                    "line-height": "1.25",
+                    "letter-spacing": "-0.8px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000013",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Cifra — Profesionales en plantilla",
+        "size": "1/4",
+        "tablet_size": "1/4",
+        "mobile_size": "1/2",
+        "attr": {
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "180px",
+              "tablet": "180px",
+              "mobile": "50%"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "left": "2rem",
+                "right": "2rem",
+                "bottom": "0px"
+              },
+              "tablet": {
+                "left": "1.25rem",
+                "right": "1.25rem",
+                "bottom": "0px"
+              },
+              "mobile": {
+                "left": "0px",
+                "right": "0px",
+                "bottom": "2rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000012",
+            "type": "counter",
+            "jsclass": "counter",
+            "title": "Cifra — Profesionales en plantilla",
+            "icon": "counter",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "icon": "",
+              "image": "",
+              "prefix": "+",
+              "number": "1000",
+              "label": "",
+              "thousands_separator": "space",
+              "duration": "1500",
+              "type": "vertical",
+              "title": "Profesionales en plantilla",
+              "title_tag": "p",
+              "css_counter_text_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_counternumber-wrappernumber_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .number",
+                "style": "color",
+                "val": "#2C2926"
+              },
+              "css_counternumber-wrappernumber_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .number",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_counternumber-wrapperprefix_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .prefix",
+                "style": "color",
+                "val": "#2C2926"
+              },
+              "css_counternumber-wrapperprefix_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .prefix",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_counternumber-wrapperpostfix_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .postfix",
+                "style": "color",
+                "val": "#2C2926"
+              },
+              "css_counternumber-wrapperpostfix_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .postfix",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_counternumber-wrapper_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "0.75rem"
+                  }
+                }
+              },
+              "css_countertitle_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .title",
+                "style": "color",
+                "val": "#6B6B6B"
+              },
+              "css_countertitle_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "16px",
+                    "line-height": "1.4",
+                    "text-transform": "uppercase"
+                  },
+                  "mobile": {
+                    "font-size": "14px",
+                    "line-height": "1.4",
+                    "text-transform": "uppercase"
+                  }
+                }
+              },
+              "css_countertitle_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .title",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000015",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Cifra — Clientes en activo",
+        "size": "1/4",
+        "tablet_size": "1/4",
+        "mobile_size": "1/2",
+        "attr": {
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "180px",
+              "tablet": "180px",
+              "mobile": "50%"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "left": "2rem",
+                "right": "2rem",
+                "bottom": "0px"
+              },
+              "tablet": {
+                "left": "1.25rem",
+                "right": "1.25rem",
+                "bottom": "0px"
+              },
+              "mobile": {
+                "left": "0px",
+                "right": "0px",
+                "bottom": "2rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000014",
+            "type": "counter",
+            "jsclass": "counter",
+            "title": "Cifra — Clientes en activo",
+            "icon": "counter",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "icon": "",
+              "image": "",
+              "prefix": "",
+              "number": "600",
+              "label": "",
+              "thousands_separator": "",
+              "duration": "1500",
+              "type": "vertical",
+              "title": "Clientes en activo",
+              "title_tag": "p",
+              "css_counter_text_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_counternumber-wrappernumber_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .number",
+                "style": "color",
+                "val": "#2C2926"
+              },
+              "css_counternumber-wrappernumber_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .number",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_counternumber-wrapperprefix_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .prefix",
+                "style": "color",
+                "val": "#2C2926"
+              },
+              "css_counternumber-wrapperprefix_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .prefix",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_counternumber-wrapperpostfix_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .postfix",
+                "style": "color",
+                "val": "#2C2926"
+              },
+              "css_counternumber-wrapperpostfix_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .postfix",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_counternumber-wrapper_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "0.75rem"
+                  }
+                }
+              },
+              "css_countertitle_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .title",
+                "style": "color",
+                "val": "#6B6B6B"
+              },
+              "css_countertitle_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "16px",
+                    "line-height": "1.4",
+                    "text-transform": "uppercase"
+                  },
+                  "mobile": {
+                    "font-size": "14px",
+                    "line-height": "1.4",
+                    "text-transform": "uppercase"
+                  }
+                }
+              },
+              "css_countertitle_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .title",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000017",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Cifra — Proyectos anuales",
+        "size": "1/4",
+        "tablet_size": "1/4",
+        "mobile_size": "1/2",
+        "attr": {
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "180px",
+              "tablet": "180px",
+              "mobile": "50%"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "left": "2rem",
+                "right": "2rem",
+                "bottom": "0px"
+              },
+              "tablet": {
+                "left": "1.25rem",
+                "right": "1.25rem",
+                "bottom": "0px"
+              },
+              "mobile": {
+                "left": "0px",
+                "right": "0px",
+                "bottom": "2rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000016",
+            "type": "counter",
+            "jsclass": "counter",
+            "title": "Cifra — Proyectos anuales",
+            "icon": "counter",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "icon": "",
+              "image": "",
+              "prefix": "+",
+              "number": "8000",
+              "label": "",
+              "thousands_separator": "space",
+              "duration": "1500",
+              "type": "vertical",
+              "title": "Proyectos anuales",
+              "title_tag": "p",
+              "css_counter_text_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_counternumber-wrappernumber_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .number",
+                "style": "color",
+                "val": "#2C2926"
+              },
+              "css_counternumber-wrappernumber_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .number",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_counternumber-wrapperprefix_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .prefix",
+                "style": "color",
+                "val": "#2C2926"
+              },
+              "css_counternumber-wrapperprefix_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .prefix",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_counternumber-wrapperpostfix_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .postfix",
+                "style": "color",
+                "val": "#2C2926"
+              },
+              "css_counternumber-wrapperpostfix_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .postfix",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_counternumber-wrapper_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "0.75rem"
+                  }
+                }
+              },
+              "css_countertitle_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .title",
+                "style": "color",
+                "val": "#6B6B6B"
+              },
+              "css_countertitle_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "16px",
+                    "line-height": "1.4",
+                    "text-transform": "uppercase"
+                  },
+                  "mobile": {
+                    "font-size": "14px",
+                    "line-height": "1.4",
+                    "text-transform": "uppercase"
+                  }
+                }
+              },
+              "css_countertitle_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .title",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000019",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Cifra — Clientes recurrentes",
+        "size": "1/4",
+        "tablet_size": "1/4",
+        "mobile_size": "1/2",
+        "attr": {
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "180px",
+              "tablet": "180px",
+              "mobile": "50%"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "left": "2rem",
+                "right": "2rem",
+                "bottom": "0px"
+              },
+              "tablet": {
+                "left": "1.25rem",
+                "right": "1.25rem",
+                "bottom": "0px"
+              },
+              "mobile": {
+                "left": "0px",
+                "right": "0px",
+                "bottom": "2rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000018",
+            "type": "counter",
+            "jsclass": "counter",
+            "title": "Cifra — Clientes recurrentes",
+            "icon": "counter",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "icon": "",
+              "image": "",
+              "prefix": "",
+              "number": "98",
+              "label": "%",
+              "thousands_separator": "",
+              "duration": "1500",
+              "type": "vertical",
+              "title": "Clientes recurrentes",
+              "title_tag": "p",
+              "css_counter_text_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_counternumber-wrappernumber_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .number",
+                "style": "color",
+                "val": "#2C2926"
+              },
+              "css_counternumber-wrappernumber_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .number",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_counternumber-wrapperprefix_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .prefix",
+                "style": "color",
+                "val": "#2C2926"
+              },
+              "css_counternumber-wrapperprefix_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .prefix",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_counternumber-wrapperpostfix_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .postfix",
+                "style": "color",
+                "val": "#2C2926"
+              },
+              "css_counternumber-wrapperpostfix_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper .postfix",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "36px",
+                    "line-height": "1.2",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_counternumber-wrapper_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .number-wrapper",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "0.75rem"
+                  }
+                }
+              },
+              "css_countertitle_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .title",
+                "style": "color",
+                "val": "#6B6B6B"
+              },
+              "css_countertitle_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "16px",
+                    "line-height": "1.4",
+                    "text-transform": "uppercase"
+                  },
+                  "mobile": {
+                    "font-size": "14px",
+                    "line-height": "1.4",
+                    "text-transform": "uppercase"
+                  }
+                }
+              },
+              "css_countertitle_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .counter .title",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000021",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Value prop — acción",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "top": "4rem"
+              },
+              "mobile": {
+                "top": "1.5rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000020",
+            "type": "button",
+            "jsclass": "button",
+            "title": "Value prop — botón",
+            "icon": "button",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Conoce Nordés Ancín",
+              "link": "/empresa/",
+              "icon": "icon-right-thin",
+              "icon_position": "right",
+              "button_style": "",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_button_icon_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#001689"
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "8px 8px 8px 8px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.5rem",
+                    "bottom": "1rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "0.875rem",
+                    "right": "1.25rem",
+                    "bottom": "0.875rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.8px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.6px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css__text_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000029",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Proyecto destacado",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "2.25rem",
+            "right": "2.25rem",
+            "bottom": "2.25rem",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "2rem",
+            "right": "2rem",
+            "bottom": "2rem",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "2rem",
+            "right": "1.25rem",
+            "bottom": "2rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_image": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-image",
+        "val": {
+          "desktop": "https://nordesancin.com/wp-content/uploads/2026/07/proyecto-destacado-ikea.jpg"
+        }
+      },
+      "css_advanced_background_size": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size",
+        "val": {
+          "desktop": "cover"
+        }
+      },
+      "css_advanced_background_position": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_background_repeat": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-repeat",
+        "val": {
+          "desktop": "no-repeat"
+        }
+      },
+      "height_switcher": "custom",
+      "css_advanced_height": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "height",
+        "val": {
+          "desktop": "1117px",
+          "tablet": "880px",
+          "mobile": "auto"
+        }
+      },
+      "background_overlay_switcher": "default",
+      "css_advanced_background_overlay_background_color": {
+        "selector": ".mcb-section-mfnuidelement .mcb-background-overlay",
+        "style": "background-color",
+        "val": "rgba(31,31,31,0.24)"
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "flex-end"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000028",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Proyecto destacado — tarjeta",
+        "size": "1/3",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "background_switcher": "default",
+          "css_advanced_background_color": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "background-color",
+            "val": "rgba(31,31,31,0.12)"
+          },
+          "css_backdrop_filter": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "backdrop-filter",
+            "val": {
+              "desktop": {
+                "blur": "60",
+                "string": "blur(60px)"
+              }
+            }
+          },
+          "css_advanced_border_radius": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-radius",
+            "val": {
+              "desktop": "12px 12px 12px 12px"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "2.25rem",
+                "right": "2.25rem",
+                "bottom": "2.25rem",
+                "left": "2.25rem"
+              },
+              "mobile": {
+                "top": "1.5rem",
+                "right": "1.5rem",
+                "bottom": "1.5rem",
+                "left": "1.5rem"
+              }
+            }
+          },
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "500px",
+              "tablet": "440px",
+              "mobile": "100%"
+            }
+          },
+          "css_advanced_min_height": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "min-height",
+            "val": {
+              "desktop": "680px",
+              "tablet": "560px",
+              "mobile": "auto"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000023",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Proyecto — categoría",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Proyectos retail",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "16px",
+                    "line-height": "1.4",
+                    "text-transform": "uppercase"
+                  },
+                  "mobile": {
+                    "font-size": "14px",
+                    "line-height": "1.4",
+                    "text-transform": "uppercase"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000024",
+            "type": "image",
+            "jsclass": "image",
+            "title": "Proyecto — logo cliente",
+            "icon": "image",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "src": "https://nordesancin.com/wp-content/uploads/2026/07/logo-ikea-blanco.svg",
+              "stretch": "0",
+              "alt": "IKEA",
+              "lazy_load": "",
+              "css_image_frame_width": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                "style": "width",
+                "val": {
+                  "desktop": "186px",
+                  "mobile": "140px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "7.5rem"
+                  },
+                  "tablet": {
+                    "bottom": "4rem"
+                  },
+                  "mobile": {
+                    "bottom": "2.5rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000025",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Proyecto — título",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Instalación de climatización en local comercial",
+              "header_tag": "h2",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "36px",
+                    "line-height": "1.24",
+                    "letter-spacing": "-0.72px",
+                    "font-weight": "500"
+                  },
+                  "tablet": {
+                    "font-size": "30px",
+                    "line-height": "1.24",
+                    "letter-spacing": "-0.6px",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "26px",
+                    "line-height": "1.24",
+                    "letter-spacing": "-0.5px",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "1rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000026",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Proyecto — descripción",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Instalación de climatización. Ventilación de Garajes. Detección de CO. Sistema de control centralizado. Producción de ACS mediante un campo de paneles solares y calderas de apoyo.",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.6",
+                    "font-weight": "700"
+                  },
+                  "mobile": {
+                    "font-size": "16px",
+                    "line-height": "1.6",
+                    "font-weight": "700"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "4rem"
+                  },
+                  "mobile": {
+                    "bottom": "2rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000027",
+            "type": "button",
+            "jsclass": "button",
+            "title": "Proyecto — botón",
+            "icon": "button",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Proyectos destacados",
+              "link": "/proyectos/",
+              "icon": "icon-right-thin",
+              "icon_position": "right",
+              "button_style": "",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_button_icon_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#FCFCFC"
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "8px 8px 8px 8px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.5rem",
+                    "bottom": "1rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "0.875rem",
+                    "right": "1.25rem",
+                    "bottom": "0.875rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.8px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.6px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "full_width": "1",
+              "css_button_justify_content": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button.button_full_width",
+                "style": "justify-content",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000055",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Servicios",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "2.25rem",
+            "bottom": "7.5rem",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "5rem",
+            "right": "2rem",
+            "bottom": "5rem",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "3.5rem",
+            "right": "1.25rem",
+            "bottom": "3.5rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#F1F1EE"
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000031",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Servicios — cabecera",
+        "size": "1/2",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "650px",
+              "tablet": "60%",
+              "mobile": "100%"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "4rem"
+              },
+              "mobile": {
+                "bottom": "1.5rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000030",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Servicios — titular",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Descubre nuestros servicios integrales en instalaciones",
+              "header_tag": "h2",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1.92px",
+                    "font-weight": "500"
+                  },
+                  "tablet": {
+                    "font-size": "38px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1.4px",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "30px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1px",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000033",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Servicios — acción",
+        "size": "1/2",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_align_self": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "align-self",
+            "val": {
+              "desktop": "flex-end"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "4rem"
+              },
+              "mobile": {
+                "bottom": "2.5rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000032",
+            "type": "button",
+            "jsclass": "button",
+            "title": "Servicios — botón",
+            "icon": "button",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Todos los servicios",
+              "link": "/servicios/",
+              "icon": "icon-right-thin",
+              "icon_position": "right",
+              "button_style": "",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_button_icon_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#001689"
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "8px 8px 8px 8px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.5rem",
+                    "bottom": "1rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "0.875rem",
+                    "right": "1.25rem",
+                    "bottom": "0.875rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.8px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.6px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css__text_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "text-align",
+                "val": {
+                  "desktop": "right",
+                  "mobile": "left"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000054",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Servicios — tarjetas",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "grid": "grid",
+          "grid_columns_switcher": "",
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(4, 1fr)",
+              "tablet": "repeat(2, 1fr)",
+              "mobile": "1fr"
+            }
+          },
+          "css_grid_columns_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "column-gap",
+            "val": {
+              "desktop": "2.25rem",
+              "tablet": "2rem",
+              "mobile": "0px"
+            }
+          },
+          "css_grid_rows_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "row-gap",
+            "val": {
+              "desktop": "2.25rem",
+              "tablet": "2rem",
+              "mobile": "1.5rem"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000038",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Servicio — Diseño e ingeniería",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#FCFCFC"
+              },
+              "css_advanced_border_radius": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "12px 12px 12px 12px"
+                }
+              },
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "2.25rem",
+                    "right": "2.25rem",
+                    "bottom": "2.25rem",
+                    "left": "2.25rem"
+                  },
+                  "mobile": {
+                    "top": "1.5rem",
+                    "right": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem"
+                  }
+                }
+              },
+              "height_switcher": "custom",
+              "css_advanced_height": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "height",
+                "val": {
+                  "desktop": "100%"
+                }
+              },
+              "css_advanced_align_content": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "align-content",
+                "val": {
+                  "desktop": "space-between"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000034",
+                "type": "image",
+                "jsclass": "image",
+                "title": "Servicio — icono",
+                "icon": "image",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "src": "https://nordesancin.com/wp-content/uploads/2026/07/icono-diseno-ingenieria.svg",
+                  "stretch": "0",
+                  "alt": "Diseño e ingeniería",
+                  "lazy_load": "",
+                  "css_image_frame_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                    "style": "width",
+                    "val": {
+                      "desktop": "77px",
+                      "mobile": "60px"
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "2.25rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000035",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Servicio — título",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Diseño e ingeniería",
+                  "header_tag": "h3",
+                  "link": "/servicios/diseno-e-ingenieria/",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#1F1F1F"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "36px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.72px",
+                        "font-weight": "500"
+                      },
+                      "tablet": {
+                        "font-size": "30px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.6px",
+                        "font-weight": "500"
+                      },
+                      "mobile": {
+                        "font-size": "26px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.5px",
+                        "font-weight": "500"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1.5rem"
+                      },
+                      "mobile": {
+                        "bottom": "1rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000036",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Servicio — descripción",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "Desarrollo de proyectos técnicos adaptados a cada cliente, combinando innovación, eficiencia y precisión.",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#6B6B6B"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.6",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.6",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "2.25rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000037",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Servicio — botón",
+                "icon": "button",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Saber más",
+                  "link": "/servicios/diseno-e-ingenieria/",
+                  "icon": "icon-right-thin",
+                  "icon_position": "right",
+                  "button_style": "",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_button_icon_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "#001689"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "8px 8px 8px 8px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "1rem",
+                        "right": "1.5rem",
+                        "bottom": "1rem",
+                        "left": "1.5rem"
+                      },
+                      "mobile": {
+                        "top": "0.875rem",
+                        "right": "1.25rem",
+                        "bottom": "0.875rem",
+                        "left": "1.25rem"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "20px",
+                        "line-height": "1.4",
+                        "letter-spacing": "-0.8px",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "17px",
+                        "line-height": "1.4",
+                        "letter-spacing": "-0.6px",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000043",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Servicio — Ejecución de instalaciones",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#FCFCFC"
+              },
+              "css_advanced_border_radius": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "12px 12px 12px 12px"
+                }
+              },
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "2.25rem",
+                    "right": "2.25rem",
+                    "bottom": "2.25rem",
+                    "left": "2.25rem"
+                  },
+                  "mobile": {
+                    "top": "1.5rem",
+                    "right": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem"
+                  }
+                }
+              },
+              "height_switcher": "custom",
+              "css_advanced_height": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "height",
+                "val": {
+                  "desktop": "100%"
+                }
+              },
+              "css_advanced_align_content": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "align-content",
+                "val": {
+                  "desktop": "space-between"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000039",
+                "type": "image",
+                "jsclass": "image",
+                "title": "Servicio — icono",
+                "icon": "image",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "src": "https://nordesancin.com/wp-content/uploads/2026/07/icono-ejecucion-instalaciones.svg",
+                  "stretch": "0",
+                  "alt": "Ejecución de instalaciones",
+                  "lazy_load": "",
+                  "css_image_frame_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                    "style": "width",
+                    "val": {
+                      "desktop": "77px",
+                      "mobile": "60px"
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "2.25rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000040",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Servicio — título",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Ejecución de instalaciones",
+                  "header_tag": "h3",
+                  "link": "/servicios/ejecucion-de-instalaciones/",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#1F1F1F"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "36px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.72px",
+                        "font-weight": "500"
+                      },
+                      "tablet": {
+                        "font-size": "30px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.6px",
+                        "font-weight": "500"
+                      },
+                      "mobile": {
+                        "font-size": "26px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.5px",
+                        "font-weight": "500"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1.5rem"
+                      },
+                      "mobile": {
+                        "bottom": "1rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000041",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Servicio — descripción",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "Ejecución integral de instalaciones con equipo propio altamente especializado.",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#6B6B6B"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.6",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.6",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "2.25rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000042",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Servicio — botón",
+                "icon": "button",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Saber más",
+                  "link": "/servicios/ejecucion-de-instalaciones/",
+                  "icon": "icon-right-thin",
+                  "icon_position": "right",
+                  "button_style": "",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_button_icon_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "#001689"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "8px 8px 8px 8px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "1rem",
+                        "right": "1.5rem",
+                        "bottom": "1rem",
+                        "left": "1.5rem"
+                      },
+                      "mobile": {
+                        "top": "0.875rem",
+                        "right": "1.25rem",
+                        "bottom": "0.875rem",
+                        "left": "1.25rem"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "20px",
+                        "line-height": "1.4",
+                        "letter-spacing": "-0.8px",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "17px",
+                        "line-height": "1.4",
+                        "letter-spacing": "-0.6px",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000048",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Servicio — Cuadros eléctricos y de control",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#FCFCFC"
+              },
+              "css_advanced_border_radius": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "12px 12px 12px 12px"
+                }
+              },
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "2.25rem",
+                    "right": "2.25rem",
+                    "bottom": "2.25rem",
+                    "left": "2.25rem"
+                  },
+                  "mobile": {
+                    "top": "1.5rem",
+                    "right": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem"
+                  }
+                }
+              },
+              "height_switcher": "custom",
+              "css_advanced_height": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "height",
+                "val": {
+                  "desktop": "100%"
+                }
+              },
+              "css_advanced_align_content": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "align-content",
+                "val": {
+                  "desktop": "space-between"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000044",
+                "type": "image",
+                "jsclass": "image",
+                "title": "Servicio — icono",
+                "icon": "image",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "src": "https://nordesancin.com/wp-content/uploads/2026/07/icono-cuadros-electricos.svg",
+                  "stretch": "0",
+                  "alt": "Cuadros eléctricos y de control",
+                  "lazy_load": "",
+                  "css_image_frame_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                    "style": "width",
+                    "val": {
+                      "desktop": "77px",
+                      "mobile": "60px"
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "2.25rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000045",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Servicio — título",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Cuadros eléctricos y de control",
+                  "header_tag": "h3",
+                  "link": "/servicios/cuadros-electricos-y-de-control/",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#1F1F1F"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "36px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.72px",
+                        "font-weight": "500"
+                      },
+                      "tablet": {
+                        "font-size": "30px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.6px",
+                        "font-weight": "500"
+                      },
+                      "mobile": {
+                        "font-size": "26px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.5px",
+                        "font-weight": "500"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1.5rem"
+                      },
+                      "mobile": {
+                        "bottom": "1rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000046",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Servicio — descripción",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "Diseño, montaje y puesta en marcha de cuadros eléctricos y de control adaptados a las necesidades de cada instalación.",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#6B6B6B"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.6",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.6",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "2.25rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000047",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Servicio — botón",
+                "icon": "button",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Saber más",
+                  "link": "/servicios/cuadros-electricos-y-de-control/",
+                  "icon": "icon-right-thin",
+                  "icon_position": "right",
+                  "button_style": "",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_button_icon_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "#001689"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "8px 8px 8px 8px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "1rem",
+                        "right": "1.5rem",
+                        "bottom": "1rem",
+                        "left": "1.5rem"
+                      },
+                      "mobile": {
+                        "top": "0.875rem",
+                        "right": "1.25rem",
+                        "bottom": "0.875rem",
+                        "left": "1.25rem"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "20px",
+                        "line-height": "1.4",
+                        "letter-spacing": "-0.8px",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "17px",
+                        "line-height": "1.4",
+                        "letter-spacing": "-0.6px",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000053",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Servicio — Mantenimiento y postventa",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "background_switcher": "default",
+              "css_advanced_background_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "background-color",
+                "val": "#FCFCFC"
+              },
+              "css_advanced_border_radius": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "12px 12px 12px 12px"
+                }
+              },
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "2.25rem",
+                    "right": "2.25rem",
+                    "bottom": "2.25rem",
+                    "left": "2.25rem"
+                  },
+                  "mobile": {
+                    "top": "1.5rem",
+                    "right": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem"
+                  }
+                }
+              },
+              "height_switcher": "custom",
+              "css_advanced_height": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "height",
+                "val": {
+                  "desktop": "100%"
+                }
+              },
+              "css_advanced_align_content": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "align-content",
+                "val": {
+                  "desktop": "space-between"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000049",
+                "type": "image",
+                "jsclass": "image",
+                "title": "Servicio — icono",
+                "icon": "image",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "src": "https://nordesancin.com/wp-content/uploads/2026/07/icono-mantenimiento-postventa.svg",
+                  "stretch": "0",
+                  "alt": "Mantenimiento y postventa",
+                  "lazy_load": "",
+                  "css_image_frame_width": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                    "style": "width",
+                    "val": {
+                      "desktop": "77px",
+                      "mobile": "60px"
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "2.25rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000050",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Servicio — título",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Mantenimiento y postventa",
+                  "header_tag": "h3",
+                  "link": "/servicios/mantenimiento-y-postventa/",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#1F1F1F"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "36px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.72px",
+                        "font-weight": "500"
+                      },
+                      "tablet": {
+                        "font-size": "30px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.6px",
+                        "font-weight": "500"
+                      },
+                      "mobile": {
+                        "font-size": "26px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.5px",
+                        "font-weight": "500"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1.5rem"
+                      },
+                      "mobile": {
+                        "bottom": "1rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000051",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Servicio — descripción",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "Servicios de mantenimiento orientados a garantizar la continuidad y eficiencia de las instalaciones.",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#6B6B6B"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.6",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.6",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "2.25rem"
+                      },
+                      "mobile": {
+                        "bottom": "1.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000052",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Servicio — botón",
+                "icon": "button",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Saber más",
+                  "link": "/servicios/mantenimiento-y-postventa/",
+                  "icon": "icon-right-thin",
+                  "icon_position": "right",
+                  "button_style": "",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_button_icon_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "#001689"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "8px 8px 8px 8px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "1rem",
+                        "right": "1.5rem",
+                        "bottom": "1rem",
+                        "left": "1.5rem"
+                      },
+                      "mobile": {
+                        "top": "0.875rem",
+                        "right": "1.25rem",
+                        "bottom": "0.875rem",
+                        "left": "1.25rem"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "20px",
+                        "line-height": "1.4",
+                        "letter-spacing": "-0.8px",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "17px",
+                        "line-height": "1.4",
+                        "letter-spacing": "-0.6px",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000060",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Empleo",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "2.25rem",
+            "right": "2.25rem",
+            "bottom": "2.25rem",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "2rem",
+            "right": "2rem",
+            "bottom": "2rem",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "2rem",
+            "right": "1.25rem",
+            "bottom": "2rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_image": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-image",
+        "val": {
+          "desktop": "https://nordesancin.com/wp-content/uploads/2026/07/empleo-portada.jpg"
+        }
+      },
+      "css_advanced_background_size": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size",
+        "val": {
+          "desktop": "cover"
+        }
+      },
+      "css_advanced_background_position": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_background_repeat": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-repeat",
+        "val": {
+          "desktop": "no-repeat"
+        }
+      },
+      "height_switcher": "custom",
+      "css_advanced_height": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "height",
+        "val": {
+          "desktop": "1117px",
+          "tablet": "820px",
+          "mobile": "auto"
+        }
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "flex-end"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000059",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Empleo — tarjeta",
+        "size": "1/3",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "background_switcher": "default",
+          "css_advanced_background_color": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "background-color",
+            "val": "rgba(31,31,31,0.12)"
+          },
+          "css_backdrop_filter": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "backdrop-filter",
+            "val": {
+              "desktop": {
+                "blur": "60",
+                "string": "blur(60px)"
+              }
+            }
+          },
+          "css_advanced_border_radius": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-radius",
+            "val": {
+              "desktop": "12px 12px 12px 12px"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "2.25rem",
+                "right": "2.25rem",
+                "bottom": "2.25rem",
+                "left": "2.25rem"
+              },
+              "mobile": {
+                "top": "1.5rem",
+                "right": "1.5rem",
+                "bottom": "1.5rem",
+                "left": "1.5rem"
+              }
+            }
+          },
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "500px",
+              "tablet": "440px",
+              "mobile": "100%"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000056",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Empleo — titular",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Únete a Nordés Ancín y desarrolla tu carrera en un entorno técnico y comprometido.",
+              "header_tag": "h2",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "36px",
+                    "line-height": "1.24",
+                    "letter-spacing": "-0.72px",
+                    "font-weight": "500"
+                  },
+                  "tablet": {
+                    "font-size": "30px",
+                    "line-height": "1.24",
+                    "letter-spacing": "-0.6px",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "26px",
+                    "line-height": "1.24",
+                    "letter-spacing": "-0.5px",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "1rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000057",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Empleo — texto",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Apostamos por un entorno donde aprender, aportar y construir soluciones eficientes junto a un equipo técnico comprometido.",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#F3F4EE"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "16px",
+                    "line-height": "1.4"
+                  },
+                  "mobile": {
+                    "font-size": "15px",
+                    "line-height": "1.5"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "4rem"
+                  },
+                  "mobile": {
+                    "bottom": "2rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000058",
+            "type": "button",
+            "jsclass": "button",
+            "title": "Empleo — botón",
+            "icon": "button",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Trabaja con nosotros",
+              "link": "/empleo/",
+              "icon": "icon-right-thin",
+              "icon_position": "right",
+              "button_style": "",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_button_icon_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#FCFCFC"
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "8px 8px 8px 8px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.5rem",
+                    "bottom": "1rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "0.875rem",
+                    "right": "1.25rem",
+                    "bottom": "0.875rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.8px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.6px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "full_width": "1",
+              "css_button_justify_content": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button.button_full_width",
+                "style": "justify-content",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000071",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Actualidad",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "2.25rem",
+            "bottom": "7.5rem",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "5rem",
+            "right": "2rem",
+            "bottom": "5rem",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "3.5rem",
+            "right": "1.25rem",
+            "bottom": "3.5rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#FCFCFC"
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000066",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Actualidad — cabecera",
+        "size": "1/2",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "650px",
+              "tablet": "60%",
+              "mobile": "100%"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "4rem"
+              },
+              "mobile": {
+                "bottom": "1.5rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000065",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Actualidad — titular",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Actualidad, proyectos y novedades de Nordés Ancín",
+              "header_tag": "h2",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1.92px",
+                    "font-weight": "500"
+                  },
+                  "tablet": {
+                    "font-size": "38px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1.4px",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "30px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1px",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000068",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Actualidad — acción",
+        "size": "1/2",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_align_self": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "align-self",
+            "val": {
+              "desktop": "flex-end"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "4rem"
+              },
+              "mobile": {
+                "bottom": "2.5rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000067",
+            "type": "button",
+            "jsclass": "button",
+            "title": "Actualidad — botón",
+            "icon": "button",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Todas las noticias",
+              "link": "/actualidad/",
+              "icon": "icon-right-thin",
+              "icon_position": "right",
+              "button_style": "",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_button_icon_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#001689"
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "8px 8px 8px 8px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.5rem",
+                    "bottom": "1rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "0.875rem",
+                    "right": "1.25rem",
+                    "bottom": "0.875rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.8px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.6px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css__text_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "text-align",
+                "val": {
+                  "desktop": "right",
+                  "mobile": "left"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000070",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Actualidad — listado",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "type": "query",
+          "query_type": "posts",
+          "query_post_type": "post",
+          "query_post_orderby": "date",
+          "query_post_order": "DESC",
+          "query_post_per_page": "4",
+          "query_display": "",
+          "grid": "grid",
+          "grid_columns_switcher": "",
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(4, 1fr)",
+              "tablet": "repeat(2, 1fr)",
+              "mobile": "1fr"
+            }
+          },
+          "css_grid_columns_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "column-gap",
+            "val": {
+              "desktop": "2.25rem",
+              "tablet": "2rem",
+              "mobile": "0px"
+            }
+          },
+          "css_grid_rows_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "row-gap",
+            "val": {
+              "desktop": "3rem",
+              "tablet": "2.5rem",
+              "mobile": "2.5rem"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000069",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Tarjeta noticia",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {},
+            "items": [
+              {
+                "uid": "itm000061",
+                "type": "image",
+                "jsclass": "image",
+                "title": "Noticia — imagen",
+                "icon": "image",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "src": "{featured_image}",
+                  "stretch": "1",
+                  "alt": "{title}",
+                  "link": "{permalink}",
+                  "lazy_load": "",
+                  "image_height": "custom",
+                  "image_height_style": "",
+                  "css_image_cover_height": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                    "style": "height",
+                    "val": {
+                      "desktop": "249px",
+                      "tablet": "220px",
+                      "mobile": "200px"
+                    }
+                  },
+                  "css_image_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "12px 12px 12px 12px"
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1rem"
+                      },
+                      "mobile": {
+                        "bottom": "0.75rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000062",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Noticia — fecha",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "{date}",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#6B6B6B"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.6",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.6",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0.5rem"
+                      },
+                      "mobile": {
+                        "bottom": "0.375rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000063",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Noticia — título",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "{title}",
+                  "header_tag": "h3",
+                  "link": "{permalink}",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#1F1F1F"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "22px",
+                        "line-height": "1.6",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "19px",
+                        "line-height": "1.5",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1.5rem"
+                      },
+                      "mobile": {
+                        "bottom": "1rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000064",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Noticia — botón",
+                "icon": "button",
+                "size": "1/2",
+                "tablet_size": "1/2",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Leer más",
+                  "link": "{permalink}",
+                  "icon": "icon-right-thin",
+                  "icon_position": "right",
+                  "button_style": "",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_button_icon_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "#001689"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "8px 8px 8px 8px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "1rem",
+                        "right": "1.5rem",
+                        "bottom": "1rem",
+                        "left": "1.5rem"
+                      },
+                      "mobile": {
+                        "top": "0.875rem",
+                        "right": "1.25rem",
+                        "bottom": "0.875rem",
+                        "left": "1.25rem"
+                      }
+                    }
+                  },
+                  "css_button_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "20px",
+                        "line-height": "1.4",
+                        "letter-spacing": "-0.8px",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "17px",
+                        "line-height": "1.4",
+                        "letter-spacing": "-0.6px",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000075",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "CTA — Preparemos una solución a medida",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "2.25rem",
+            "bottom": "7.5rem",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "5rem",
+            "right": "2rem",
+            "bottom": "5rem",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "4rem",
+            "right": "1.25rem",
+            "bottom": "4rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_image": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-image",
+        "val": {
+          "desktop": "https://nordesancin.com/wp-content/uploads/2026/07/cta-portada.jpg"
+        }
+      },
+      "css_advanced_background_size": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size",
+        "val": {
+          "desktop": "cover"
+        }
+      },
+      "css_advanced_background_position": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_background_repeat": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-repeat",
+        "val": {
+          "desktop": "no-repeat"
+        }
+      },
+      "height_switcher": "custom",
+      "css_advanced_height": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "height",
+        "val": {
+          "desktop": "960px",
+          "tablet": "700px",
+          "mobile": "auto"
+        }
+      },
+      "background_overlay_switcher": "default",
+      "css_advanced_background_overlay_background_color": {
+        "selector": ".mcb-section-mfnuidelement .mcb-background-overlay",
+        "style": "background-color",
+        "val": "rgba(0,22,137,0.55)"
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_justify_content": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "justify-content",
+        "val": {
+          "desktop": "center"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000074",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "CTA — contenido",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "904px",
+              "tablet": "80%",
+              "mobile": "100%"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000072",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "CTA — titular",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Preparemos una solución a medida",
+              "header_tag": "h2",
+              "css_txt_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "120px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-7.2px",
+                    "font-weight": "400"
+                  },
+                  "tablet": {
+                    "font-size": "72px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-4.32px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "40px",
+                    "line-height": "1.15",
+                    "letter-spacing": "-2.4px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "4rem"
+                  },
+                  "mobile": {
+                    "bottom": "2rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000073",
+            "type": "button",
+            "jsclass": "button",
+            "title": "CTA — botón",
+            "icon": "button",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Ponte en contacto",
+              "link": "/contacto/",
+              "icon": "icon-right-thin",
+              "icon_position": "right",
+              "button_style": "",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_button_icon_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#FCFCFC"
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "8px 8px 8px 8px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.5rem",
+                    "bottom": "1rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "0.875rem",
+                    "right": "1.25rem",
+                    "bottom": "0.875rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.8px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.6px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css__text_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

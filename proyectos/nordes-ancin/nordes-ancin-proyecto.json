@@ -1,0 +1,3009 @@
+[
+  {
+    "uid": "sec000017",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Hero — Ficha de proyecto",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "2.25rem",
+            "right": "2.25rem",
+            "bottom": "2.25rem",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "8rem",
+            "right": "2rem",
+            "bottom": "2.5rem",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "7rem",
+            "right": "1.25rem",
+            "bottom": "2rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_image": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-image",
+        "val": {
+          "desktop": "https://nordesancin.com/wp-content/uploads/2026/07/hero-proyecto-iter.jpg"
+        }
+      },
+      "css_advanced_background_size": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size",
+        "val": {
+          "desktop": "cover"
+        }
+      },
+      "css_advanced_background_position": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_background_repeat": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-repeat",
+        "val": {
+          "desktop": "no-repeat"
+        }
+      },
+      "height_switcher": "custom",
+      "css_advanced_height": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "height",
+        "val": {
+          "desktop": "1117px",
+          "tablet": "880px",
+          "mobile": "auto"
+        }
+      },
+      "background_overlay_switcher": "default",
+      "css_advanced_background_overlay_background_color": {
+        "selector": ".mcb-section-mfnuidelement .mcb-background-overlay",
+        "style": "background-color",
+        "val": "rgba(4,4,4,0.36)"
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "flex-end"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000003",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Hero — titular",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "4rem"
+              },
+              "tablet": {
+                "bottom": "3rem"
+              },
+              "mobile": {
+                "bottom": "2rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000001",
+            "type": "breadcrumbs",
+            "jsclass": "breadcrumbs",
+            "title": "Hero — migas",
+            "icon": "breadcrumbs",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "separator": "→",
+              "breadcrumb_home": "1",
+              "css_breadcrumbs_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .breadcrumbs",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "16px",
+                    "line-height": "1",
+                    "letter-spacing": "-0.64px"
+                  },
+                  "mobile": {
+                    "font-size": "14px",
+                    "line-height": "1",
+                    "letter-spacing": "-0.4px"
+                  }
+                }
+              },
+              "css_breadcrumbs_gap": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .breadcrumbs",
+                "style": "gap",
+                "val": {
+                  "desktop": "8px"
+                }
+              },
+              "css_breadcrumbsli_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .breadcrumbs li",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_breadcrumbslia_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .breadcrumbs li a",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_breadcrumbslia_color_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .breadcrumbs li:hover a",
+                "style": "color",
+                "val": "#F1F1EE"
+              },
+              "css_breadcrumbsli-breadcrumbs-separator_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .breadcrumbs li .mfn-breadcrumbs-separator",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_breadcrumbsli-breadcrumbs-separator_font_size": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .breadcrumbs li .mfn-breadcrumbs-separator",
+                "style": "font-size",
+                "val": {
+                  "desktop": "13px",
+                  "mobile": "12px"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.25rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000002",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Hero — titular",
+            "icon": "heading",
+            "size": "3/5",
+            "tablet_size": "4/5",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Ejecución de instalaciones para ITER: un sol en miniatura en Cadarache",
+              "header_tag": "h1",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "64px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-3.2px",
+                    "font-weight": "500"
+                  },
+                  "tablet": {
+                    "font-size": "48px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-2.4px",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "34px",
+                    "line-height": "1.15",
+                    "letter-spacing": "-1.2px",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000016",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Hero — fila de datos",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "grid": "grid",
+          "grid_columns_switcher": "",
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(4, 1fr)",
+              "tablet": "repeat(2, 1fr)",
+              "mobile": "1fr"
+            }
+          },
+          "css_grid_columns_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "column-gap",
+            "val": {
+              "desktop": "0px"
+            }
+          },
+          "css_grid_rows_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "row-gap",
+            "val": {
+              "desktop": "0px"
+            }
+          },
+          "background_switcher": "default",
+          "css_advanced_background_color": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "background-color",
+            "val": "#001689"
+          },
+          "css_advanced_border_radius": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-radius",
+            "val": {
+              "desktop": "12px 12px 12px 12px"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000006",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Dato — Cliente final",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "2.25rem",
+                    "right": "2.25rem",
+                    "bottom": "2.25rem",
+                    "left": "2.25rem"
+                  },
+                  "tablet": {
+                    "top": "1.5rem",
+                    "right": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "1.25rem",
+                    "right": "1.25rem",
+                    "bottom": "1.25rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "height_switcher": "custom",
+              "css_advanced_height": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "height",
+                "val": {
+                  "desktop": "100%"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000004",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Dato — etiqueta",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "Cliente final",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#F1F1EE"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "13.3px",
+                        "line-height": "1.6"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.6"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1rem"
+                      },
+                      "mobile": {
+                        "bottom": "0.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000005",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Dato — valor",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "ITER Organization<br>Fusion for Energy",
+                  "header_tag": "p",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "24px",
+                        "line-height": "1.2",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "20px",
+                        "line-height": "1.2",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000009",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Dato — Ubicación",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "2.25rem",
+                    "right": "2.25rem",
+                    "bottom": "2.25rem",
+                    "left": "2.25rem"
+                  },
+                  "tablet": {
+                    "top": "1.5rem",
+                    "right": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "1.25rem",
+                    "right": "1.25rem",
+                    "bottom": "1.25rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "height_switcher": "custom",
+              "css_advanced_height": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "height",
+                "val": {
+                  "desktop": "100%"
+                }
+              },
+              "css_advanced_border_style": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-style",
+                "val": "solid"
+              },
+              "css_advanced_border_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-color",
+                "val": "rgba(252,252,252,0.24)"
+              },
+              "css_advanced_border_width": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-width",
+                "val": {
+                  "desktop": "0px 0px 0px 1px",
+                  "tablet": "0px 0px 0px 1px",
+                  "mobile": "1px 0px 0px 0px"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000007",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Dato — etiqueta",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "Ubicación",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#F1F1EE"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "13.3px",
+                        "line-height": "1.6"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.6"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1rem"
+                      },
+                      "mobile": {
+                        "bottom": "0.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000008",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Dato — valor",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Cadarache<br>Provenza, Francia",
+                  "header_tag": "p",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "24px",
+                        "line-height": "1.2",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "20px",
+                        "line-height": "1.2",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000012",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Dato — Período de ejecución",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "2.25rem",
+                    "right": "2.25rem",
+                    "bottom": "2.25rem",
+                    "left": "2.25rem"
+                  },
+                  "tablet": {
+                    "top": "1.5rem",
+                    "right": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "1.25rem",
+                    "right": "1.25rem",
+                    "bottom": "1.25rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "height_switcher": "custom",
+              "css_advanced_height": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "height",
+                "val": {
+                  "desktop": "100%"
+                }
+              },
+              "css_advanced_border_style": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-style",
+                "val": "solid"
+              },
+              "css_advanced_border_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-color",
+                "val": "rgba(252,252,252,0.24)"
+              },
+              "css_advanced_border_width": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-width",
+                "val": {
+                  "desktop": "0px 0px 0px 1px",
+                  "tablet": "0px 0px 0px 1px",
+                  "mobile": "1px 0px 0px 0px"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000010",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Dato — etiqueta",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "Período de ejecución",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#F1F1EE"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "13.3px",
+                        "line-height": "1.6"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.6"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1rem"
+                      },
+                      "mobile": {
+                        "bottom": "0.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000011",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Dato — valor",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "2013 – 2016",
+                  "header_tag": "p",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "24px",
+                        "line-height": "1.2",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "20px",
+                        "line-height": "1.2",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "uid": "itm000015",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Dato — Sector",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_padding": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "2.25rem",
+                    "right": "2.25rem",
+                    "bottom": "2.25rem",
+                    "left": "2.25rem"
+                  },
+                  "tablet": {
+                    "top": "1.5rem",
+                    "right": "1.5rem",
+                    "bottom": "1.5rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "1.25rem",
+                    "right": "1.25rem",
+                    "bottom": "1.25rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "height_switcher": "custom",
+              "css_advanced_height": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "height",
+                "val": {
+                  "desktop": "100%"
+                }
+              },
+              "css_advanced_border_style": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-style",
+                "val": "solid"
+              },
+              "css_advanced_border_color": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-color",
+                "val": "rgba(252,252,252,0.24)"
+              },
+              "css_advanced_border_width": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "border-width",
+                "val": {
+                  "desktop": "0px 0px 0px 1px",
+                  "tablet": "0px 0px 0px 1px",
+                  "mobile": "1px 0px 0px 0px"
+                }
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000013",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Dato — etiqueta",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "Sector",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#F1F1EE"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "13.3px",
+                        "line-height": "1.6"
+                      },
+                      "mobile": {
+                        "font-size": "13px",
+                        "line-height": "1.6"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1rem"
+                      },
+                      "mobile": {
+                        "bottom": "0.5rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000014",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Dato — valor",
+                "icon": "heading",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "title": "Industrial y Alimentario",
+                  "header_tag": "p",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "24px",
+                        "line-height": "1.2",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "20px",
+                        "line-height": "1.2",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000026",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "El reto",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "2.25rem",
+            "bottom": "7.5rem",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "5rem",
+            "right": "2rem",
+            "bottom": "5rem",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "3.5rem",
+            "right": "1.25rem",
+            "bottom": "3.5rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#FCFCFC"
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000019",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Reto — cabecera",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "4rem"
+              },
+              "tablet": {
+                "bottom": "3rem"
+              },
+              "mobile": {
+                "bottom": "2rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000018",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Reto — titular",
+            "icon": "heading",
+            "size": "3/5",
+            "tablet_size": "5/6",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Un reto de ingeniería, coordinación y precisión a escala internacional",
+              "header_tag": "h2",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "92px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-5.52px",
+                    "font-weight": "800"
+                  },
+                  "tablet": {
+                    "font-size": "64px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-3.5px",
+                    "font-weight": "800"
+                  },
+                  "mobile": {
+                    "font-size": "40px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-2px",
+                    "font-weight": "800"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000022",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Reto — columna izquierda",
+        "size": "1/2",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "right": "2rem"
+              },
+              "tablet": {
+                "right": "1rem"
+              },
+              "mobile": {
+                "right": "0px"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000020",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Reto — párrafo destacado",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "<p>Un tokamak de 23.000 toneladas y 60 metros de altura, diseñado para alcanzar temperaturas de hasta 150 millones de grados, exige una ejecución sin margen para el error. En Cadarache, <strong>Nordés Ancín trabajó en cuatro de los 39 edificios del complejo ITER</strong>, coordinándose con siete agencias internacionales, bajo protocolos de obra nuclear y mientras la obra civil continuaba avanzando.</p>",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#6B6B6B"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "22px",
+                    "line-height": "1.6"
+                  },
+                  "mobile": {
+                    "font-size": "18px",
+                    "line-height": "1.6"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.25rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000021",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Reto — estrategia",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "<p>La estrategia fue anticipar en oficina todo lo posible. Las instalaciones se modelaron sobre el modelo federado del complejo para resolver interferencias antes de llegar a obra, y colectores y tramos de conducto se prefabricaron en Cambre para reducir el tiempo de montaje en Cadarache. Un equipo propio permaneció desplazado durante toda la ejecución, con jefe de obra permanente y una <strong>trazabilidad documental exhaustiva de pruebas, protocolos y mediciones.</strong></p>",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#6B6B6B"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.6",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "16px",
+                    "line-height": "1.6",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000025",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Reto — columna derecha",
+        "size": "1/2",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "left": "2rem"
+              },
+              "tablet": {
+                "left": "1rem"
+              },
+              "mobile": {
+                "left": "0px"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000023",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Reto — alcance y resultado",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "<p>El alcance incluyó climatización y tratamiento de aire, ventilación y extracción, calefacción y ACS, fontanería y saneamiento, distribución eléctrica, cuadros eléctricos y de control, protección contra incendios, además de la puesta en marcha y las pruebas finales.</p><p><strong>Los cuatro edificios se entregaron dentro del calendario previsto</strong>, sin mover una sola fecha. La prefabricación redujo semanas de trabajo en plataforma y la documentación fue aceptada sin devoluciones. Además, la experiencia permitió consolidar un método de planificación y trazabilidad documental que Nordés Ancín aplica desde entonces en el resto de sus obras.</p>",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#6B6B6B"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.6",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "16px",
+                    "line-height": "1.6",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.25rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000024",
+            "type": "button",
+            "jsclass": "button",
+            "title": "Reto — botón vídeo",
+            "icon": "button",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Ver vídeo del montaje",
+              "link": "https://www.youtube.com/watch?v=XXXXXXXXXXX",
+              "icon": "icon-right-thin",
+              "icon_position": "right",
+              "button_style": "",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_button_icon_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#001689"
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "8px 8px 8px 8px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.5rem",
+                    "bottom": "1rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "0.875rem",
+                    "right": "1.25rem",
+                    "bottom": "0.875rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.8px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.6px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "target": "lightbox",
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000029",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Galería del proyecto",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "0px",
+            "right": "2.25rem",
+            "bottom": "0px",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "0px",
+            "right": "2rem",
+            "bottom": "0px",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "0px",
+            "right": "1.25rem",
+            "bottom": "0px",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#FCFCFC"
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000028",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Galería",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_border_radius": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-radius",
+            "val": {
+              "desktop": "12px 12px 12px 12px"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000027",
+            "type": "slider",
+            "jsclass": "slider",
+            "title": "Galería — slider",
+            "icon": "slider",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "category": "iter",
+              "orderby": "menu_order",
+              "order": "ASC",
+              "style": "flat",
+              "title_tag": "h3",
+              "navigation": "",
+              "css_image_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .content_slider.default .content_slider_ul .slick-list,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .content_slider:not(.default) .content_slider_ul li img",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "12px 12px 12px 12px"
+                }
+              },
+              "css_content_slider_ulbutton_fontsize": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .content_slider .content_slider_ul .button",
+                "style": "--mfn-slider-arrow-size",
+                "val": {
+                  "desktop": "29px",
+                  "mobile": "22px"
+                }
+              },
+              "css_content_slider_ulbutton_border_style": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .content_slider .content_slider_ul .button",
+                "style": "border-style",
+                "val": "none"
+              },
+              "css_content_slider_ulbutton_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .content_slider .content_slider_ul .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "12px 12px 12px 12px"
+                }
+              },
+              "css_content_slider_ulbutton_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .content_slider .content_slider_ul .button i",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "background_switcher": "default",
+              "css_content_slider_ulbutton_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .content_slider .content_slider_ul .button",
+                "style": "background-color",
+                "val": "rgba(31,31,31,0.12)"
+              },
+              "css_content_slider_ulbutton_color_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .content_slider .content_slider_ul .button:hover i",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "background_switcher_hover": "default",
+              "css_content_slider_ulbutton_background_hover": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .content_slider .content_slider_ul .button:hover, .mcb-section .mcb-wrap .mcb-item-mfnuidelement .content_slider .content_slider_ul .button:before",
+                "style": "background",
+                "val": "#001689"
+              },
+              "css_dots_bg": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .slider_pagination a,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .slider_pagination a:after",
+                "style": "background-color",
+                "val": "#A3A3A3"
+              },
+              "css_dots_bg_active": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .slider_pagination .slick-active a,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .slider_pagination .slick-active a:after",
+                "style": "background-color",
+                "val": "#FCFCFC"
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000041",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Otros proyectos",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "2.25rem",
+            "bottom": "7.5rem",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "5rem",
+            "right": "2rem",
+            "bottom": "5rem",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "3.5rem",
+            "right": "1.25rem",
+            "bottom": "3.5rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#FCFCFC"
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000036",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Otros proyectos — cabecera",
+        "size": "1/2",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "650px",
+              "tablet": "60%",
+              "mobile": "100%"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "4rem"
+              },
+              "mobile": {
+                "bottom": "1.5rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000035",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Otros proyectos — titular",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Otros proyectos que resolvimos desde Nordés ancín",
+              "header_tag": "h2",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1.92px",
+                    "font-weight": "500"
+                  },
+                  "tablet": {
+                    "font-size": "38px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1.4px",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "30px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1px",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000038",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Otros proyectos — acción",
+        "size": "1/2",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_align_self": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "align-self",
+            "val": {
+              "desktop": "flex-end"
+            }
+          },
+          "css_advanced_margin": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "margin",
+            "val": {
+              "desktop": {
+                "bottom": "4rem"
+              },
+              "mobile": {
+                "bottom": "2.5rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000037",
+            "type": "button",
+            "jsclass": "button",
+            "title": "Otros proyectos — botón",
+            "icon": "button",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Todos los proyectos",
+              "link": "/proyectos/",
+              "icon": "icon-right-thin",
+              "icon_position": "right",
+              "button_style": "",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_button_icon_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#001689"
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "8px 8px 8px 8px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.5rem",
+                    "bottom": "1rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "0.875rem",
+                    "right": "1.25rem",
+                    "bottom": "0.875rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.8px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.6px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css__text_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "text-align",
+                "val": {
+                  "desktop": "right",
+                  "mobile": "left"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000040",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Otros proyectos — listado",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "type": "query",
+          "query_type": "posts",
+          "query_post_type": "portfolio",
+          "query_post_orderby": "rand",
+          "query_post_order": "DESC",
+          "query_post_per_page": "3",
+          "query_display": "",
+          "grid": "grid",
+          "grid_columns_switcher": "",
+          "css_grid_columns": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "grid-template-columns",
+            "val": {
+              "desktop": "repeat(3, 1fr)",
+              "tablet": "repeat(2, 1fr)",
+              "mobile": "1fr"
+            }
+          },
+          "css_grid_columns_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "column-gap",
+            "val": {
+              "desktop": "4rem",
+              "tablet": "2rem",
+              "mobile": "0px"
+            }
+          },
+          "css_grid_rows_gap": {
+            "selector": ".mcb-section .mcb-wrap-grid.mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "row-gap",
+            "val": {
+              "desktop": "4rem",
+              "tablet": "3rem",
+              "mobile": "2.5rem"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000039",
+            "icon": "wrap",
+            "jsclass": "wrap",
+            "title": "Tarjeta proyecto",
+            "item_is_wrap": 1,
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "css_advanced_position": {
+                "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+                "style": "position",
+                "val": "relative"
+              }
+            },
+            "items": [
+              {
+                "uid": "itm000030",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Sector tag",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "{categories}",
+                  "width_switcher": "inline",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "20px",
+                        "line-height": "1.4",
+                        "letter-spacing": "-0.8px"
+                      },
+                      "mobile": {
+                        "font-size": "15px",
+                        "line-height": "1.4",
+                        "letter-spacing": "-0.4px"
+                      }
+                    }
+                  },
+                  "background_switcher": "default",
+                  "css_advanced_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "background-color",
+                    "val": "rgba(31,31,31,0.72)"
+                  },
+                  "css_advanced_backdrop_filter": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "backdrop-filter",
+                    "val": {
+                      "desktop": {
+                        "blur": "60",
+                        "string": "blur(60px)"
+                      }
+                    }
+                  },
+                  "css_advanced_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "2000px 2000px 2000px 2000px"
+                    }
+                  },
+                  "css_advanced_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0.75rem",
+                        "right": "1.25rem",
+                        "bottom": "0.75rem",
+                        "left": "1.25rem"
+                      },
+                      "mobile": {
+                        "top": "0.5rem",
+                        "right": "0.875rem",
+                        "bottom": "0.5rem",
+                        "left": "0.875rem"
+                      }
+                    }
+                  },
+                  "css_advanced_position": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "position",
+                    "val": {
+                      "desktop": "absolute"
+                    }
+                  },
+                  "css_advanced_top": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "top",
+                    "val": {
+                      "desktop": "1.5rem",
+                      "mobile": "1rem"
+                    }
+                  },
+                  "css_advanced_left": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "left",
+                    "val": {
+                      "desktop": "1.5rem",
+                      "mobile": "1rem"
+                    }
+                  },
+                  "css_advanced_z_index": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                    "style": "z-index",
+                    "val": "2"
+                  }
+                }
+              },
+              {
+                "uid": "itm000031",
+                "type": "image",
+                "jsclass": "image",
+                "title": "Project image",
+                "icon": "image",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "src": "{featured_image}",
+                  "stretch": "1",
+                  "alt": "{title}",
+                  "link": "{permalink}",
+                  "image_height": "custom",
+                  "image_height_style": "",
+                  "css_image_cover_height": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame.mfn-coverimg .image_wrapper img",
+                    "style": "height",
+                    "val": {
+                      "desktop": "360px",
+                      "tablet": "320px",
+                      "mobile": "260px"
+                    }
+                  },
+                  "css_image_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .image_frame",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "12px 12px 12px 12px"
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "1rem"
+                      },
+                      "mobile": {
+                        "bottom": "0.75rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000032",
+                "type": "heading",
+                "jsclass": "heading",
+                "title": "Project title",
+                "icon": "heading",
+                "size": "4/5",
+                "tablet_size": "4/5",
+                "mobile_size": "4/5",
+                "attr": {
+                  "title": "{title}",
+                  "header_tag": "h3",
+                  "link": "{permalink}",
+                  "css_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                    "style": "color",
+                    "val": "#1F1F1F"
+                  },
+                  "css_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "36px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.72px",
+                        "font-weight": "500"
+                      },
+                      "tablet": {
+                        "font-size": "30px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.6px",
+                        "font-weight": "500"
+                      },
+                      "mobile": {
+                        "font-size": "26px",
+                        "line-height": "1.24",
+                        "letter-spacing": "-0.5px",
+                        "font-weight": "500"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0.5rem"
+                      },
+                      "mobile": {
+                        "bottom": "0.375rem"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000033",
+                "type": "button",
+                "jsclass": "button",
+                "title": "Project link",
+                "icon": "button",
+                "size": "1/5",
+                "tablet_size": "1/5",
+                "mobile_size": "1/5",
+                "attr": {
+                  "title": "",
+                  "link": "{permalink}",
+                  "link_title": "Ver proyecto",
+                  "icon": "icon-right-thin",
+                  "icon_position": "right",
+                  "button_style": "",
+                  "background_switcher": "default",
+                  "css_button_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_button_icon_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                    "style": "color",
+                    "val": "#FCFCFC"
+                  },
+                  "css_button_background_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "background-color",
+                    "val": "#001689"
+                  },
+                  "css_button_border_radius": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "border-radius",
+                    "val": {
+                      "desktop": "8px 8px 8px 8px"
+                    }
+                  },
+                  "css_button_padding": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                    "style": "padding",
+                    "val": {
+                      "desktop": {
+                        "top": "0.5rem",
+                        "right": "1rem",
+                        "bottom": "0.5rem",
+                        "left": "1rem"
+                      },
+                      "mobile": {
+                        "top": "0.5rem",
+                        "right": "1rem",
+                        "bottom": "0.5rem",
+                        "left": "1rem"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "left": "auto"
+                      },
+                      "mobile": {
+                        "left": "auto"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "uid": "itm000034",
+                "type": "plain_text",
+                "jsclass": "plain_text",
+                "title": "Project location",
+                "icon": "plain_text",
+                "size": "1/1",
+                "tablet_size": "1/1",
+                "mobile_size": "1/1",
+                "attr": {
+                  "content": "{postmeta:ubicacion}",
+                  "css_descdesca_color": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                    "style": "color",
+                    "val": "#6B6B6B"
+                  },
+                  "css_desc_typography": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                    "style": "typography",
+                    "val": {
+                      "desktop": {
+                        "font-size": "18px",
+                        "line-height": "1.6",
+                        "font-weight": "400"
+                      },
+                      "mobile": {
+                        "font-size": "16px",
+                        "line-height": "1.6",
+                        "font-weight": "400"
+                      }
+                    }
+                  },
+                  "css_advanced_margin": {
+                    "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                    "style": "margin",
+                    "val": {
+                      "desktop": {
+                        "bottom": "0px"
+                      },
+                      "mobile": {
+                        "bottom": "0px"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000054",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "Contacto — Formulario proyectos",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "2.25rem",
+            "bottom": "7.5rem",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "5rem",
+            "right": "2rem",
+            "bottom": "5rem",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "3rem",
+            "right": "1.25rem",
+            "bottom": "3rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_color": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-color",
+        "val": "#F1F1EE"
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "center"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000048",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Contacto — intro",
+        "size": "1/2",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "right": "7.5rem"
+              },
+              "tablet": {
+                "right": "3rem"
+              },
+              "mobile": {
+                "right": "0px"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000042",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Contacto — titular",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "¿Tienes un proyecto en mente? Te escuchamos",
+              "header_tag": "h2",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#222223"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "48px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1.92px",
+                    "font-weight": "500"
+                  },
+                  "tablet": {
+                    "font-size": "38px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1.4px",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "30px",
+                    "line-height": "1.2",
+                    "letter-spacing": "-1px",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "1rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000043",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Contacto — descripción",
+            "icon": "heading",
+            "size": "5/6",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Cuéntanos qué necesitas y nuestro equipo técnico te ayudará a definir la mejor solución para tu instalación.",
+              "header_tag": "p",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#464648"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.4px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.3px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "4rem"
+                  },
+                  "mobile": {
+                    "bottom": "2rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000044",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Contacto — etiqueta",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "CONTACTO",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#6B6B6B"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.6",
+                    "text-transform": "uppercase"
+                  },
+                  "mobile": {
+                    "font-size": "15px",
+                    "line-height": "1.6",
+                    "text-transform": "uppercase"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.25rem"
+                  },
+                  "mobile": {
+                    "bottom": "1rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000045",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Contacto — dirección",
+            "icon": "heading",
+            "size": "3/5",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Polígono Espíritu Santo, c/ Monier 9-11, parcelas 36-38, 15650 Cambre",
+              "header_tag": "p",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.4px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.3px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "1rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000046",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Contacto — teléfono",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "<a href=\"tel:+34981138338\">+34 981 138 338</a>",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#6B6B6B"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.6",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "16px",
+                    "line-height": "1.6",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1.5rem"
+                  },
+                  "mobile": {
+                    "bottom": "1rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000047",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Contacto — email",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "<a href=\"mailto:info@nordesancin.com\">info@nordesancin.com</a>",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#6B6B6B"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "18px",
+                    "line-height": "1.6",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "16px",
+                    "line-height": "1.6",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "uid": "wrp000053",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "Contacto — formulario",
+        "size": "1/2",
+        "tablet_size": "1/2",
+        "mobile_size": "1/1",
+        "attr": {
+          "background_switcher": "default",
+          "css_advanced_background_color": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "background-color",
+            "val": "#FCFCFC"
+          },
+          "css_advanced_border_radius": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "border-radius",
+            "val": {
+              "desktop": "16px 16px 16px 16px"
+            }
+          },
+          "css_advanced_padding": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner",
+            "style": "padding",
+            "val": {
+              "desktop": {
+                "top": "2.25rem",
+                "right": "2.25rem",
+                "bottom": "2.25rem",
+                "left": "2.25rem"
+              },
+              "mobile": {
+                "top": "1.5rem",
+                "right": "1.25rem",
+                "bottom": "1.5rem",
+                "left": "1.25rem"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000049",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Formulario — título",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Escríbenos",
+              "header_tag": "h3",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#222223"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "36px",
+                    "line-height": "1.24",
+                    "letter-spacing": "-0.72px",
+                    "font-weight": "500"
+                  },
+                  "tablet": {
+                    "font-size": "30px",
+                    "line-height": "1.24",
+                    "letter-spacing": "-0.6px",
+                    "font-weight": "500"
+                  },
+                  "mobile": {
+                    "font-size": "26px",
+                    "line-height": "1.24",
+                    "letter-spacing": "-0.5px",
+                    "font-weight": "500"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "1rem"
+                  },
+                  "mobile": {
+                    "bottom": "0.5rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000050",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "Formulario — descripción",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Respondemos a empresas en menos de 24 horas laborables.",
+              "header_tag": "p",
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#6B6B6B"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.4px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.3px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.25rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000051",
+            "type": "cf7",
+            "jsclass": "cf7",
+            "title": "Formulario",
+            "icon": "cf7",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "form": "",
+              "css_formformlabel_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement form,.mcb-section .mcb-wrap .mcb-item-mfnuidelement form label",
+                "style": "color",
+                "val": "#464648"
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "2.25rem"
+                  },
+                  "mobile": {
+                    "bottom": "1.5rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000052",
+            "type": "plain_text",
+            "jsclass": "plain_text",
+            "title": "Formulario — texto legal",
+            "icon": "plain_text",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "content": "Los datos personales facilitados voluntariamente por usted, a través del presente formulario web serán tratados, por Nordés Ancín, S.A., con su consentimiento, con la finalidad de atender su solicitud, consulta, queja o sugerencia, sin que se produzca comunicaciones o cesiones de datos y conservados durante los plazos necesarios para atender su solicitud. Puede usted ejercer los derechos de acceso, rectificación o supresión de sus datos, dirigiéndose a lopd@nordesancin.com, para más información al respecto, puede consultar nuestra <a href=\"/politica-de-privacidad/\">Política de Privacidad</a>.",
+              "css_descdesca_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc a",
+                "style": "color",
+                "val": "#6B6B6B"
+              },
+              "css_desc_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .desc",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "13.3px",
+                    "line-height": "1.6"
+                  },
+                  "mobile": {
+                    "font-size": "13px",
+                    "line-height": "1.6"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "sec000058",
+    "icon": "section",
+    "jsclass": "section",
+    "title": "CTA — Preparemos una solución a medida",
+    "ver": "default",
+    "attr": {
+      "width_switcher": "custom",
+      "css_advanced_max_width": {
+        "selector": ".mcb-section-mfnuidelement.custom-width .section_wrapper",
+        "style": "max-width",
+        "val": "1728px"
+      },
+      "css_advanced_padding": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "padding",
+        "val": {
+          "desktop": {
+            "top": "7.5rem",
+            "right": "2.25rem",
+            "bottom": "7.5rem",
+            "left": "2.25rem"
+          },
+          "tablet": {
+            "top": "5rem",
+            "right": "2rem",
+            "bottom": "5rem",
+            "left": "2rem"
+          },
+          "mobile": {
+            "top": "4rem",
+            "right": "1.25rem",
+            "bottom": "4rem",
+            "left": "1.25rem"
+          }
+        }
+      },
+      "background_switcher": "default",
+      "css_advanced_background_image": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-image",
+        "val": {
+          "desktop": "https://nordesancin.com/wp-content/uploads/2026/07/cta-portada.jpg"
+        }
+      },
+      "css_advanced_background_size": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-size",
+        "val": {
+          "desktop": "cover"
+        }
+      },
+      "css_advanced_background_position": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-position",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_background_repeat": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "background-repeat",
+        "val": {
+          "desktop": "no-repeat"
+        }
+      },
+      "height_switcher": "custom",
+      "css_advanced_height": {
+        "selector": ".mcb-section-mfnuidelement",
+        "style": "height",
+        "val": {
+          "desktop": "960px",
+          "tablet": "700px",
+          "mobile": "auto"
+        }
+      },
+      "background_overlay_switcher": "default",
+      "css_advanced_background_overlay_background_color": {
+        "selector": ".mcb-section-mfnuidelement .mcb-background-overlay",
+        "style": "background-color",
+        "val": "rgba(0,22,137,0.55)"
+      },
+      "css_advanced_align_items": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "align-items",
+        "val": {
+          "desktop": "center"
+        }
+      },
+      "css_advanced_justify_content": {
+        "selector": ".mcb-section-mfnuidelement .section_wrapper",
+        "style": "justify-content",
+        "val": {
+          "desktop": "center"
+        }
+      }
+    },
+    "wraps": [
+      {
+        "uid": "wrp000057",
+        "icon": "wrap",
+        "jsclass": "wrap",
+        "title": "CTA — contenido",
+        "size": "1/1",
+        "tablet_size": "1/1",
+        "mobile_size": "1/1",
+        "attr": {
+          "width_switcher": "custom",
+          "css_advanced_flex": {
+            "selector": ".mcb-section .mcb-wrap-mfnuidelement",
+            "style": "width",
+            "val": {
+              "desktop": "904px",
+              "tablet": "80%",
+              "mobile": "100%"
+            }
+          }
+        },
+        "items": [
+          {
+            "uid": "itm000055",
+            "type": "heading",
+            "jsclass": "heading",
+            "title": "CTA — titular",
+            "icon": "heading",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Preparemos una solución a medida",
+              "header_tag": "h2",
+              "css_txt_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title,.mcb-section .mcb-wrap .mcb-item-mfnuidelement .title a",
+                "style": "color",
+                "val": "#FCFCFC"
+              },
+              "css_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .title",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "120px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-7.2px",
+                    "font-weight": "400"
+                  },
+                  "tablet": {
+                    "font-size": "72px",
+                    "line-height": "1.1",
+                    "letter-spacing": "-4.32px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "40px",
+                    "line-height": "1.15",
+                    "letter-spacing": "-2.4px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "4rem"
+                  },
+                  "mobile": {
+                    "bottom": "2rem"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "itm000056",
+            "type": "button",
+            "jsclass": "button",
+            "title": "CTA — botón",
+            "icon": "button",
+            "size": "1/1",
+            "tablet_size": "1/1",
+            "mobile_size": "1/1",
+            "attr": {
+              "title": "Ponte en contacto",
+              "link": "/contacto/",
+              "icon": "icon-right-thin",
+              "icon_position": "right",
+              "button_style": "",
+              "background_switcher": "default",
+              "css_button_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_button_icon_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button i",
+                "style": "color",
+                "val": "#1F1F1F"
+              },
+              "css_button_background_color": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "background-color",
+                "val": "#FCFCFC"
+              },
+              "css_button_border_radius": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "border-radius",
+                "val": {
+                  "desktop": "8px 8px 8px 8px"
+                }
+              },
+              "css_button_padding": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "padding",
+                "val": {
+                  "desktop": {
+                    "top": "1rem",
+                    "right": "1.5rem",
+                    "bottom": "1rem",
+                    "left": "1.5rem"
+                  },
+                  "mobile": {
+                    "top": "0.875rem",
+                    "right": "1.25rem",
+                    "bottom": "0.875rem",
+                    "left": "1.25rem"
+                  }
+                }
+              },
+              "css_button_typography": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .button",
+                "style": "typography",
+                "val": {
+                  "desktop": {
+                    "font-size": "20px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.8px",
+                    "font-weight": "400"
+                  },
+                  "mobile": {
+                    "font-size": "17px",
+                    "line-height": "1.4",
+                    "letter-spacing": "-0.6px",
+                    "font-weight": "400"
+                  }
+                }
+              },
+              "css__text_align": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement",
+                "style": "text-align",
+                "val": {
+                  "desktop": "center"
+                }
+              },
+              "css_advanced_margin": {
+                "selector": ".mcb-section .mcb-wrap .mcb-item-mfnuidelement .mcb-column-inner",
+                "style": "margin",
+                "val": {
+                  "desktop": {
+                    "bottom": "0px"
+                  },
+                  "mobile": {
+                    "bottom": "0px"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
