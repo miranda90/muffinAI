@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "muffinai",
+  "description": "Taller de maquetación BeBuilder de Invbit.",
+  "owner": {
+    "name": "Invbit",
+    "url": "https://invbit.com"
+  },
+  "plugins": [
+    {
+      "name": "bebuilder",
+      "description": "Genera y valida JSON de BeBuilder: catálogo real del theme, validador estricto, documentación maestra y flujo verificable.",
+      "source": "./",
+      "category": "development"
+    }
+  ]
+}

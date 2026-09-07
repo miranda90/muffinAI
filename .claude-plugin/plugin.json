@@ -1,0 +1,9 @@
+{
+  "name": "bebuilder",
+  "description": "Taller BeBuilder: genera, valida y entrega el JSON de BeTheme/Muffin Builder para proyectos WordPress de Invbit.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Invbit",
+    "url": "https://invbit.com"
+  }
+}

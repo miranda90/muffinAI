@@ -15,7 +15,7 @@ servidores y aquí solo se fabrica y comprueba lo que luego se importa.
   la librería llevan los helpers duplicados dentro: congelados a propósito, no migrarlos.
 - `tools/validate_bebuilder_json.py` — validador contra el catálogo real del theme. Uso en
   `tools/README.md`.
-- `.claude/skills/bebuilder-json/SKILL.md` — la skill: flujo de generación, reglas
+- `skills/bebuilder-json/SKILL.md` — la skill: flujo de generación, reglas
   innegociables, trampas. **Leerla antes de generar cualquier JSON.**
 - `docs/bebuilder/` — documentación maestra (arquitectura, CSS pipeline, elementos, global
   styles, iconos, tipografía, **medios: imágenes y vídeo — doc 09**). `docs/legacy/` es historia,
@@ -68,3 +68,12 @@ Leer `docs/bebuilder/10-flujo-verificable.md`. Usar `build(context)` y `tools/bu
 No ejecutar scripts históricos con el nuevo runner. `python3 tools/check.py` comprueba
 regresiones, catálogo, fichas y plantilla. `accepted` es la condición de entrega local;
 WordPress y fidelidad visual permanecen pendientes hasta ejecutarlos realmente.
+
+## Distribución como plugin de Claude Code
+
+El repositorio **es** el plugin (`.claude-plugin/plugin.json` con `source: "./"` en
+`.claude-plugin/marketplace.json`). La skill vive en `skills/bebuilder-json/`, con un enlace
+desde `.claude/skills/` para las sesiones abiertas dentro del propio taller. Los comandos
+`/bebuilder:encargo`, `/bebuilder:build`, `/bebuilder:validar` y `/bebuilder:check` están en
+`commands/` y resuelven la raíz del taller con `${CLAUDE_PLUGIN_ROOT}`. Instalación y uso sin
+Claude Code: `INSTALL.md`; contexto de arranque para otros modelos: `AGENTS.md`.
