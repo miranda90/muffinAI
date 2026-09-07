@@ -18,3 +18,7 @@ venv/
 # Salidas de trabajo del validador
 *.fixed.json
 *.ok.json
+
+# Copia local del tema comprado (ThemeForest): fuente para regenerar el catálogo,
+# no hace falta para generar/validar JSON y no se redistribuye.
+/betheme/
