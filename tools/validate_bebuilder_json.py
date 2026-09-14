@@ -1274,6 +1274,8 @@ class Validator:
             return None
         for key, value in attr.items():
             if value in (None, "", {}, []): continue
+            if key == "css_advanced_background_color" and attr.get("background_switcher") == "video":
+                continue  # color de respaldo del vídeo: el panel lo oculta pero el helper lo emite (trampa 25, tests/php)
             defs = index.get(key, [])
             if isinstance(value, dict) and value.get("selector"):
                 defs = [d for d in defs if d.get("selector") == value["selector"]] or defs

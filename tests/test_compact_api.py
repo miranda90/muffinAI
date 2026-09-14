@@ -120,6 +120,20 @@ class CompactApiTests(unittest.TestCase):
         self.assertTrue(result['accepted'], [x for x in result['issues'] if x['level'] != 'info'])
 
 
+class VideoBackgroundTests(unittest.TestCase):
+    def test_video_bg_accepted_with_fallback_color(self):
+        manifest = {'hero': {'id': 9, 'url': 'https://sitio.example/wp-content/uploads/hero.mp4'}}
+        with mfn.BuildContext(manifest=manifest) as ctx:
+            page = [sec(wr(el('heading', title='x', color='#fff')), padding=(80, 36),
+                        **mfn.video_bg(ctx.media('hero'), fallback='#10221E', overlay='#000', opacity=0.4))]
+        attr = page[0]['attr']
+        self.assertEqual((attr['background_switcher'], attr['bg_video_dots'], attr['background_overlay_switcher']),
+                         ('video', 'hide', 'default'))
+        self.assertEqual(attr['css_advanced_background_overlay_opacity']['val'], 0.4)
+        result = validate(page, strict=True, manifest=manifest)
+        self.assertTrue(result['accepted'], [x for x in result['issues'] if x['level'] != 'info'])
+
+
 class RealProjectEquivalence(unittest.TestCase):
     """Bloques del encargo We Are Testers reescritos con la API compacta = mismo JSON."""
     FROZEN = ROOT / 'proyectos/we-are-testers/we-are-testers-casos-de-exito.json'

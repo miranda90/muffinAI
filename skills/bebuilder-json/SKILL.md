@@ -47,7 +47,7 @@ hero = sec(
        el("button", title="Empezar", link="/contacto/", **BTN, cols=("1/3", "1/2")),
        cols=("2/3", "1/1")),
     padding=(160, 36, 120, 36), max_width="1728px", background_color="#221C3D",
-    **bg(context.media("hero")), name="Hero")
+    **bg(context.media("hero")), name="Hero")  # vídeo: **video_bg(mp4, fallback="#…", overlay="#000", opacity=0.4)
 
 cards = sec(
     wr(*[nw(el("image", src=context.media(f), alt=t, image_cover_height=240, margin=(0, 0, 24, 0)),
@@ -86,7 +86,9 @@ cta = sec(wr(el("heading", title="¿Hablamos?", header_tag="h2", txt_align="cent
 Sizes válidos: `1/6 1/5 1/4 1/3 2/5 1/2 3/5 2/3 3/4 4/5 5/6 1/1`. `sec()` pone `width_switcher: full`
 salvo `max_width=` (→ `custom`). Un dict de kwargs (`**BTN`) es la forma de compartir estilo.
 Centrar dentro de su columna: botón `text_align="center"` (`css__text_align`), imagen
-`image_text_align="center"`, título `txt_align="center"`; no `justify_content` en el wrap. Botón a ancho completo: `full_width=1`
+`image_text_align="center"`, título `txt_align="center"`. Un bloque más estrecho que su wrap
+(`cols="2/3"`) se centra con `justify_content="center"` en el wrap. Orden distinto en móvil:
+`order={"desktop": 0, "mobile": -1}` en el wrap o item (sale `"+0"`: PHP descarta el `"0"`). Botón a ancho completo: `full_width=1`
 (no es responsive; en desktop el ancho lo da `cols`). Enlace de texto suelto: `plain_text` con
 `<a>` y `descdesca_color` (cubre `.desc a`). Icono suelto: `icon_2` con `size`/`color`.
 Los helpers previos (`css`, `typo`, `pad`, `m0`, `item`, `wrap`, `nested`, `section`, `style_field`,
@@ -96,12 +98,18 @@ Los helpers previos (`css`, `typo`, `pad`, `m0`, `item`, `wrap`, `nested`, `sect
 
 `python3 tools/fields.py --types` lista los 128 tipos. Título → `heading` (`title` + `header_tag`),
 párrafo → `plain_text` (`content`), botón → `button`, imagen → `image` (`src` = `URL#ID`, `alt`),
-lista con iconos → `list`, cifras → `counter` (entero pelado en `number`; `prefix`/`label` para
+icono suelto → `icon_2`, lista con iconos → `list_2` (`tabs=[{"icon": "icon-check", "content": "…"}, …]`;
+`list` es un solo ítem), cifras → `counter` (entero pelado en `number`; `prefix`/`label` para
 `+`/`%`; `icon=""` e `image=""`; separador solo `""`/`comma`/`space`), pestañas → `tabs`,
-acordeón → `faq`, testimonio → `testimonial`, badge sobre imagen → `banner_box`, vídeo →
-`video` con `video=""` obligatorio + `mp4` + `placeholder` + `html5_parameters="a;;l;m;i"`
-(trampa 25). Nunca empaquetar columnas o título+texto en un `column` con HTML y clases grid.
-Si un nativo cubre el bloque se usa aunque el mockup sea estático; degradar solo con motivo.
+acordeón → `faq` o `accordion` (`tabs=[{"title": "…", "content": "…"}, …]`, `title=""`), cita →
+`blockquote` (`content`, `author`), testimonios → `testimonials`/`testimonials_list` **solo si el
+sitio tiene el CPT con entradas** (tiran de `category`/`orderby`, sin texto inline); testimonio
+inline del diseño → `nw(image avatar + blockquote)`; badge sobre imagen → `banner_box`; vídeo
+en página → `video` con `video=""` obligatorio + `mp4` + `placeholder` +
+`html5_parameters="a;;l;m;i"`; vídeo de fondo → `video_bg()` (trampa 25). Los repetidores
+(`tabs`, `list`) son listas de dicts con las claves de la ficha. Nunca empaquetar columnas o
+título+texto en un `column` con HTML y clases grid. Si un nativo cubre el bloque se usa aunque el
+mockup sea estático; degradar solo con motivo.
 
 ## 4. Layout: reglas que la API no puede decidir por ti
 

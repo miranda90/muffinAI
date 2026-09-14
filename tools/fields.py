@@ -14,7 +14,7 @@ import re
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from validate_bebuilder_json import load_schema
+from validate_bebuilder_json import load_schema, LEGACY_SECTION, LEGACY_WRAP, LEGACY_ITEM
 
 SHORT = [(".mcb-section .mcb-wrap .mcb-item-mfnuidelement", "item"),
          (".mcb-section .mcb-wrap-mfnuidelement .mcb-wrap-inner", "wrap-inner"),
@@ -62,7 +62,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("scope", nargs="?", help="tipo de item, wrap o section")
     parser.add_argument("--grep", help="regex sobre id, style o título")
-    parser.add_argument("--advanced", action="store_true", help="pestaña Advanced común")
+    parser.add_argument("--advanced", action="store_true", help="pestaña Advanced común a los items (wrap y section ya incluyen la suya)")
     parser.add_argument("--types", action="store_true", help="listar tipos y alias")
     opts = parser.parse_args(argv)
     schema = load_schema()
@@ -72,10 +72,12 @@ def main(argv=None):
             aliases = sorted(a for a, t in schema.aliases.items() if t == itype)
             print("%-28s %s%s" % (itype, spec.get("title", ""), "  (alias: %s)" % ", ".join(aliases) if aliases else ""))
         return 0
+    legacy = LEGACY_ITEM
     if opts.advanced:
         index, header = schema.advanced, "advanced (todos los items)"
     elif opts.scope in ("wrap", "section"):
         index, header = schema.index_for(opts.scope), opts.scope
+        legacy = LEGACY_WRAP if opts.scope == "wrap" else LEGACY_SECTION
     elif opts.scope:
         itype = schema.canonical(opts.scope)
         own = set(schema._index(schema.raw["items"][itype].get("attr", [])))
@@ -86,6 +88,8 @@ def main(argv=None):
     pattern = re.compile(opts.grep, re.I) if opts.grep else None
     print("# " + header)
     for key, definitions in index.items():
+        if key in legacy and not any(d.get("selector") for d in definitions):
+            continue  # legacy sin css_*: el front lo vuelca como style inline; la API lo rechaza
         seen = set()
         for definition in definitions:
             text = line(definition)

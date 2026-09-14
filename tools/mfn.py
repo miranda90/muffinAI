@@ -488,4 +488,16 @@ def bg(image, size="cover", position="center", repeat="no-repeat"):
             "background_position": position, "background_repeat": repeat}
 
 
-__all__ += ["A", "el", "wr", "nw", "sec", "bg"]
+def video_bg(mp4, *, fallback, overlay=None, opacity=None, dots=False):
+    """Vídeo de fondo de sección (trampa 25): sec(..., **video_bg(context.media("hero"), fallback="#111",
+    overlay="#000", opacity=0.4)). `fallback` es el color mientras carga; opacity 0-1; dots oculta la trama."""
+    fields = {"background_switcher": "video", "bg_video_mp4": mp4, "bg_video_dots": "" if dots else "hide",
+              "background_color": fallback}
+    if overlay is not None:
+        fields["background_overlay_background_color"] = overlay
+    if opacity is not None:
+        fields["background_overlay_opacity"] = opacity
+    return fields
+
+
+__all__ += ["A", "el", "wr", "nw", "sec", "bg", "video_bg"]

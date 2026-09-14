@@ -44,7 +44,9 @@ switcher (`background_switcher`, `grid`, `image_height`, `full_width`, `width/he
 si el script no lo fija: un valor explícito siempre gana. `cols="1/2"` o `("1/3", "1/2", "1/1")`
 fija `size`/`tablet_size`/`mobile_size`; `name=` es el título del nodo (no `label`/`title`, que
 son contenido de counter/heading/button); `bg(url)` devuelve los cuatro campos de un fondo de
-imagen. Campos de contenido numéricos se guardan como string (`number=120` → `"120"`). Campo
+imagen y `video_bg(mp4, fallback=, overlay=, opacity=)` los de un vídeo de fondo (el validador no
+avisa W051 por el color de respaldo bajo `video`: el helper del theme lo emite igual, comprobado
+con el harness PHP). Campos de contenido numéricos se guardan como string (`number=120` → `"120"`). Campo
 inexistente → `ValueError` con sugerencias; campo legacy (`align`, `bg_color`, `padding` plano)
 → `ValueError` con el equivalente. Kwargs con guion: `**{"campo-con-guion": v}`.
 
