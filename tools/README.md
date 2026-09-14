@@ -29,6 +29,37 @@ theme (`builder-elements/_elements.json`, volcado ejecutando el PHP de
 `class-mfn-builder-fields.php`) y contra el comportamiento verificado de
 `class-mfn-helper.php` (motor de CSS) y `class-mfn-builder-front.php` (render).
 
+## API compacta para scripts nuevos (`tools/mfn.py`)
+
+`el(tipo, **campos)`, `wr(*items, **campos)`, `nw(*items, **campos)` (wrap anidado) y
+`sec(*wraps, **campos)`: cada kwarg es un campo del catálogo, con o sin prefijo `css_` /
+`css_advanced_`. Selector y style se resuelven del catálogo (8016 campos `css_*`, 3 ambiguos que
+exigen `style_field()` con selector). El valor se normaliza por tipo: `padding`/`margin` aceptan
+`(80, 0)`, `"24px 0"`, `32` o dict de lados y salen en `rem` (`root_font_px` del perfil) con
+`mobile` replicado; `border_width`/`border_radius` salen como string shorthand; `typography`
+replica `mobile`; los campos responsive envuelven `{"desktop": v}` y añaden la unidad del
+catálogo; colores y compuestos pasan tal cual; un dict `css()`/`typo()`/`style_field()` ya
+construido se respeta. Las condiciones del panel (`condition {id, opt: "is", val}`) declaran su
+switcher (`background_switcher`, `grid`, `image_height`, `full_width`, `width/height_switcher`…)
+si el script no lo fija: un valor explícito siempre gana. `cols="1/2"` o `("1/3", "1/2", "1/1")`
+fija `size`/`tablet_size`/`mobile_size`; `label=` es el título del nodo; `bg(url)` devuelve los
+cuatro campos de un fondo de imagen. Campo inexistente → `ValueError` con sugerencias.
+
+```bash
+python3 tools/fields.py button                 # campos propios, una línea cada uno
+python3 tools/fields.py button --grep "border|hover"
+python3 tools/fields.py wrap | section         # campos de wrap / sección
+python3 tools/fields.py --advanced             # pestaña Advanced común a todos los items
+python3 tools/fields.py --types                # 128 tipos renderizables y sus alias
+```
+
+Formato de línea: `id  tipo[/sides]  [rwd]  [unit=px]  [opts=a|b]  [std=…]  [if control is 'v']  -> style @ selector`.
+
+`tools/build.py SCRIPT --check` imprime solo `accepted`, `exit_code`, `counts`, `issues`
+(sin infos cuando hay algo más grave), `design_issues` y `fixes`; `--full` añade el informe
+íntegro (estadísticas, tipos, pasos de entrega). Tests: `tests/test_compact_api.py`, incluido
+un test de equivalencia con bloques del encargo real de We Are Testers.
+
 ## Uso
 
 ```bash

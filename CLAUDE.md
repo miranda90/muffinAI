@@ -10,9 +10,12 @@ servidores y aquí solo se fabrica y comprueba lo que luego se importa.
   `assets/` (medios del diseño + `manifest.json` con el `id`/`url` de cada uno en el WordPress
   destino) e `icons/`. **Todo lo nuevo nace aquí, nunca en la raíz.**
 - `proyectos/_plantilla/build_plantilla.py` — punto de partida de cualquier página nueva.
-- `tools/mfn.py` — helpers comunes (uid, css, typo, pad, section, wrap, nested, item,
-  selectores base, `load_manifest`/`media` para medios como `URL#ID`). Los scripts previos a
-  la librería llevan los helpers duplicados dentro: congelados a propósito, no migrarlos.
+- `tools/mfn.py` — API compacta `el`/`wr`/`nw`/`sec`/`bg` (cada kwarg es un campo del catálogo;
+  selector, style, `rem`, valor `mobile` y switchers se resuelven solos) más los helpers base
+  (uid, css, typo, pad, section, wrap, nested, item, `load_manifest`/`media` → `URL#ID`). Los
+  scripts previos a la librería llevan los helpers duplicados dentro: congelados, no migrarlos.
+- `tools/fields.py <tipo>` — campos de un elemento en una línea cada uno (`--grep`, `--advanced`,
+  `--types`): consultar esto antes que la ficha completa.
 - `tools/validate_bebuilder_json.py` — validador contra el catálogo real del theme. Uso en
   `tools/README.md`.
 - `skills/bebuilder-json/SKILL.md` — la skill: flujo de generación, reglas

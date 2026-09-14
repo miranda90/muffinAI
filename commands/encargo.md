@@ -18,4 +18,6 @@ directorio actual del usuario.
    `id` y `url`. Ningún medio inventado, ningún `localhost`, ninguna URL de Figma.
 4. Pregunta al usuario lo que falte (URL del diseño, acceso al WordPress destino, tokens de
    color/tipografía) en vez de suponerlo.
-5. Termina con `/bebuilder:build proyectos/$1/build_$2.py` para el primer `--check`.
+5. Maqueta con la API compacta (`el`/`wr`/`nw`/`sec`, ver SKILL §2); campos de cada tipo con
+   `python3 tools/fields.py <tipo>`.
+6. Termina con `/bebuilder:build proyectos/$1/build_$2.py` para el primer `--check`.

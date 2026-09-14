@@ -5,7 +5,11 @@ Este documento actualiza el flujo de los scripts nuevos. Los scripts y JSON entr
 ## Construir y entregar
 
 1. Copiar `proyectos/_plantilla/build_plantilla.py` al directorio del cliente.
-2. Completar `PROFILE`, `SOURCE`, `TOKENS` y `build(context)`.
+2. Completar `PROFILE`, `SOURCE`, `TOKENS` y `build(context)` con la API compacta de `tools/mfn.py`
+   (`el`/`wr`/`nw`/`sec`/`bg`: cada kwarg es un campo del catálogo; selector, style, `rem`, valor
+   `mobile` y switchers se resuelven solos; detalle en `tools/README.md`). Campos por tipo:
+   `python3 tools/fields.py <tipo>`. `--check` imprime solo veredicto e incidencias (`--full` para
+   el informe completo).
 3. Registrar diseño y decisiones responsive con `context.bind()`. Un bloque medido, inferido o pendiente conserva su procedencia en el sidecar; no se añaden campos propios al JSON de BeBuilder. Vincular una sección cubre sus descendientes, pero no justifica omisiones del diseño: cada bloque fuente debe asignarse o tener excepción.
 4. Resolver medios y dependencias. Las URLs locales o temporales no son entregables.
 5. Ejecutar desde cualquier directorio, utilizando rutas correctas al script:

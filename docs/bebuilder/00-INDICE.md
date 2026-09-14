@@ -19,10 +19,13 @@ usando exclusivamente las opciones que cada elemento permite.
 | [09-medios-imagenes-video.md](09-medios-imagenes-video.md) | Imágenes y vídeo de principio a fin: inventario en Figma (`get_metadata`, `download_assets`, `export_video`), descarga a `assets/`, subida a WordPress por wp-cli/REST, `manifest.json`, formato `URL#ID` y por qué (`sc_image`, `mfn_get_attachment`), fondos, vídeo de sección e item `video`, trampas de medios, checklist |
 | [08-tipografia-fuentes.md](08-tipografia-fuentes.md) | Tipografía en Theme Options: familia por rol (`font_select`), tamaños, Google Fonts (CDN/local/disabled), fuentes propias autoalojadas (`font-custom*`, generación de `@font-face`), almacenamiento en `wp_options.betheme`, gestión completa por SSH/wp-cli, trampa de `static-css`, trampas |
 
-## Validador
+## Herramientas
 
-`tools/validate_bebuilder_json.py` — comprueba un JSON contra el catálogo real de campos y el
-comportamiento verificado del motor de CSS y del render. Uso y catálogo de códigos en
+`tools/mfn.py` — API compacta para generar (`el`/`wr`/`nw`/`sec`: kwargs = campos del catálogo,
+selector/style/rem/mobile/switchers resueltos solos). `tools/fields.py <tipo>` — campos de un
+elemento en una línea cada uno, sin abrir la ficha. `tools/build.py` — construye, valida y
+entrega. `tools/validate_bebuilder_json.py` — comprueba un JSON contra el catálogo real de campos
+y el comportamiento verificado del motor de CSS y del render. Uso y catálogo de códigos en
 `tools/README.md`.
 
 ```bash
