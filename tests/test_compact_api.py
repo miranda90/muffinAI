@@ -27,6 +27,13 @@ class CompactApiTests(unittest.TestCase):
             self.assertEqual(A('section', padding='20px')['css_advanced_padding']['val']['desktop']['top'], '2rem')
         val = A('item', 'heading', margin={'desktop': {'bottom': '2rem'}, 'mobile': {'bottom': '1rem'}})['css_advanced_margin']['val']
         self.assertEqual(val, {'desktop': {'bottom': '2rem'}, 'mobile': {'bottom': '1rem'}})
+        # sin desktop no hay nada que replicar: laptop/tablet solos se respetan
+        self.assertEqual(A('item', 'heading', margin={'laptop': (0, 8)})['css_advanced_margin']['val'],
+                         {'laptop': {'top': '0px', 'right': '0.5rem', 'bottom': '0px', 'left': '0.5rem'}})
+        self.assertEqual(A('item', 'heading', typography={'tablet': {'font-size': '1px'}})['css_typography']['val'],
+                         {'tablet': {'font-size': '1px'}})
+        for value in ('auto', '50%', '-1.5rem', 'calc(100% - 2rem)'):
+            self.assertEqual(A('section', margin=value)['css_advanced_margin']['val']['desktop']['top'], value)
 
     def test_shorthand_dimensions_and_units(self):
         attr = A('item', 'button', button_border_radius=8, button_border_width='1px 0', button_gap=16, icon='icon-x')
@@ -69,6 +76,10 @@ class CompactApiTests(unittest.TestCase):
         with mfn.BuildContext():
             node = el('heading', title='x', cols=('1/3', '1/2'), label='Titular')
             self.assertEqual((node['size'], node['tablet_size'], node['mobile_size'], node['title']), ('1/3', '1/2', '1/1', 'Titular'))
+            one = el('heading', title='x', cols=('1/4',))
+            self.assertEqual((one['size'], one['tablet_size'], one['mobile_size']), ('1/4', '1/4', '1/1'))
+            with self.assertRaises(ValueError):
+                el('heading', title='x', cols=('1/4', '1/4', '1/4', '1/4'))
             section = sec(wr(node, cols='1/2'), label='Hero')
             self.assertEqual(section['attr']['width_switcher'], 'full')
             self.assertEqual(section['wraps'][0]['size'], '1/2')
@@ -130,7 +141,9 @@ class RealProjectEquivalence(unittest.TestCase):
                       button_background_hover='#F4F7F9', button_color_hover='#000000',
                       margin=(0, '0.75rem', 0, 0), cols=('1/4', '1/4', '1/2'), label='Etiqueta — Comunidades online')
         reference = self.find('Etiqueta — Comunidades online')
-        # El script congelado omitió el switcher del hover (W050 en el validador); la API lo declara sola.
+        # El script congelado omitió el switcher del hover: el validador lo señala (W050) y la API lo declara sola.
+        frozen = validate([{'attr': {}, 'wraps': [{'size': '1/1', 'attr': {}, 'items': [reference]}]}])
+        self.assertIn('css_button_background_hover', [x['path'].rsplit('.', 1)[-1] for x in frozen['issues'] if x['code'] == 'W050'])
         reference['attr']['background_switcher_hover'] = 'default'
         self.assertEqual(strip(node), reference)
 

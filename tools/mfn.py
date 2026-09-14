@@ -308,6 +308,7 @@ __all__ += ["BuildContext", "catalog", "style_field", "transform", "px_to_rem", 
 # image_height, full_width, width/height_switcher…) se declaran solos.
 _DEVICES = ("desktop", "laptop", "tablet", "mobile")
 _RE_PX = __import__("re").compile(r"^(-?\d*\.?\d+)px$")
+_RE_TOKEN = __import__("re").compile(r"[^\s(]+\([^)]*\)|\S+")
 _PASS_TYPES = {"color", "gradient", "transform", "box_shadow", "backdrop_filter", "text_shadow"}
 
 
@@ -338,7 +339,7 @@ def _sides(value):
     if isinstance(value, (int, float)):
         value = (value,)
     elif isinstance(value, str):
-        value = value.split()
+        value = _RE_TOKEN.findall(value)  # calc(100% - 2rem) es un solo valor
     parts = list(value)
     if len(parts) == 1:
         parts = parts * 4
@@ -357,6 +358,13 @@ def _devices(value):
     return {"desktop": value}
 
 
+def _with_mobile(devices):
+    """Regla 5: mobile replica desktop si falta. Sin desktop (solo laptop/tablet) se respeta tal cual."""
+    if "desktop" in devices:
+        devices.setdefault("mobile", deepcopy(devices["desktop"]))
+    return devices
+
+
 def _unit(value, unit):
     return "%g%s" % (value, unit) if isinstance(value, (int, float)) and not isinstance(value, bool) and unit else value
 
@@ -365,23 +373,18 @@ def _norm(definition, value):
     style, ftype = definition.get("style"), definition.get("type")
     if ftype == "dimensions" and definition.get("version") == "separated-fields":
         out = {d: _no_zero({k: _rem(x) for k, x in _sides(v).items()}) for d, v in _devices(value).items()}
-        out.setdefault("mobile", deepcopy(out["desktop"]))
-        return out
+        return _with_mobile(out)
     if ftype == "dimensions":  # border-width / border-radius: string shorthand (trampa 14)
         return {d: " ".join(str(_unit(x, "px")) for x in _sides(v).values())
                 for d, v in _devices(value).items()}
     if ftype == "typography_vb" or style == "typography":
-        out = _devices(value)
-        out.setdefault("mobile", deepcopy(out["desktop"]))
-        return out
+        return _with_mobile(_devices(value))
     if ftype in _PASS_TYPES or not definition.get("responsive"):
         return value
     param = definition.get("param") if isinstance(definition.get("param"), dict) else {}
     unit = definition.get("default_unit") or param.get("unit")
     out = {d: _unit(v, unit) for d, v in _devices(value).items()}
-    if style == "font-size":
-        out.setdefault("mobile", deepcopy(out["desktop"]))
-    return out
+    return _with_mobile(out) if style == "font-size" else out
 
 
 def _conditions(definition):
@@ -429,17 +432,22 @@ def A(scope, itype=None, **fields):
     for conditions in pending:  # switchers del panel: trampa 19 y afines
         for condition in conditions:
             if condition.get("opt", "is") != "is" or "val" not in condition:
-                continue
+                continue  # "isnt"/OR no fijan un valor concreto: el validador (W050) lo señala
             controller = controllers.get(condition["id"], condition["id"])
             attr.setdefault(controller, condition["val"])
     return attr
 
 
 def _cols(cols):
-    if isinstance(cols, str):
-        return cols, cols, "1/1"
-    cols = tuple(cols)
-    return (cols + ("1/1",))[:3] if len(cols) == 2 else cols
+    """"1/2" | ("1/2",) → desktop=tablet, mobile 1/1; ("1/3", "1/2") → mobile 1/1; tres → tal cual."""
+    cols = (cols,) if isinstance(cols, str) else tuple(cols)
+    if len(cols) == 1:
+        cols = (cols[0], cols[0])
+    if len(cols) == 2:
+        cols = cols + ("1/1",)
+    if len(cols) != 3:
+        raise ValueError("cols admite 1-3 tamaños: %r" % (cols,))
+    return cols
 
 
 def el(itype, *, cols="1/1", label=None, **fields):
