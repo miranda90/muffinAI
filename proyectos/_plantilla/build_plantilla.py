@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parents[1] / "tools"))
-from mfn import el, wr, nw, sec, bg
+from mfn import el, wr, nw, sec, bg, video_bg  # video_bg(mp4, fallback=, overlay=, opacity=)
 
 OUTPUT = "salida.json"
 PROFILE = {"editor": "visual", "artifact_kind": "page", "root_font_px": 16,

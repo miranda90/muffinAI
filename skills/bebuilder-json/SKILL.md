@@ -71,14 +71,14 @@ cta = sec(wr(el("heading", title="¿Hablamos?", header_tag="h2", txt_align="cent
 | `(80, 0)`, `"24px 0 0"`, `32`, `{"bottom": "2rem"}` | `padding` / `margin` (y `button_padding`…) | lados `top right bottom left`, **px → rem** con `root_font_px` del perfil, `0` → `"0px"`, `mobile` = desktop si no se da |
 | `{"desktop": (80, 0), "mobile": (40, 0)}` | ídem | cada breakpoint normalizado; `laptop`/`tablet` opcionales |
 | `8`, `"1px 0"` | `border_radius`, `border_width` | string shorthand `"8px 8px 8px 8px"` (trampa 14) |
-| `{"font-size": "68px", ...}` o `{"desktop": …, "mobile": …}` | `typography`, `desc_typography`, `button_typography` | `mobile` replicado si falta |
+| `{"font-size": "68px", ...}` o `{"desktop": …, "mobile": …}` | `typography`, `desc_typography`, `button_typography` | `mobile` replicado si falta. Claves: `font-family`, `font-size`, `line-height`, `font-weight`, `letter-spacing`, `text-transform`, `font-style`, `text-decoration`, `color`, `text-align` |
 | `16`, `"100%"`, `"center"` | campo responsive (`gap`, `height`, `image_cover_height`, `align_items`…) | `{"desktop": v}` + unidad del catálogo si es número |
 | `"#fff"` | color | tal cual |
 | `"0 4px 24px 0 rgba(0,0,0,.08)"` | `box_shadow`, `text_shadow` | string CSS tal cual |
 | gradient / transform dicts | compuestos | tal cual (`transform()` de mfn para transform) |
 | `120`, `1` | campos de contenido/switch (`number`, `full_width`…) | `"120"`, `"1"` (el theme guarda strings) |
 | `css(...)`, `typo(...)`, `style_field(...)` | cualquiera | se respeta sin tocar |
-| `cols="1/2"` / `cols=("1/3", "1/2", "1/1")` | `el`/`wr`/`nw` | `size` / `tablet_size` / `mobile_size` (mobile `1/1` por defecto) |
+| `cols="1/2"` / `("1/3", "1/2")` / `("1/3", "1/3", "1/2")` | `el`/`wr`/`nw` | `size` / `tablet_size` / `mobile_size`: un valor = desktop y tablet, dos = desktop y tablet, **mobile siempre `1/1` salvo tercer valor** |
 | `name="Hero"` | todos | `title` del nodo en el panel (`title`/`label` son campos de contenido: heading, button, counter) |
 | `align="center"`, `bg_color=…` | legacy | `ValueError`: el front los vuelca como `style=""` inline; usar el `css_*` |
 | campo con guion (`counternumber-wrappernumber_color`) | cualquiera | `**{"campo-con-guion": v}` |
@@ -91,6 +91,11 @@ Centrar dentro de su columna: botón `text_align="center"` (`css__text_align`), 
 `order={"desktop": 0, "mobile": -1}` en el wrap o item (sale `"+0"`: PHP descarta el `"0"`). Botón a ancho completo: `full_width=1`
 (no es responsive; en desktop el ancho lo da `cols`). Enlace de texto suelto: `plain_text` con
 `<a>` y `descdesca_color` (cubre `.desc a`). Icono suelto: `icon_2` con `size`/`color`.
+Botón outline: `button_background_color="transparent"` + `button_border_style="solid"` +
+`button_border_width=1` + `button_border_color`. Imagen con alto fijo: `image_cover_height=H`
+(cover); logos sin recorte además `image_height_style="fit"` (clase `mfn-fitimg-wrapper`,
+contain). Avatar redondo: `image_frame_width=80` + `image_cover_height=80` +
+`image_border_radius=999`. Precio o texto suelto sin elemento propio: `plain_text`.
 Los helpers previos (`css`, `typo`, `pad`, `m0`, `item`, `wrap`, `nested`, `section`, `style_field`,
 `recipes.py`) siguen disponibles y se mezclan sin problema.
 
