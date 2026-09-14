@@ -85,8 +85,8 @@ cta = sec(wr(el("heading", title="¿Hablamos?", header_tag="h2", txt_align="cent
 
 Sizes válidos: `1/6 1/5 1/4 1/3 2/5 1/2 3/5 2/3 3/4 4/5 5/6 1/1`. `sec()` pone `width_switcher: full`
 salvo `max_width=` (→ `custom`). Un dict de kwargs (`**BTN`) es la forma de compartir estilo.
-Centrar un botón o imagen dentro de su columna: `text_align="center"` en el item (campo Advanced
-`css__text_align`), no `justify_content` en el wrap. Botón a ancho completo: `full_width=1`
+Centrar dentro de su columna: botón `text_align="center"` (`css__text_align`), imagen
+`image_text_align="center"`, título `txt_align="center"`; no `justify_content` en el wrap. Botón a ancho completo: `full_width=1`
 (no es responsive; en desktop el ancho lo da `cols`). Enlace de texto suelto: `plain_text` con
 `<a>` y `descdesca_color` (cubre `.desc a`). Icono suelto: `icon_2` con `size`/`color`.
 Los helpers previos (`css`, `typo`, `pad`, `m0`, `item`, `wrap`, `nested`, `section`, `style_field`,
