@@ -299,3 +299,178 @@ nested = _checked_constructor(nested)
 item = _checked_constructor(item)
 
 __all__ += ["BuildContext", "catalog", "style_field", "transform", "px_to_rem", "BREAKPOINTS"]
+
+
+# ---------------------------------------------------------------- API compacta
+# Cada kwarg es un campo del catálogo (con o sin prefijo css_/css_advanced_).
+# Selector y style salen del catálogo; el valor se normaliza según el tipo del
+# campo; los switchers que condicionan el campo (background_switcher, grid,
+# image_height, full_width, width/height_switcher…) se declaran solos.
+_DEVICES = ("desktop", "laptop", "tablet", "mobile")
+_RE_PX = __import__("re").compile(r"^(-?\d*\.?\d+)px$")
+_PASS_TYPES = {"color", "gradient", "transform", "box_shadow", "backdrop_filter", "text_shadow"}
+
+
+def _root_px():
+    context = _active.get()
+    root = context.profile.get("root_font_px") if context is not None else None
+    return root or 16
+
+
+def _rem(value):
+    """px → rem (regla 6). Números = px. Otras unidades y palabras pasan tal cual."""
+    if isinstance(value, bool):
+        raise ValueError("Booleano no es un espaciado")
+    if isinstance(value, (int, float)):
+        value = "%gpx" % value
+    if isinstance(value, str):
+        match = _RE_PX.match(value.strip())
+        if match:
+            n = float(match.group(1))
+            return "0" if n == 0 else "%grem" % round(n / _root_px(), 4)
+    return value
+
+
+def _sides(value):
+    """'16px 0' | 16 | (t, r, b, l) | {'top':…} → dict de lados en orden CSS."""
+    if isinstance(value, dict):
+        return dict(value)
+    if isinstance(value, (int, float)):
+        value = (value,)
+    elif isinstance(value, str):
+        value = value.split()
+    parts = list(value)
+    if len(parts) == 1:
+        parts = parts * 4
+    elif len(parts) == 2:
+        parts = [parts[0], parts[1], parts[0], parts[1]]
+    elif len(parts) == 3:
+        parts = [parts[0], parts[1], parts[2], parts[1]]
+    elif len(parts) != 4:
+        raise ValueError("Espaciado con %d valores; se admiten 1-4" % len(parts))
+    return dict(zip(("top", "right", "bottom", "left"), parts))
+
+
+def _devices(value):
+    if isinstance(value, dict) and value and set(value) <= set(_DEVICES):
+        return deepcopy(value)
+    return {"desktop": value}
+
+
+def _unit(value, unit):
+    return "%g%s" % (value, unit) if isinstance(value, (int, float)) and not isinstance(value, bool) and unit else value
+
+
+def _norm(definition, value):
+    style, ftype = definition.get("style"), definition.get("type")
+    if ftype == "dimensions" and definition.get("version") == "separated-fields":
+        out = {d: _no_zero({k: _rem(x) for k, x in _sides(v).items()}) for d, v in _devices(value).items()}
+        out.setdefault("mobile", deepcopy(out["desktop"]))
+        return out
+    if ftype == "dimensions":  # border-width / border-radius: string shorthand (trampa 14)
+        return {d: " ".join(str(_unit(x, "px")) for x in _sides(v).values())
+                for d, v in _devices(value).items()}
+    if ftype == "typography_vb" or style == "typography":
+        out = _devices(value)
+        out.setdefault("mobile", deepcopy(out["desktop"]))
+        return out
+    if ftype in _PASS_TYPES or not definition.get("responsive"):
+        return value
+    param = definition.get("param") if isinstance(definition.get("param"), dict) else {}
+    unit = definition.get("default_unit") or param.get("unit")
+    out = {d: _unit(v, unit) for d, v in _devices(value).items()}
+    if style == "font-size":
+        out.setdefault("mobile", deepcopy(out["desktop"]))
+    return out
+
+
+def _conditions(definition):
+    condition = definition.get("condition")
+    if isinstance(condition, dict):
+        return [condition]
+    if isinstance(condition, list) and (not condition or condition[0] == "AND" or isinstance(condition[0], dict)):
+        return [c for c in condition if isinstance(c, dict)]
+    return []
+
+
+def A(scope, itype=None, **fields):
+    """attr de sección/wrap/item a partir de kwargs con nombres del catálogo."""
+    import difflib
+    schema = catalog()
+    if scope == "item":
+        itype = schema.canonical(itype)
+        index, controllers = schema.items[itype], schema.controllers.get(itype, {})
+    elif scope in ("section", "wrap"):
+        index, controllers = schema.index_for(scope), schema.controllers.get(scope, {})
+    else:
+        raise ValueError("scope debe ser section/wrap/item")
+    attr, pending = {}, []
+    for key, value in fields.items():
+        candidates = [c for c in (key, "css_" + key, "css_advanced_" + key) if c in index]
+        # Campos legacy planos (wrap.padding, section.background_color…) no tapan al css_*.
+        resolved = next((c for c in candidates if any(d.get("selector") and d.get("style") for d in index[c])),
+                        candidates[0] if candidates else None)
+        if resolved is None:
+            near = difflib.get_close_matches(key, [k.replace("css_advanced_", "").replace("css_", "") for k in index], 3, 0.6)
+            raise ValueError("Campo '%s' no existe en %s%s; parecidos: %s" % (key, scope, "/" + itype if itype else "", ", ".join(near) or "ninguno"))
+        definitions = index[resolved]
+        styled = [d for d in definitions if d.get("selector") and d.get("style")]
+        if styled:
+            signatures = {(d["selector"], d["style"]) for d in styled}
+            if len(signatures) != 1:
+                raise ValueError("Campo ambiguo '%s': usar style_field() con selector explícito" % resolved)
+            definition = styled[0]
+            prebuilt = isinstance(value, dict) and {"selector", "style", "val"} <= set(value)
+            attr[resolved] = value if prebuilt else css(definition["selector"], definition["style"], _norm(definition, value))
+        else:
+            attr[resolved] = value
+        if value not in (None, "", {}, []):
+            pending.extend(_conditions(d) for d in definitions)
+    for conditions in pending:  # switchers del panel: trampa 19 y afines
+        for condition in conditions:
+            if condition.get("opt", "is") != "is" or "val" not in condition:
+                continue
+            controller = controllers.get(condition["id"], condition["id"])
+            attr.setdefault(controller, condition["val"])
+    return attr
+
+
+def _cols(cols):
+    if isinstance(cols, str):
+        return cols, cols, "1/1"
+    cols = tuple(cols)
+    return (cols + ("1/1",))[:3] if len(cols) == 2 else cols
+
+
+def el(itype, *, cols="1/1", label=None, **fields):
+    """Item: el("heading", title="Hola", header_tag="h1", color="#fff", margin=0)."""
+    size, tablet, mobile = _cols(cols)
+    return item(itype, A("item", itype, **fields), size, tablet, mobile, title=label)
+
+
+def wr(*items, cols="1/1", label="Wrap", **fields):
+    """Wrap con items posicionales: wr(el(...), el(...), cols="1/2", padding=(0, 16))."""
+    size, tablet, mobile = _cols(cols)
+    return wrap(A("wrap", **fields), list(items), size, tablet, mobile, title=label)
+
+
+def nw(*items, cols="1/1", label="Wrap", **fields):
+    """Wrap anidado (tarjeta de grid o de query loop). Un solo nivel: trampa 16."""
+    size, tablet, mobile = _cols(cols)
+    return nested(A("wrap", **fields), list(items), size, tablet, mobile, title=label)
+
+
+def sec(*wraps, label="Section", **fields):
+    """Sección: sec(wr(...), padding=(80, 0), max_width="1728px", background_color="#111")."""
+    attr = A("section", **fields)
+    attr.setdefault("width_switcher", "full")
+    return section(attr, list(wraps), title=label)
+
+
+def bg(image, size="cover", position="center", repeat="no-repeat"):
+    """Fondo de imagen para sec()/wr()/nw(): sec(..., **bg(context.media("hero")))."""
+    return {"background_image": {"desktop": image}, "background_size": size,
+            "background_position": position, "background_repeat": repeat}
+
+
+__all__ += ["A", "el", "wr", "nw", "sec", "bg"]
