@@ -64,6 +64,25 @@ class CompactApiTests(unittest.TestCase):
     def test_unknown_key_suggests(self):
         with self.assertRaisesRegex(ValueError, 'button_padding'):
             A('item', 'button', button_paddng=1)
+        with self.assertRaisesRegex(ValueError, 'legacy'):
+            A('item', 'button', align='center')
+        with self.assertRaisesRegex(ValueError, 'legacy'):
+            A('wrap', bg_color='#fff')
+
+    def test_content_fields_are_strings_and_counter_label_survives(self):
+        attr = A('item', 'counter', number=120, label='+', title='proyectos')
+        self.assertEqual((attr['number'], attr['label']), ('120', '+'))
+        self.assertEqual(A('item', 'button', full_width=1)['full_width'], '1')
+        with mfn.BuildContext():
+            node = el('counter', number=120, label='+', name='Cifra')
+        self.assertEqual((node['attr']['label'], node['title']), ('+', 'Cifra'))
+        self.assertEqual(A('item', 'button', text_align='center')['css__text_align']['val'], {'desktop': 'center'})
+        shadow = A('item', 'heading', box_shadow='0 4px 24px 0 rgba(0,0,0,.08)')['css_advanced_box_shadow']
+        self.assertEqual(shadow['val'], '0 4px 24px 0 rgba(0,0,0,.08)')
+        with mfn.BuildContext():
+            page = [sec(wr(el('heading', title='x', box_shadow='0 4px 24px 0 rgba(0,0,0,.08)'),
+                           el('button', title='x', link='/x/', text_align='center')))]
+        self.assertTrue(validate(page, strict=True)['accepted'])
 
     def test_prebuilt_css_passthrough_and_alias(self):
         built = mfn.css(mfn.S_TITLE, 'typography', {'desktop': {'font-size': '1px'}, 'mobile': {'font-size': '1px'}})
@@ -74,13 +93,13 @@ class CompactApiTests(unittest.TestCase):
 
     def test_cols_and_labels(self):
         with mfn.BuildContext():
-            node = el('heading', title='x', cols=('1/3', '1/2'), label='Titular')
+            node = el('heading', title='x', cols=('1/3', '1/2'), name='Titular')
             self.assertEqual((node['size'], node['tablet_size'], node['mobile_size'], node['title']), ('1/3', '1/2', '1/1', 'Titular'))
             one = el('heading', title='x', cols=('1/4',))
             self.assertEqual((one['size'], one['tablet_size'], one['mobile_size']), ('1/4', '1/4', '1/1'))
             with self.assertRaises(ValueError):
                 el('heading', title='x', cols=('1/4', '1/4', '1/4', '1/4'))
-            section = sec(wr(node, cols='1/2'), label='Hero')
+            section = sec(wr(node, cols='1/2'), name='Hero')
             self.assertEqual(section['attr']['width_switcher'], 'full')
             self.assertEqual(section['wraps'][0]['size'], '1/2')
             with self.assertRaises(ValueError):
@@ -96,7 +115,7 @@ class CompactApiTests(unittest.TestCase):
                    el('image', src=ctx.media('hero'), alt='Hero', image_cover_height=320, margin=0), cols='1/2', padding=(0, 16)),
                 wr(*[nw(el('plain_text', content='x', margin=0), background_color='#fff', height='100%', padding=24) for _ in range(3)],
                    grid_columns={'desktop': 'repeat(3, 1fr)', 'tablet': 'repeat(2, 1fr)', 'mobile': '1fr'}, grid_columns_gap='1.5rem', grid_rows_gap='1.5rem'),
-                padding=(80, 0), max_width='1728px', background_color='#111', label='Hero')]
+                padding=(80, 0), max_width='1728px', background_color='#111', name='Hero')]
         result = validate(page, strict=True, manifest=manifest)
         self.assertTrue(result['accepted'], [x for x in result['issues'] if x['level'] != 'info'])
 
@@ -122,12 +141,12 @@ class RealProjectEquivalence(unittest.TestCase):
             node = wr(
                 el('image', src=self.MEDIA + 'eyebrow-cuadrado.svg', alt='', width_switcher='inline', hover='disable',
                    image_frame_width='10px', margin={'desktop': (0, '1.125rem', 0, 0), 'mobile': (0, '0.75rem', 0, 0)},
-                   cols=('1/6', '1/6', '1/6'), label='Eyebrow — cuadrado'),
+                   cols=('1/6', '1/6', '1/6'), name='Eyebrow — cuadrado'),
                 el('heading', title='Casos de éxito', header_tag='p', width_switcher='inline', color='#221C3D',
                    typography={'desktop': eyebrow, 'mobile': eyebrow_m}, margin=0,
-                   cols=('5/6', '5/6', '5/6'), label='Eyebrow — texto'),
+                   cols=('5/6', '5/6', '5/6'), name='Eyebrow — texto'),
                 align_items='center', margin={'desktop': {'bottom': '2rem'}, 'mobile': {'bottom': '1.25rem'}},
-                label='Eyebrow — Casos de éxito')
+                name='Eyebrow — Casos de éxito')
         self.assertEqual(strip(node), self.find('Eyebrow — Casos de éxito'))
 
     def test_pill(self):
@@ -139,7 +158,7 @@ class RealProjectEquivalence(unittest.TestCase):
                       button_border_width=1, button_border_color='#C5C7C8', button_border_radius=2000,
                       button_padding=(6, 12), button_typography={'desktop': t, 'mobile': tm},
                       button_background_hover='#F4F7F9', button_color_hover='#000000',
-                      margin=(0, '0.75rem', 0, 0), cols=('1/4', '1/4', '1/2'), label='Etiqueta — Comunidades online')
+                      margin=(0, '0.75rem', 0, 0), cols=('1/4', '1/4', '1/2'), name='Etiqueta — Comunidades online')
         reference = self.find('Etiqueta — Comunidades online')
         # El script congelado omitió el switcher del hover: el validador lo señala (W050) y la API lo declara sola.
         frozen = validate([{'attr': {}, 'wraps': [{'size': '1/1', 'attr': {}, 'items': [reference]}]}])

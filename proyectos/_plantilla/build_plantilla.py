@@ -46,7 +46,7 @@ def card(title, text, link, image_src=None):
               el("plain_text", content=text, descdesca_color=TOKENS["body"], desc_typography=T["p"], margin=(0, 0, 24, 0)),
               el("button", title="Ver más", link=link, **BTN),
               background_color=TOKENS["white"], padding=32, height="100%", align_content="space-between",
-              label="Tarjeta — " + title)
+              name="Tarjeta — " + title)
 
 
 def build(context):
@@ -60,7 +60,7 @@ def build(context):
            el("plain_text", content="Texto de apoyo del hero.", descdesca_color=TOKENS["white"], desc_typography=T["p"], margin=(0, 0, 40, 0)),
            el("button", title="Empezar", link="/contacto/", **BTN, cols=("1/3", "1/2")),
            cols=("2/3", "1/1")),
-        padding=(160, 36, 120, 36), max_width=M, background_color=TOKENS["dark"], **(bg(img) if img else {}), label="Hero")
+        padding=(160, 36, 120, 36), max_width=M, background_color=TOKENS["dark"], **(bg(img) if img else {}), name="Hero")
     context.bind("hero", hero, evidence="inferred", responsive={"mobile": "Una columna; padding 160→ver TOKENS"})
 
     cards = sec(
@@ -70,14 +70,13 @@ def build(context):
            card("Servicio tres", "Descripción breve.", "/servicios/tres/", img),
            grid_columns={"desktop": "repeat(3, 1fr)", "tablet": "repeat(2, 1fr)", "mobile": "1fr"},
            grid_columns_gap="2rem", grid_rows_gap="2rem"),
-        padding=(120, 64), max_width=M, background_color=TOKENS["light"], label="Servicios")
+        padding=(120, 64), max_width=M, background_color=TOKENS["light"], name="Servicios")
     context.bind("servicios", cards, evidence="inferred", responsive={"tablet": "2 columnas", "mobile": "1 columna"})
 
     cta = sec(
         wr(el("heading", title="¿Hablamos?", header_tag="h2", color=TOKENS["white"], typography=T["h2"], txt_align="center", margin=(0, 0, 32, 0)),
-           el("button", title="Contactar", link="/contacto/", **BTN, cols=("1/4", "1/2")),
-           justify_content="center"),
-        padding=(96, 36), max_width=M, background_color=TOKENS["primary"], label="CTA")
+           el("button", title="Contactar", link="/contacto/", **BTN, text_align="center")),
+        padding=(96, 36), max_width=M, background_color=TOKENS["primary"], name="CTA")
     context.bind("cta", cta, evidence="inferred", responsive={"mobile": "Botón a media anchura"})
     return [hero, cards, cta]
 

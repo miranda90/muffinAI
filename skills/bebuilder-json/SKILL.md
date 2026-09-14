@@ -20,7 +20,8 @@ los docs largos se consultan solo cuando la tabla final lo indique.
    Nunca URLs de Figma, `localhost` ni inventadas; lo no conseguido se lista como pendiente.
 3. Tokens del diseño en el script (`TOKENS`, roles tipográficos `T` con valor mobile, `BTN`…).
 4. Trocear el diseño: bandas → `sec()`, filas/columnas → `wr()`, tarjetas → `nw()`, bloques → `el()`.
-   Registrar cada banda con `context.bind(id, nodo, evidence=…, responsive={…})`.
+   Registrar cada banda con `context.bind(id, nodo, evidence=…, responsive={…})`; `evidence` es
+   `measured` (medido en Figma/HTML), `inferred` (spec textual, imagen, deducido) o `pending`.
 5. Iterar `python3 tools/build.py proyectos/<cliente>/build_<pagina>.py --check` hasta
    `"accepted": true` (exit 0). Se corrige el script, nunca el JSON.
 6. Publicar con el mismo comando sin `--check` (escribe JSON + `.report/.design/.profile.json`).
@@ -46,7 +47,7 @@ hero = sec(
        el("button", title="Empezar", link="/contacto/", **BTN, cols=("1/3", "1/2")),
        cols=("2/3", "1/1")),
     padding=(160, 36, 120, 36), max_width="1728px", background_color="#221C3D",
-    **bg(context.media("hero")), label="Hero")
+    **bg(context.media("hero")), name="Hero")
 
 cards = sec(
     wr(*[nw(el("image", src=context.media(f), alt=t, image_cover_height=240, margin=(0, 0, 24, 0)),
@@ -56,7 +57,13 @@ cards = sec(
          for f, t, u in CARDS],
        grid_columns={"desktop": "repeat(3, 1fr)", "tablet": "repeat(2, 1fr)", "mobile": "1fr"},
        grid_columns_gap="2rem", grid_rows_gap="2rem"),
-    padding=(120, 64), max_width="1728px", label="Servicios")
+    padding=(120, 64), max_width="1728px", name="Servicios")
+
+cifras = sec(wr(*[el("counter", number=n, label=suf, title=t, icon="", image="", cols=("1/3", "1/3")) for n, suf, t in KPI]),
+             padding=(96, 36), background_color="#0B1B2B", name="Cifras")
+cta = sec(wr(el("heading", title="¿Hablamos?", header_tag="h2", txt_align="center", typography=T["h2"]),
+             el("button", title="Escríbenos", link="/contacto/", **BTN, text_align="center")),
+          padding=(96, 36), background_color=T_PRIMARY, name="CTA")
 ```
 
 | Valor que pasas | Campo | Resultado |
@@ -66,13 +73,22 @@ cards = sec(
 | `8`, `"1px 0"` | `border_radius`, `border_width` | string shorthand `"8px 8px 8px 8px"` (trampa 14) |
 | `{"font-size": "68px", ...}` o `{"desktop": …, "mobile": …}` | `typography`, `desc_typography`, `button_typography` | `mobile` replicado si falta |
 | `16`, `"100%"`, `"center"` | campo responsive (`gap`, `height`, `image_cover_height`, `align_items`…) | `{"desktop": v}` + unidad del catálogo si es número |
-| `"#fff"`, gradient/transform/box_shadow dicts | color y compuestos | tal cual (`transform()` de mfn para transform) |
+| `"#fff"` | color | tal cual |
+| `"0 4px 24px 0 rgba(0,0,0,.08)"` | `box_shadow`, `text_shadow` | string CSS tal cual |
+| gradient / transform dicts | compuestos | tal cual (`transform()` de mfn para transform) |
+| `120`, `1` | campos de contenido/switch (`number`, `full_width`…) | `"120"`, `"1"` (el theme guarda strings) |
 | `css(...)`, `typo(...)`, `style_field(...)` | cualquiera | se respeta sin tocar |
 | `cols="1/2"` / `cols=("1/3", "1/2", "1/1")` | `el`/`wr`/`nw` | `size` / `tablet_size` / `mobile_size` (mobile `1/1` por defecto) |
-| `label="Hero"` | todos | `title` del nodo en el panel (el `title` de heading/button es contenido) |
+| `name="Hero"` | todos | `title` del nodo en el panel (`title`/`label` son campos de contenido: heading, button, counter) |
+| `align="center"`, `bg_color=…` | legacy | `ValueError`: el front los vuelca como `style=""` inline; usar el `css_*` |
+| campo con guion (`counternumber-wrappernumber_color`) | cualquiera | `**{"campo-con-guion": v}` |
 
 Sizes válidos: `1/6 1/5 1/4 1/3 2/5 1/2 3/5 2/3 3/4 4/5 5/6 1/1`. `sec()` pone `width_switcher: full`
 salvo `max_width=` (→ `custom`). Un dict de kwargs (`**BTN`) es la forma de compartir estilo.
+Centrar un botón o imagen dentro de su columna: `text_align="center"` en el item (campo Advanced
+`css__text_align`), no `justify_content` en el wrap. Botón a ancho completo: `full_width=1`
+(no es responsive; en desktop el ancho lo da `cols`). Enlace de texto suelto: `plain_text` con
+`<a>` y `descdesca_color` (cubre `.desc a`). Icono suelto: `icon_2` con `size`/`color`.
 Los helpers previos (`css`, `typo`, `pad`, `m0`, `item`, `wrap`, `nested`, `section`, `style_field`,
 `recipes.py`) siguen disponibles y se mezclan sin problema.
 

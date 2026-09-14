@@ -407,12 +407,17 @@ def A(scope, itype=None, **fields):
         index, controllers = schema.index_for(scope), schema.controllers.get(scope, {})
     else:
         raise ValueError("scope debe ser section/wrap/item")
+    from validate_bebuilder_json import LEGACY_SECTION, LEGACY_WRAP, LEGACY_ITEM
+    legacy = {"section": LEGACY_SECTION, "wrap": LEGACY_WRAP, "item": LEGACY_ITEM}[scope]
     attr, pending = {}, []
     for key, value in fields.items():
-        candidates = [c for c in (key, "css_" + key, "css_advanced_" + key) if c in index]
+        candidates = [c for c in (key, "css_" + key, "css_advanced_" + key, "css__" + key) if c in index]
         # Campos legacy planos (wrap.padding, section.background_color…) no tapan al css_*.
         resolved = next((c for c in candidates if any(d.get("selector") and d.get("style") for d in index[c])),
                         candidates[0] if candidates else None)
+        if resolved in legacy:  # padding/align/bg_color… sin variante css_*: el front los vuelca como style inline
+            raise ValueError("Campo legacy '%s' (%s): usar el css_* equivalente (python3 tools/fields.py %s)"
+                             % (key, scope, itype or scope))
         if resolved is None:
             near = difflib.get_close_matches(key, [k.replace("css_advanced_", "").replace("css_", "") for k in index], 3, 0.6)
             raise ValueError("Campo '%s' no existe en %s%s; parecidos: %s" % (key, scope, "/" + itype if itype else "", ", ".join(near) or "ninguno"))
@@ -425,8 +430,8 @@ def A(scope, itype=None, **fields):
             definition = styled[0]
             prebuilt = isinstance(value, dict) and {"selector", "style", "val"} <= set(value)
             attr[resolved] = value if prebuilt else css(definition["selector"], definition["style"], _norm(definition, value))
-        else:
-            attr[resolved] = value
+        else:  # campo de contenido/switch: el theme guarda strings ("1", "120")
+            attr[resolved] = str(value) if isinstance(value, (int, float)) and not isinstance(value, bool) else value
         if value not in (None, "", {}, []):
             pending.extend(_conditions(d) for d in definitions)
     for conditions in pending:  # switchers del panel: trampa 19 y afines
@@ -450,29 +455,31 @@ def _cols(cols):
     return cols
 
 
-def el(itype, *, cols="1/1", label=None, **fields):
+# `name=` es el título del nodo en el panel del VB. No se llama `label`/`title` porque esos son
+# campos de contenido (counter.label, heading.title) y taparlos perdería datos en silencio.
+def el(itype, *, cols="1/1", name=None, **fields):
     """Item: el("heading", title="Hola", header_tag="h1", color="#fff", margin=0)."""
     size, tablet, mobile = _cols(cols)
-    return item(itype, A("item", itype, **fields), size, tablet, mobile, title=label)
+    return item(itype, A("item", itype, **fields), size, tablet, mobile, title=name)
 
 
-def wr(*items, cols="1/1", label="Wrap", **fields):
+def wr(*items, cols="1/1", name="Wrap", **fields):
     """Wrap con items posicionales: wr(el(...), el(...), cols="1/2", padding=(0, 16))."""
     size, tablet, mobile = _cols(cols)
-    return wrap(A("wrap", **fields), list(items), size, tablet, mobile, title=label)
+    return wrap(A("wrap", **fields), list(items), size, tablet, mobile, title=name)
 
 
-def nw(*items, cols="1/1", label="Wrap", **fields):
+def nw(*items, cols="1/1", name="Wrap", **fields):
     """Wrap anidado (tarjeta de grid o de query loop). Un solo nivel: trampa 16."""
     size, tablet, mobile = _cols(cols)
-    return nested(A("wrap", **fields), list(items), size, tablet, mobile, title=label)
+    return nested(A("wrap", **fields), list(items), size, tablet, mobile, title=name)
 
 
-def sec(*wraps, label="Section", **fields):
+def sec(*wraps, name="Section", **fields):
     """Sección: sec(wr(...), padding=(80, 0), max_width="1728px", background_color="#111")."""
     attr = A("section", **fields)
     attr.setdefault("width_switcher", "full")
-    return section(attr, list(wraps), title=label)
+    return section(attr, list(wraps), title=name)
 
 
 def bg(image, size="cover", position="center", repeat="no-repeat"):
