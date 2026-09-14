@@ -91,6 +91,7 @@ def main(argv=None):
     parser.add_argument("--manifest", type=Path)
     parser.add_argument("--design", type=Path)
     parser.add_argument("--output", type=Path)
+    parser.add_argument("--full", action="store_true", help="informe completo (por defecto: solo veredicto e incidencias)")
     opts = parser.parse_args(argv)
     try:
         script = opts.script.resolve()
@@ -112,7 +113,10 @@ def main(argv=None):
         output = opts.output or script.parent / getattr(module, "OUTPUT", "salida.json")
         if not output.is_absolute(): output = script.parent / output
         result = deliver(document, context, output, check=opts.check, draft=opts.draft)
-        print(json.dumps(result, ensure_ascii=False, indent=2))
+        brief = {k: result[k] for k in ("accepted", "exit_code", "counts", "issues", "design_issues", "fixes")}
+        brief["issues"] = [x for x in brief["issues"] if x["level"] != "info"] or brief["issues"]
+        if not opts.check and result["accepted"]: brief["output"] = str(output)
+        print(json.dumps(result if opts.full else brief, ensure_ascii=False, indent=2))
         return result["exit_code"]
     except (OSError, ValueError, TypeError, KeyError) as exc:
         print(json.dumps({"accepted": False, "exit_code": 3, "error": str(exc)}, ensure_ascii=False))
